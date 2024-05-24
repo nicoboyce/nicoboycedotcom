@@ -6,15 +6,16 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            Deltastring
-tagline:          'Zendesk solutions specialists'
-description:      'Boutique Zendesk solutions'
-url:              https://deltastring.com
+title:            Nico Boyce
+tagline:          'An internet human person'
+description:      'Person doing human things'
+url:              https://nicoboyce.com
 baseurl:          /
+email:            hello@nicoboyce.com
 
 author:
   name:           'Nico Boyce'
-  url:            https://deltastring.com
+  url:            https://nicoboyce.com
 
 # paginate:         4
 
