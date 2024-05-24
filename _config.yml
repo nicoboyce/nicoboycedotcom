@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         kramdown
+
+# Permalinks
+permalink:        pretty
+# relative_permalinks: true
+
+# Setup
+title:            Deltastring
+tagline:          'Zendesk solutions specialists'
+description:      'Boutique Zendesk solutions'
+url:              https://deltastring.com
+baseurl:          /
+
+author:
+  name:           'Nico Boyce'
+  url:            https://deltastring.com
+
+# paginate:         4
+
+# plugins:
+#  - jekyll-paginate-v2
+#  - jekyll-gist
+
+# Custom vars
+version:          24.05
+
+excerpt_separator: "<!--excerpt-end-->"
+# github:
+#   repo:           https://github.com/poole/hyde
