@@ -37,7 +37,7 @@ Everyone has that one instrument they regret selling, and for me that is a Germa
 
 For many years I used Ashdown amplifiers, first a MAG 400W with 410 (the old red face UK model) and later an ABM Evo II 112. Recently I picked up an amp I always wanted to own, a Genz Benz ShuttleMax 9.2. This runs into a Matamp cab with Fane speaker.
 
-In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced with a Lace Sensors Deathbucker. This one stays in C and is strung with 13s. I also have an ESP LTD LP type which has a bridge DiMarzio SD, coil split, this is my D guitar currently. My first guitar, a Vintage branded SG type with Wilkinson pickups, is currently in E. All are strung with d'Addario strings usually.
+In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced with a Lace Sensors Deathbucker. This one stays in C and is strung with 13s. I also have an ESP LTD LP type which has a bridge DiMarzio SD, coil split, this is my D guitar currently. My first guitar, a Vintage branded SG type with Wilkinson pickups, is currently in E. All are strung with d'Addario usually.
 
 These go to an Epiphone Valve Special, a Blackstar HT-5H or sometimes the Genz for that grunt.
 
