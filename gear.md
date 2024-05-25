@@ -15,6 +15,9 @@ I primarily use a pair of Nikon DLSRs, specifically the D3300 and the D300S. For
 
 These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry an 15-55mm. If you're just starting out shooting Nikon DX DLSRs (which would be a strange choice but I'd back it) then the 18-200mm with VR could be your only lens if you take care of it. The telezoom has a Hoya circular polarising filter on the end.
 
+![Nico in the wild.](/public/img/snap.jpg)
+*Nico in the wild.*
+
 Some of my photos are shot on a Lumix FZ45, which is a great bridge camera for learning the basics. I don't much like the viewfinder but that's the price you pay with this format.
 
 I carry a USB-C SD card reader so I can quickly check images on my phone and share them if necessary. Depending on the event, I'll have grips, straps, tripod etc sometimes but I am trying harder to travel light. One critical bit of kit you won't see influencers touting: roofers' knee pads, the gel filled type.
@@ -28,6 +31,9 @@ I organise my images with Darktable and store them on a custom NAS.
 The Ibanez Upswing (UB804) probably gets the most play at the moment. Other basses I play are the Ibanez ATK400, Ibanez AGB140, Maverick B-1 (rewired passive, bridge pickup only, direct to jack) and a Mania VTB-5BS. My strings of choice are LaBella Deep Talkin' flats (UB, AGB) and d'Addario nickel roundwounds for everything else.
 
 Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I'll own another Warwick. Maybe an FNA.
+
+![One corner of the studio.](/public/img/studio.jpg)
+*One corner of the studio.*
 
 For many years I used Ashdown amplifiers, first a MAG 400W with 410 (the old red face UK model) and later an ABM Evo II 112. Recently I picked up an amp I always wanted to own, a Genz Benz ShuttleMax 9.2. This runs into a Matamp cab with Fane speaker.
 
