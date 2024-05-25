@@ -5,7 +5,7 @@ title: Where did the Nico logo design originate?
 
 I put together a logo of my name soon after I chose my name itself. It looks like this:
 
-![Nico Beastie Boyce logo.](/public/img/nicologo.svg)
+<img src="/public/img/nicologo.svg" alt="Nico Beastie Boyce logo." width="600" />
 *This is my logo thing.*
 
 This is how I put it together.<!--excerpt-end-->
