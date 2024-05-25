@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gear
+title: Creative Gear
 ---
 
 # What do I use for what?
