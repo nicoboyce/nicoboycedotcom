@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Where did the Nico logo design originate?
-published: true
 ---
 
 I put together a logo of my name soon after I chose my name itself. It looks like this:
@@ -17,7 +16,7 @@ Lewis Hamilton and Nico Rosberg made huge waves en route to Formula One and were
 
 You can see Nico Rosberg's logo on the cockpit of this Airbus, replicating his helmet design.
 
-![Nico Rosberg helmet design on an Airbus](/public/img/nicorosberg.jpg}
+![Nico Rosberg helmet design on an Airbus](/public/img/nicorosberg.jpg)
 *Nico Rosberg's Williams era helmet design, on an Airbus.*
 
 This wasn't actually the first thing I considered for my own design, but it's the first thing F1 fans will spot.
