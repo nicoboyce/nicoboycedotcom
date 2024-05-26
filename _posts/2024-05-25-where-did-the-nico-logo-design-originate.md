@@ -14,7 +14,7 @@ This is how I put it together.<!--excerpt-end-->
 
 Lewis Hamilton and Nico Rosberg made huge waves en route to Formula One and were very exciting junior drivers at the point where I was first watching the lower rungs of the single-seater ladder. Rosberg was one of the influences on my choice of name and so I did look to him for ideas for a design. I wanted to reference my appreciation for his achievements but with an individual twist.
 
-You can see Nico Rosberg's logo on the cockpit of this Airbus, replicating his helmet design.
+You can see Nico Rosberg's logo on the cockpit of this Airbus, replicating his helmet design. The N and I are not connected, and the O has a break in it mirroring the C, but the proportions and concept are similar.
 
 ![Nico Rosberg helmet design on an Airbus](/public/img/nicorosberg.jpg)
 *Nico Rosberg's Williams era helmet design, on an Airbus.*
@@ -23,12 +23,20 @@ This wasn't actually the first thing I considered for my own design, but it's th
 
 ### Sony Vaio
 
-I did take inspiration from the Sony Vaio logo. There are plenty of good articles discussing this design, such as [here](https://imjustcreative.com/the-sony-vaio-logo/2022/10/21). Essentially, consider the VA as a waveform representing analogue signals and the IO representing binary code and therefore digital signals.
+I primarily took inspiration from the Sony Vaio logo. There are plenty of good articles discussing this design, such as [here](https://imjustcreative.com/the-sony-vaio-logo/2022/10/21). Essentially, consider the VA as a waveform representing analogue signals and the IO representing binary code and therefore digital signals.
 
 ![VAIO P series, Yoggy from Yokohama, Kanagawa, Japan, CC BY 2.0](/public/img/Sony_VAIO_P.jpg)
 *VAIO P series, Yoggy from Yokohama, Kanagawa, Japan, CC BY 2.0*
 
 This resonated with my own background, as a one-time photonics student turned musician, or as an artist and engineer.
+
+## The geometry
+
+I created the original sketch in a maths education package called Cabri-Géomètre. The O and C were simply overlapping circles (by the full width of the character at the intersection) with the gap in the C character the circumference length of the difference in radius between the inner and outer edges.
+
+The width of the N was four times the width of each stroke, i.e. the white space between left and right leg of the N was double the stroke. Originally the I was the same distance on from there (and therefore the curve linking the N and I matched the top of the N) but this looked super weird so I halved it.
+
+Everything looked a bit precise and weird, so I took a screenshot at low resolution, upped the contrast, smoothed the resulting image, then used an online SVG converter. Then there's a few little tweaks directly in the resulting XML, notably the radius of the I dot circle (it is a tad larger) and the shape of the top end of the C.
 
 ### Explanation
 
