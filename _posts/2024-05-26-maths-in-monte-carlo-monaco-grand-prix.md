@@ -8,7 +8,7 @@ Formula One is a sport made almost entirely of maths, but the commentators rarel
 ![Max Verstappen's Red Bull car](/public/img/redbull.jpeg)
 *Max Verstappen's Red Bull car, photo from my own archive.*
 
-*If you haven't seen the 2024 Monaco Grand Prix but you're planning to catch up, do that and then come back to this article.*<!--excerpt-end-->
+**If you haven't seen the 2024 Monaco Grand Prix but you're planning to catch up, do that and then come back to this article.**<!--excerpt-end-->
 
 ### Background to the 2024 Monaco Grand Prix
 
