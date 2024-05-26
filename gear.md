@@ -28,7 +28,7 @@ Akaso action cameras are my choice for the price to performance ratio. Got a big
 
 I organise my images with Darktable and store them on a custom NAS.
 
-### Guitars, etc
+### Guitars, basses, amps, etc
 
 The Ibanez Upswing (UB804) probably gets the most play at the moment. Other basses I play are the Ibanez ATK400, Ibanez AGB140, Maverick B-1 (rewired passive, bridge pickup only, direct to jack) and a Mania VTB-5BS. My strings of choice are LaBella Deep Talkin' flats (UB, AGB) and d'Addario nickel roundwounds for everything else.
 
