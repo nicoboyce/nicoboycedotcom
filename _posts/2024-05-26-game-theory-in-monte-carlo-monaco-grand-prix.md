@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Applying game theory in Monte Carlo. When to pit at the Monaco Grand Prix?
+title: Applying logic and maths in Monte Carlo. When to pit at the Monaco Grand Prix?
 ---
 
-Formula One is a sport made almost entirely of maths, but the commentators rarely use the full toolkit of logic while talking viewers through the races. Maybe they think it won't be exciting to examine the competition in this way? Regardless, let's throw some game theory at today's grand prix and see what bounces back.
+Formula One is a sport made almost entirely of maths, but the commentators rarely use the full toolkit of logic while talking viewers through the races. Maybe they think it won't be exciting to examine the competition in this way? Regardless, let's throw some logic at today's grand prix and see what bounces back.
 
 ![Max Verstappen's Red Bull car](/public/img/redbull.jpeg)
 *Max Verstappen's Red Bull car, photo from my own archive.*
@@ -30,7 +30,7 @@ Let's jump to around halfway through the race. Here was the order (of the top se
 6. Max Verstappen, Red Bull
 7. Lewis Hamilton, Mercedes
 
-Current F1 rules require each car to use two different types of tyre in a dry race. The first four of these started on the Medium tyre and the other three took the Hard tyre for the start, but a first lap incident meant that they were all able to change their tyres. Therefore the all took the opposite choice and none have any mandatory pit stops for the remainder of the race. The Ferrari and McLaren cars are now on the durable but slower Hard tyres and the Mercedes and Red Bull cars are on the grippier Medium tyres.
+Current F1 rules require each car to use two different types of tyre in a dry race. The first four of these started on the medium tyre and the other three took the hard tyre for the start, but a first lap incident meant that they were all able to change their tyres. Therefore they all took the opposite choice and none have any mandatory pit stops for the remainder of the race. The Ferrari and McLaren cars are now on the durable but slower hard tyres and the Mercedes and Red Bull cars are on the grippier medium tyres.
 
 You can imagine that Russell, Verstappen, and Hamilton are all now becoming concerned about the remaining lifespan of their tyres, while those ahead are more worried that they could be vulnerable to a car on quicker rubber in the event of a caution period.
 
@@ -38,7 +38,7 @@ Leclerc was trying to slow the pace of the race for the frontrunners. George Rus
 
 ### Lewis stops, does Max?
 
-Lewis Hamilton was called to the pits and would change to Hard tyres, I think the same set that he had used for the first lap. There was a 45 second gap behind, so there was no risk of losing a position.
+Lewis Hamilton was called to the pits and would change to hard tyres, I think the same set that he had used for the first lap. There was a 45 second gap behind, so there was no risk of losing a position.
 
 Max Verstappen followed this with a stop on the next lap. He emerged ahead of Lewis Hamilton but within sight of the Mercedes driver. Lewis felt that he should have been told that there could be an opportunity to pass Max, saying so over the team radio, and the Sky commentators agreed.
 
@@ -57,7 +57,7 @@ Sorry Lewis Hamilton, sorry Sky F1, but in this case you were incorrect.
 
 A lap later, George Russell did not stop and take new tyres. Max Verstappen was a lot faster on his new tyres and had been very close to George beforehand. He quickly reduced the deficit to the extent that George Russell did not have the free pit stop option. I shouted at the television that this proved my point, but David Croft and Martin Brundle couldn't hear me.
 
-Verstappen and Hamilton continued to put decent times in (at least compared to the rest of the field) and soon Russell was coming under some pressure from Max Verstappen. It was starting to look like the actions of Hamilton's crew had adversely affected his teammate, who would now have to continue on the worn-out Medium tyres until the chequered flag while the World Champion looks for an opportunity to muscle through.
+Verstappen and Hamilton continued to put decent times in (at least compared to the rest of the field) and soon Russell was coming under some pressure from Max Verstappen. It was starting to look like the actions of Hamilton's crew had adversely affected his teammate, who would now have to continue on the worn-out medium tyres until the chequered flag while the World Champion looks for an opportunity to muscle through.
 
 Could Mercedes have planned for this? There were two options. Either they needed to prevent the Verstappen pit stop or they needed to enable one for George Russell.
 
