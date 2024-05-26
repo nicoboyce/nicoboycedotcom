@@ -15,7 +15,7 @@ I primarily use a pair of Nikon DLSRs, specifically the D3300 and the D300S. For
 
 *When I do upgrade from my D3300, I could get something like a D7200 (which is only a year newer and has the same sensor) or a  D500 (barely newer than the D7200 but a lot more expensive) or I guess switch systems and get all new glass and a full-frame DSLR (still old tech) or a mid-range mirrorless like the Sony A7? I'm really not sure at this stage. I like the look of the OM-1 II but how futureproof is it? The Sony A9 III is mindblowing in specs but also price.*
 
-These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry a 15-55mm. The telezoom has a Hoya circular polarising filter on the end.
+These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry an 18-55mm. The telezoom has a Hoya circular polarising filter on the end.
 
 ![Nico in the wild.](/public/img/snap.jpg)
 *Nico in the wild.*
