@@ -11,9 +11,9 @@ There is some crossover between different facets of my work, but I've broadly gr
 
 ### Photography and video
 
-I primarily use a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then it can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
+I primarily use a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
 
-These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry an 15-55mm. If you're just starting out shooting Nikon DX DLSRs (which would be a strange choice but I'd back it) then the 18-200mm with VR could be your only lens if you take care of it. The telezoom has a Hoya circular polarising filter on the end.
+These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry a 15-55mm. The telezoom has a Hoya circular polarising filter on the end.
 
 ![Nico in the wild.](/public/img/snap.jpg)
 *Nico in the wild.*
@@ -45,7 +45,7 @@ Effects come and go but I wouldn't be without the ProCo Turbo Rat (I use a resto
 
 ### Audio recording
 
-I'm not an expert in microphones but I like the sound of my Audio Technica pair. I use an AT4040 and AT2035, one for warmth and one for clarity. I've bought and sold a few others but these two tick my boxes basically. They connect to a Focusrite Scarlett 18i8 and I use Logic on an M2 Macbook Pro for the most part.
+I'm not an expert in microphones but I like the sound of my Audio Technica pair. I use an AT4040 and AT2035, one for warmth and one for clarity. I've bought and sold a few others but these two tick my boxes basically. They connect to a Focusrite Scarlett 18i8 and I use Logic on an M2 Macbook Pro for the most part, sometimes Audacity for demos.
 
 I play a Novation Mininova for both synthesis and MIDI control. Monitoring is done with some AGK K92 cans and mixing is on a Beyerdynamics DT770 250 ohm set.
 
