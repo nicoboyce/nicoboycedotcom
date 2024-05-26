@@ -12,9 +12,9 @@ Formula One is a sport made almost entirely of maths, but the commentators rarel
 
 ### Background to the 2024 Monaco Grand Prix
 
-As tradition dictates, it's the last Sunday in May and I've just watched the Monaco Grand Prix and I'm having a bite before the Indy 500, but mostly I'm chewing over the difference between the expectations of the Sky F1 commentators and the decisions of the Ferrari and McLaren strategists.
+As tradition dictates, it's the last Sunday in May and I've just watched the Monaco Grand Prix and I'm having a bite before the Indy 500, but mostly I'm chewing over the difference between the expectations of the Sky F1 commentators and the decisions of the team strategists.
 
-Neither team are anywhere near challenging Max Verstappen in the points, but Monaco is a very historic race and one where a lot of deals are done. This is particularly true for these more established teams.
+No team is anywhere near challenging Max Verstappen and Red Bull in the points, but Monaco is a very historic race and one where a lot of important sponsorship deals are done. A win at Monaco is particularly prized by the more established teams, Ferrari and McLaren.
 
 Monaco is a circuit where it is notoriously difficult to overtake, in fact virtually impossible in 2024. Ferrari and their polesitter driver Leclerc are still seeking redemption for the [2021 race](https://en.wikipedia.org/wiki/2021_Monaco_Grand_Prix).
 
