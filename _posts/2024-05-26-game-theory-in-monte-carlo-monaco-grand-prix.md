@@ -68,3 +68,30 @@ It is definitely plausible that Lewis Hamilton could have pushed harder (he did 
 In any case, it made no difference to the eventual result.
 
 To enable a stop for George Russell, he would have needed to gain time relative to Max Verstappen over the three laps in question. If the timing showed 21-22 seconds gap by the time George Russell reached the Piscine (swimming pool) section on the lap following Max Verstappen's stop then that would have done the job. This was never liekly to be the case unless Red Bull made a mistake with the tyre change, with no way for Mercedes to show Verstappen.
+
+### Okay so what about the lead four?
+
+*It may at this point in the article be evident that the Indy 500 has been delayed and the curry hasn't yet arrived and I had more time than I expected to write this article.*
+
+The front four were pretty much nose to tail for lap after lap. On the Sky coverage, ex racers Anthony Davidson and Martin Brundle agreed that the Ferrari and McLaren teams would need to make pitstops themselves. This made no sense, and I'm surprised that everyone couldn't see that.
+
+Remember that there's really no way to pass a racer at Monaco if they don't make a major error. In 2018, Daniel Ricciardo won the Monaco Grand Prix despite the failure of his engine's hybrid system and a faltering gearbox with two shattered cogs. I realise this must sound insane to people who don't watch F1. Be assured that you are completely right.
+
+Lando Norris, in fourth, would have nothing to gain by taking fresh tyres unless he knew in advance that the cars ahead of him would also stop. He would also need a gap of at least 21 seconds behind him to George Russell to be assured of retaining his position. I don't think he ever quite had sufficient gap and there was no way Ferrari would surrender track position even if they were down to the rims.
+
+![Some F1 cars at Thruxton](/public/img/f1s.jpg)
+*This is not how Monaco went today.*
+
+If the gap had developed then it seems reasonable to assume that McLaren would take the precaution of mounting fresh Pirellis on the car of Norris. This would not have triggered the same chain reaction we saw with Verstappen responding to Hamilton, because the four leaders were always so close together and new tyres would have been faster. Even if Norris built the space behind to take fresh tyres, Sainz would always have stayed out to maintain track position. There was never a chance of a positive outcome.
+
+Even if the Norris crew could see the future and predict a safety car (though there wasn't one) then Ferrari could always beat McLaren by just doing nothing and staying ahead. In fact, even the Singapore 2008 scenario wasn't possible today.
+
+Brundle and Davidson focused on the fact that stopping earlier would benefit Norris if all of the lead pack pitted (or at least one of the Ferraris) but this required McLaren to be sure that Ferrari would decide to stop for tyres. Instead, it was obvious that they would not decide to do that. The proposed strategy only wins in the scenario where you already know your opponent's next move.
+
+### Alright, so what is your point?
+
+I don't think Davidson and Brundle have any interest in misleading viewers, in trying to create tension where there really isn't any. Martin Brundle has always been a straight-shooter as a broadcaster. He had for years warned about the specific danger of the scenario which led to the death of Jules Bianchi, for example. Davidson also has nothing to gain from any kind of chicanery.
+
+Bernie Collins has been a part of the Sky team at some races recently. Bernie is a strategy engineer with F1 experience, who brings a good dose of sense to the broadcast. I definitely notice the difference when she isn't available to bring her insights.
+
+Monaco is always an impressive spectacle. There's nowhere else you can see cars this fast competing around such tight streets. Don't tune in to the Monaco Grand Prix in future years expecting to see plenty of wheel to wheel action and don't assume that the commentators know what they are talking about!
