@@ -79,7 +79,7 @@ Remember that there's really no way to pass a racer at Monaco if they don't make
 
 Lando Norris, in fourth, would have nothing to gain by taking fresh tyres unless he knew in advance that the cars ahead of him would also stop. He would also need a gap of at least 21 seconds behind him to George Russell to be assured of retaining his position. I don't think he ever quite had sufficient gap and there was no way Ferrari would surrender track position even if they were down to the rims.
 
-![Some F1 cars at Thruxton](/public/img/f1s.jpg)
+![Some F1 cars at Thruxton](/public/img/f1s.jpeg)
 *This is not how Monaco went today.*
 
 If the gap had developed then it seems reasonable to assume that McLaren would take the precaution of mounting fresh Pirellis on the car of Norris. This would not have triggered the same chain reaction we saw with Verstappen responding to Hamilton, because the four leaders were always so close together and new tyres would have been faster. Even if Norris built the space behind to take fresh tyres, Sainz would always have stayed out to maintain track position. There was never a chance of a positive outcome.
