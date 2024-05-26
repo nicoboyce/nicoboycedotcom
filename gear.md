@@ -49,6 +49,9 @@ Effects come and go but I wouldn't be without the ProCo Turbo Rat (I use a resto
 
 I'm not an expert in microphones but I like the sound of my Audio Technica pair. I use an AT4040 and AT2035, one for warmth and one for clarity. I've bought and sold a few others but these two tick my boxes basically. They connect to a Focusrite Scarlett 18i8 and I use Logic on an M2 Macbook Pro for the most part, sometimes Audacity for demos.
 
+![Recording gear in action.](/public/img/recording.jpeg)
+*Recording gear in action.*
+
 I play a Novation Mininova for both synthesis and MIDI control. Monitoring is done with some AGK K92 cans and mixing is on a Beyerdynamics DT770 250 ohm set.
 
 ### Art supplies
