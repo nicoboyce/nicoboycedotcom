@@ -67,7 +67,7 @@ It is definitely plausible that Lewis Hamilton could have pushed harder (he did 
 
 In any case, it made no difference to the eventual result.
 
-To enable a stop for George Russell, he would have needed to gain time relative to Max Verstappen over the three laps in question. If the timing showed 21-22 seconds gap by the time George Russell reached the Piscine (swimming pool) section on the lap following Max Verstappen's stop then that would have done the job. This was never liekly to be the case unless Red Bull made a mistake with the tyre change, with no way for Mercedes to show Verstappen.
+To enable a stop for George Russell, he would have needed to gain time relative to Max Verstappen over the three laps in question. If the timing showed 21-22 seconds gap by the time George Russell reached the Piscine (swimming pool) section on the lap following Max Verstappen's stop then that would have done the job. This was never likely to be the case unless Red Bull made a mistake with the tyre change, with no way for Mercedes to show Verstappen.
 
 ### Okay so what about the lead four?
 
