@@ -281,5 +281,5 @@ a.sidebar-nav-item:focus {
 }
 
 .post > p img {
-  max-width: 600px;
+  width: max(600px, 100%);
 }
