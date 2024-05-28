@@ -285,6 +285,6 @@ a.sidebar-nav-item:focus {
 }
 @media (min-width: 48em) {
   .post > p img {
-    width: 600px%;
+    width: 600px;
   }
 }
