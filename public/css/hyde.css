@@ -280,6 +280,6 @@ a.sidebar-nav-item:focus {
   }
 }
 
-.post > img {
+.post > p > img {
   max-width: 600px;
 }
