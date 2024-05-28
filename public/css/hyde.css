@@ -279,3 +279,7 @@ a.sidebar-nav-item:focus {
     display: none;
   }
 }
+
+.post > img {
+  max-width: 600px;
+}
