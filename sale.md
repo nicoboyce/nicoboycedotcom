@@ -5,6 +5,8 @@ title: Gear for sale
 
 # Buy some stuff, fund me buying more stuff
 
+*Updated 7/7/24*
+
 Like everyone who creates, sometimes you need a clear-out! I'll list items here when I remember to. Drop me an [email](mailto:{{ site.email }}) if anything takes your fancy.
 
 ### Music gear
