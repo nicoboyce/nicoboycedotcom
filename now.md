@@ -3,6 +3,10 @@ layout: page
 title: What's happening now?
 ---
 
+# What's happening now?
+
+What is this about? Well there's a [blog post](https://nicoboyce.com/blog/) explaining but basically this is a little page I will keep updated with news from me. Do please feel free to get in touch if you are inspired to chat with me about any of these things!
+
 *This is a now page as defined [here](https://nownownow.com/about) which exists to explain what I'm up to lately. If you are reading this and have your own now page I'd be interested to see how you do it!*
 
 # Things I am creating
