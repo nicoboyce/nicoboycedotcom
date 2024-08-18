@@ -1,8 +1,8 @@
 
 <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+    <span class="sidebar-nav-item><a {% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a></span>
 
-<span class="sidebar-nav-item">Nico: <a {% if page.url == "/about/" %}href="#top" class="sidebar-nav-item active"{% else %}href="/about/"{% endif %}>about</a> / <a href="/blog/">blog</a> / <a href="/now/">now</a></span>
+<span class="sidebar-nav-item">Nico: <a {% if page.url == "/about/" %}href="#top" class="active"{% else %}href="/about/"{% endif %}>about</a> / <a href="/blog/">blog</a> / <a href="/now/">now</a></span>
 
 <span class="sidebar-nav-item">Create: <a href="/snaps/">life</a> / <a href="/music/">sounds</a> / <a href="/cars/">motors</a></span>
 
