@@ -43,7 +43,7 @@ In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced wi
 
 These go to an Epiphone Valve Special, a Blackstar HT-5H or sometimes the Genz for that grunt.
 
-Effects come and go but I wouldn't be without the ProCo Turbo Rat (I use a restored original) and an Electro Harmonix Big Muff Pi with Tone Wicker. I've got a few weirdo pedals like a Gojira FX Ants fuzz and I've built a few of my own noiseboxes. Sometimes I'll break out the Whammy or the Akai Headrush E2.
+Effects come and go but I wouldn't be without the ProCo Turbo Rat (I use a restored original) and a Big Muff, ideally with Tone Wicker. I've got a few weirdo pedals like a Gojira FX Ants fuzz and I've built a few of my own noiseboxes. Sometimes I'll break out the Whammy or the Akai Headrush E2.
 
 ### Audio recording
 
@@ -52,7 +52,7 @@ I'm not an expert in microphones but I like the sound of my Audio Technica pair.
 ![Recording gear in action.](/public/img/recording.jpeg)
 *Recording gear in action.*
 
-I play a Novation Mininova for both synthesis and MIDI control. Monitoring is done with some AGK K92 cans and mixing is on a Beyerdynamics DT770 250 ohm set.
+I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AGK K92 cans and mixing is on a Beyerdynamics DT770 250 ohm set.
 
 ### Art supplies
 
