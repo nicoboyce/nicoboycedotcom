@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Recent photography
+title: Street snaps gallery
 ---
 
 Presented with little to no comment, here are little crops and quick edits of photos I have taken recently.
