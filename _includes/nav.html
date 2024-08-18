@@ -7,11 +7,10 @@
 <span class="sidebar-nav-item">Content: <a href="/snaps/">life</a> / <a href="/music/">music</a> / <a href="/cars/">cars</a></span>
 
 <span class="sidebar-nav-item">Gear: <a href="/gear/">current</a> / <a href="/sale/">for sale</a> / <a href="/next/">future</a></span>
+</nav>
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
+
+{% comment %}
 
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}
@@ -21,7 +20,5 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-  </nav>
 
-
-<span class="sidebar-nav-item"><a href="mailto:hello@nicoboyce.com">Email</a> | <a href="https://wa.me/447596476097">WhatsApp</a> | <a href="https://deltastring.com">Deltastring</a></span>
+    {% endcomment %}
