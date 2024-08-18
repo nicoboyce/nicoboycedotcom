@@ -95,6 +95,10 @@ html {
 }
 
 /* Sidebar nav */
+.active {
+  font-weight: bold;
+}
+
 .sidebar-nav {
   margin-bottom: 1rem;
 }
