@@ -1,5 +1,6 @@
 ---
 layout: page
+nav: Sale
 title: Gear for sale
 ---
 

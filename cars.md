@@ -1,5 +1,6 @@
 ---
 layout: page
+nav: Cars
 title: Automotive and motorsport
 ---
 

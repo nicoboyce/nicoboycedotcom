@@ -1,0 +1,32 @@
+
+<nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.nav }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+<nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+    <a class="sidebar-nav-item" href="/about/">Who is this Nico anyway?</a>
+    <a class="sidebar-nav-item" href="/blog/">Blog</a>
+    <a class="sidebar-nav-item" href="/cars/">Automotive and motorsport</a>  
+    <a class="sidebar-nav-item" href="/gear/">Creative Gear</a>
+    <a class="sidebar-nav-item" href="/music/">Music or just noise</a>
+    <a class="sidebar-nav-item" href="/now/">What's happening now?</a>
+    <a class="sidebar-nav-item" href="/sale/">Gear for sale</a>
+    <a class="sidebar-nav-item" href="/snaps/">Street snaps gallery</a>
+</nav>
+
+<span class="sidebar-nav-item"><a href="mailto:hello@nicoboyce.com">Email</a> | <a href="https://wa.me/447596476097">WhatsApp</a> | <a href="https://deltastring.com">Deltastring</a></span>

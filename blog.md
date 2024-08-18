@@ -1,5 +1,6 @@
 ---
 layout: page
+nav: Blog
 title: Blog
 ---
 

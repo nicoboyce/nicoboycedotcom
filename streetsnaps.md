@@ -1,5 +1,6 @@
 ---
 layout: page
+nav: Street
 title: Street snaps gallery
 ---
 
