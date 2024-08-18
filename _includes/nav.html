@@ -2,11 +2,11 @@
 <nav class="sidebar-nav">
     <span class="sidebar-nav-item"><a {% if page.url == site.baseurl %}href="#top" class="active"{% else %}href="{{ site.baseurl }}"{% endif %}>Home</a></span>
 
-<span class="sidebar-nav-item">Nico: <a {% if page.url == "/about/" %}href="#top" class="active"{% else %}href="/about/"{% endif %}>about</a> / <a href="/blog/">blog</a> / <a href="/now/">now</a></span>
+<span class="sidebar-nav-item">Nico: <a {% if page.url == "/about/" %}href="#top" class="active"{% else %}href="/about/"{% endif %}>about</a> / <a {% if page.url == "/blog/" %}href="#top" class="active"{% else %}href="/blog/"{% endif %}>blog</a> / <a {% if page.url == "/now/" %}href="#top" class="active"{% else %}href="/now/"{% endif %}>now</a></span>
 
-<span class="sidebar-nav-item">Create: <a href="/snaps/">life</a> / <a href="/music/">sounds</a> / <a href="/cars/">motors</a></span>
+<span class="sidebar-nav-item">Create: <a {% if page.url == "/snaps/" %}href="#top" class="active"{% else %}href="/snaps/"{% endif %}>life</a> / <a {% if page.url == "/music/" %}href="#top" class="active"{% else %}href="/music/"{% endif %}>sounds</a> / <a {% if page.url == "/cars/" %}href="#top" class="active"{% else %}href="/cars/"{% endif %}>motors</a></span>
 
-<span class="sidebar-nav-item">Gear: <a href="/gear/">current</a> / <a href="/sale/">for sale</a> / <a href="/next/">future</a></span>
+<span class="sidebar-nav-item">Gear: <a {% if page.url == "/gear/" %}href="#top" class="active"{% else %}href="/gear/"{% endif %}>current</a> / <a {% if page.url == "/sale/" %}href="#top" class="active"{% else %}href="/sale/"{% endif %}>for sale</a> / <a {% if page.url == "/next/" %}href="#top" class="active"{% else %}href="/next/"{% endif %}>future</a></span>
 </nav>
 
 
