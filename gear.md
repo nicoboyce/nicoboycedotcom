@@ -14,8 +14,6 @@ There is some crossover between different facets of my work, but I've broadly gr
 
 I primarily use a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
 
-*An aside: When I do upgrade from my D3300, I could get something like a D7200 (which is only a year newer and has the same sensor) or a  D500 (barely newer than the D7200 but a lot more expensive) or I guess switch systems and get all new glass and a full-frame DSLR (still old tech) or a mid-range mirrorless like the Sony A7? I'm really not sure at this stage. I like the look of the OM-1 II but how futureproof is it? The Sony A9 III is mindblowing in specs but also price.*
-
 These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry an 18-55mm. The telezoom has a Hoya rotating polarising filter on the end.
 
 ![Nico in the wild.](/public/img/snap.jpg)
@@ -58,3 +56,12 @@ I play a Novation Mininova for both synthesis and MIDI control. Some drum loops 
 ### Art supplies
 
 Currently I have paints in stock from Flame, Montana, Molotow, maybe some others. I get through a lot of masking tape and I get wooden panels mainly from Jewsons. I've built a sort of easel from old palattes and have a few tricks and secrets which will remain so for now!
+
+### Outside
+
+We have developed a pretty serious camping setup. The tent was a great purchase, it's a Ventura and I would buy the same again if it needed to be replaced for some reason. It's the deluxe extended version and we've got the detatchable annex for when we need the additional space. When we do use that, usually we hang an inner tent and pop an additional bed in that section behind the ladder.
+
+![Tent on the car.](/public/img/camp.jpeg)
+*The car tent, fully deployed.*
+
+When it's warm I definitely sleep better in the tent than I do inside!
