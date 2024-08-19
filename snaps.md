@@ -1,10 +1,12 @@
 ---
 layout: page
-nav: Street
-title: Street snaps gallery
+nav: Life
+title: Snaps and splats gallery
 ---
 
-Presented with little to no comment, here are little crops and quick edits of photos I have taken recently.
+# Snaps and splats
+
+Presented with little to no comment, here are little crops and quick edits of photos I have taken recently, along with the odd bit of painting.
 
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
