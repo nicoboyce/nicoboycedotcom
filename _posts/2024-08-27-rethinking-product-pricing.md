@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Rethinking product pricing.
-published: true
 ---
 
 ### or Why traditional SaaS pricing models fail and what I'm going to do about it
