@@ -13,7 +13,7 @@ Well I'm going to do something new.
 
 ### Firstly, the product
 
-It'll be announced soon over at [Deltastring.com](https://deltastring.com) but basically further to the book launch will be some software bringing additional capability to your Zendesk admin life. If you work in the Zendesk world, take a look, but if you don't, the answer is basically "business software" okay?
+It'll be announced soon over at [Deltastring.com](https://deltastring.com) but basically further to the book launch will be some software bringing additional capability to your Zendesk admin life. If you work in the Zendesk world, keep an eye out, but if you don't, the answer is basically "business software" okay?
 
 ![The Zendesk Cookbook, coming soon from Nico](/public/img/zendesk-cookbook.png)
 *The Zendesk Cookbook, coming soon from Nico*
