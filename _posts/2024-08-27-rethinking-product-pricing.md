@@ -24,9 +24,9 @@ Let's not get bogged down in the detail there for now.
 
 You've probably got a bunch of subscription direct debits for various things. I've got Tidal, Disney, Xbox, a couple others. Isn't it exhausting each month to see which one has hiked the price this time? It doesn't feel fair.
 
-In the world of business applications, just ten months after you finally get that purchase approved to get the tool you've been needing, you have to haggle again with the provider. Their costs have increased, they have new features. Great, but your budget doesn't automatically increase! You might have to drop the thing you've gotten used to using. Why?
+In the world of business applications, just ten months after you finally get that purchase approved to get the tool you've been needing, you have to haggle again with the provider. Their costs have increased, they have new features. Great, but your budget doesn't automatically increase! You might have to drop the thing you are now used to using. Why?
 
-At the same time, the software company providing the tool have to remember to come back ten months after buying their thing so that they can try and squeeze more cash out of customers. A reliably consistent percentage of the time they will cancel and this will feel bad for everyone. Also you have to pay for the weeks of work in haggling the new contract and all this stuff.
+At the same time, the software company providing the tool have to remember to come back ten months after buying their thing so that they can try and squeeze more cash out of customers. A reliably consistent percentage of the time the customer will cancel and this will feel bad for everyone. Also someone has to pay for the weeks of work in haggling the new contract and all this stuff.
 
 **I'm not really interested in doing any of that.**
 
@@ -46,7 +46,7 @@ If you have a question which isn't answered here you can <a href="mailto:nico@de
 
 **Won't this eventually price out any sales?**
 
-It sure will. I'm not looking to be Amazon where everyone has an account. I'd rather support a sensible number of users than let it grow unchecked. Of course, I'm not looking to deny anyone who wants this tool at whatever cost.
+It sure will. I'm not looking to be Amazon where everyone has an account. I'd rather support a sensible number of users than let it grow unchecked. Of course, I'm not looking to deny anyone who wants this tool regardless of cost.
 
 **What if some competitor goes crazy and buys all the early subscriptions and then cancels it and then the price is too expensive for other buyers?**
 
