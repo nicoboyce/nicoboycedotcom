@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rethinking product pricing.
-published: false
+published: true
 ---
 
 ### or Why traditional SaaS pricing models fail and what I'm going to do about it
@@ -14,7 +14,7 @@ Well I'm going to do something new.
 
 ### Firstly, the product
 
-You can read about what's coming up over on the [blog for my company Deltastring](https://deltastring.com/blog/) but let's just say that accompanying the book launch will be some software bringing additional capability to your Zendesk admin life. If you work in the Zendesk world, take a look, but if you don't, the answer is basically "business software" okay?
+It'll be announced soon over at [Deltastring.com](https://deltastring.com) but basically further to the book launch will be some software bringing additional capability to your Zendesk admin life. If you work in the Zendesk world, take a look, but if you don't, the answer is basically "business software" okay?
 
 ![The Zendesk Cookbook, coming soon from Nico](/public/img/zendesk-cookbook.png)
 *The Zendesk Cookbook, coming soon from Nico*
@@ -25,9 +25,9 @@ Let's not get bogged down in the detail there for now.
 
 You've probably got a bunch of subscription direct debits for various things. I've got Tidal, Disney, Xbox, a couple others. Isn't it exhausting each month to see which one has hiked the price this time? It doesn't feel fair.
 
-In the world of business applications, just ten months after you finally get that purchase approved to get the tool you've been needing, you have to haggle again with the provider. Their costs have increased, they have new features. Great, but your budget doesn't automatically increase! You might have to drop the thing you are now used to using. Why?
+In the world of business applications, just ten months after you finally get that purchase approved to get the tool you've been needing, you have to haggle again with the provider. Their costs have increased, they have new features. Great, but your budget doesn't automatically grow! You might have to drop the thing you are now used to using. Why?
 
-At the same time, the software company providing the tool have to remember to come back ten months after buying their thing so that they can try and squeeze more cash out of customers. A reliably consistent percentage of the time the customer will cancel and this will feel bad for everyone. Also someone has to pay for the weeks of work in haggling the new contract and all this stuff.
+At the same time, the software company providing the tool have to remember to come back ten months after each deal is done so that they can try and squeeze more cash out of customers. A reliably consistent percentage of the time the customer will cancel and this will feel bad for everyone. Also someone has to pay for the weeks of work in haggling the new contract and all this nonsense.
 
 **I'm not really interested in doing any of that.**
 
@@ -63,4 +63,4 @@ No. You can buy a month. If you can't buy a month to try it out then you were ne
 
 ### Enough already, show me the thing
 
-Take a look at the [Deltastring blog](https://deltastring.com/blog/) where there's info on the tool itself.
+Be patient!
