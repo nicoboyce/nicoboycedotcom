@@ -6,7 +6,7 @@ title: Gear for sale
 
 # Buy some stuff, fund me buying more stuff
 
-*Updated 19/8/24*
+*Updated 3/9/24*
 
 Like everyone who creates, sometimes you need a clear-out! I'll list items here when I remember to. Drop me an [email](mailto:{{ site.email }}) if anything takes your fancy.
 
@@ -20,4 +20,5 @@ Like everyone who creates, sometimes you need a clear-out! I'll list items here 
 ### Photography gear
 
 * Nikon D300S, a bit beaten up but a good starter snapper! Make an offer I guess
-* Nikon glass, older zooms in the 70-300 range, unfashionable but functional
+* Nikon glass, mostly older zooms in the 70-300 range, unfashionable but functional
+* Nikon D3300, this is in good condition, not sure of the shutter count
