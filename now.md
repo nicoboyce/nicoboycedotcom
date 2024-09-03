@@ -4,11 +4,32 @@ nav: now
 title: What's happening now?
 ---
 
-# What's happening now? 19th August '24
+# What's happening now?
 
 What is this about? Well there's a [blog post](https://nicoboyce.com/blog/) explaining but basically this is a little page I will keep updated with news from me.
 
 *This is a now page as defined [here](https://nownownow.com/about) which exists to explain what I'm up to lately. If you are reading this and have your own now page I'd be interested to see how you do it!*
+
+### September '24
+
+# What's going on?
+
+* We saw Massive Attack in Bristol at the Act 1.5 thing. It was pretty good, a nice first gig for Victor. Killer Mike was a great support, we had some vegan jerk stuff that was tasty.
+* I got a bargain on a new camera so I've switched away from the old Nokia system. It's a Fujifilm H-X2. I'll put some pictures up here directly.
+* Another piece of the puzzle with the business is the tooling. I've packaged up a lot of the scripts and started assembling a GUI, like this:
+
+![Deltastring Zendesk config tool.](/public/img/ds-tool.jpeg)
+*The Deltastring Zendesk config tool.*
+
+# What's next?
+
+* I think it's time to hire someone to help me out with the business. It's hard to work out what to delegate.
+* Still planning the relocation. I hope to get this done soon.
+* I need more time to create and also relax... work is and always will be a lot of energy but I need other things in my life!
+
+---
+
+### August '24
 
 # Things I am creating
 
