@@ -57,6 +57,8 @@ Here are some of the cars:
 
 ![Traction.](/public/img/prescott-traction.jpeg)
 
+Can you spot which were taken with the Nikon D3300 and which were taken with the Fujifilm X-H2?
+
 It was one of the best motorsport events I've been to, a really great day out. Looking forward to next year.
 
 ***
