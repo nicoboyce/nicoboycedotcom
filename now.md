@@ -12,6 +12,9 @@ What is this about? Well there's a [blog post](https://nicoboyce.com/blog/) expl
 
 ### September '24
 
+![Us, at Prescott](/public/img/us.jpeg)
+*We went to Prescott, see [cars](/cars/)*
+
 # What's going on?
 
 * We saw Massive Attack in Bristol at the Act 1.5 thing. It was pretty good, a nice first gig for Victor. Killer Mike was a great support, we had some vegan jerk stuff that was tasty.
