@@ -11,7 +11,6 @@ explicit: "do we swear"
 keywords: "keyword tags" 
 block: "hold back publishing it" 
 voices: "who did the talking"
-
 published: false
 ---
 
