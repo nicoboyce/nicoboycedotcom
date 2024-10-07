@@ -17,14 +17,6 @@ author:
   name:           'Nico Boyce'
   url:            https://nicoboyce.com
 
-# paginate:         4
-
-# plugins:
-#  - jekyll-paginate-v2
-#  - jekyll-gist
-
-# Custom vars
-version:          24.05
 
 excerpt_separator: "<!--excerpt-end-->"
 # github:
