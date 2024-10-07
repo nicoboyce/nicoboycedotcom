@@ -10,6 +10,24 @@ Here you'll find car related nonsense. Sometimes I might write a rant about F1. 
 
 ***
 
+Got myself a birthday present.
+
+![Trailer.](/public/img/bmw1.jpeg)
+*Hired a trailer.*
+
+![Fleet.](/public/img/bmw2.jpeg)
+*At Fleet, paying our respects to Scott Mills.*
+
+![Home.](/public/img/bmw3.jpeg)
+*BMW at home.*
+
+![Victor drives.](/public/img/bmw4.jpeg)
+*Victor gets comfortable.*
+
+Plenty of work needed to get it all ready for action but isn't it a great piece of kit?
+
+***
+
 We went to Prescott (which is the Bugatti Owners Club place in Gloucestershire) for the British Hillclimb Championship which is all on the youtube if you want to see it in a video format [here](https://www.youtube.com/watch?v=rn7df2xiabM)
 
 We looked like this
