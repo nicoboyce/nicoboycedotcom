@@ -10,6 +10,11 @@ Presented with little to no comment, here are little crops and quick edits of ph
 
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
+![Garden murder.](/public/img/murder.jpeg)
+*Garden murder.*
+
+***
+
 ![Garden.](/public/img/garden.jpeg)
 *In the garden.*
 
