@@ -12,7 +12,9 @@ There is some crossover between different facets of my work, but I've broadly gr
 
 ### Photography and video
 
-I primarily use a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
+I've recently switched systems to a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh?
+
+Previously I primarily used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
 
 These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry an 18-55mm. The telezoom has a Hoya rotating polarising filter on the end.
 
@@ -51,7 +53,7 @@ I'm not an expert in microphones but I like the sound of my Audio Technica pair.
 ![Recording gear in action.](/public/img/recording.jpeg)
 *Recording gear in action.*
 
-I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AGK K92 cans and mixing is on a Beyerdynamics DT770 250 ohm set.
+I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AGK K92 cans and mixing is on KRK 8s or a Beyerdynamics DT770 250 ohm set.
 
 ### Art supplies
 

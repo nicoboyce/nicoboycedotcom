@@ -10,6 +10,10 @@ What is this about? Well there's a [blog post](https://nicoboyce.com/blog/) expl
 
 *This is a now page as defined [here](https://nownownow.com/about) which exists to explain what I'm up to lately. If you are reading this and have your own now page I'd be interested to see how you do it!*
 
+### October '24
+
+It feels like it's everything all at once right now. Got a new [project car](/cars/) and we're relocating, the business is just accelerating and it's hard to keep on top of what's changing. We're off to see the mighty Fu Manchu. I'm playing Jedi Survivor and watching Loudermilk again and I'm working on some sounds you'll hear very soon.
+
 ### September '24
 
 ![Us, at Prescott](/public/img/us.jpeg)
