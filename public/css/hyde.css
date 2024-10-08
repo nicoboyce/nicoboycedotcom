@@ -61,6 +61,9 @@ div {
   }
 }
 
+.info {
+  line-height: 1.1;
+}
 
 /*
  * Sidebar
