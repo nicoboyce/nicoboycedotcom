@@ -87,6 +87,9 @@ div {
     width: 18rem;
     text-align: left;
   }
+  .marg {
+    margin-bottom: 0rem;
+  }
 }
 
 /* Sidebar links */
@@ -98,6 +101,8 @@ div {
     font-size: 1.32rem;
   }
 }
+
+
 
 /* About section */
 .sidebar-about h1 {
