@@ -22,17 +22,17 @@ Been working on a track for months now (provisionally titled No Fly Zone) but it
 
 **Things on rotation at the moment:**
 
+* 100 Gecs
 * Millionaire - Outside the Simian Flock
 * Have A Nice Life - Deathconsciousness
 * Divide & Dissolve
-* Satyricon - Volcano
 
 **Upcoming gigs:**
 
-* Massive Attack
 * Fu Manchu
 
 **Recent live shows:**
 
+* Massive Attack, also Killer Mike
 * Sunn O))) (and amazing support Jesse Sykes)
 * Brant Bjork, Mondo Generator, &c
