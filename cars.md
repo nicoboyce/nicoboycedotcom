@@ -10,6 +10,10 @@ Here you'll find car related nonsense. Sometimes I might write a rant about F1. 
 
 ***
 
+Forget team Max or team Lando. My driver of 2024 has to be Connor Zilisch. Youtube is over there if you need to catch up with this guy.
+
+***
+
 Got myself a birthday present.
 
 ![Trailer.](/public/img/bmw1.jpeg)

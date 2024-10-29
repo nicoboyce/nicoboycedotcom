@@ -22,17 +22,17 @@ Been working on a track for months now (provisionally titled No Fly Zone) but it
 
 **Things on rotation at the moment:**
 
-* 100 Gecs
-* Millionaire - Outside the Simian Flock
-* Have A Nice Life - Deathconsciousness
-* Divide & Dissolve
+* 100 Gecs (hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)
+* Mark Lanegan Band - Here Comes That Weird Chill (post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)
+* Monolord - Rust (somehow more Cathedral than Sleep)
 
 **Upcoming gigs:**
 
-* Fu Manchu
+* Brant Bjork Trio
 
 **Recent live shows:**
 
+* Fu Manchu
 * Massive Attack, also Killer Mike
 * Sunn O))) (and amazing support Jesse Sykes)
 * Brant Bjork, Mondo Generator, &c
