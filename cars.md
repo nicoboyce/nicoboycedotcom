@@ -10,6 +10,33 @@ Here you'll find car related nonsense. Sometimes I might write a rant about F1. 
 
 ***
 
+### Lydden Hill snaps
+
+![Pack.](/public/img/lh-pack.jpeg)
+*Pack scrap.*
+
+![Doran.](/public/img/lh-doran.jpeg)
+*Doran.*
+
+![Bennett.](/public/img/lh-bennett.jpeg)
+*Bennett.*
+
+![Crosscar.](/public/img/lh-xcar.jpeg)
+*Crosscar.*
+
+![Ford.](/public/img/lh-ford.jpeg)
+*Ford.*
+
+![Launch.](/public/img/lh-bennett-launch.jpeg)
+*Launch.*
+
+![Roof.](/public/img/lh-roof.jpeg)
+*Roof.*
+
+The fireworks were way better than most displays where they are the main event. Of course at Lydden it's all about the horsepower. Top class RX cars will beat an F1 car off the line up to about 100mph. They can race on any surface and take jumps you wouldn't believe possible. The UK is the birthplace of rallycross and it's a great format for families and people new to motorsport. Get to Lydden Hill when you can. Also make sure you get some of that mayo from the paddock cafe when you're there.
+
+***
+
 Forget team Max or team Lando. My driver of 2024 has to be Connor Zilisch. Youtube is over there if you need to catch up with this guy.
 
 ***
