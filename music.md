@@ -22,6 +22,7 @@ Been working on a track for months now (provisionally titled No Fly Zone) but it
 
 **Things on rotation at the moment:**
 
+* Charli XCX - Brat (what more is there to say, it's the pop album everyone can love and relate to)
 * 100 Gecs (hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)
 * Mark Lanegan Band - Here Comes That Weird Chill (post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)
 * Monolord - Rust (somehow more Cathedral than Sleep)
@@ -33,6 +34,13 @@ Been working on a track for months now (provisionally titled No Fly Zone) but it
 **Recent live shows:**
 
 * Fu Manchu
+Shakey performance from singer Scott Hill but drummer Scott Reeder (also of Sun & Sail Club with homonymous ex Kyuss bass monster Scott Reeder) was having fun and it showed. Epic rendition of Saturn III. Bottom of bill support [Torus](https://www.torusband.com/) are a band to keep an eye on, with some real clever songwriting as the bass kept coming up over the top of the riffs.
+
 * Massive Attack, also Killer Mike
-* Sunn O))) (and amazing support Jesse Sykes)
-* Brant Bjork, Mondo Generator, &c
+Initial sound and lighting issues and a sudden downpour cleared out the field early but those who stayed were treated to a powerful show. Could have used more of a crescendo to end. Mostly a really well thought out one-day event. Killer Mike got the tone right with his gospel-based hip-hop of optimism.
+
+* Sunn O))) (support Jesse Sykes)
+Almost indescribable. Destroyed like the nazis at the end of Raiders of the Lost Ark. I walked out a different man.
+
+* Brant Bjork, Mondo Generator, Masters of Reality, &c at Desertfest
+Brant is always magical to me, and this was the best performance I have seen from him since the Saved By Magic tour. Nick Oliveri smashes out singalong hits and leaves everyone with a big grin. Chris Goss of MoR was having medical issues but the band held it together and bringing in Alain Johannes was a stroke of genius. Absolute heroes.
