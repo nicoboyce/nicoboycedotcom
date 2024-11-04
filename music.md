@@ -22,10 +22,10 @@ Been working on a track for months now (provisionally titled No Fly Zone) but it
 
 **Things on rotation at the moment:**
 
-* Charli XCX - Brat (what more is there to say, it's the pop album everyone can love and relate to)
-* 100 Gecs (hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)
-* Mark Lanegan Band - Here Comes That Weird Chill (post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)
-* Monolord - Rust (somehow more Cathedral than Sleep)
+* Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
+* 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
+* Mark Lanegan Band - Here Comes That Weird Chill _(post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)_
+* Monolord - Rust _(somehow more Cathedral than Sleep)_
 
 **Upcoming gigs:**
 
@@ -34,13 +34,13 @@ Been working on a track for months now (provisionally titled No Fly Zone) but it
 **Recent live shows:**
 
 * Fu Manchu
-Shakey performance from singer Scott Hill but drummer Scott Reeder (also of Sun & Sail Club with homonymous ex Kyuss bass monster Scott Reeder) was having fun and it showed. Epic rendition of Saturn III. Bottom of bill support [Torus](https://www.torusband.com/) are a band to keep an eye on, with some real clever songwriting as the bass kept coming up over the top of the riffs.
+_Shakey performance from singer Scott Hill but drummer Scott Reeder (also of Sun & Sail Club with homonymous ex Kyuss bass monster Scott Reeder) was having fun and it showed. Epic rendition of Saturn III. Bottom of bill support [Torus](https://www.torusband.com/) are a band to keep an eye on, with some real clever songwriting as the bass kept coming up over the top of the riffs._
 
 * Massive Attack, also Killer Mike
-Initial sound and lighting issues and a sudden downpour cleared out the field early but those who stayed were treated to a powerful show. Could have used more of a crescendo to end. Mostly a really well thought out one-day event. Killer Mike got the tone right with his gospel-based hip-hop of optimism.
+_Initial sound and lighting issues and a sudden downpour cleared out the field early but those who stayed were treated to a powerful show. Could have used more of a crescendo to end. Mostly a really well thought out one-day event. Killer Mike got the tone right with his gospel-based hip-hop of optimism._
 
 * Sunn O))) (support Jesse Sykes)
-Almost indescribable. Destroyed like the nazis at the end of Raiders of the Lost Ark. I walked out a different man.
+_Almost indescribable. Destroyed like the nazis at the end of Raiders of the Lost Ark. I walked out a different man._
 
 * Brant Bjork, Mondo Generator, Masters of Reality, &c at Desertfest
-Brant is always magical to me, and this was the best performance I have seen from him since the Saved By Magic tour. Nick Oliveri smashes out singalong hits and leaves everyone with a big grin. Chris Goss of MoR was having medical issues but the band held it together and bringing in Alain Johannes was a stroke of genius. Absolute heroes.
+_Brant is always magical to me, and this was the best performance I have seen from him since the Saved By Magic tour. Nick Oliveri smashes out singalong hits and leaves everyone with a big grin. Chris Goss of MoR was having medical issues but the band held it together and bringing in Alain Johannes was a stroke of genius. Absolute heroes._
