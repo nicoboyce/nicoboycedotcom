@@ -10,6 +10,16 @@ Presented with little to no comment, here are little crops and quick edits of ph
 
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
+***
+
+![Trees.](/public/img/trees.jpeg)
+*Trees. Laser tag in the woods.*
+
+![Mushrooms.](/public/img/mushrooms.jpeg)
+*Mushrooms.*
+
+***
+
 ![Carrots.](/public/img/carrots.jpeg)
 *Carrots.*
 
