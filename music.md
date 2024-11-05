@@ -6,9 +6,12 @@ title: Music or just noise
 
 # Music (or just noise)
 
-I sometimes write music and I also still sometimes write about music.
+I sometimes write music and I also still sometimes write about music. A long time ago I did reviews and interviews for various short-lived e-zines as well as the student papers. I'm not massively into criticism but I do believe in curation.
 
 Here you can check out what I'm listening to and also my latest releases.
+
+![Toys.](/public/img/studio.jpg)
+*Toys.*
 
 You can hear me on [Bandcamp](https://nicoboyce.bandcamp.com/) or on [YouTube](https://www.youtube.com/channel/UCVFMIbN6jTkiU9d7U5jspYg) or [Tidal](https://tidal.com/browse/artist/22802151?u) but I don't recommend Spotify and I'll be pulling my tracks from there before too long. I think you can find me on Amazon or Apple or wherever else you may be but I haven't checked.
 
@@ -20,12 +23,23 @@ Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most 
 
 Been working on a track for months now (provisionally titled No Fly Zone) but it's not quite coming together right. I'm not sure how to get it over the line.
 
+![Studio.](/public/img/studio.jpeg)
+*Studio space.*
+
+Relocating the studio seems to be helping with the creativity.
+
 **Things on rotation at the moment:**
 
 * Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
 * 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
 * Mark Lanegan Band - Here Comes That Weird Chill _(post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)_
 * Monolord - Rust _(somehow more Cathedral than Sleep)_
+
+**These bands should be on your playlists:**
+
+* Divide and Dissolve
+* Have a Nuce Life
+* Keys to the Astral Gates and Mystic Doors
 
 **Upcoming gigs:**
 
