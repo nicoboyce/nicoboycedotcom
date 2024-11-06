@@ -6,9 +6,11 @@ title: What's happening now?
 
 # What's happening now?
 
-What is this about? Well there's a [blog post](https://nicoboyce.com/blog/) explaining but basically this is a little page I will keep updated with news from me.
+*What is this about? This is a now page as defined [here](https://nownownow.com/about) which exists to explain what I'm up to lately. If you are reading this and have your own now page I'd be interested to see how you do it!*
 
-*This is a now page as defined [here](https://nownownow.com/about) which exists to explain what I'm up to lately. If you are reading this and have your own now page I'd be interested to see how you do it!*
+### November '24
+
+We have relocated and we're still trying to work out where to put everything. We went to the BRX and there are snaps on the [cars page](/cars/). Both cars have been in and out of the shop over and over. Fu Manchu were a thing, some thoughts on the [music page](/music). Business is busy.
 
 ### October '24
 
