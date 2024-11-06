@@ -1,7 +1,7 @@
 ---
 layout: page
-nav: Blog
-title: Blog
+nav: Essays
+title: Essays
 ---
 
 <div class="posts">
