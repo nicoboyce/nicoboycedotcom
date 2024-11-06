@@ -12,7 +12,7 @@ There is some crossover between different facets of my work, but I've broadly gr
 
 ### Photography and video
 
-I've recently switched systems to a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh?
+I've recently switched systems to a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh? It isn't great for motorsport panning shots, whatever I do with the settings.
 
 Previously I primarily used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
 
@@ -38,13 +38,13 @@ Everyone has that one instrument they regret selling, and for me that is a Germa
 ![One corner of the studio.](/public/img/studio.jpg)
 *One corner of the studio.*
 
-For many years I used Ashdown amplifiers, first a MAG 400W with 410 (the old red face UK model) and later an ABM Evo II 112. Recently I picked up an amp I always wanted to own, a Genz Benz ShuttleMax 9.2. This runs into a Matamp cab with Fane speaker.
+For many years I used Ashdown amplifiers, first a MAG 400W with 410 (the old red face UK model) and later an ABM Evo II 112. Recently I picked up an amp I always wanted to own, a Genz Benz ShuttleMax 9.2. This runs into a Matamp cab with Fane neodymium speaker.
 
 In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced with a Lace Sensors Deathbucker. This one stays in C and is strung with 13s. I also have an ESP LTD LP type which has a bridge DiMarzio SD, coil split, this is my D guitar currently. My first guitar, a Vintage branded SG type with Wilkinson pickups, is currently in E. All are strung with d'Addario usually.
 
 These go to an Epiphone Valve Special, a Blackstar HT-5H or sometimes the Genz for that grunt.
 
-Effects come and go but I wouldn't be without the ProCo Turbo Rat (I use a restored original) and a Big Muff, ideally with Tone Wicker. I've got a few weirdo pedals like a Gojira FX Ants fuzz and I've built a few of my own noiseboxes. Sometimes I'll break out the Whammy or the Akai Headrush E2.
+Effects come and go but I wouldn't be without the ProCo Turbo Rat and a Big Muff with Tone Wicker. The Rat is an '80s one and I need to swap out 9v adaptor for a modern one. I've got a few weirdo pedals like a Gojira FX Ants fuzz and I've built a few of my own noiseboxes. Sometimes I'll break out the Whammy or the Akai Headrush E2.
 
 ### Audio recording
 

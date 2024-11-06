@@ -30,16 +30,18 @@ Relocating the studio seems to be helping with the creativity.
 
 **Things on rotation at the moment:**
 
+* Vic du Monte's Idiot Prayer - Prey for the City _(So much to unpick here, you tell me)_
 * Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
 * 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
 * Mark Lanegan Band - Here Comes That Weird Chill _(post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)_
 * Monolord - Rust _(somehow more Cathedral than Sleep)_
 
-**These bands should be on your playlists:**
+**These artists should be on your playlists:**
 
 * Divide and Dissolve
-* Have a Nuce Life
+* Have a Nice Life
 * Keys to the Astral Gates and Mystic Doors
+* Tanya Tagaq
 
 **Upcoming gigs:**
 
@@ -50,7 +52,7 @@ Relocating the studio seems to be helping with the creativity.
 * Fu Manchu
 _Shakey performance from singer Scott Hill but drummer Scott Reeder (also of Sun & Sail Club with homonymous ex Kyuss bass monster Scott Reeder) was having fun and it showed. Epic rendition of Saturn III. Bottom of bill support [Torus](https://www.torusband.com/) are a band to keep an eye on, with some real clever songwriting as the bass kept coming up over the top of the riffs._
 
-* Massive Attack, also Killer Mike
+* Massive Attack (support Killer Mike)
 _Initial sound and lighting issues and a sudden downpour cleared out the field early but those who stayed were treated to a powerful show. Could have used more of a crescendo to end. Mostly a really well thought out one-day event. Killer Mike got the tone right with his gospel-based hip-hop of optimism._
 
 * Sunn O))) (support Jesse Sykes)

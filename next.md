@@ -19,4 +19,4 @@ It'd be helpful to have some proper hardware drum machines. Composing beats on a
 
 ## Pictures
 
-When I do upgrade from my D3300, I could get something like a D7200 (which is only a year newer and has the same sensor) or a  D500 (barely newer than the D7200 but a lot more expensive) or I guess switch systems and get all new glass and a full-frame DSLR (still old tech) or a mid-range mirrorless like the Sony A7? I'm really not sure at this stage. I like the look of the OM-1 II but how futureproof is it? The Sony A9 III is mindblowing in specs but also price.
+Action cams are next in the upgrade cycle. DJI maybe?
