@@ -18,6 +18,8 @@ Everyone is in on it. I open the Guardian to find something to get angry at and 
 
 Speaking of Adrian Chiles, there's a great genre of feelings on the internet where ignorance is seen as a kind of virtuous purity. You've probably seen them. Person new to X picks their favourite tool for X. I don't want the headphones someone who doesn't like music prefers. They don't know what they are talking about. Japanese chefs choose the best Cornish pasty. Okay great.
 
+This phenomenon is literally the premise of Emily in Paris. Knowing nothing is a superpower, not a liability. Education is holding you back. In the land of the idiots, the person with one idea is king.
+
 Did you even watch the new Joker film if you haven't told someone else they are stupid for liking it or hating it or not really caring about it? Everything is "underrated" or "overrated" which is just some guy saying "I like this" or "I don't like this" but with a bonus slice of "other people are wrong" except that it's something pointless anyway like Call of Duty or Metallica or a Porsche.
 
 ![Figures.](/public/img/figures.jpeg)
