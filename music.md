@@ -46,6 +46,8 @@ Relocating the studio seems to be helping with the creativity.
 **Upcoming gigs:**
 
 * Brant Bjork Trio
+* Masters of Reality
+* Chat Pile
 
 **Recent live shows:**
 
