@@ -10,7 +10,7 @@ title: What's happening now?
 
 ### November '24
 
-We have relocated and we're still trying to work out where to put everything. We went to the BRX and there are snaps on the [cars page](/cars/). Both cars have been in and out of the shop over and over. Fu Manchu were a thing, some thoughts on the [music page](/music). Business is busy.
+We have relocated and we're still trying to work out where to put everything. We went to the BRX and there are snaps on the [cars page](/cars/). Both cars have been in and out of the shop over and over. Fu Manchu were a thing, some thoughts on the [music page](/music). Business is busy. The BMW needs to be fed more money and I'm already thinking "what's next" but I don't know. I've gotten back in to painting and also been recording some bits and pieces.
 
 ### October '24
 
