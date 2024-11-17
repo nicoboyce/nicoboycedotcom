@@ -9,7 +9,7 @@ This is a little website where I publish and discuss some of my creative project
 
 ### Things I do and am currently doing
 
-Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a> or check out my [now page](/now/).
+Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a> and check out my [now page](/now/).
 
 Automotive and motorsport writing and photography has been a part of my life since first hitching a ride to the British Motor Show in 2000. My lockdown podcast on car culture and sim racing was picked up by a leading e-sports organisation for a generous sum, and I have attended some national level events in a professional capacity. For a while I had a collection of world records in Forza Horizon but racing games have taken a back seat lately.
 
