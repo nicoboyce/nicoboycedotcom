@@ -21,7 +21,7 @@ It feels like it's everything all at once right now. Got a new [project car](/ca
 ![Us, at Prescott](/public/img/us.jpeg)
 *We went to Prescott, see [cars](/cars/)*
 
-# What's going on?
+# Earlier
 
 * We saw Massive Attack in Bristol at the Act 1.5 thing. It was pretty good, a nice first gig for Victor. Killer Mike was a great support, we had some vegan jerk stuff that was tasty.
 * I got a bargain on a new camera so I've switched away from the old Nokia system. It's a Fujifilm H-X2. I'll put some pictures up here directly.
