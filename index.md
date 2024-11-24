@@ -1,4 +1,4 @@
----
+/wheels/---
 layout: default
 title: Nico Beastie Boyce — human person
 ---
