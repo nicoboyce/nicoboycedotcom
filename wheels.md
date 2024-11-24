@@ -1,7 +1,7 @@
 ---
 layout: page
 nav: Wheels
-title: Automotive and motorsport
+title: Automotive, motorsport, sometimes biking and skating and such
 ---
 
 # This is how we roll
