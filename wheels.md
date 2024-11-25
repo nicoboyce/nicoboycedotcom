@@ -21,6 +21,9 @@ Pimped my bmx
 ![Chain.](/public/img/bmx-chain.jpeg)
 *Chain.*
 
+![Park.](/public/img/bikezzz.jpeg)
+*Park.*
+
 ***
 
 Macau is crazy but not such a great circuit to actually race, they should reinvent it as a time trial. Nevertheless that was a mighty performance from Ugo, who nailed every restart to confirm what plenty of us have been saying for a while. This kid is the real deal. We were there at Brands Hatch when he won his first car race and now the sky is the limit.
