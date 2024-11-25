@@ -10,7 +10,7 @@ Here you'll find car and bike related nonsense. Sometimes I might write a rant a
 
 ***
 
-Pimped my bmx
+### Pimped my bmx
 
 ![Bmx.](/public/img/bmx.jpeg)
 *Bmx.*
@@ -26,9 +26,13 @@ Pimped my bmx
 
 ***
 
+### Macau F3 GP
+
 Macau is crazy but not such a great circuit to actually race, they should reinvent it as a time trial. Nevertheless that was a mighty performance from Ugo, who nailed every restart to confirm what plenty of us have been saying for a while. This kid is the real deal. We were there at Brands Hatch when he won his first car race and now the sky is the limit.
 
 ***
+
+### Mac and Cheese
 
 I've been a McLaren fan since Coulthard joined the Woking squad and as such I have always considered Ferraris to be tacky and poorly assembled and the Scuderia to be a bunch of cry babies leaning on their history to try and get preferential treatment. Ferrari are the Manchester United of F1, the idiot's choice, the team who are more likely to license their logo for keyrings and pencil sharpeners than string a series of good performances together. 
 
@@ -64,6 +68,8 @@ I don't know what's a 575 or a 620 or an Artura (why does that one get a name?) 
 The fireworks were way better than most displays where they are the main event. Of course at Lydden it's all about the horsepower. Top class RX cars will beat an F1 car off the line up to about 100mph. They can race on any surface and take jumps you wouldn't believe possible. The UK is the birthplace of rallycross and it's a great format for families and people new to motorsport. Get to Lydden Hill when you can. Also make sure you get some of that mayo from the paddock cafe when you're there.
 
 ***
+
+### fast track
 
 Forget team Max or team Lando. My driver of 2024 has to be Connor Zilisch. Youtube is over there if you need to catch up with this guy.
 
