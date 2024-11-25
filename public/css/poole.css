@@ -86,7 +86,6 @@ em {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Lemonada", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.25;
   color: #1C0B31;
@@ -409,7 +408,6 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "Karma", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
