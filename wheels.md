@@ -28,7 +28,7 @@ Here you'll find car and bike related nonsense. Sometimes I might write a rant a
 
 ### Macau F3 GP
 
-Macau is crazy but not such a great circuit to actually race, they should reinvent it as a time trial. Nevertheless that was a mighty performance from Ugo, who nailed every restart to confirm what plenty of us have been saying for a while. This kid is the real deal. We were there at Brands Hatch when he won his first car race and now the sky is the limit.
+Macau is crazy but not such a great circuit to actually race, they should reinvent it as a time trial. Nevertheless that was a mighty performance from Ugo, who nailed every restart to confirm what plenty of us have been saying for a while. This kid is the real deal. We were there at Brands Hatch when he won his first car race and now the sky is the limit. [Full feature race on the youtube](https://www.youtube.com/watch?v=YYe_NXIC3H0) but be prepared to fast forward...
 
 ***
 
