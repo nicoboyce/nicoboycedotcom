@@ -30,11 +30,9 @@ Relocating the studio seems to be helping with the creativity.
 
 **Things on rotation at the moment:**
 
-* Vic du Monte's Idiot Prayer - Prey for the City _(So much to unpick here, you tell me)_
-* Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
-* 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
-* Mark Lanegan Band - Here Comes That Weird Chill _(post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)_
-* Monolord - Rust _(somehow more Cathedral than Sleep)_
+* Earl Sweatshirt - Doris _(I honestly never tire of this record, sounds even better on the heavyweight vinyl. Earl picks apart his relationships with his family, his friends, his culture, his fanbase, society, all for our mere entertainment. Falling apart never sounded so perfect.)_
+* Brant Bjork and the Operators _(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and )_
+
 
 **These artists should be on your playlists:**
 
@@ -62,3 +60,11 @@ _Almost indescribable. Destroyed like the nazis at the end of Raiders of the Los
 
 * Brant Bjork, Mondo Generator, Masters of Reality, &c at Desertfest
 _Brant is always magical to me, and this was the best performance I have seen from him since the Saved By Magic tour. Nick Oliveri smashes out singalong hits and leaves everyone with a big grin. Chris Goss of MoR was having medical issues but the band held it together and bringing in Alain Johannes was a stroke of genius. Absolute heroes._
+
+**Spin these:**
+
+* Vic du Monte's Idiot Prayer - Prey for the City _(So much to unpick here, you tell me)_
+* Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
+* 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
+* Mark Lanegan Band - Here Comes That Weird Chill _(post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)_
+* Monolord - Rust _(somehow more Cathedral than Sleep)_
