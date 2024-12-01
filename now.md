@@ -10,18 +10,22 @@ title: What's happening now?
 
 ### November '24
 
-We have relocated and we're still trying to work out where to put everything. We went to the BRX and there are snaps on the [cars page](/wheels/). Both cars have been in and out of the shop over and over. Fu Manchu were a thing, some thoughts on the [music page](/music). Business is busy. The BMW needs to be fed more money and I'm already thinking "what's next" but I don't know. I've gotten back in to painting and also been recording some bits and pieces.
+We have relocated and we're still trying to work out where to put everything. We went to the BRX and there are snaps on the [wheels page](/wheels/). Both cars have been in and out of the shop over and over. Fu Manchu were a thing, some thoughts on the [music page](/music). Business is busy. The BMW needs to be fed more money and I'm already thinking "what's next" but I don't know. I've gotten back in to painting and also been recording some bits and pieces.
+
+***
 
 ### October '24
 
 It feels like it's everything all at once right now. Got a new [project car](/wheels/) and we're relocating, the business is just accelerating and it's hard to keep on top of what's changing. We're off to see the mighty Fu Manchu. I'm playing Jedi Survivor and watching Loudermilk again and I'm working on some sounds you'll hear very soon.
+
+***
 
 ### September '24
 
 ![Us, at Prescott](/public/img/us.jpeg)
 *We went to Prescott, see [cars](/wheels/)*
 
-# Earlier
+also
 
 * We saw Massive Attack in Bristol at the Act 1.5 thing. It was pretty good, a nice first gig for Victor. Killer Mike was a great support, we had some vegan jerk stuff that was tasty.
 * I got a bargain on a new camera so I've switched away from the old Nokia system. It's a Fujifilm H-X2. I'll put some pictures up here directly.
