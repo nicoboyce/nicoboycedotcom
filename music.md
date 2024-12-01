@@ -31,7 +31,8 @@ Relocating the studio seems to be helping with the creativity.
 **Things on rotation at the moment:**
 
 * Earl Sweatshirt - Doris _(I honestly never tire of this record, sounds even better on the heavyweight vinyl. Earl picks apart his relationships with his family, his friends, his culture, his fanbase, society, all for our mere entertainment. Falling apart never sounded so perfect.)_
-* Brant Bjork and the Operators _(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and )_
+* Brant Bjork and the Operators _(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and bouncy pop choruses? My all time favourite.)_
+* Gaz Coombes - Turn the Car Around _(Not sure I've really digested this one yet but it's full of charm.)_
 
 
 **These artists should be on your playlists:**
