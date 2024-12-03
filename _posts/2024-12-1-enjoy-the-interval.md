@@ -18,9 +18,4 @@ Something you'll hear in Song 2 or in Connection by Elastica or My Ghettoblaster
 
 This is great with a Rat style distortion and an underbiased fuzz face circuit as it takes on a synth-like quality. The gated signal and square wave tone from the fuzz but with the treble filter of the Rat combine with the slight dissonance of the fourth in the 12 tone equal temperment scale to create a sound similar to the frequency modulation on an 80s analog.
 
-Essentially I'm banning myself from the powerchord and instead aiming to write a series of songs built around showcasing different intervals. I guess time will tell if this helps break out of that rut!
-
-
-
-
-
+Essentially I'm barring myself from the powerchord and instead aiming to write a series of songs built around showcasing different intervals. I guess time will tell if this helps break out of that rut!
