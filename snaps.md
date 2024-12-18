@@ -12,6 +12,14 @@ Newest at the top (not in strict chronology, but I'll add to the list from the t
 
 ***
 
+![Bird.](/public/img/bird.jpeg)
+*Bird.*
+
+![Promenade.](/public/img/promenade.jpeg)
+*Promenade.*
+
+***
+
 ![Trees.](/public/img/trees.jpeg)
 *Trees. Laser tag in the woods.*
 
