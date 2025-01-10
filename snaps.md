@@ -11,7 +11,7 @@ Presented with little to no comment, here are little crops and quick edits of ph
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
 ![Scratch.](/public/img/scratch.jpeg)
-*Scratch.
+*Scratch.*
 
 ![Feelz.](/public/img/feelz.jpeg)
 *Feelz.*
