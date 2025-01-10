@@ -8,6 +8,12 @@ title: What's happening now?
 
 *What is this about? This is a now page as defined [here](https://nownownow.com/about) which exists to explain what I'm up to lately. If you are reading this and have your own now page I'd be interested to see how you do it!*
 
+### January '25
+
+I feel like I need to be busy. There are so many projects on the go but I just keep picking up new things. It's like I can only be sidetracked. There comes a point where the tangents themself become circular.
+
+***
+
 ### how is it december already
 
 I don't know

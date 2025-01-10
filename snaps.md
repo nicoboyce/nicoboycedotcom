@@ -10,6 +10,20 @@ Presented with little to no comment, here are little crops and quick edits of ph
 
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
+![Ice.](/public/img/ice.jpeg)
+*Ice.*
+
+![Flignt.](/public/img/flight.jpeg)
+*Flight.*
+
+![Vision.](/public/img/vision.jpeg)
+*Vision.*
+
+![Walk.](/public/img/walk.jpeg)
+*Walk.*
+
+***
+
 ![Scratch.](/public/img/scratch.jpeg)
 *Scratch.*
 
