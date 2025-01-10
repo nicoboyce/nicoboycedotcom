@@ -10,6 +10,21 @@ Presented with little to no comment, here are little crops and quick edits of ph
 
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
+![Scratch.](/public/img/scratch.jpeg)
+*Scratch.
+
+![Feelz.](/public/img/feelz.jpeg)
+*Feelz.*
+
+![Six.](/public/img/six.jpeg)
+*Six.*
+
+![Palace.](/public/img/palace.jpeg)
+*Palace.*
+
+![Trek.](/public/img/trek.jpeg)
+*Trek.*
+
 ***
 
 ![Bird.](/public/img/bird.jpeg)
