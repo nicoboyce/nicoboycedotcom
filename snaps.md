@@ -27,8 +27,8 @@ Newest at the top (not in strict chronology, but I'll add to the list from the t
 ![Scratch.](/public/img/scratch.jpeg)
 *Scratch.*
 
-![Feelz.](/public/img/feelz.jpeg)
-*Feelz.*
+![Action.](/public/img/feelz.jpeg)
+*Action.*
 
 ![Six.](/public/img/six.jpeg)
 *Six.*
