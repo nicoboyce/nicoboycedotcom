@@ -10,6 +10,8 @@ Presented with little to no comment, here are little crops and quick edits of ph
 
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
+I no longer use Instagram due to Meta's decision to become a safe space for nazis but I would encourage you to try Pixelfed as a friendlier alternative and you will [find me there](https://pixelfed.social/beastie) with some alternative edits of the sort of thing I share here.
+
 ![Ice.](/public/img/ice.jpeg)
 *Ice.*
 
