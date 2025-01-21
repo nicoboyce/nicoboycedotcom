@@ -6,7 +6,19 @@ title: Automotive, motorsport, sometimes biking and skating and such
 
 # This is how we roll
 
-Here you'll find car and bike related nonsense. Sometimes I might write a rant about F1. Other times there could be a dump of car show snaps. I'll add new things to the top, so if you check back you'll see updates first. Take a look at the [@beastiewheels Instagram](https://instagram.com/beastiewheels) too.
+Here you'll find car and bike related nonsense. Sometimes I might write a rant about F1. Other times there could be a dump of car show snaps. I'll add new things to the top, so if you check back you'll see updates first.
+
+I no longer use Instagram due to Meta's decision to become a safe space for nazis but I would encourage you to try Pixelfed as a friendlier alternative and you will [find me there](https://pixelfed.social/beastie) with some alternative edits of the sort of thing I share here.
+
+***
+
+### Dakar 25 showed the big dogs their weaknesses
+
+In case you missed it, M-Sport turned up at Dakar with a new Ford and some not-so-quiet confidence and established big names Ekstrom and Sainz. Prodrive were positively bragging about the tech in their Dacia and brought Loeb and Al-Attiyah, the statistally greatest ever rally driver and rally-raid driver, along with Gutierrez who is up and coming and basically there in a support role with a mechanic in her co-driver's seat.
+
+Meanwhile, with no fanfare at all, Toyota machinery dominated the event and the eventual winner was in a privateer Hilux entry. Toyota have developed that car year after year and Team Overdrive driver Al-Rajhi is a Saudi local who navigates the Empty Quarter for fun.
+
+Check out the Dakar channel on youtube and see how it was won.
 
 ***
 

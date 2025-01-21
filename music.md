@@ -30,10 +30,10 @@ Relocating the studio seems to be helping with the creativity.
 
 **Things on rotation at the moment:**
 
-* Earl Sweatshirt - Doris _(I honestly never tire of this record, sounds even better on the heavyweight vinyl. Earl picks apart his relationships with his family, his friends, his culture, his fanbase, society, all for our mere entertainment. Falling apart never sounded so perfect.)_
-* Brant Bjork and the Operators _(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and bouncy pop choruses? My all time favourite.)_
-* Gaz Coombes - Turn the Car Around _(Not sure I've really digested this one yet but it's full of charm.)_
-
+* Common
+* Millionaire - Paradisiac
+* Kruder & Dorfmeister
+* Funkadelic
 
 **These artists should be on your playlists:**
 
@@ -47,6 +47,9 @@ Relocating the studio seems to be helping with the creativity.
 * Brant Bjork Trio
 * Masters of Reality
 * Chat Pile
+* Have a Nice Life
+* Queens of the Stone Age
+* Jack White
 
 **Recent live shows:**
 
@@ -69,3 +72,6 @@ _Brant is always magical to me, and this was the best performance I have seen fr
 * 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
 * Mark Lanegan Band - Here Comes That Weird Chill _(post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)_
 * Monolord - Rust _(somehow more Cathedral than Sleep)_
+* Earl Sweatshirt - Doris _(I honestly never tire of this record, sounds even better on the heavyweight vinyl. Earl picks apart his relationships with his family, his friends, his culture, his fanbase, society, all for our mere entertainment. Falling apart never sounded so perfect.)_
+* Brant Bjork and the Operators _(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and bouncy pop choruses? My all time favourite.)_
+* Gaz Coombes - Turn the Car Around _(Full of charm.)_
