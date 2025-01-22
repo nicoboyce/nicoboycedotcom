@@ -10,6 +10,8 @@ Here you'll find car and bike related nonsense. Sometimes I might write a rant a
 
 I no longer use Instagram due to Meta's decision to become a safe space for nazis but I would encourage you to try Pixelfed as a friendlier alternative and you will [find me there](https://pixelfed.social/beastie) with some alternative edits of the sort of thing I share here.
 
+***
+
 ### Bike rebuild
 
 Grabbed a bargain jump bike and it needed some customisation. Popped on a super narrow and sharp looking Cinelli handlebar, a comfy GT saddle, some sick ODI x Vans grips and DMR pedals. I need to take some proper pics.
