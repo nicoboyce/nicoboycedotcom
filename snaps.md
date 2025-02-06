@@ -12,6 +12,20 @@ Newest at the top (not in strict chronology, but I'll add to the list from the t
 
 I no longer use Instagram due to Meta's decision to become a safe space for nazis but I would encourage you to try Pixelfed as a friendlier alternative and you will [find me there](https://pixelfed.social/beastie) with some alternative edits of the sort of thing I share here.
 
+![Eastney](/public/img/eastney.jpg)
+*Eastney.*
+
+![Enter](/public/img/enter.jpg)
+*Enter.*
+
+![Prom](/public/img/prom.jpg)
+*Prom.*
+
+![Space](/public/img/space.jpg)
+*Space.*
+
+***
+
 ![Ice.](/public/img/ice.jpeg)
 *Ice.*
 

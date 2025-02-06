@@ -12,6 +12,11 @@ I no longer use Instagram due to Meta's decision to become a safe space for nazi
 
 ***
 
+### On the street
+
+![Scoobs](/public/img/scoob.jpg)
+*Scoobs*
+
 ### Bike rebuild
 
 Grabbed a bargain jump bike and it needed some customisation. Popped on a super narrow and sharp looking Cinelli handlebar, a comfy GT saddle, some sick ODI x Vans grips and DMR pedals. I need to take some proper pics.
