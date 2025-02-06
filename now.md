@@ -10,7 +10,7 @@ title: What's happening now?
 
 ### Feb '25
 
-How did things get busier? New contract, new projects, gigs, adventures. 
+How did things get busier? New contract, new projects, gigs, adventures.
 
 ***
 
