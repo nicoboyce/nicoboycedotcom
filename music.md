@@ -41,6 +41,7 @@ Relocating the studio seems to be helping with the creativity.
 * Have a Nice Life
 * Keys to the Astral Gates and Mystic Doors
 * Tanya Tagaq
+* Big Brave
 
 **Upcoming gigs:**
 
@@ -67,6 +68,7 @@ _Brant is always magical to me, and this was the best performance I have seen fr
 
 **Spin these:**
 
+* FKA twigs - EUSEXUA _(It's obviously good, but it's not new or interesting. I wish I was young enough to be impressed by this, but I'm not so I'm not. It's a nice reminder that William Orbit exists and you can just listen to his work.)_
 * Vic du Monte's Idiot Prayer - Prey for the City _(So much to unpick here, you tell me)_
 * Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
 * 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
