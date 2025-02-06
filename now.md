@@ -12,6 +12,8 @@ title: What's happening now?
 
 How did things get busier? New contract, new projects, gigs, adventures. 
 
+***
+
 ### January '25
 
 I feel like I need to be busy. There are so many projects on the go but I just keep picking up new things. It's like I can only be sidetracked. There comes a point where the tangents themself become circular.
