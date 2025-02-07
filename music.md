@@ -45,7 +45,6 @@ Relocating the studio seems to be helping with the creativity.
 
 **Upcoming gigs:**
 
-* Brant Bjork Trio
 * Masters of Reality
 * Chat Pile
 * Have a Nice Life
@@ -53,6 +52,9 @@ Relocating the studio seems to be helping with the creativity.
 * Jack White
 
 **Recent live shows:**
+
+* Brant Bjork Trio
+_Brant is my all-time hero and he's truly on fire at the moment. The new record is a mighty return to form and seeing Brant and Mario Lalli bounce off of each other up close is always a dream come true for me. The 1865 was way short of capacity but it was a friendly crowd with good vibes. Drummer Mike Amster brought some extra punch and movement as compared to the more laid back and organic rhythms of Ryan Gut on the previous tour. Brant's vocals weren't consistent but the sheer joy of the performance is what everyone in the room will remember. Support: Earl of Hell (the vocals weren't my bag but the tones were great) and Moosehead (strong performers but it felt like the songwriting could be more collaborative and coherent)_
 
 * Fu Manchu
 _Shakey performance from singer Scott Hill but drummer Scott Reeder (also of Sun & Sail Club with homonymous ex Kyuss bass monster Scott Reeder) was having fun and it showed. Epic rendition of Saturn III. Bottom of bill support [Torus](https://www.torusband.com/) are a band to keep an eye on, with some real clever songwriting as the bass kept coming up over the top of the riffs._
