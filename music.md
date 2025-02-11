@@ -79,3 +79,6 @@ _Brant is always magical to me, and this was the best performance I have seen fr
 * Earl Sweatshirt - Doris _(I honestly never tire of this record, sounds even better on the heavyweight vinyl. Earl picks apart his relationships with his family, his friends, his culture, his fanbase, society, all for our mere entertainment. Falling apart never sounded so perfect.)_
 * Brant Bjork and the Operators _(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and bouncy pop choruses? My all time favourite.)_
 * Gaz Coombes - Turn the Car Around _(Full of charm.)_
+
+![Guitars.](/public/img/guits.jpeg)
+*Guitars.*
