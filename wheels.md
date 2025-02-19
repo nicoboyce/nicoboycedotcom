@@ -14,8 +14,40 @@ I no longer use Instagram due to Meta's decision to become a safe space for nazi
 
 ### On the street
 
+![Lancia](/public/img/lancia.jpeg)
+*Lancia.*
+
+![Fisheye and I](/public/img/fisheye.jpeg)
+*Fisheye and I.*
+
+![Miata NA](/public/img/miatana.jpeg)
+*Miata NA.*
+
+![Chevy](/public/img/chevy.jpeg)
+*Chevy.*
+
+![Volvo](/public/img/volvo.jpeg)
+*Volvo.*
+
+![Lambo](/public/img/lambo.jpeg)
+*Lambo.*
+
+![Fords](/public/img/fords.jpeg)
+*Fords.*
+
+![Chevy at Brands](/public/img/chevy-brands.jpeg)
+*Chevy at Brands.*
+
+![Granada](/public/img/granada.jpeg)
+*Granada.*
+
+![Jeep.](/public/img/jeep.jpeg)
+*Jeep.*
+
 ![Scoobs](/public/img/scoob.jpg)
-*Scoobs*
+*Scoobs.*
+
+***
 
 ### Bike rebuild
 
