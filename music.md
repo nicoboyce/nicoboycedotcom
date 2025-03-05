@@ -53,6 +53,9 @@ Relocating the studio seems to be helping with the creativity.
 
 **Recent live shows:**
 
+* Jack White (support Black Mekon)
+_Treat for my kid who is a huge fan. I had a vague worry Jack White would be a bit of an artist about things but I was totally wrong. He thrashed out a solid 90 minutes of crowd pleasers, hits from throughout his career. Jack White has been strumming out his own brand of bluesy rock before he had an audience and I think he'll still be doing this long after the world stops caring about the possibilities for noise enabled by Leo Fender designs. Not one I would have gone to ordinarily but everyone left grinning. Support band Black Mekon were wonderful, great humour and really won over the crowd, tricky in a larger venue supporting a big name artist._
+
 * Brant Bjork Trio
 _Brant is my all-time hero and he's truly on fire at the moment. The new record is a mighty return to form and seeing Brant and Mario Lalli bounce off of each other up close is always a dream come true for me. The 1865 was way short of capacity but it was a friendly crowd with good vibes. Drummer Mike Amster brought some extra punch and movement as compared to the more laid back and organic rhythms of Ryan Gut on the previous tour. Brant's vocals weren't consistent but the sheer joy of the performance is what everyone in the room will remember. Support: Earl of Hell (the vocals weren't my bag but the tones were great) and Moosehead (strong performers but it felt like the songwriting could be more collaborative and coherent)_
 
