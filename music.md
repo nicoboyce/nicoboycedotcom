@@ -6,7 +6,7 @@ title: Music or just noise
 
 # Music (or just noise)
 
-I sometimes write music and I also still sometimes write about music. A long time ago I did reviews and interviews for various short-lived e-zines as well as the student papers. I'm not massively into criticism but I do believe in curation.
+I sometimes write music and I also still sometimes write about music. A long time ago I did reviews and interviews for various short-lived e-zines as well as the student papers. I'm not a believer in criticism per se but I do enjoy curation.
 
 Here you can check out what I'm listening to and also my latest releases.
 
@@ -19,37 +19,7 @@ You can hear me on [Bandcamp](https://nicoboyce.bandcamp.com/) or on [YouTube](h
 
 Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most of this stuff is on (deep breath) Spotify, Apple Music, iTunes, Instagram/Facebook, TikTok & other ByteDance stores, YouTube Music, Amazon, Pandora, Deezer, Tidal, iHeartRadio, Claro Música, Saavn, Anghami, KKBox, NetEase, Tencent, MediaNet, Boomplay, Adaptr, Flo, Joox, Kuack Media, Qobuz, Snapchat most of which I have never heard of. So there!
 
-**In progress:**
-
-Been working on a track for months now (provisionally titled No Fly Zone) but it's not quite coming together right. I'm not sure how to get it over the line.
-
-![Studio.](/public/img/studio.jpeg)
-*Studio space.*
-
-Relocating the studio seems to be helping with the creativity.
-
-**Things on rotation at the moment:**
-
-* Common
-* Millionaire - Paradisiac
-* Kruder & Dorfmeister
-* Funkadelic
-
-**These artists should be on your playlists:**
-
-* Divide and Dissolve
-* Have a Nice Life
-* Keys to the Astral Gates and Mystic Doors
-* Tanya Tagaq
-* Big Brave
-
-**Upcoming gigs:**
-
-* Masters of Reality
-* Chat Pile
-* Have a Nice Life
-* Queens of the Stone Age
-* Jack White
+***
 
 **Recent live shows:**
 
@@ -70,6 +40,43 @@ _Almost indescribable. Destroyed like the nazis at the end of Raiders of the Los
 
 * Brant Bjork, Mondo Generator, Masters of Reality, &c at Desertfest
 _Brant is always magical to me, and this was the best performance I have seen from him since the Saved By Magic tour. Nick Oliveri smashes out singalong hits and leaves everyone with a big grin. Chris Goss of MoR was having medical issues but the band held it together and bringing in Alain Johannes was a stroke of genius. Absolute heroes._
+
+***
+
+**In progress:**
+
+Been working on a track for months now (provisionally titled No Fly Zone) but it's not quite coming together right. I'm not sure how to get it over the line.
+
+![Studio.](/public/img/studio.jpeg)
+*Studio space.*
+
+Relocating the studio seems to be helping with the creativity.
+
+***
+
+**Things on rotation at the moment:**
+
+* Common
+* Kenny Beats
+* Millionaire - Paradisiac
+* Kruder & Dorfmeister
+* Funkadelic
+
+**These artists should be on your playlists:**
+
+* Divide and Dissolve
+* Have a Nice Life
+* Keys to the Astral Gates and Mystic Doors
+* Tanya Tagaq
+* Big Brave
+
+**Upcoming gigs:**
+
+* Masters of Reality
+* Chat Pile
+* Have a Nice Life
+* Queens of the Stone Age
+* The Beta Band
 
 **Spin these:**
 
