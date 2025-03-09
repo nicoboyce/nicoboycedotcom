@@ -7,9 +7,9 @@ title: Nico Beastie Boyce — human person
 
 This is a little website where I publish and discuss some of my creative projects. I have a company which does CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
 
-### Things I do and am currently doing
+Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a> and check out my [now page](/now/). New photos live on the [snaps page](/snaps) or on my [pixelfed](https://pixelfed.social/beastie). New music chatter is [here](/music/) and car chat is [here](/wheels/).
 
-Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a> and check out my [now page](/now/).
+***
 
 Automotive and motorsport writing and photography has been a part of my life since first hitching a ride to the British Motor Show in 2000. My lockdown podcast on car culture and sim racing was picked up by a leading e-sports organisation for a generous sum, and I have attended national level events in a professional capacity. For a while I had a collection of world records in Forza Horizon but lately I'm more into Dirt Rally 2.0. I wish they would update the Lydden Hill layout with the Nitro Rallycross changes! Motoring based stuff is [over here](/wheels/).
 
