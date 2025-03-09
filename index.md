@@ -11,6 +11,8 @@ Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }
 
 ***
 
+## Things I do
+
 Automotive and motorsport writing and photography has been a part of my life since first hitching a ride to the British Motor Show in 2000. My lockdown podcast on car culture and sim racing was picked up by a leading e-sports organisation for a generous sum, and I have attended national level events in a professional capacity. For a while I had a collection of world records in Forza Horizon but lately I'm more into Dirt Rally 2.0. I wish they would update the Lydden Hill layout with the Nitro Rallycross changes! Motoring based stuff is [over here](/wheels/).
 
 ![Nico Beastie Boyce](/public/img/bike.jpeg)
