@@ -9,7 +9,7 @@ It's easy to get stuck in a rut. We can all get happy staying in our comfort zon
 
 My son Victor is finding his own way with music at the moment and has developed huge love for those chunky but rich sounds from British indie pop of the '90s. We've had a lot of Radiohead, Blur, Elastica, Supergrass, PJ Harvey and others.
 
-![Twang,](/public/img/offset.jpeg)
+![Twang.](/public/img/offset.jpeg)
 *Twang.*
 
 I've had Brant Bjork and the Operators on repeat in the car (since my Duna CD was found) and found some similarities in the songwriting with Victor's playlists.
