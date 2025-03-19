@@ -6,11 +6,61 @@ title: Snaps and splats gallery
 
 # Snaps and splats
 
-Presented with little to no comment, here are little crops and quick edits of photos I have taken recently, along with the odd bit of painting.
+Presented with little to no comment, here are little crops and quick edits of photos I have taken recently, along with the odd bit of painting. There are also some car based snaps [over here](/wheels/)
 
 Newest at the top (not in strict chronology, but I'll add to the list from the top)
 
 I no longer use Instagram due to Meta's decision to become a safe space for nazis but I would encourage you to try Pixelfed as a friendlier alternative and you will [find me there](https://pixelfed.social/beastie) with some alternative edits of the sort of thing I share here.
+
+***
+
+![Spiral.](/public/img/spiral.jpg)
+*Snore.*
+
+![Lights.](/public/img/lights.jpg)
+*Lights.*
+
+![Wall hole.](/public/img/wallhole.jpg)
+*Wall hole.*
+
+![Mutton](/public/img/mutton.jpg)
+*Mutton.*
+
+![Fish.](/public/img/fish.jpg)
+*Fish.*
+
+![Dig.](/public/img/dig.jpg)
+*Dig.*
+
+![Hog.](/public/img/hog.jpg)
+*Hog.*
+
+***
+
+## Bird friends
+
+![Angry robin.](/public/img/rob.jpg)
+*Angry robin.*
+
+![Feather](/public/img/feather.jpg)
+*Feather.*
+
+![Prey.](/public/img/prey.jpg)
+*Prey.*
+
+![Caw.](/public/img/caw.jpg)
+*Caw.*
+
+![Gull.](/public/img/gull.jpg)
+*Gull.*
+
+![Twit.](/public/img/twit.jpg)
+*Twit.*
+
+![Peak.](/public/img/peak.jpg)
+*Peak.*
+
+***
 
 ![Moon.](/public/img/moon.jpg)
 *Moon.*
