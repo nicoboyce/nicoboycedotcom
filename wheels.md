@@ -13,7 +13,7 @@ Here you'll find car and bike related nonsense. Sometimes I might write a rant a
 If you're looking to be entertained by cars driven fast, here's what I enjoy.
 
 #### In the UK
-* [British Hillclimb](https://www.youtube.com/@HillClimbTV)
+* [British Hillclimb](https://www.youtube.com/@HillClimbTV) (see you at Prescott!)
 * [British Rallycross](https://www.youtube.com/@5NationsBRX) especially the buggies at Lydden Hill, always fun
 * [VSCC Lakeland Trial](https://www.youtube.com/watch?v=gaJu3YiBYVc) and honestly any vintage hillclimbing is great
 * [750 Motor Club](https://www.youtube.com/@750MotorClubTV)
