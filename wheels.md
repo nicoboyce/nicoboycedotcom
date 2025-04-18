@@ -8,6 +8,8 @@ title: Automotive, motorsport, sometimes biking and skating and such
 
 Here you'll find car and bike related nonsense. Sometimes I might write a rant about F1. Other times there could be a dump of car show snaps. I'll add new things to the top, so if you check back you'll see updates first.
 
+***
+
 ### Racing worth watching
 
 If you're looking to be entertained by cars driven fast, here's what I enjoy.
