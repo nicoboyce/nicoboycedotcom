@@ -14,6 +14,36 @@ I no longer use Instagram due to Meta's decision to become a safe space for nazi
 
 ***
 
+### Painting
+
+Some silly stuff
+
+![Victor.](/public/img/victor.jpeg)
+*Victor.*
+
+![Frug.](/public/img/frug.jpg)
+*Frug.*
+
+fin.
+
+***
+
+### In and around water
+
+![Wash.](/public/img/wash.jpg)
+*Wash.*
+
+![Oar.](/public/img/oar.jpg)
+*Oar.*
+
+![Creep.](/public/img/creep.jpg)
+*Creep.*
+
+![Splish.](/public/img/splish.jpg)
+*Splish.*
+
+***
+
 ![Spiral.](/public/img/spiral.jpg)
 *Snore.*
 
