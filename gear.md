@@ -14,6 +14,8 @@ There is some crossover between different facets of my work, but I've broadly gr
 
 I've recently switched systems to a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh? It isn't great for motorsport panning shots, whatever I do with the settings.
 
+Sigma zooms and Viltrox primes are my choices in the Fuji system.
+
 Previously I primarily used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
 
 These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry an 18-55mm. The telezoom has a Hoya rotating polarising filter on the end.
@@ -33,7 +35,7 @@ I organise my images with Darktable and store them on a custom NAS.
 
 The Ibanez Upswing (UB804) probably gets the most play at the moment. Other basses I play are the Ibanez ATK400, Ibanez AGB140, Maverick B-1 (rewired passive, bridge pickup only, direct to jack) and a Mania VTB-5BS. My strings of choice are LaBella Deep Talkin' flats (UB, AGB) and d'Addario nickel roundwounds for everything else.
 
-Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I'll own another Warwick. Maybe an FNA.
+~~Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I'll own another Warwick. Maybe an FNA.~~ I did buy another one of these and we haven't quite clicked. I don't know why.
 
 ![One corner of the studio.](/public/img/studio.jpg)
 *One corner of the studio.*
@@ -41,6 +43,8 @@ Everyone has that one instrument they regret selling, and for me that is a Germa
 For many years I used Ashdown amplifiers, first a MAG 400W with 410 (the old red face UK model) and later an ABM Evo II 112. Recently I picked up an amp I always wanted to own, a Genz Benz ShuttleMax 9.2. This runs into a Matamp cab with Fane neodymium speaker.
 
 In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced with a Lace Sensors Deathbucker. This one stays in C and is strung with 13s. I also have an ESP LTD LP type which has a bridge DiMarzio SD, coil split, this is my D guitar currently. My first guitar, a Vintage branded SG type with Wilkinson pickups, is currently in E. All are strung with d'Addario usually.
+
+The latest addition is a Squier offset. It's got a jazzmaster neck pickup and a tele bridge. Amazing thing.
 
 These go to an Epiphone Valve Special, a Blackstar HT-5H or sometimes the Genz for that grunt.
 
