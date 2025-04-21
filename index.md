@@ -9,6 +9,11 @@ This is a little website where I publish and discuss some of my creative project
 
 Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a> and check out my [now page](/now/). New photos live on the [snaps page](/snaps) or on my [pixelfed](https://pixelfed.social/beastie). New music chatter is [here](/music/) and car chat is [here](/wheels/).
 
+New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it.
+
+![Instrumental Driving Music for Drecks](/public/img/inst.jpg)
+*Instrumental Driving Music for Drecks.*
+
 ***
 
 ## Things I do
@@ -22,8 +27,9 @@ I started making music playing slow-and-low jams at parties in old Cornish farm 
 
 My album and live reviews and also interviews have been published online and in print under various pen names. I have had the privilege of meeting most of my musical heroes and experiencing far more live performances than I could list or remember. There's some noise and nonsense [here](/music/).
 
-<p><iframe class="no-mob" style="border: 0; width: 519px; height: 611px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nicoboyce.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe><iframe class="on-mob" style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://nicoboyce.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe></p>
-
 I'm getting into painting but it's hard to kill my inner critic. I use spray cans on wooden boards. It takes a lot of patience. I'm still developing my plans with this but there is an ambition to do some sort of exhibition within the next year or so.
+
+![Frug.](/public/img/frug.jpg)
+*Frug.*
 
 Designing and prototyping analogue audio circuits, primarily guitar effects, is something I need to find more time for. I have been testing a novel and unique distortion unit which is capable of a huge spectrum of new sounds. I will write more about that as the project progresses.
