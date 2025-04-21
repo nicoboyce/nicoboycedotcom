@@ -10,9 +10,14 @@ I sometimes write music and I also still sometimes write about music. A long tim
 
 Here you can check out what I'm listening to and also my latest releases.
 
-## Coming soon: new album Instrumental Driving Music for Drecks
+## New album Instrumental Driving Music for Drecks
 
-You heard it here first.
+Go [here](https://fightingmongooses.bandcamp.com/) and buy it.
+
+![Instrumental Driving Music for Drecks](/public/img/inst.jpg)
+*Instrumental Driving Music for Drecks.*
+
+Put this in your ears and be happy (happiness optional)
 
 ![Toys.](/public/img/studio.jpg)
 *Toys.*
