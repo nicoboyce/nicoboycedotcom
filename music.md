@@ -10,6 +10,10 @@ I sometimes write music and I also still sometimes write about music. A long tim
 
 Here you can check out what I'm listening to and also my latest releases.
 
+## Coming soon: new album Instrumental Driving Music for Drecks
+
+You heard it here first.
+
 ![Toys.](/public/img/studio.jpg)
 *Toys.*
 
@@ -22,6 +26,12 @@ Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most 
 ***
 
 **Recent live shows:**
+
+*Chat Pile (support HIRS Collective)
+_Mighty. More words as I find them._
+
+* Masters of Reality (support Earl of Hell)
+_So powerful I had many tears. I don't know what else to say. The show was a real journey from dark and creepy through some freeflowing exploration to a big bold resolution and finally some humour with a dark edge. Chris Goss and co kept nothing in reserve. Earl of Hell were better, tighter, bigger, ready for launch._
 
 * Jack White (support Black Mekon)
 _Treat for my kid who is a huge fan. I had a vague worry Jack White would be a bit of an artist about things but I was totally wrong. He thrashed out a solid 90 minutes of crowd pleasers, hits from throughout his career. Jack White has been strumming out his own brand of bluesy rock before he had an audience and I think he'll still be doing this long after the world stops caring about the possibilities for noise enabled by Leo Fender designs. Not one I would have gone to ordinarily but everyone left grinning. Support band Black Mekon were wonderful, great humour and really won over the crowd, tricky in a larger venue supporting a big name artist._
@@ -56,6 +66,7 @@ Relocating the studio seems to be helping with the creativity.
 
 **Things on rotation at the moment:**
 
+* underscores
 * Common
 * Kenny Beats
 * Millionaire - Paradisiac
@@ -72,8 +83,6 @@ Relocating the studio seems to be helping with the creativity.
 
 **Upcoming gigs:**
 
-* Masters of Reality
-* Chat Pile
 * Have a Nice Life
 * Queens of the Stone Age
 * The Beta Band
