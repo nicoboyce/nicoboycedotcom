@@ -27,7 +27,7 @@ Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most 
 
 **Recent live shows:**
 
-*Chat Pile (support HIRS Collective)
+* Chat Pile (support HIRS Collective)
 _Mighty. More words as I find them._
 
 * Masters of Reality (support Earl of Hell)
