@@ -23,7 +23,7 @@ There's two things which were a bit more of a decision this time around. Here ar
 
 ## Yes, we are using a band name now
 
-Previous releases just said "Nico Boyce" on the cover. I'm okay with the name Nico Boyce because it is who I am and a name I mostly chose. On the other hand, I am starting to build a great reputation as a Zendeks specialist (see [Deltastring.com](https://deltastring.com) for more on that) and I didn't want these things colliding so much. It would be a particular problem on Youtube where [we have a Deltastring channel](https://www.youtube.com/@deltastringdotcom) now.
+Previous releases just said "Nico Boyce" on the cover. I'm okay with the name Nico Boyce because it is who I am and a name I mostly chose. On the other hand, I am building a great reputation as a Zendesk specialist (see [Deltastring.com](https://deltastring.com) for more on that) and I didn't want these things colliding so much. It would be a particular problem on Youtube where [we have a Deltastring channel](https://www.youtube.com/@deltastringdotcom) now.
 
 <img src="/public/img/nicologo.svg" alt="Nico Beastie Boyce logo." width="600" />
 *My name is Nico.*
