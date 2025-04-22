@@ -14,10 +14,10 @@ We've pretty much used all the toys on this one. There's some samples and some l
 
 There are specific moments which are nods to many of our favourite artists. There are some chords on one track which are a tip of the hat to Mark Lanegan, specifically the Scraps at Midnight record. There's a song with a rhythm that comes from Brant Bjork and the Operators. A couple of seconds of drums are a wink at Hag Me by the Melvins. Like everything of this type, it's a stack of things we have learned from other records. HIRS and jpegMafia and 100 Gecs and Mr Oizo and Troy Van Leeuwen's Enemy showed us the way too.
 
-The title is a salute to the Desert Sessions but with a Cornish flavour. The photo is one I took on a driving holiday around Cumbria after thrashing the old Mazda up that hill on a Forza Horizon 4 mission, so it remembers the old podcast we did in 2020. The lettering hints at a future instalment in this series, which has more straight-up desert rock leanings via Fu Manchu.
+![Guitars.](/public/img/guits.jpeg)
+*Guitars.*
 
-![The Fighting Mongooses.](/public/img/fighting-mongooses.jpeg)
-*The Fighting Mongooses.*
+The title is a salute to the Desert Sessions but with a Cornish flavour. The photo is one I took on a driving holiday around Cumbria after thrashing the old Mazda up that hill on a Forza Horizon 4 mission, so it remembers the old podcast we did in 2020. The lettering hints at a future instalment in this series, which has more straight-up desert rock leanings via Fu Manchu.
 
 There's two things which were a bit more of a decision this time around. Here are those decisions and why I made them.
 
@@ -35,6 +35,9 @@ There's some talk on the Nico logo [here](https://nicoboyce.com/2024/05/25/where
 The Fighting Mongooses is a cool team name, as Fry says. We're big Futurama fans. There's not a lot more to it.
 
 Also releasing music under my name doesn't show that it's a team effort. Rosie shouldn't be letting me take all the credit!
+
+![The Fighting Mongooses.](/public/img/fighting-mongooses.jpeg)
+*The Fighting Mongooses.*
 
 ## No, this isn't on streaming services (yet)
 
