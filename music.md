@@ -12,7 +12,7 @@ Here you can check out what I'm listening to and also my latest releases.
 
 ## New album Instrumental Driving Music for Drecks
 
-Go [here](https://fightingmongooses.bandcamp.com/) and buy it.
+Read about the release [here](https://nicoboyce.com/2025/04/22/releasing-music-for-drecks/) and then go [here](https://fightingmongooses.bandcamp.com/) and buy it.
 
 ![Instrumental Driving Music for Drecks](/public/img/inst.jpg)
 *Instrumental Driving Music for Drecks.*
