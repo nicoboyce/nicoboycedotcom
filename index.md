@@ -11,8 +11,7 @@ Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }
 
 New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it.
 
-![Instrumental Driving Music for Drecks](/public/img/inst.jpg)
-*Instrumental Driving Music for Drecks.*
+<iframe style="border: 0; width: 500px; height: 620px;" src="https://bandcamp.com/EmbeddedPlayer/album=2664333807/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/album/instrumental-driving-music-for-drecks">instrumental driving music for drecks by The Fighting Mongooses</a></iframe>
 
 ***
 
