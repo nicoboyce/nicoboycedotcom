@@ -11,7 +11,7 @@ Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }
 
 New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it.
 
-<iframe style="border: 0; width: 500px; height: 620px;" src="https://bandcamp.com/EmbeddedPlayer/album=2664333807/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/album/instrumental-driving-music-for-drecks">instrumental driving music for drecks by The Fighting Mongooses</a></iframe>
+<iframe style="border: 0; width: 400px; height: 737px;" src="https://bandcamp.com/EmbeddedPlayer/album=2664333807/size=large/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/album/instrumental-driving-music-for-drecks">instrumental driving music for drecks by The Fighting Mongooses</a></iframe>
 
 ***
 
@@ -22,7 +22,7 @@ Automotive and motorsport writing and photography has been a part of my life sin
 ![Nico Beastie Boyce](/public/img/bike.jpeg)
 *Nico Beastie Boyce*
 
-I started making music playing slow-and-low jams at parties in old Cornish farm buildings with millennial long-haired skate punk trash buddies in pre-YouTube times. You can hear me on <a href="https://nicoboyce.bandcamp.com/">Bandcamp</a> or search for me in your music streaming app of choice. I primarily play the electric upright bass.
+I started making music playing slow-and-low jams at parties in old Cornish farm buildings with millennial long-haired skate punk trash buddies in pre-YouTube times. You can hear me on <a href="https://fightingmongooses.bandcamp.com/">Bandcamp</a> or search for me in your music streaming app of choice. I primarily play the electric upright bass.
 
 My album and live reviews and also interviews have been published online and in print under various pen names. I have had the privilege of meeting most of my musical heroes and experiencing far more live performances than I could list or remember. There's some noise and nonsense [here](/music/).
 
