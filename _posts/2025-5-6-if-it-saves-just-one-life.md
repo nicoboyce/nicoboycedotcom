@@ -9,7 +9,7 @@ I've heard this phrase come up a few times recently, I think mostly on Radio 4.
 
 > If it saves just one life, isn't it worth doing?
 
-For some reason the presenter didn't dare give the correct answer to this question.<!--excerpt-end-->
+For some reason the presenter didn't dare give the correct answer to this question:<!--excerpt-end-->
 
 **No it fucking isn't.**
 
@@ -30,7 +30,7 @@ If you're super into wrestling crocodiles or motorcycle stunts or maybe you're t
 In between, there are things we deem to be necessary or important where people take a calculated risk. Firefighters. Train drivers. X-ray technicians. These people do important work which I would imagine comes with a likely reduced lifespan.
 
 ![Driver.](/public/img/drive.jpg)
-*Driver. Risk taker.*
+*Nico Boyce. Car driver. Risk taker.*
 
 There are things we all do every day which are statistically more hazardous to life. Walking down stairs. Driving a car. Cooking meat. Taking a shower.
 
