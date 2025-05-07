@@ -32,8 +32,14 @@ Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most 
 
 **Recent live shows:**
 
+* Self Esteem outstore with Vinilo/1865
+_Alright so I do love Self Esteem and I loved Slow Club from when they were playing in pubs and when she's in town I show up, it's as simple as that. This performance barely lasted half an hour and was just bad. I'm good with an intimate low key acoustic type little set and I'm good with a big proper show but this fell in the middle and wasn't either and honestly I was pretty pissed of with how rubbish this was. Totally mis-sold by the Vinilo record store. Also not fun: the crowd were all people who didn't really know how to do this sort of thing. Most people only saw the stage through their phone screen. To top it off, the new songs are not good. I'd like to wipe this from my memory._
+
+* The Bug vs BIG|BRAVE, sonic face-off
+_Mad one-off sonic battle. Canadian folk-doom noise architects Big Brave occupied the stage of the Garage and Dorset lord of dub The Bug faced them down with a separate sound system at the other end of the Islington warehouse. Face-melting bliss. Clip [here](https://pixelfed.social/p/beastie/820786658141040899)._
+
 * Chat Pile (support HIRS Collective)
-_Mighty. More words as I find them._
+_Mighty. HIRS combine the attributes of Melt-Banana and Napalm Death (both of which I've seen and are amazing) and blend classic pop samples with absolute rage. Unbelievably huge. Chat Pile powered through their best material in the same way a bulldozer would power through your home. Both acts go straight on to my must see recommendations._
 
 * Masters of Reality (support Earl of Hell)
 _So powerful I had many tears. I don't know what else to say. The show was a real journey from dark and creepy through some freeflowing exploration to a big bold resolution and finally some humour with a dark edge. Chris Goss and co kept nothing in reserve. Earl of Hell were better, tighter, bigger, ready for launch._
@@ -60,41 +66,39 @@ _Brant is always magical to me, and this was the best performance I have seen fr
 
 **In progress:**
 
-Been working on a track for months now (provisionally titled No Fly Zone) but it's not quite coming together right. I'm not sure how to get it over the line.
+I'm really happy with Drecks and we're going to go bigger and bolder with the sequel!
 
 ![Studio.](/public/img/studio.jpeg)
 *Studio space.*
-
-Relocating the studio seems to be helping with the creativity.
 
 ***
 
 **Things on rotation at the moment:**
 
+* Link Wray
+* Ikonika
 * underscores
 * Common
 * Kenny Beats
-* Millionaire - Paradisiac
-* Kruder & Dorfmeister
-* Funkadelic
 
 **These artists should be on your playlists:**
 
-* Divide and Dissolve
 * Have a Nice Life
 * Keys to the Astral Gates and Mystic Doors
 * Tanya Tagaq
-* Big Brave
+* Snake River Conspiracy
+* Bongzilla
 
 **Upcoming gigs:**
 
 * Have a Nice Life
 * Queens of the Stone Age
+* Divide and Dissolve
 * The Beta Band
+* Earth
 
 **Spin these:**
 
-* FKA twigs - EUSEXUA _(It's obviously good, but it's not new or interesting. I wish I was young enough to be impressed by this, but I'm not so I'm not. It's a nice reminder that William Orbit exists and you can just listen to his work.)_
 * Vic du Monte's Idiot Prayer - Prey for the City _(So much to unpick here, you tell me)_
 * Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
 * 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_
@@ -103,6 +107,11 @@ Relocating the studio seems to be helping with the creativity.
 * Earl Sweatshirt - Doris _(I honestly never tire of this record, sounds even better on the heavyweight vinyl. Earl picks apart his relationships with his family, his friends, his culture, his fanbase, society, all for our mere entertainment. Falling apart never sounded so perfect.)_
 * Brant Bjork and the Operators _(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and bouncy pop choruses? My all time favourite.)_
 * Gaz Coombes - Turn the Car Around _(Full of charm.)_
+
+**Bin these:**
+
+* FKA twigs - EUSEXUA _(I wish I was young enough to be impressed by this, but I'm not so I'm not. William Orbit exists and you can just listen to his work.)_
+* Pantera - _(I don't know why I keep hearing people playing Pantera. These records have no redeeming value. It's okay to admit you were wrong.)_
 
 ![Guitars.](/public/img/guits.jpeg)
 *Guitars.*
