@@ -10,7 +10,7 @@ We have made a new album. You can hear and buy it on Bandcamp [here](https://fig
 ![Instrumental Driving Music for Drecks](/public/img/inst.webp)
 *The Fighting Mongooses — Instrumental Driving Music for Drecks.*
 
-We've pretty much used all the toys on this one. There's some samples and some layers of ambient noise we recorded. I think I play each of the guitars on the rack at some point. There's some upright bass and plenty of synth and also both physical and software drum machines. Most of the effects are hardware units, right down to the tape simulation and pitch shifting.
+We've pretty much used all the toys on this one.<!--excerpt-end--> There's some samples and some layers of ambient noise we recorded. I think I play each of the guitars on the rack at some point. There's some upright bass and plenty of synth and also both physical and software drum machines. Most of the effects are hardware units, right down to the tape simulation and pitch shifting.
 
 There are specific moments which are nods to many of our favourite artists. There are some chords on one track which are a tip of the hat to Mark Lanegan, specifically the Scraps at Midnight record. There's a song with a rhythm that comes from Brant Bjork and the Operators. A couple of seconds of drums are a wink at Hag Me by the Melvins. Like everything of this type, it's a stack of things we have learned from other records. HIRS and jpegMafia and 100 Gecs and Mr Oizo and Troy Van Leeuwen's Enemy showed us the way too.
 

@@ -14,6 +14,13 @@ I no longer use Instagram due to Meta's decision to become a safe space for nazi
 
 ***
 
+![green](/public/img/prescott-25-0.jpeg)
+*green*
+
+see the [wheels page](/wheels/).
+
+***
+
 ### Painting
 
 Some silly stuff
