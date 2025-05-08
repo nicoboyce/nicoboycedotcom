@@ -17,7 +17,10 @@ Modern phones are effectively a general purpose computing device which is portab
 
 The Apple iPhone lineage really follows on from the iPod, which was the most successful of a flood of devices which put a little hard drive into a minidisk player. If you don't remember minidisks, they basically combined the 3.5" floppy disk with the compact disk. You could put any kind of data on them, but they were mostly used for audio, at least outside of Japan. Sony pushed them as a format for a bit, even doing the odd VAIO laptop with the appropriate drive.
 
-As I recall the Sony minidisk players used some weird Sony audio file format which didn't catch on, so Apple did the same with the iPod of course. Apple didn't have the audio chops of their rivals but they won this battle simply by buying literally all of the small size hard drives on the market. No one can compete when you have the whole supply! There was a brand Cowon who made good stuff but they had to use 2.5" drives, which weren't great to pocket. Probably smaller than today's phones though!
+![Vaio.](/public/img/Sony_VAIO_P.jpg)
+*Sony Vaio thing. Some Sony things had minidisk drives.*
+
+As I recall the Sony minidisk players used some weird Sony audio file format (atrac3?) which didn't catch on, so Apple did the same with the iPod of course. Apple didn't have the audio chops of their rivals but they won this battle simply by buying literally all of the small size hard drives on the market. No one can compete when you have the whole supply! There was a brand Cowon who made good stuff but they had to use 2.5" drives, which weren't great to pocket.
 
 I can't directly blame Apple but they took something which was important to a lot of people and burned it down virtually overnight. People under 30 won't understand how music enthusiasts would hunt for years for particular recordings. I am 36 so only really got to participate right at the tail end. You would read about the new releases in NME or Kerrang and maybe you could buy one or two. You'd have a list, perhaps mental or perhaps actually on paper, of the music you were hoping to find some day. When I was in a town I didn't know, I'd find their weirdest record stores to trawl through the racks hunting for gold.
 
@@ -31,4 +34,11 @@ Now you can listen to pretty much anything, pretty much anywhere. You can enjoy 
 
 No seriously though. Do you remember when you first saw a phone that could take a photo? I do. Some rich kid at school was flaunting it, basking in the magnificence of 640x480. Now we all have that, plus they can do daft things like crop out your ex with "ai". Great.
 
-I do have one of the photos I took with my first camera phone. I have it because I put it on Wikipedia at some point. I don't have any other photos from that time, though I remember taking plenty. Friends who are no longer with us. Places I'll probably never go again.
+![Brant Bjork.](/public/img/BrantBjork.jpg)
+*Brant Bjork, twenty years ago.*
+
+I do have one of the photos I took with my first camera phone. I have it because I put it on Wikipedia at some point. You just looked at it. I don't have any other photos from that time, though I remember taking plenty. Friends who are no longer with us. Places I'll probably never go again.
+
+### So what?
+
+It's clear that these devices have given us a lot of capability. Many people literally don't remember that it was possible to not know something and have to remember what the question was until you were somewhere with the appropriate book or a person you could ask. You could get really lost and have to solve that problem yourself. You could be travelling and 
