@@ -303,7 +303,7 @@ p img {
   width: 100%;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 1320px) {
   p img {
   display: block;
   max-width:800px;
