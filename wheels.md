@@ -45,9 +45,6 @@ Here you'll find car and bike related nonsense. I'll add new things to the top, 
 ![tyres](/public/img/cars/wheel-00011.jpeg)
 *tyres*
 
-![tent](/public/img/cars/wheel-00012.jpeg)
-*tent*
-
 ![fezza](/public/img/cars/wheel-00013.jpeg)
 *fezza*
 
@@ -78,59 +75,59 @@ Here you'll find car and bike related nonsense. I'll add new things to the top, 
 ![mog](/public/img/cars/wheel-00022.jpeg)
 *mog*
 
-![23](/public/img/cars/wheel-00023.jpeg)
-*23*
+![brute](/public/img/cars/wheel-00023.jpeg)
+*brute*
 
-![24](/public/img/cars/wheel-00024.jpeg)
-*24*
+![pop](/public/img/cars/wheel-00024.jpeg)
+*pop*
 
-![25](/public/img/cars/wheel-00025.jpeg)
-*25*
+![route 66](/public/img/cars/wheel-00025.jpeg)
+*route 66*
 
-![26](/public/img/cars/wheel-00026.jpeg)
-*26*
+![cortina](/public/img/cars/wheel-00026.jpeg)
+*cortina*
 
-![27](/public/img/cars/wheel-00027.jpeg)
-*27*
+![rosie](/public/img/cars/wheel-00027.jpeg)
+*rosie*
 
-![28](/public/img/cars/wheel-00028.jpeg)
-*28*
+![evo](/public/img/cars/wheel-00028.jpeg)
+*evo*
 
-![29](/public/img/cars/wheel-00029.jpeg)
-*29*
+![rocket](/public/img/cars/wheel-00029.jpeg)
+*rocket*
 
-![30](/public/img/cars/wheel-00030.jpeg)
-*30*
+![deployment](/public/img/cars/wheel-00030.jpeg)
+*deployment*
 
-![31](/public/img/cars/wheel-00031.jpeg)
-*31*
+![jdm](/public/img/cars/wheel-00031.jpeg)
+*jdm*
 
-![32](/public/img/cars/wheel-00032.jpeg)
-*32*
+![pop](/public/img/cars/wheel-00032.jpeg)
+*pop*
 
-![33](/public/img/cars/wheel-00033.jpeg)
-*33*
+![yellow fire](/public/img/cars/wheel-00033.jpeg)
+*yellow fire*
 
-![34](/public/img/cars/wheel-00034.jpeg)
-*34*
+![tent](/public/img/cars/wheel-00034.jpeg)
+*tent*
 
-![35](/public/img/cars/wheel-00035.jpeg)
-*35*
+![launch](/public/img/cars/wheel-00035.jpeg)
+*launch*
 
-![36](/public/img/cars/wheel-00036.jpeg)
-*36*
+![Tingram](/public/img/cars/wheel-00036.jpeg)
+*Tingram*
 
-![37](/public/img/cars/wheel-00037.jpeg)
-*37*
+![it's on](/public/img/cars/wheel-00037.jpeg)
+*it's on*
 
-![38](/public/img/cars/wheel-00038.jpeg)
-*38*
+![turbo](/public/img/cars/wheel-00038.jpeg)
+*turbo*
 
-![39](/public/img/cars/wheel-00039.jpeg)
-*39*
+![torslander](/public/img/cars/wheel-00039.jpeg)
+*torslander*
 
-![40](/public/img/cars/wheel-00040.jpeg)
-*40*
+![after you](/public/img/cars/wheel-00040.jpeg)
+*after you*
 
 ![action](/public/img/cars/wheel-00041.jpeg)
 *action*
