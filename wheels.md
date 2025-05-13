@@ -12,38 +12,38 @@ Here you'll find car and bike related nonsense. I'll add new things to the top, 
 
 ### Photo dump, no logic
 
-![1](/public/img/cars/wheel-00001.jpeg)
-*1*
+![Plato](/public/img/cars/wheel-00001.jpeg)
+*Petrol with Plato*
 
-![2](/public/img/cars/wheel-00002.jpeg)
-*2*
+![Lambo](/public/img/cars/wheel-00002.jpeg)
+*Limited edition Lambo*
 
-![3](/public/img/cars/wheel-00003.jpeg)
-*3*
+![Tidworth](/public/img/cars/wheel-00003.jpeg)
+*on the tank course*
 
-![4](/public/img/cars/wheel-00004.jpeg)
-*4*
+![f4](/public/img/cars/wheel-00004.jpeg)
+*F4 rivals*
 
-![5](/public/img/cars/wheel-00005.jpeg)
-*5*
+![Mac](/public/img/cars/wheel-00005.jpeg)
+*Michael Andretti McLaren*
 
-![6](/public/img/cars/wheel-00006.jpeg)
-*6*
+![Marlborough](/public/img/cars/wheel-00006.jpeg)
+*Marlborough*
 
-![7](/public/img/cars/wheel-00007.jpeg)
-*7*
+![Thruxton test day](/public/img/cars/wheel-00007.jpeg)
+*Thruxton test day*
 
-![8](/public/img/cars/wheel-00008.jpeg)
-*8*
+![purple NA](/public/img/cars/wheel-00008.jpeg)
+*purple NA*
 
-![9](/public/img/cars/wheel-00009.jpeg)
-*9*
+![Alfa](/public/img/cars/wheel-00009.jpeg)
+*Breakfast club Alfa*
 
-![10](/public/img/cars/wheel-00010.jpeg)
-*10*
+![NB drifter](/public/img/cars/wheel-00010.jpeg)
+*NB drifter*
 
-![11](/public/img/cars/wheel-00011.jpeg)
-*11*
+![tyres](/public/img/cars/wheel-00011.jpeg)
+*tyres*
 
 ![12](/public/img/cars/wheel-00012.jpeg)
 *12*
