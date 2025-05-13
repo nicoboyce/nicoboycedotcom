@@ -12,25 +12,25 @@ Here you'll find car and bike related nonsense. Sometimes I might write a rant a
 
 ### Prescott, BHC round 1
 
-![green](/public/img/prescott-25-0.jpeg)
+![green](/public/img/cars/prescott-25-0.jpeg)
 *green*
 
-![gold](/public/img/prescott-25-1.jpeg)
+![gold](/public/img/cars/prescott-25-1.jpeg)
 *gold*
 
-![blue](/public/img/prescott-25-2.jpeg)
+![blue](/public/img/cars/prescott-25-2.jpeg)
 *blue*
 
-![orange](/public/img/prescott-25-3.jpeg)
+![orange](/public/img/cars/prescott-25-3.jpeg)
 *orange*
 
-![red](/public/img/prescott-25-4.jpeg)
+![red](/public/img/cars/prescott-25-4.jpeg)
 *red*
 
-![chrome](/public/img/prescott-25-5.jpeg)
+![chrome](/public/img/cars/prescott-25-5.jpeg)
 *chrome*
 
-![black](/public/img/prescott-25-7.jpeg)
+![black](/public/img/cars/prescott-25-7.jpeg)
 *black*
 
 Top day out.
@@ -169,25 +169,25 @@ I don't know what's a 575 or a 620 or an Artura (why does that one get a name?) 
 
 ### Lydden Hill snaps
 
-![Pack.](/public/img/lh-pack.jpeg)
+![Pack.](/public/img/cars/lh-pack.jpeg)
 *Pack scrap.*
 
-![Doran.](/public/img/lh-doran.jpeg)
+![Doran.](/public/img/cars/lh-doran.jpeg)
 *Doran.*
 
-![Bennett.](/public/img/lh-bennett.jpeg)
+![Bennett.](/public/img/cars/lh-bennett.jpeg)
 *Bennett.*
 
-![Crosscar.](/public/img/lh-xcar.jpeg)
+![Crosscar.](/public/img/cars/lh-xcar.jpeg)
 *Crosscar.*
 
-![Ford.](/public/img/lh-ford.jpeg)
+![Ford.](/public/img/cars/lh-ford.jpeg)
 *Ford.*
 
-![Launch.](/public/img/lh-bennett-launch.jpeg)
+![Launch.](/public/img/cars/lh-bennett-launch.jpeg)
 *Launch.*
 
-![Roof.](/public/img/lh-roof.jpeg)
+![Roof.](/public/img/cars/lh-roof.jpeg)
 *Roof.*
 
 The fireworks were way better than most displays where they are the main event. Of course at Lydden it's all about the horsepower. Top class RX cars will beat an F1 car off the line up to about 100mph. They can race on any surface and take jumps you wouldn't believe possible. The UK is the birthplace of rallycross and it's a great format for families and people new to motorsport. Get to Lydden Hill when you can. Also make sure you get some of that mayo from the paddock cafe when you're there. [Watch the final on the youtube](https://www.youtube.com/watch?v=l3b7TWoOxwc)
@@ -204,16 +204,16 @@ Forget team Max or team Lando. My driver of 2024 has to be Connor Zilisch. Youtu
 
 Got myself a birthday present.
 
-![Trailer.](/public/img/bmw1.jpeg)
+![Trailer.](/public/img/cars/bmw1.jpeg)
 *Hired a trailer.*
 
-![Fleet.](/public/img/bmw2.jpeg)
+![Fleet.](/public/img/cars/bmw2.jpeg)
 *At Fleet, paying our respects to Scott Mills.*
 
-![Home.](/public/img/bmw3.jpeg)
+![Home.](/public/img/cars/bmw3.jpeg)
 *BMW at home.*
 
-![Victor drives.](/public/img/bmw4.jpeg)
+![Victor drives.](/public/img/cars/bmw4.jpeg)
 *Victor gets comfortable.*
 
 Plenty of work needed to get it all ready for action but isn't it a great piece of kit?
@@ -229,43 +229,43 @@ We looked like this
 
 Here are some of the cars:
 
-![Abarth.](/public/img/prescott-abarth.jpeg)
+![Abarth.](/public/img/cars/prescott-abarth.jpeg)
 
-![Bugatti.](/public/img/prescott-bugatti.jpeg)
+![Bugatti.](/public/img/cars/prescott-bugatti.jpeg)
 
-![The hill.](/public/img/prescott-hill.jpeg)
+![The hill.](/public/img/cars/prescott-hill.jpeg)
 
-![Prescott.](/public/img/prescott-1.jpeg)
+![Prescott.](/public/img/cars/prescott-1.jpeg)
 
-![Prescott again.](/public/img/prescott-2.jpeg)
+![Prescott again.](/public/img/cars/prescott-2.jpeg)
 
-![Cigar.](/public/img/prescott-cigar.jpeg)
+![Cigar.](/public/img/cars/prescott-cigar.jpeg)
 
-![Frogeye.](/public/img/prescott-frogeye.jpeg)
+![Frogeye.](/public/img/cars/prescott-frogeye.jpeg)
 
-![Glow.](/public/img/prescott-glow.jpeg)
+![Glow.](/public/img/cars/prescott-glow.jpeg)
 
-![Hill.](/public/img/prescott-hill.jpeg)
+![Hill.](/public/img/cars/prescott-hill.jpeg)
 
-![Legend.](/public/img/prescott-legend.jpeg)
+![Legend.](/public/img/cars/prescott-legend.jpeg)
 
-![Mitsubishi.](/public/img/prescott-mitsubishi.jpeg)
+![Mitsubishi.](/public/img/cars/prescott-mitsubishi.jpeg)
 
-![Paddock.](/public/img/prescott-paddock.jpeg)
+![Paddock.](/public/img/cars/prescott-paddock.jpeg)
 
-![Porsche.](/public/img/prescott-porsche.jpeg)
+![Porsche.](/public/img/cars/prescott-porsche.jpeg)
 
-![Radical.](/public/img/prescott-radical.jpeg)
+![Radical.](/public/img/cars/prescott-radical.jpeg)
 
-![Rapid.](/public/img/prescott-rapid.jpeg)
+![Rapid.](/public/img/cars/prescott-rapid.jpeg)
 
-![Semi-circle.](/public/img/prescott-semicircle.jpeg)
+![Semi-circle.](/public/img/cars/prescott-semicircle.jpeg)
 
-![Seven.](/public/img/prescott-seven.jpeg)
+![Seven.](/public/img/cars/prescott-seven.jpeg)
 
-![Subarus.](/public/img/prescott-subarus.jpeg)
+![Subarus.](/public/img/cars/prescott-subarus.jpeg)
 
-![Traction.](/public/img/prescott-traction.jpeg)
+![Traction.](/public/img/cars/prescott-traction.jpeg)
 
 Can you spot which were taken with the Nikon D3300 and which were taken with the Fujifilm X-H2?
 
@@ -275,18 +275,18 @@ It was one of the best motorsport events I've been to, a really great day out. L
 
 Naples had a weird car thing going on. I loved seeing the Lancia and Dacia stuff that never made it to the UK and the splutter of air cooled Fiats is pleasing to me.
 
-![Fiat.](/public/img/126.jpeg)
+![Fiat.](/public/img/cars/126.jpeg)
 *In Naples you leave your door open and your handbrake off. If someone is determined to enter or move your car, just let them.*
 
 I've got to get me something like this.
 
 ***
 
-![Cars.](/public/img/cargrid1.jpeg)
+![Cars.](/public/img/cars/cargrid1.jpeg)
 
-![Cars.](/public/img/cargrid2.jpeg)
+![Cars.](/public/img/cars/cargrid2.jpeg)
 
-![Cars.](/public/img/cargrid3.jpeg)
+![Cars.](/public/img/cars/cargrid3.jpeg)
 
-![More cars.](/public/img/cargrid4.jpeg)
+![More cars.](/public/img/cars/cargrid4.jpeg)
 
