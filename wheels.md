@@ -6,7 +6,28 @@ title: Automotive, motorsport, sometimes biking and skating and such
 
 # This is how we roll
 
-Here you'll find car and bike related nonsense. Sometimes I might write a rant about F1. Other times there could be a dump of car show snaps. I'll add new things to the top, so if you check back you'll see updates first.
+Here you'll find car and bike related nonsense. I'll add new things to the top, so if you check back you'll see updates first.
+
+***
+
+### Photo dump, no logic
+
+![1](/public/img/cars/wheel-00001.jpeg)
+*1*
+
+![2](/public/img/cars/wheel-00002.jpeg)
+*2*
+
+![3](/public/img/cars/wheel-00003.jpeg)
+*3*
+
+![4](/public/img/cars/wheel-00004.jpeg)
+*4*
+
+![5](/public/img/cars/wheel-00005.jpeg)
+*5*
+
+
 
 ***
 
