@@ -66,7 +66,7 @@ div {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: #1C0B31;
+  color: #0e0518;
   background-color: #202020;
 }
 @media (min-width: 48em) {
@@ -85,7 +85,7 @@ div {
 
 /* Sidebar links */
 .sidebar a {
-  color: #1C0B31;
+  color: #0e0518;
 }
 @media (min-width: 64em) {
   .lead {
