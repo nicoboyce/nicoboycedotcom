@@ -28,7 +28,7 @@ Previous releases just said "Nico Boyce" on the cover. I'm okay with the name Ni
 <img src="/public/img/nicologo.svg" alt="Nico Beastie Boyce logo." width="600" style="filter: hue-rotate(90deg) brightness(2);"/>
 *My name is Nico.*
 
-There's some talk on the Nico logo [here](https://nicoboyce.com/2024/05/25/where-did-the-nico-logo-design-originate/) and I should do the same about Deltastring!
+There's some talk on the Nico logo [here](https://nicoboyce.com/2024/05/25/where-did-the-nico-logo-design-originate/) and the Deltastring logo [here](https://www.linkedin.com/posts/nicoboyce_friends-always-ask-me-about-the-deltastring-activity-7328767237085958144-eOOF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAByZVBwB4YyqAQTKe01S1QkUfCQwMdIk3o4).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ya4DuoPbVjc?si=8Qr-u-5hUtND54LS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
