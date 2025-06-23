@@ -16,8 +16,8 @@ If you're looking to be entertained by cars driven fast, here's what I enjoy.
 
 #### In the UK
 * [British Hillclimb](https://www.youtube.com/@HillClimbTV) (see you at Prescott!)
-* [British Rallycross](https://www.youtube.com/@5NationsBRX) especially the buggies at Lydden Hill, always fun
-* [VSCC Lakeland Trial](https://www.youtube.com/watch?v=gaJu3YiBYVc) and honestly any vintage hillclimbing is great
+* [British Rallycross](https://www.youtube.com/@5NationsBRX) especially the buggies at Lydden Hill and the 2wd retro cars, always fun
+* [VSCC Lakeland Trial](https://www.youtube.com/watch?v=gaJu3YiBYVc) and honestly any vintage hillclimbs/trials/sprints are excellent
 * [750 Motor Club](https://www.youtube.com/@750MotorClubTV)
 * [BTCC](https://www.youtube.com/@OfficialBTCC) but I'm sure you know that
 * [BRSCC](https://www.youtube.com/@TheBRSCC/streams) which is always a great value day out
@@ -30,14 +30,6 @@ If you're looking to be entertained by cars driven fast, here's what I enjoy.
 * [Formula Offroad Iceland](https://www.youtube.com/@G7Media/videos), also broadcast by [Jakob Cecil](https://www.youtube.com/user/jakobcecil), is just nuts and commentator Kristian is fantastic.
 
 Let me know what I have missed, via [hello@nicoboyce.com](mailto:hello@nicoboyce.com)
-
-***
-
-### decision time, brown
-
-Lando has more than double the grand prix experience of Oscar but fewer wins. I like Lando. I saw him race at Brands Hatch in the Ginetta Juniors a few years back. He's a quick boy and it doesn't hurt that he has boy band looks and good marketing people making the most of that. He needs to spend some of that cash getting his head together.
-
-Until Lando sorts out the mental stuff there's no chance they'll be engraving his name on the fancy pot at the end of the year. Mac need to throw their full support behind Oscar and kill off the prospect of a Red Bull resurgence.
 
 ***
 
@@ -285,6 +277,14 @@ Until Lando sorts out the mental stuff there's no chance they'll be engraving hi
 
 ![peeking]](/public/img/cars/wheel-00083.jpeg)
 *peeking*
+
+***
+
+### decision time, brown
+
+Lando has more than double the grand prix experience of Oscar but fewer wins. I like Lando. I saw him race at Brands Hatch in the Ginetta Juniors a few years back. He's a quick boy and it doesn't hurt that he has boy band looks and good marketing people making the most of that. He needs to spend some of that cash getting his head together.
+
+Until Lando sorts out the mental stuff there's no chance they'll be engraving his name on the fancy pot at the end of the year. Mac need to throw their full support behind Oscar and kill off the prospect of a Red Bull resurgence.
 
 ***
 
