@@ -8,6 +8,12 @@ title: What's happening now?
 
 *What is this about? This is a now page as defined [here](https://nownownow.com/about) which exists to explain what I'm up to lately. If you are reading this and have your own now page I'd be interested to see how you do it!*
 
+### June, July
+
+We bought a house! We did a bunch of other things too but mainly we bought a house!
+
+***
+
 ### May
 
 We saw Chat Pile and Hirs and also The Bug and Big Brave and also Self Esteem.. see [sounds](/music/). We went to Prescott and things were speedy.. see the [wheels page](/wheels/).
