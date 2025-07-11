@@ -9,7 +9,9 @@ I've been thinking about this meeting which took place earlier in the week. I th
 
 Hey Christian, thanks for coming in. Did they offer you a fizzy drink? Okay great<!--excerpt-end-->, let's jump into it.
 
-We just came off of a conference call with Mercedes lawyers and Max Verstappen's management and they have triggered an exit clause. He'll be leaving at the end of the season. He's the one with the number 1 on his car, is that right? Well anyway it seems we had a big release fee in there so that'll help balance the books. In the mean time you can look at where you're putting each of your drivers. I'm sure you've planned for this eventuality so we just need to stick to that process. Just like your ongoing court case! Oh sorry, yes, superinjunction, I'll shush. Scratch that from the minutes!
+We just came off of a conference call with Mercedes lawyers and Max Verstappen's management and they have triggered an exit clause. I couldn't hear too well, the signal isn't great from the harbour in Sardinia. He'll be leaving at the end of the season. He's the one with the number 1 on his car, is that right? 
+
+Well anyway it seems we had a big release fee in there so that'll help balance the books. In the mean time you can look at where you're putting each of your drivers. I'm sure you've planned for this eventuality so we just need to stick to that process. Just like your ongoing court case! Oh sorry, yes, superinjunction, I'll shush. Scratch that from the minutes!
 
 Oh you're not sure what the plan is now? That's okay, I was looking over the notes from last year's general meeting and you had that Australian chap, right? The one with the big grin and somehow got a win in a McLaren. That team seemed pretty useless last time I came to a race!
 
