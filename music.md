@@ -19,9 +19,6 @@ Read about the release [here](https://nicoboyce.com/2025/04/22/releasing-music-f
 
 Put this in your ears and be happy (happiness optional)
 
-![Toys.](/public/img/studio.jpg)
-*Toys.*
-
 You can hear me on [Bandcamp](https://fightingmongooses.bandcamp.com/) or on [YouTube](https://www.youtube.com/channel/UCVFMIbN6jTkiU9d7U5jspYg) or [Tidal](https://tidal.com/browse/artist/22802151?u) but I don't recommend Spotify and I'll be pulling my tracks from there before too long. I think you can find me on Amazon or Apple or wherever else you may be but I haven't checked.
 
 <iframe class="no-mob" style="border: 0; width: 519px; height: 611px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe><iframe class="on-mob" style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe>
@@ -103,6 +100,8 @@ I'm really happy with Drecks and we're going to go bigger and bolder with the se
 
 **Spin these:**
 
+* Scratch Acid - Berserker _(Post hardcore horror noise. Equal parts SSD and Sutch.)_
+* PinkPantheress - Fancy That _(Genuinely exciting Brit-garage nineties pop collision.)_
 * Vic du Monte's Idiot Prayer - Prey for the City _(So much to unpick here, you tell me)_
 * Charli XCX - Brat _(what more is there to say, it's the pop album everyone can love and relate to)_
 * 100 Gecs _(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don't match)_

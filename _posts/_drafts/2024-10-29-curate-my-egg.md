@@ -19,5 +19,3 @@ Do you use Instagram? I opened up Instagram the other day and there were literal
 
 Instagram is a weird case. Despite sounding like Deliveroo for goods which are consumed in small quantities, Zuckerberg spent a billion dollars buying it. You remember what Instagram started as? It was an image host for Twitter, like Imgur was built by Reddit users. A billion is really a lot.
 
-I'm not here to rehash the arguments of [Cory Doctorow](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys) of [Ed Zitron](https://www.wheresyoured.at/make-fun-of-them/) or [Maciej Ceglowski](https://idlewords.com/talks/) because you can and should just read them.
-
