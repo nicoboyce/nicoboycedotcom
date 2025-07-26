@@ -7,7 +7,7 @@
           <img src="/public/img/nicologo.svg" alt="{{ site.title }}" width="100%" class="marg" />
         </a>
       </h1>
-      <!---<p class="lead marg">{{ site.description }}</p>--->
+      <p class="lead marg">><a {% if page.url=="/about/" %}href="#top" class="active" {% else %}href="/about/" {% endif %}>{{ site.description }}</a></p>
     </div>
 
     {% include nav.html %}
