@@ -13,6 +13,11 @@ New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it
 
 <iframe style="border: 0; width: 400px; height: 737px;" src="https://bandcamp.com/EmbeddedPlayer/album=2664333807/size=large/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/album/instrumental-driving-music-for-drecks">instrumental driving music for drecks by The Fighting Mongooses</a></iframe>
 
+It is the first release on my new label **hyperdoom**
+
+![hyperdoom](/public/img/hyperdoom_logo.svg)
+*hyperdoom*
+
 ***
 
 ## Things I do

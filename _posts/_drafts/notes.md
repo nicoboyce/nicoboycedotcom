@@ -16,3 +16,15 @@ That dial is static today. It's not that things aren't happening. It's just that
 What would today's da Vinci be doing? Same thing we're all doing. Sitting here with Claude Code open (or some other flavour of LLM) trying to coax it into producing something useful, most likely some other LLM frontend lead generation tool or adware. Literally nothing else is economically viable now!
 
 I'm not here to rehash the arguments of [Cory Doctorow](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys) of [Ed Zitron](https://www.wheresyoured.at/make-fun-of-them/) or [Maciej Ceglowski](https://idlewords.com/talks/) because you can and should just read them. I think we do have a consensus that these things are bad and making the world worse, 
+
+
+
+
+
+
+---
+
+Today, everything is out of context.
+
+Stewart Lee https://www.stewartlee.co.uk/written_for_money/context-is-vital-thats-why-im-filming-everything-i-say-and-do-from-now-on/
+

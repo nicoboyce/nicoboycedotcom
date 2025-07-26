@@ -11,7 +11,7 @@ Everyone in the UK (okay, probably everyone everywhere) is full of opinions abou
 ![Britain, earlier.](/public/img/hole.jpg)
 *Britain, earlier.*
 
-British people grumble to each other about the weather because it's a safe topic for everyone to get a grouch in. Odiham, a small Hampshire town with a significant air force presence, recently went three weeks without direct sunlight. I know Odiham pretty well. There are residents who live dangerous lives<!--excerpt-end--> for you and I. We can forgive them for sticking to safe conversation.
+British people grumble to each other about the weather because it's a safe topic for everyone to get a grouch in. Odiham, a small Hampshire town with a significant air force presence, recently went three weeks without direct sunlight. I know Odiham pretty well. There are residents who live dangerous lives<!--excerpt-end--> for the safety of you and I. We can forgive them for sticking to risk-free conversation.
 
 ### British chat
 
