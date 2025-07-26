@@ -5,11 +5,22 @@ title: Nico Beastie Boyce — human person
 
 # Hello. I am Nico.
 
-This is a little website where I publish and discuss some of my creative projects. I have a company which does CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
+This is a little website where I publish and discuss my creative projects.
 
-Read my latest essay: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a> and check out my [now page](/now/). New photos live on the [snaps page](/snaps) or on my [pixelfed](https://pixelfed.social/beastie). New music chatter is [here](/music/) and car chat is [here](/wheels/).
+I have a company which does CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
+<a href="https://deltastring.com">
+![Deltastring](/public/img/ds-logo-trans-alt.svg)
+*Deltastring*
+</a>
 
-New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it.
+New and sexy:
+
+* My latest essay is here: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a>
+* My [now page](/now/) 
+* New photos live on the [snaps page](/snaps) or on my [pixelfed](https://pixelfed.social/beastie).
+* New music chatter is [here](/music/)
+* Car photos and chat is [here](/wheels/).
+* New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it.
 
 <iframe style="border: 0; width: 400px; height: 737px;" src="https://bandcamp.com/EmbeddedPlayer/album=2664333807/size=large/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/album/instrumental-driving-music-for-drecks">instrumental driving music for drecks by The Fighting Mongooses</a></iframe>
 
