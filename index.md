@@ -10,10 +10,9 @@ This is a little website where I publish and discuss my creative projects.
 I have a company which does CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
 <a href="https://deltastring.com">
 ![Deltastring](/public/img/ds-logo-trans-alt.svg)
-*Deltastring*
 </a>
 
-New and sexy:
+## New and sexy things
 
 * My latest essay is here: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a>
 * My [now page](/now/) 
@@ -29,7 +28,13 @@ It is the first release on my new label **hyperdoom**
 ![hyperdoom](/public/img/hyperdoom_logo.svg)
 *hyperdoom*
 
-***
+## Current projects
+
+* Make new house good
+* Beacon (software project for my company)
+* New music will be more hyper and more doom
+* I am painting a mushroom monster
+* Still refining the insane distortion effect, new and unique and different to everything ever before
 
 ## Things I do
 
