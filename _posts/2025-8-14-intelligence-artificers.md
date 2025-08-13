@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Intelligence artificers, or parlour tricks for non-human persons
-published: false
 ---
+
 *It's not a rambling rant, it's a weave. Every character is from my fingers, promise.*
 
 As I write this I am flicking through my photos from today at Museo della Seta Como. It's my sort of place. No one looks to me for sartorial expertise, but my preference is always to be around experts in domains which are distant from my comfort zones.
@@ -32,4 +32,9 @@ The AI nonsense is still defended. That's okay, even the idiot's bluffing contai
 
 I promise you this one thing. We will never run out of idiots.
 
-Douglas Adams discusses this in Dirk Gently. The teacher finds new lines of enquiry in the blank face of the student. Stupid is out there for free. Don't connect it to your customers or employees!
+Douglas Adams discusses this in Dirk Gently. The teacher finds new lines of enquiry in the blank face of the student. **Stupid is out there for free.** Don't connect it to your customers or employees!
+
+Let's not pretend being ignorant or wrong is valuable. This isn't Youtube! Being an expert is sexy. Know weird stuff and I'll buy us lunch to hear more about it.
+
+![Versace.](/public/img/versace.jpeg)
+*Versace.*
