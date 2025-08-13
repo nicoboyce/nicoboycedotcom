@@ -10,6 +10,12 @@ Here you'll find car and bike related nonsense. I'll add new things to the top, 
 
 ***
 
+### Zilisch Zilisch Zilisch
+
+Whatever this guy wants to drive, he will win.
+
+***
+
 ### Horner had it coming
 
 Ecclestone said (I'm paraphrasing) people will put up with you being difficult so long as you're winning, but the moment that ends then the knives are out.
@@ -287,7 +293,7 @@ Let me know what I have missed, via [hello@nicoboyce.com](mailto:hello@nicoboyce
 ![apex](/public/img/cars/wheel-00082.jpeg)
 *apex*
 
-![peeking]](/public/img/cars/wheel-00083.jpeg)
+![peeking](/public/img/cars/wheel-00083.jpeg)
 *peeking*
 
 ***
