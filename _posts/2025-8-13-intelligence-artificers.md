@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Intelligence artificers
+title: Intelligence artificers, or parlour tricks for non-human persons
 published: false
 ---
 *It's not a rambling rant, it's a weave. Every character is from my fingers, promise.*
@@ -22,9 +22,14 @@ I say this from experience. I can muddle through a chat about pretty much anythi
 
 If it's not the Zendesk API or Kyuss related bands or British rallycross or a few other very specific topics, I'm at best an enthusiastic amateur. If you're not an expert in the topic though, I probably sound pretty smart on low voltage analogue electronics or go strategy or straight 6 petrol BMW engines. That doesn't qualify me to fix your 3 series!
 
-It's worse with LLMs. Their whole game is sounding like they know more than they do. Ask it something you don't know and be impressed. Then ask it something you are an expert in and be horrified at the distortions and half-truths! How do you know when it's misleading you? When you are impressed!
+It's worse with LLMs. **The whole AI game is making bots sound like know more than they do.** Ask it something you don't know and be amazed. Then ask it something you are an expert in and be horrified at the distortions and half-truths! How do you know when it's misleading you? When you are impressed!
 
-That's okay though, even the idiot's bluffing contains information. 
+**A genuine expert doesn't downplay their limitations.** They find the level which best serves their audience. They throw in a few flourishes and hints at a broader and deeper understanding lurking just beyond this conversation! I left Como knowing there was more I didn't know about silk than I had previously thought.
+
+The AI nonsense is still defended. That's okay, even the idiot's bluffing contains information. You can learn from patiently explaining to someone who knows nothing!
 
 ## Idiots are not in short supply
 
+I promise you this one thing. We will never run out of idiots.
+
+Douglas Adams discusses this in Dirk Gently. The teacher finds new lines of enquiry in the blank face of the student. Stupid is out there for free. Don't connect it to your customers or employees!
