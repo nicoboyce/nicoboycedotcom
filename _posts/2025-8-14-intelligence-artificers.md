@@ -7,8 +7,8 @@ title: Intelligence artificers, or parlour tricks for non-human persons
 
 As I write this I am flicking through my photos from today at Museo della Seta Como. It's my sort of place. No one looks to me for sartorial expertise, but my preference is always to be around experts in domains which are distant from my comfort zones.
 
-![Versace.](/public/img/versace.jpeg)
-*Versace.*
+![Tools.](/public/img/tools.jpg)
+*Tools.*
 
 Abandoning my comfort zone brings me to the state of tech. You might know (or think you know) I'm a cynic<!--excerpt-end--> but it's (I'm?) never that simple.
 
