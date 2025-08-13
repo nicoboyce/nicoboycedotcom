@@ -28,6 +28,11 @@ It is the first release on my new label **hyperdoom**
 ![hyperdoom](/public/img/hyperdoom_logo.svg)
 *hyperdoom*
 
+or maybe
+
+![hyperdoom](/public/img/hyperdoom.gif)
+*hyperdoom*
+
 ## Current projects
 
 * Make new house good
