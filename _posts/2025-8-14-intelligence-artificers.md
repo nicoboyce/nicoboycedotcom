@@ -8,7 +8,7 @@ title: Intelligence artificers, or parlour tricks for non-human persons
 As I write this I am flicking through my photos from today at Museo della Seta Como. It's my sort of place. No one looks to me for sartorial expertise, but my preference is always to be around experts in domains which are distant from my comfort zones.
 
 ![Tools.](/public/img/tools.jpg)
-*Tools.*
+*Tools. These are from Milan silk workshops.*
 
 Abandoning my comfort zone brings me to the state of tech. You might know (or think you know) I'm a cynic<!--excerpt-end--> but it's (I'm?) never that simple.
 
@@ -37,4 +37,14 @@ Douglas Adams discusses this in Dirk Gently. The teacher finds new lines of enqu
 Let's not pretend being ignorant or wrong is valuable. This isn't Youtube! Being an expert is sexy. Know weird stuff and I'll buy us lunch to hear more about it.
 
 ![Versace.](/public/img/versace.jpeg)
-*Versace.*
+*Versace. Renowned expert.*
+
+The shortage is of people who really really know. Wisdom is always powerful.
+
+## Guessing doesn't beat knowing
+
+Plenty of people approach me showing off their ~~chatgpt wrapper~~ exciting new AI product and none of them can ever explain how it outperforms a deterministic engineering solution.
+
+Guessing and bluffing and rolling dice is sometimes going to work but it will never always work. The best outcome is to identify where good things occur and then set that part of the process. Create a feedback loop which iteratively improves.
+
+Of course, this process will always find itself persuing dead ends, iterating into a local maxima. The kind of problem you avoid if you have a human mind. 
