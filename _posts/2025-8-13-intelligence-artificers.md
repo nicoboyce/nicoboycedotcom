@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Intelligence artificers, or parlour tricks for non-human persons
+published: false
 ---
 
 *It's not a rambling rant, it's a weave. Every character is from my fingers, promise.*
