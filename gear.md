@@ -6,19 +6,19 @@ title: Creative Gear
 
 # What do I use for what?
 
-This is a question I am often asked across my creative pursuits. Gear isn't where the creativity comes from, but it sure does help draw it out.
+Gear isn't where the creativity comes from, but it sure does help draw it out.
 
 There is some crossover between different facets of my work, but I've broadly grouped things as feels logical.
 
 ### Photography and video
 
-I've recently switched systems to a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh? It isn't great for motorsport panning shots, whatever I do with the settings.
+I've recently switched systems to a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh? It isn't great for motorsport panning shots, whatever I do with the settings. We've now also got an X-S20 which does most of what the X-H2 can but the reduced size and weight are often useful.
 
-Sigma zooms and Viltrox primes are my choices in the Fuji system.
+Sigma zooms and Viltrox primes are my choices in the Fuji system. The little Fuji power zoom is handy to have.
 
-Previously I primarily used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. For now, it's skill and time rather than gear which limits my photography!
+Previously I used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. It's still skill and time rather than gear which limits my pictures.
 
-These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX NIKKOR 70-300mm f/4.5-6.3G ED VR and I'll also carry an 18-55mm. The telezoom has a Hoya rotating polarising filter on the end.
+These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX 70-300mm f/4.5-6.3G ED VR. Telezooms always have a Hoya rotating polarising filter on the end.
 
 ![Nico in the wild.](/public/img/snap.jpg)
 *Nico in the wild.*
@@ -29,7 +29,7 @@ I carry a USB-C SD card reader so I can quickly check images on my phone and sha
 
 Akaso action cameras are my choice for the price to performance ratio. Got a big bag of clips and straps and other accessories so we're ready for anything.
 
-I organise my images with Darktable and store them on a custom NAS.
+I organise my images with [Darktable](https://www.darktable.org/) and store them on a DIY NAS.
 
 ### Guitars, basses, amps, etc
 
@@ -48,16 +48,16 @@ The latest addition is a Squier offset. It's got a jazzmaster neck pickup and a 
 
 These go to an Epiphone Valve Special, a Blackstar HT-5H or sometimes the Genz for that grunt.
 
-Effects come and go but I wouldn't be without the ProCo Turbo Rat and a Big Muff with Tone Wicker. The Rat is an '80s one and I need to swap out 9v adaptor for a modern one. I've got a few weirdo pedals like a Gojira FX Ants fuzz and I've built a few of my own noiseboxes. Sometimes I'll break out the Whammy or the Akai Headrush E2.
+Effects come and go but I wouldn't be without the ProCo Turbo Rat and a Big Muff with Tone Wicker. The Rat is an '80s one and I need to swap out 9v adaptor for a modern one. I've got a few weirdo pedals like a Gojira FX Ants fuzz and I've built a few of my own noiseboxes. Sometimes I'll break out the Whammy or the Akai Headrush E2. Newest toy: [Neon Egg Planetarium](https://neonegg.com/).
 
 ### Audio recording
 
-I'm not an expert in microphones but I like the sound of my Audio Technica pair. I use an AT4040 and AT2035, one for warmth and one for clarity. I've bought and sold a few others but these two tick my boxes basically. They connect to a Focusrite Scarlett 18i8 and I use Logic on an M2 Macbook Pro for the most part, sometimes Audacity for demos.
+I'm not an expert in microphones but I like the sound of my Audio Technica pair. I use an AT4040 and AT2035, one for warmth and one for clarity. I've bought and sold a few others but these two tick my boxes basically. They connect to a Focusrite Scarlett 18i8 and I use Logic on an M2 Macbook Pro for the most part, sometimes Audacity for demos. I've also got a Rode shotgun mic and a Sennheiser lavalier.
 
 ![Recording gear in action.](/public/img/recording.jpeg)
 *Recording gear in action.*
 
-I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AGK K92 cans and mixing is on KRK 8s or a Beyerdynamics DT770 250 ohm set.
+I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AGK K92 cans and mixing is on KRK 8s or Beyerdynamics DT770 pro.
 
 ### Art supplies
 

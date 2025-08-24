@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Applying logic and maths in Monte Carlo. When to pit at the Monaco Grand Prix?
+date: 2024-05-26
+categories: wheels
 ---
 
 Formula One is a sport made almost entirely of maths, but the commentators rarely use the full toolkit of logic while talking viewers through the races. Maybe they think it won't be exciting to examine the competition in this way? Regardless, let's throw some logic at today's grand prix and see what bounces back.

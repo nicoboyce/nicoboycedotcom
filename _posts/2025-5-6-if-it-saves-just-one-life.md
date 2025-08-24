@@ -1,6 +1,8 @@
 ---
 layout: post
 title: If it saves just one life
+date: 2025-05-06
+categories: essays
 ---
 
 *There's talk about death and some might say I am insensitive here and if you don't fancy that then please read something which will make you happy*

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Enjoy the interval
+date: 2024-12-01
+categories: essays
 ---
 
 *having a break from big dumb power chords*
