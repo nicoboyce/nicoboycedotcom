@@ -5,9 +5,9 @@ title: Nico Beastie Boyce — human person
 
 # Hello. I am Nico.
 
-This is a little website where I publish and discuss my creative projects.
+This is my old fashioned personal website where I publish and discuss my creative things.
 
-I have a company which does CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
+I also do CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
 <a href="https://deltastring.com">
 ![Deltastring](/public/img/ds-logo-trans-alt.svg)
 </a>
@@ -17,7 +17,7 @@ I have a company which does CX consulting and Zendesk implementations and integr
 * My latest essay is here: {% assign post = site.posts.first %}<a href="{{ post.url }}">{{ post.title }}</a>
 * My [now page](/now/) 
 * New photos live on the [snaps page](/snaps) or on my [pixelfed](https://pixelfed.social/beastie).
-* New music chatter is [here](/music/)
+* Music chatter is [here](/music/)
 * Car photos and chat is [here](/wheels/).
 * New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it.
 
@@ -43,7 +43,7 @@ or maybe
 
 ## Things I do
 
-Automotive and motorsport writing and photography has been a part of my life since first hitching a ride to the British Motor Show in 2000. My lockdown podcast on car culture and sim racing was picked up by a leading e-sports organisation for a generous sum, and I have attended national level events in a professional capacity. For a while I had a collection of world records in Forza Horizon but lately I'm more into Dirt Rally 2.0. I wish they would update the Lydden Hill layout with the Nitro Rallycross changes! Motoring based stuff is [over here](/wheels/).
+Snapping and scribbling about cars has been a part of my life since first hitching a ride to the British Motor Show in 2000. My lockdown podcast on car culture and sim racing was picked up by a leading e-sports organisation. I've attended national level events in a professional capacity. For a while I had a collection of world records in Forza Horizon but lately I'm more into Dirt Rally 2.0. I wish they would update the Lydden Hill layout with the Nitro Rallycross changes! Motoring based stuff is [over here](/wheels/).
 
 ![Nico Beastie Boyce](/public/img/bike.jpeg)
 *Nico Beastie Boyce*

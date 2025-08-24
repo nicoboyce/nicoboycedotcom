@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Now we know.
+date: 2024-07-07
+categories: essays
 ---
 
 I've added a now page to the site. If you have a site a bit like this, maybe you should give it a go too?

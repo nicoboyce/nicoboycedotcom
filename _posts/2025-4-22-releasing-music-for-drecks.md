@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Releasing music for drecks
+date: 2025-04-22
+categories: essays
 ---
 
 *some decisions and why I made them*
