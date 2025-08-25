@@ -4,7 +4,7 @@ nav: About
 title: Who is this Nico anyway?
 ---
 
-# Nico Beastie Boyce, offline creator.
+# Nico Beastie Boyce, discontent creator.
 
 Nico Beastie Boyce is an engineer, artist, photographer, musician.
 
