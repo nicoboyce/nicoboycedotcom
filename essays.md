@@ -5,8 +5,7 @@ title: Essays
 ---
 
 <div class="posts">
-  {% assign essay_categories = "business,culture,philosophy,music,design,personal,meta,saas,history,criticism,theory,release,opinion,motorsport" | split: "," %}
-  {% assign essay_posts = site.posts | where_exp: "post", "essay_categories contains post.categories[0]" %}
+  {% assign essay_posts = site.posts | where: "categories", "essays" %}
   {% for post in essay_posts %}
   <div class="post">
     <h1 class="post-title">
