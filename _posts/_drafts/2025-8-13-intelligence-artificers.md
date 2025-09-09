@@ -6,7 +6,7 @@ published: false
 
 *It's not a rambling rant, it's a weave. Every character is from my fingers, promise.*
 
-As I write this I am flicking through my photos from today at Museo della Seta Como. It's my sort of place. No one looks to me for sartorial expertise, but my preference is always to be around experts in domains which are distant from my comfort zones.
+As I write this I am flicking through my photos from my day at Museo della Seta Como. It's my sort of place. No one looks to me for sartorial expertise, but my preference is always to be around experts in domains which are distant from my comfort zones.
 
 ![Tools.](/public/img/tools.jpg)
 *Tools. These are from Milan silk workshops.*
@@ -21,7 +21,7 @@ Here are my main complaints and you can email me your contributions/corrections/
 
 I say this from experience. I can muddle through a chat about pretty much anything but a true expert will see through me rapidly.
 
-If it's not the Zendesk API or Kyuss and related bands or British rallycross or a few other very specific topics, I'm at best an enthusiastic amateur. If you're not an expert in the topic though, I probably sound pretty smart on low voltage analogue electronics or go strategy or straight 6 petrol BMW engines. That doesn't qualify me to fix your 3 series!
+If it's not the Zendesk API or Kyuss or British rallycross or a few other very specific topics, I'm at best an enthusiastic amateur. If you're not an expert in the topic though, I probably sound pretty smart on low voltage analogue electronics or go strategy or straight 6 petrol BMW engines. That doesn't qualify me to fix your 3 series!
 
 It's worse with LLMs. **The whole AI game is about making bots sound like know more than they do.** Ask it something you don't know and be amazed. Then ask it something you are an expert in and be horrified at the distortions and half-truths! How do you know when it's misleading you? When you are impressed!
 
@@ -55,28 +55,4 @@ Of course, this process will always find itself persuing dead ends, iterating in
 Look at baking a cake. We don't chuck everything in a pot, shake it up, pop it in the oven. We start with the outcome in mind and follow the steps in a sensible order! So why do I see companies who should know better burning down existing methods?
 
 Sometimes you want to adjust tone of voice or some phrasing for customer specific reasons. You don't need AI for this! In Zendesk triggers you can use Liquid to have different voicings and select using user level tags.
-
----
-
-## ENDING OPTIONS (Claude's suggestions):
-
-**Option 1: Circle back to silk museum/real expertise**
-- Real expertise (silk artisans) vs artificial "intelligence" 
-- The value of genuine knowledge vs parlour tricks
-- Contrast Como craftsmen who know their domain deeply with AI that bluffs
-
-**Option 2: Call to action**
-- Why we should seek out real experts instead of feeding LLM hype
-- Encourage readers to find their own "silk museum" moments
-- Value deep knowledge over surface-level AI parlour tricks
-
-**Option 3: Personal reflection**
-- What you learned from abandoning comfort zones
-- How real expertise humbles you in a good way
-- AI doesn't give you that same humbling experience - it just flatters
-
-**Option 4: Broader implications**
-- What happens to society when we replace experts with convincing bluffers
-- The danger of losing institutional knowledge to algorithmic guesswork
-- Why we need more silk museums, fewer chatbots
 
