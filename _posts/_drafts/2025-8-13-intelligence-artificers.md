@@ -56,3 +56,27 @@ Look at baking a cake. We don't chuck everything in a pot, shake it up, pop it i
 
 Sometimes you want to adjust tone of voice or some phrasing for customer specific reasons. You don't need AI for this! In Zendesk triggers you can use Liquid to have different voicings and select using user level tags.
 
+---
+
+## ENDING OPTIONS (Claude's suggestions):
+
+**Option 1: Circle back to silk museum/real expertise**
+- Real expertise (silk artisans) vs artificial "intelligence" 
+- The value of genuine knowledge vs parlour tricks
+- Contrast Como craftsmen who know their domain deeply with AI that bluffs
+
+**Option 2: Call to action**
+- Why we should seek out real experts instead of feeding LLM hype
+- Encourage readers to find their own "silk museum" moments
+- Value deep knowledge over surface-level AI parlour tricks
+
+**Option 3: Personal reflection**
+- What you learned from abandoning comfort zones
+- How real expertise humbles you in a good way
+- AI doesn't give you that same humbling experience - it just flatters
+
+**Option 4: Broader implications**
+- What happens to society when we replace experts with convincing bluffers
+- The danger of losing institutional knowledge to algorithmic guesswork
+- Why we need more silk museums, fewer chatbots
+
