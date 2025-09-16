@@ -28,3 +28,7 @@ Today, everything is out of context.
 
 Stewart Lee https://www.stewartlee.co.uk/written_for_money/context-is-vital-thats-why-im-filming-everything-i-say-and-do-from-now-on/
 
+
+
+
+Autumn is here and so it's time for Apple to increment their version numbers. This year they have mixed it up by announcing 26 as the follow-up to 15. 
