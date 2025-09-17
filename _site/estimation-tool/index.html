@@ -250,7 +250,7 @@ Latest update: 17 Sep 2025
   </div>
 
   <div id="game-controls">
-    <button id="new-challenge" style="display:none;">Next Challenge</button>
+    <!-- Auto-advance, no manual next button needed -->
   </div>
 </div>
 
@@ -337,6 +337,11 @@ Latest update: 17 Sep 2025
 
 .choice-btn.incorrect {
   background: #8b2d2d;
+}
+
+.choice-btn.very-bad {
+  background: #4a1515;
+  border: 3px solid #ff0000;
 }
 
 #estimation-game button:not(.choice-btn) {

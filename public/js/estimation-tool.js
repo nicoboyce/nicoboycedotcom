@@ -7,6 +7,7 @@ class PirateEstimationGame {
         this.timer = null;
         this.challengeNumber = 0;
         this.choices = [];
+        this.timerPaused = false;
 
         this.setupEventListeners();
         this.showWelcomeMessage();
@@ -14,7 +15,6 @@ class PirateEstimationGame {
 
     setupEventListeners() {
         document.getElementById('start-game').addEventListener('click', () => this.startGame());
-        document.getElementById('new-challenge').addEventListener('click', () => this.nextChallenge());
 
         // Add event listeners for multiple choice buttons
         document.querySelectorAll('.choice-btn').forEach((btn, index) => {
@@ -39,18 +39,27 @@ class PirateEstimationGame {
 
         document.getElementById('start-game').style.display = 'none';
         document.getElementById('multiple-choice').style.display = 'grid';
-        document.getElementById('new-challenge').style.display = 'inline-block';
     }
 
     startTimer() {
         this.timer = setInterval(() => {
-            this.timeRemaining--;
-            this.updateDisplay();
+            if (!this.timerPaused) {
+                this.timeRemaining--;
+                this.updateDisplay();
 
-            if (this.timeRemaining <= 0) {
-                this.endGame();
+                if (this.timeRemaining <= 0) {
+                    this.endGame();
+                }
             }
         }, 1000);
+    }
+
+    pauseTimer() {
+        this.timerPaused = true;
+    }
+
+    resumeTimer() {
+        this.timerPaused = false;
     }
 
     updateDisplay() {
@@ -270,25 +279,45 @@ class PirateEstimationGame {
             btn.textContent = this.choices[index];
             btn.className = 'choice-btn';
             btn.disabled = false;
+            btn.style.opacity = '1'; // Reset opacity
         });
     }
 
     selectChoice(choiceIndex) {
         if (!this.gameActive || !this.currentChallenge) return;
 
+        // Pause timer during feedback
+        this.pauseTimer();
+
         // Disable all buttons
         document.querySelectorAll('.choice-btn').forEach(btn => btn.disabled = true);
 
-        // Show correct/incorrect
+        // Enhanced visual feedback based on risk type
+        const userAnswer = this.choices[choiceIndex];
+        const correctAnswer = this.currentChallenge.answer;
+        const riskType = this.currentChallenge.riskType;
+
         document.querySelectorAll('.choice-btn').forEach((btn, index) => {
             if (index === this.correctChoiceIndex) {
                 btn.classList.add('correct');
             } else if (index === choiceIndex) {
-                btn.classList.add('incorrect');
+                // Color based on how bad the choice was for this risk type
+                const diff = this.choices[index] - correctAnswer;
+
+                if (riskType === 'over_better' && diff < 0) {
+                    btn.classList.add('very-bad'); // Too low when over is better = dangerous
+                } else if (riskType === 'under_better' && diff > 0) {
+                    btn.classList.add('very-bad'); // Too high when under is better = dangerous
+                } else {
+                    btn.classList.add('incorrect'); // Regular wrong answer
+                }
+            } else {
+                // Show other options in muted style
+                btn.style.opacity = '0.5';
             }
         });
 
-        this.processAnswer(choiceIndex === this.correctChoiceIndex, this.choices[choiceIndex]);
+        this.processAnswer(choiceIndex === this.correctChoiceIndex, userAnswer);
     }
 
     generateFromTemplate(templates) {
@@ -381,7 +410,11 @@ class PirateEstimationGame {
             `<div style="color: ${timeBonus > 10 ? 'green' : timeBonus > 0 ? 'orange' : 'red'}">${feedback}</div>
              <div>+${timeBonus} seconds! Correct answer was ${correct}</div>`;
 
-        setTimeout(() => this.nextChallenge(), 2000);
+        // Auto-advance to next challenge after showing feedback
+        setTimeout(() => {
+            this.resumeTimer();
+            this.nextChallenge();
+        }, 3000); // Longer pause to read feedback
     }
 
     endGame() {
@@ -407,7 +440,6 @@ class PirateEstimationGame {
         document.getElementById('feedback').textContent = '';
         document.getElementById('start-game').style.display = 'inline-block';
         document.getElementById('multiple-choice').style.display = 'none';
-        document.getElementById('new-challenge').style.display = 'none';
     }
 }
 

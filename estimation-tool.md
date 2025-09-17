@@ -31,7 +31,7 @@ title: Pirate Estimation Challenge
   </div>
 
   <div id="game-controls">
-    <button id="new-challenge" style="display:none;">Next Challenge</button>
+    <!-- Auto-advance, no manual next button needed -->
   </div>
 </div>
 
@@ -118,6 +118,11 @@ title: Pirate Estimation Challenge
 
 .choice-btn.incorrect {
   background: #8b2d2d;
+}
+
+.choice-btn.very-bad {
+  background: #4a1515;
+  border: 3px solid #ff0000;
 }
 
 #estimation-game button:not(.choice-btn) {
