@@ -89,37 +89,49 @@ class PirateEstimationGame {
                 template: "{chests} treasure chests to split equally between {pirates} pirates. How many chests each?",
                 ranges: { chests: [6, 20], pirates: [2, 4] },
                 calculate: (vars) => Math.floor(vars.chests / vars.pirates),
-                tolerance: 1
+                tolerance: 1,
+                riskType: "exact",
+                explanation: "Must be exactly right - unfair splits cause fights!"
             },
             {
-                template: "{coins} gold coins found in a chest. Split equally between {crew} crew members. About how many each?",
-                ranges: { coins: [15, 30], crew: [3, 6] },
-                calculate: (vars) => Math.round(vars.coins / vars.crew),
-                tolerance: 1
+                template: "We need biscuits for {crew} crew, {days} days voyage. Each pirate eats {biscuitsPerDay} per day. How many biscuits total?",
+                ranges: { crew: [8, 15], days: [4, 8], biscuitsPerDay: [8, 12] },
+                calculate: (vars) => vars.crew * vars.days * vars.biscuitsPerDay,
+                tolerance: 20,
+                riskType: "over_better",
+                explanation: "Better to have too many - crew mutinies if they starve!"
+            },
+            {
+                template: "Loading cargo: our ship can carry {maxWeight} barrels safely. We have {barrels} barrels to load. How much weight?",
+                ranges: { maxWeight: [50, 80], barrels: [40, 70] },
+                calculate: (vars) => vars.barrels,
+                tolerance: 5,
+                riskType: "under_better",
+                explanation: "Better to underestimate - too much weight sinks the ship!"
             },
             {
                 template: "We captured {bags} bags of silver, each bag holds about {coinsPerBag} coins. Roughly how many coins total?",
                 ranges: { bags: [3, 6], coinsPerBag: [15, 25] },
                 calculate: (vars) => vars.bags * vars.coinsPerBag,
-                tolerance: 15
+                tolerance: 15,
+                riskType: "either",
+                explanation: "Just need a rough count for planning."
             },
             {
-                template: "Loading the ship: {trips} trips to shore, each trip takes {minutes} minutes. About how long total?",
-                ranges: { trips: [4, 8], minutes: [12, 18] },
-                calculate: (vars) => vars.trips * vars.minutes,
-                tolerance: 10
-            },
-            {
-                template: "Shore leave: {pirates} pirates, each gets {hours} hours on land. Total shore leave hours?",
-                ranges: { pirates: [6, 12], hours: [3, 6] },
-                calculate: (vars) => vars.pirates * vars.hours,
-                tolerance: 8
+                template: "Fresh water: {crew} crew needs {litresPerDay} litres each daily for {days} days. How many litres total?",
+                ranges: { crew: [6, 12], litresPerDay: [3, 5], days: [4, 8] },
+                calculate: (vars) => vars.crew * vars.litresPerDay * vars.days,
+                tolerance: 15,
+                riskType: "over_better",
+                explanation: "Better to have extra - crew dies of thirst without enough!"
             },
             {
                 template: "Buying supplies: rope costs {costPerLength} gold per length, we need {lengths} lengths. Total cost?",
                 ranges: { costPerLength: [5, 15], lengths: [4, 8] },
                 calculate: (vars) => vars.costPerLength * vars.lengths,
-                tolerance: 10
+                tolerance: 10,
+                riskType: "exact",
+                explanation: "Must be exactly right for fair trading!"
             }
         ];
 
@@ -245,6 +257,8 @@ class PirateEstimationGame {
             question: question,
             answer: answer,
             tolerance: tolerance,
+            riskType: template.riskType || 'either',
+            explanation: template.explanation || '',
             vars: vars
         };
     }
@@ -253,9 +267,17 @@ class PirateEstimationGame {
         const difficultyText = this.challengeNumber <= 3 ? "Easy" :
                               this.challengeNumber <= 6 ? "Medium" : "Hard";
 
+        const riskIcon = {
+            'exact': '🎯',
+            'over_better': '⬆️',
+            'under_better': '⬇️',
+            'either': '≈'
+        }[this.currentChallenge.riskType];
+
         document.getElementById('challenge-text').innerHTML =
-            `<p><em>Challenge ${this.challengeNumber} (${difficultyText})</em></p>
-             <p><strong>${this.currentChallenge.question}</strong></p>`;
+            `<p><em>Challenge ${this.challengeNumber} (${difficultyText}) ${riskIcon}</em></p>
+             <p><strong>${this.currentChallenge.question}</strong></p>
+             <p><small><em>${this.currentChallenge.explanation}</em></small></p>`;
 
         this.clearCanvas();
         this.drawCaptainScene();
@@ -293,22 +315,66 @@ class PirateEstimationGame {
 
         const correct = this.currentChallenge.answer;
         const tolerance = this.currentChallenge.tolerance;
-        const diff = Math.abs(userAnswer - correct);
+        const diff = userAnswer - correct; // Keep sign for asymmetric scoring
+        const absDiff = Math.abs(diff);
 
         let feedback, timeBonus;
 
-        if (diff === 0) {
+        // Asymmetric scoring based on risk type
+        if (absDiff === 0) {
             feedback = '🎯 Perfect! Right on target!';
             timeBonus = 30;
-        } else if (diff <= tolerance) {
-            feedback = '⭐ Great estimate! Close enough!';
-            timeBonus = 15;
-        } else if (diff <= tolerance * 2) {
-            feedback = '👍 Not bad! Getting warmer...';
-            timeBonus = 5;
+        } else if (this.currentChallenge.riskType === 'exact') {
+            // Must be exactly right
+            if (absDiff <= tolerance) {
+                feedback = '⭐ Close enough for exact work!';
+                timeBonus = 15;
+            } else {
+                feedback = '💥 Not precise enough! The answer was ' + correct;
+                timeBonus = 0;
+            }
+        } else if (this.currentChallenge.riskType === 'over_better') {
+            // Better to overestimate (positive diff = overestimate)
+            if (diff >= 0 && diff <= tolerance) {
+                feedback = '⭐ Good! Better to have extra than run short!';
+                timeBonus = 20;
+            } else if (diff > tolerance) {
+                feedback = '⚠️ Way too much, but at least we won\'t run out!';
+                timeBonus = 10;
+            } else if (diff < 0 && absDiff <= tolerance) {
+                feedback = '😬 A bit low - crew might be unhappy!';
+                timeBonus = 5;
+            } else {
+                feedback = '💀 Too little! Crew mutiny! Answer was ' + correct;
+                timeBonus = 0;
+            }
+        } else if (this.currentChallenge.riskType === 'under_better') {
+            // Better to underestimate (negative diff = underestimate)
+            if (diff <= 0 && absDiff <= tolerance) {
+                feedback = '⭐ Good! Better safe than sinking the ship!';
+                timeBonus = 20;
+            } else if (diff < -tolerance) {
+                feedback = '⚠️ Very cautious, but at least we\'re safe!';
+                timeBonus = 10;
+            } else if (diff > 0 && diff <= tolerance) {
+                feedback = '😬 A bit risky - might be too much!';
+                timeBonus = 5;
+            } else {
+                feedback = '🌊 Too much! Ship sinks! Answer was ' + correct;
+                timeBonus = 0;
+            }
         } else {
-            feedback = '💥 Way off course! The answer was ' + correct;
-            timeBonus = 0;
+            // Traditional symmetric scoring
+            if (absDiff <= tolerance) {
+                feedback = '⭐ Great estimate! Close enough!';
+                timeBonus = 15;
+            } else if (absDiff <= tolerance * 2) {
+                feedback = '👍 Not bad! Getting warmer...';
+                timeBonus = 5;
+            } else {
+                feedback = '💥 Way off course! The answer was ' + correct;
+                timeBonus = 0;
+            }
         }
 
         this.timeRemaining += timeBonus;
