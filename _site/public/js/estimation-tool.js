@@ -227,6 +227,9 @@ class PirateEstimationGame {
 
         // Round answers to appropriate level based on magnitude
         const roundToSignificantDigits = (num) => {
+            // Always ensure we have an integer first
+            num = Math.round(num);
+
             if (num < 10) return num;
             if (num < 100) return Math.round(num / 5) * 5; // Round to nearest 5
             if (num < 1000) return Math.round(num / 10) * 10; // Round to nearest 10
