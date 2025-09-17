@@ -84,125 +84,168 @@ class PirateEstimationGame {
     }
 
     generateEasyChallenge() {
-        const easyScenarios = [
+        const easyTemplates = [
             {
-                question: "8 treasure chests to split between 4 pirates. How many chests each?",
-                answer: 2,
-                tolerance: 0
-            },
-            {
-                question: "15 gold coins split between 3 crew members. About how many each?",
-                answer: 5,
+                template: "{chests} treasure chests to split between {pirates} pirates. How many chests each?",
+                ranges: { chests: [6, 16], pirates: [2, 4] },
+                calculate: (vars) => Math.floor(vars.chests / vars.pirates),
                 tolerance: 1
             },
             {
-                question: "The ship sailed 47 miles. About how far to the nearest 10?",
-                answer: 50,
+                template: "{coins} gold coins split between {crew} crew members. About how many each?",
+                ranges: { coins: [12, 24], crew: [3, 6] },
+                calculate: (vars) => Math.round(vars.coins / vars.crew),
+                tolerance: 1
+            },
+            {
+                template: "The ship sailed {miles} miles. About how far to the nearest 10?",
+                ranges: { miles: [23, 87] },
+                calculate: (vars) => Math.round(vars.miles / 10) * 10,
                 tolerance: 10
             },
             {
-                question: "We have 23 barrels of rum. About how many tens is that?",
-                answer: 2,
-                tolerance: 0
+                template: "We have {barrels} barrels of rum. About how many tens is that?",
+                ranges: { barrels: [15, 45] },
+                calculate: (vars) => Math.floor(vars.barrels / 10),
+                tolerance: 1
             },
             {
-                question: "3 bags with about 20 coins each. Roughly how many total?",
-                answer: 60,
-                tolerance: 10
+                template: "{bags} bags with about {coinsPerBag} coins each. Roughly how many total?",
+                ranges: { bags: [3, 6], coinsPerBag: [15, 25] },
+                calculate: (vars) => vars.bags * vars.coinsPerBag,
+                tolerance: 15
             },
             {
-                question: "We need 4 trips, each takes about 15 minutes. About how long total?",
-                answer: 60,
-                tolerance: 10
+                template: "We need {trips} trips, each takes about {minutes} minutes. About how long total?",
+                ranges: { trips: [3, 8], minutes: [12, 25] },
+                calculate: (vars) => vars.trips * vars.minutes,
+                tolerance: 15
             }
         ];
 
-        const scenario = easyScenarios[Math.floor(Math.random() * easyScenarios.length)];
-        return {
-            type: 'captain',
-            ...scenario
-        };
+        return this.generateFromTemplate(easyTemplates);
     }
 
     generateMediumChallenge() {
-        const mediumScenarios = [
+        const mediumTemplates = [
             {
-                question: "50 crew, each needs 10 biscuits daily, 7 days to port. Biscuits come in boxes of 100. How many boxes?",
-                answer: 35,
+                template: "{crew} crew, each needs {biscuits} biscuits daily, {days} days to port. Biscuits come in boxes of {boxSize}. How many boxes?",
+                ranges: { crew: [30, 60], biscuits: [8, 12], days: [5, 10], boxSize: [80, 120] },
+                calculate: (vars) => Math.ceil((vars.crew * vars.biscuits * vars.days) / vars.boxSize),
                 tolerance: 5
             },
             {
-                question: "We have 200 barrels of water, crew of 40, each drinks 3 barrels per week. How many weeks will it last?",
-                answer: 17,
+                template: "We have {barrels} barrels of water, crew of {crew}, each drinks {weekly} barrels per week. How many weeks will it last?",
+                ranges: { barrels: [150, 250], crew: [30, 50], weekly: [2, 4] },
+                calculate: (vars) => Math.floor(vars.barrels / (vars.crew * vars.weekly)),
                 tolerance: 3
             },
             {
-                question: "Enemy ship fires every 30 seconds, battle lasts 8 minutes. About how many cannonballs will they fire?",
-                answer: 16,
+                template: "Enemy ship fires every {seconds} seconds, battle lasts {minutes} minutes. About how many cannonballs will they fire?",
+                ranges: { seconds: [20, 40], minutes: [6, 12] },
+                calculate: (vars) => Math.floor((vars.minutes * 60) / vars.seconds),
                 tolerance: 3
             },
             {
-                question: "Each chest holds about 500 gold coins, we've captured 7 chests. Roughly how much gold?",
-                answer: 3500,
+                template: "Each chest holds about {coinsPerChest} gold coins, we've captured {chests} chests. Roughly how much gold?",
+                ranges: { coinsPerChest: [400, 600], chests: [5, 9] },
+                calculate: (vars) => vars.coinsPerChest * vars.chests,
                 tolerance: 500
             },
             {
-                question: "Storm approaching at 15mph, we're 60 miles away. How long until it hits?",
-                answer: 4,
-                tolerance: 1
+                template: "Storm approaching at {stormSpeed}mph, we're {distance} miles away. How long until it hits?",
+                ranges: { stormSpeed: [12, 18], distance: [40, 80] },
+                calculate: (vars) => Math.round(vars.distance / vars.stormSpeed),
+                tolerance: 2
             },
             {
-                question: "Island is 120 miles away, we sail at 8mph. About how many hours voyage?",
-                answer: 15,
+                template: "Island is {distance} miles away, we sail at {speed}mph. About how many hours voyage?",
+                ranges: { distance: [80, 160], speed: [6, 12] },
+                calculate: (vars) => Math.round(vars.distance / vars.speed),
                 tolerance: 3
             }
         ];
 
-        const scenario = mediumScenarios[Math.floor(Math.random() * mediumScenarios.length)];
-        return {
-            type: 'captain',
-            ...scenario
-        };
+        return this.generateFromTemplate(mediumTemplates);
     }
 
     generateHardChallenge() {
-        const hardScenarios = [
+        const hardTemplates = [
             {
-                question: "King's fleet 200 miles behind, their ships 5mph faster than ours at 12mph. How many hours until they catch us?",
-                answer: 40,
+                template: "King's fleet {distance} miles behind, their ships {advantage}mph faster than ours at {ourSpeed}mph. How many hours until they catch us?",
+                ranges: { distance: [150, 300], advantage: [3, 7], ourSpeed: [8, 15] },
+                calculate: (vars) => Math.round(vars.distance / vars.advantage),
                 tolerance: 8
             },
             {
-                question: "Port Royal has 5,000 people. About how many meals get eaten there per day?",
-                answer: 15000,
-                tolerance: 5000
+                template: "Port {portName} has {population} people. About how many meals get eaten there per day?",
+                ranges: { population: [3000, 8000] },
+                calculate: (vars) => vars.population * 3,
+                tolerance: 2000,
+                portNames: ["Royal", "Nassau", "Tortuga", "Kingston"]
             },
             {
-                question: "847 gold coins between 7 pirates. About how much each?",
-                answer: 121,
-                tolerance: 20
+                template: "{coins} gold coins between {pirates} pirates. About how much each?",
+                ranges: { coins: [600, 1200], pirates: [6, 9] },
+                calculate: (vars) => Math.round(vars.coins / vars.pirates),
+                tolerance: 25
             },
             {
-                question: "Each pirate eats 3 meals daily. 12 pirates for a 25-day voyage. About how many meals needed?",
-                answer: 900,
-                tolerance: 100
+                template: "Each pirate eats {meals} meals daily. {pirates} pirates for a {days}-day voyage. About how many meals needed?",
+                ranges: { meals: [2, 4], pirates: [8, 15], days: [20, 35] },
+                calculate: (vars) => vars.meals * vars.pirates * vars.days,
+                tolerance: 150
             },
             {
-                question: "If we capture 3 ships per month, each worth about 400 gold, roughly how much in a year?",
-                answer: 14400,
-                tolerance: 2000
+                template: "If we capture {ships} ships per month, each worth about {value} gold, roughly how much in a year?",
+                ranges: { ships: [2, 5], value: [300, 600] },
+                calculate: (vars) => vars.ships * vars.value * 12,
+                tolerance: 3000
             },
             {
-                question: "Lookout duty: 4 shifts daily, 3 pirates per shift, 20-day voyage. How many duty assignments?",
-                answer: 240,
-                tolerance: 30
+                template: "Lookout duty: {shifts} shifts daily, {piratesPerShift} pirates per shift, {days}-day voyage. How many duty assignments?",
+                ranges: { shifts: [3, 5], piratesPerShift: [2, 4], days: [15, 30] },
+                calculate: (vars) => vars.shifts * vars.piratesPerShift * vars.days,
+                tolerance: 50
             }
         ];
 
-        const scenario = hardScenarios[Math.floor(Math.random() * hardScenarios.length)];
+        return this.generateFromTemplate(hardTemplates);
+    }
+
+    generateFromTemplate(templates) {
+        const template = templates[Math.floor(Math.random() * templates.length)];
+        const vars = {};
+
+        // Generate random values for each variable
+        for (const [key, range] of Object.entries(template.ranges)) {
+            const [min, max] = range;
+            vars[key] = min + Math.floor(Math.random() * (max - min + 1));
+        }
+
+        // Handle special cases like port names
+        if (template.portNames) {
+            vars.portName = template.portNames[Math.floor(Math.random() * template.portNames.length)];
+        }
+
+        // Replace placeholders in template
+        let question = template.template;
+        for (const [key, value] of Object.entries(vars)) {
+            question = question.replace(new RegExp(`{${key}}`, 'g'), value);
+        }
+
+        // Calculate answer
+        const answer = template.calculate(vars);
+        const tolerance = typeof template.tolerance === 'function'
+            ? template.tolerance(vars)
+            : template.tolerance;
+
         return {
             type: 'captain',
-            ...scenario
+            question: question,
+            answer: answer,
+            tolerance: tolerance,
+            vars: vars
         };
     }
 
