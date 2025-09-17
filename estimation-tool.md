@@ -20,8 +20,9 @@ title: Pirate Estimation Challenge
     </div>
 
     <div id="answer-area">
-      <input type="number" id="answer-input" placeholder="Your estimate...">
-      <button id="submit-answer">Submit Answer</button>
+      <button id="start-game">Start Challenge</button>
+      <input type="number" id="answer-input" placeholder="Your estimate..." style="display:none;">
+      <button id="submit-answer" style="display:none;">Submit Answer</button>
     </div>
 
     <div id="feedback">
@@ -30,7 +31,6 @@ title: Pirate Estimation Challenge
   </div>
 
   <div id="game-controls">
-    <button id="start-game">Start Challenge</button>
     <button id="new-challenge" style="display:none;">Next Challenge</button>
   </div>
 </div>

@@ -38,6 +38,8 @@ class PirateEstimationGame {
         this.nextChallenge();
 
         document.getElementById('start-game').style.display = 'none';
+        document.getElementById('answer-input').style.display = 'inline-block';
+        document.getElementById('submit-answer').style.display = 'inline-block';
         document.getElementById('new-challenge').style.display = 'inline-block';
     }
 
@@ -262,6 +264,8 @@ class PirateEstimationGame {
         this.clearCanvas();
         document.getElementById('feedback').textContent = '';
         document.getElementById('start-game').style.display = 'inline-block';
+        document.getElementById('answer-input').style.display = 'none';
+        document.getElementById('submit-answer').style.display = 'none';
         document.getElementById('new-challenge').style.display = 'none';
     }
 }
