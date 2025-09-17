@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Creative Gear — Nico Boyce — Person doing human things">
+  <meta name="fediverse:creator" content="@nico@social.coop">
+  <link rel="me" href="https://social.coop/@nico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Creative Gear &middot; Nico Boyce
+      
+    </title>
+
+</head>
+
+
+  <body class="theme-base-09">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="no-mob marg" />
+      <h1 class="marg">
+        <a href="/">
+          <img src="/public/img/nicologo.svg" alt="Nico Boyce" width="100%" class="marg" />
+        </a>
+      </h1>
+      <p class="lead marg"><a href="/about/">Person doing human things</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+    <span class="sidebar-nav-item">
+        <a href="/now/" >now</a> // <a href="/essays/" >essays</a> // <a href="/snaps/" >snaps</a> // <a href="/music/" >tunes</a>
+        <br /><a href="/wheels/" >wheels</a> // <a href="#top" class="active" >stuff</a> // <a href="/sale/" >sale</a> // <a href="/next/" >future</a>
+</nav>
+
+    <span class="sidebar-nav-item"><a href="mailto:hello@nicoboyce.com">email</a> // <a href="https://pixelfed.social/beastie" target="_blank" rel="noopener noreferrer">pixelfed</a> // <a href="https://deltastring.com" target="_blank" rel="noopener noreferrer">deltastring</a></span>
+
+    <span class="sidebar-nav-item no-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+<div class="page">
+  <h1 id="what-do-i-use-for-what">What do I use for what?</h1>
+
+<p>Gear isn’t where the creativity comes from, but it sure does help draw it out.</p>
+
+<p>There is some crossover between different facets of my work, but I’ve broadly grouped things as feels logical.</p>
+
+<h3 id="photography-and-video">Photography and video</h3>
+
+<p>I’ve recently switched systems to a Fujifilm X-H2. It’s a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that’s the future, eh? It isn’t great for motorsport panning shots, whatever I do with the settings. We’ve now also got an X-S20 which does most of what the X-H2 can but the reduced size and weight are often useful.</p>
+
+<p>Sigma zooms and Viltrox primes are my choices in the Fuji system. The little Fuji power zoom is handy to have.</p>
+
+<p>Previously I used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. It’s still skill and time rather than gear which limits my pictures.</p>
+
+<p>These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX 70-300mm f/4.5-6.3G ED VR. Telezooms always have a Hoya rotating polarising filter on the end.</p>
+
+<p><img src="/public/img/snap.jpg" alt="Nico in the wild." />
+<em>Nico in the wild.</em></p>
+
+<p>Some of my photos are shot on a Lumix FZ45, which is a great bridge camera for learning the basics. I don’t much like the viewfinder but that’s the price you pay with this format.</p>
+
+<p>I carry a USB-C SD card reader so I can quickly check images on my phone and share them if necessary. Depending on the event, I’ll have grips, straps, tripod etc sometimes but I am trying harder to travel light. One critical bit of kit you won’t see influencers touting: roofers’ knee pads, the gel filled type.</p>
+
+<p>Akaso action cameras are my choice for the price to performance ratio. Got a big bag of clips and straps and other accessories so we’re ready for anything.</p>
+
+<p>I organise my images with <a href="https://www.darktable.org/">Darktable</a> and store them on a DIY NAS.</p>
+
+<h3 id="guitars-basses-amps-etc">Guitars, basses, amps, etc</h3>
+
+<p>The Ibanez Upswing (UB804) probably gets the most play at the moment. Other basses I play are the Ibanez ATK400, Ibanez AGB140, Maverick B-1 (rewired passive, bridge pickup only, direct to jack) and a Mania VTB-5BS. My strings of choice are LaBella Deep Talkin’ flats (UB, AGB) and d’Addario nickel roundwounds for everything else.</p>
+
+<p><del>Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I’ll own another Warwick. Maybe an FNA.</del> I did buy another one of these and we haven’t quite clicked. I don’t know why.</p>
+
+<p><img src="/public/img/studio.jpg" alt="One corner of the studio." />
+<em>One corner of the studio.</em></p>
+
+<p>For many years I used Ashdown amplifiers, first a MAG 400W with 410 (the old red face UK model) and later an ABM Evo II 112. Recently I picked up an amp I always wanted to own, a Genz Benz ShuttleMax 9.2. This runs into a Matamp cab with Fane neodymium speaker.</p>
+
+<p>In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced with a Lace Sensors Deathbucker. This one stays in C and is strung with 13s. I also have an ESP LTD LP type which has a bridge DiMarzio SD, coil split, this is my D guitar currently. My first guitar, a Vintage branded SG type with Wilkinson pickups, is currently in E. All are strung with d’Addario usually.</p>
+
+<p>The latest addition is a Squier offset. It’s got a jazzmaster neck pickup and a tele bridge. Amazing thing.</p>
+
+<p>These go to an Epiphone Valve Special, a Blackstar HT-5H or sometimes the Genz for that grunt.</p>
+
+<p>Effects come and go but I wouldn’t be without the ProCo Turbo Rat and a Big Muff with Tone Wicker. The Rat is an ’80s one and I need to swap out 9v adaptor for a modern one. I’ve got a few weirdo pedals like a Gojira FX Ants fuzz and I’ve built a few of my own noiseboxes. Sometimes I’ll break out the Whammy or the Akai Headrush E2. Newest toy: <a href="https://neonegg.com/">Neon Egg Planetarium</a>.</p>
+
+<h3 id="audio-recording">Audio recording</h3>
+
+<p>I’m not an expert in microphones but I like the sound of my Audio Technica pair. I use an AT4040 and AT2035, one for warmth and one for clarity. I’ve bought and sold a few others but these two tick my boxes basically. They connect to a Focusrite Scarlett 18i8 and I use Logic on an M2 Macbook Pro for the most part, sometimes Audacity for demos. I’ve also got a Rode shotgun mic and a Sennheiser lavalier.</p>
+
+<p><img src="/public/img/recording.jpeg" alt="Recording gear in action." />
+<em>Recording gear in action.</em></p>
+
+<p>I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AGK K92 cans and mixing is on KRK 8s or Beyerdynamics DT770 pro.</p>
+
+<h3 id="art-supplies">Art supplies</h3>
+
+<p>Currently I have paints in stock from Flame, Montana, Molotow, maybe some others. I get through a lot of masking tape and I get wooden panels mainly from Jewsons. I’ve built a sort of easel from old palattes and have a few tricks and secrets which will remain so for now!</p>
+
+<h3 id="outside">Outside</h3>
+
+<p>We have developed a pretty serious camping setup. The tent was a great purchase, it’s a Ventura and I would buy the same again if it needed to be replaced for some reason. It’s the deluxe extended version and we’ve got the detatchable annex for when we need the additional space. When we do use that, usually we hang an inner tent and pop an additional bed in that section behind the ladder.</p>
+
+<p><img src="/public/img/camp.jpeg" alt="Tent on the car." />
+<em>The car tent, fully deployed.</em></p>
+
+<p>When it’s warm I definitely sleep better in the tent than I do inside!</p>
+
+  <img src="/public/img/delta.png" alt="Deltastring logo" />
+</div>
+    </div>
+
+    <div class="sidebar on-mob">
+      <div class="sidebar-sticky">
+
+
+        <span class="sidebar-nav-item on-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

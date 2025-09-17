@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Automotive, motorsport, sometimes biking and skating and such — Nico Boyce — Person doing human things">
+  <meta name="fediverse:creator" content="@nico@social.coop">
+  <link rel="me" href="https://social.coop/@nico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Automotive, motorsport, sometimes biking and skating and such &middot; Nico Boyce
+      
+    </title>
+
+</head>
+
+
+  <body class="theme-base-09">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="no-mob marg" />
+      <h1 class="marg">
+        <a href="/">
+          <img src="/public/img/nicologo.svg" alt="Nico Boyce" width="100%" class="marg" />
+        </a>
+      </h1>
+      <p class="lead marg"><a href="/about/">Person doing human things</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+    <span class="sidebar-nav-item">
+        <a href="/now/" >now</a> // <a href="/essays/" >essays</a> // <a href="/snaps/" >snaps</a> // <a href="/music/" >tunes</a>
+        <br /><a href="#top" class="active" >wheels</a> // <a href="/gear/" >stuff</a> // <a href="/sale/" >sale</a> // <a href="/next/" >future</a>
+</nav>
+
+    <span class="sidebar-nav-item"><a href="mailto:hello@nicoboyce.com">email</a> // <a href="https://pixelfed.social/beastie" target="_blank" rel="noopener noreferrer">pixelfed</a> // <a href="https://deltastring.com" target="_blank" rel="noopener noreferrer">deltastring</a></span>
+
+    <span class="sidebar-nav-item no-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+<div class="page">
+  <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/08/23/classy-travellers/">
+        Classy travellers
+      </a>
+    </h1>
+
+    <span class="post-date">23 Aug 2025</span>
+
+    <p><img src="/public/img/teeth.jpg" alt="Teeth." />
+<em>Teeth.</em></p>
+
+<p><img src="/public/img/chunk.jpeg" alt="Chunk." />
+<em>Chunk.</em></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/08/15/lando-needs-therapy/">
+        Decision time, brown
+      </a>
+    </h1>
+
+    <span class="post-date">15 Aug 2025</span>
+
+    <p>Lando has more than double the grand prix experience of Oscar but fewer wins. I like Lando. I saw him race at Brands Hatch in the Ginetta Juniors a few years back. He’s a quick boy and it doesn’t hurt that he has boy band looks and good marketing people making the most of that. He needs to spend some of that cash getting his head together.</p>
+
+<p>Until Lando sorts out the mental stuff there’s no chance they’ll be engraving his name on the fancy pot at the end of the year. Mac need to throw their full support behind Oscar and kill off the prospect of a Red Bull resurgence.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/08/10/racing-worth-watching/">
+        Racing worth watching
+      </a>
+    </h1>
+
+    <span class="post-date">10 Aug 2025</span>
+
+    <p>If you’re looking to be entertained by cars driven fast, here’s what I enjoy.</p>
+
+<h2 id="in-the-uk">In the UK</h2>
+<ul>
+  <li><a href="https://www.youtube.com/@HillClimbTV">British Hillclimb</a> (see you at Prescott!)</li>
+  <li><a href="https://www.youtube.com/@5NationsBRX">British Rallycross</a> especially the buggies at Lydden Hill and the 2wd retro cars, always fun</li>
+  <li><a href="https://www.youtube.com/watch?v=gaJu3YiBYVc">VSCC Lakeland Trial</a> and honestly any vintage hillclimbs/trials/sprints are excellent</li>
+  <li><a href="https://www.youtube.com/@750MotorClubTV">750 Motor Club</a></li>
+  <li><a href="https://www.youtube.com/@OfficialBTCC">BTCC</a> but I’m sure you know that</li>
+  <li><a href="https://www.youtube.com/@TheBRSCC/streams">BRSCC</a> which is always a great value day out</li>
+</ul>
+
+<h2 id="international">International</h2>
+<ul>
+  <li><a href="https://www.youtube.com/@imsaofficial/streams">IMSA</a>, particularly the MX-5 cup. John and Shea might be the best commentary duo in motorsport.</li>
+  <li><a href="https://www.youtube.com/@nitrocross/videos">Nitrocross</a> formerly Nitro Rallycross. I think this series folded but it’s well worth a watch, especially the 2021 season. Coley and Jared are also great commentators.</li>
+  <li><a href="https://www.youtube.com/@HillClimbMonsters">Hillclimb Monsters</a> is not a series per se but all the craziest hillclimb builds you could want</li>
+  <li><a href="https://www.youtube.com/@K4Movies/videos">K4 Movies</a> film all the craziest off road events in Europe, from ATVs to 8x8 trucks.</li>
+  <li><a href="https://www.youtube.com/@G7Media/videos">Formula Offroad Iceland</a>, also broadcast by <a href="https://www.youtube.com/user/jakobcecil">Jakob Cecil</a>, is just nuts and commentator Kristian is fantastic.</li>
+</ul>
+
+<p>Let me know what I have missed, via <a href="mailto:hello@nicoboyce.com">hello@nicoboyce.com</a></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/07/11/christians-tough-day/">
+        Horner had it coming
+      </a>
+    </h1>
+
+    <span class="post-date">11 Jul 2025</span>
+
+    <p>Ecclestone said (I’m paraphrasing) people will put up with you being difficult so long as you’re winning, but the moment that ends then the knives are out.</p>
+
+<p>No one wants to bump into someone they know from work when they are on holiday but it looks like Toto and Max picked the same spot off of Sardinia to anchor their yachts. Awkward!</p>
+
+<p>With Max at Merc and Horner potentially a free agent eventually (though likely he has to buy out his RBR contract to 2030) we’re faced with the delicious prospect of Horner and Hamilton in red versus Max and Toto in grey. Given how these guys obsess over each other, my money would be on Piastri being a double world champ come the end of ‘26.</p>
+
+<p>I’ve written further nonsense <a href="https://nicoboyce.com/2025/07/11/christians-tough-day/">here</a></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/06/15/car-photo-dump/">
+        Car photo dump, no logic
+      </a>
+    </h1>
+
+    <span class="post-date">15 Jun 2025</span>
+
+    <p><img src="/public/img/cars/petrol-with-plato.jpeg" alt="Plato" />
+<em>Petrol with Plato</em></p>
+
+<p><img src="/public/img/cars/limited-edition-lambo.jpeg" alt="Lambo" />
+<em>Limited edition Lambo</em></p>
+
+<p><img src="/public/img/cars/on-the-tank-course.jpeg" alt="Tidworth" />
+<em>on the tank course</em></p>
+
+<p><img src="/public/img/cars/f4-rivals.jpeg" alt="f4" />
+<em>F4 rivals</em></p>
+
+<p><img src="/public/img/cars/michael-andretti-mclaren.jpeg" alt="Mac" />
+<em>Michael Andretti McLaren</em></p>
+
+<p><img src="/public/img/cars/marlborough.jpeg" alt="Marlborough" />
+<em>Marlborough</em></p>
+
+<p><img src="/public/img/cars/thruxton-test-day.jpeg" alt="Thruxton test day" />
+<em>Thruxton test day</em></p>
+
+<p><img src="/public/img/cars/purple-na.jpeg" alt="purple NA" />
+<em>purple NA</em></p>
+
+<p><img src="/public/img/cars/breakfast-club-alfa.jpeg" alt="Alfa" />
+<em>Breakfast club Alfa</em></p>
+
+<p><img src="/public/img/cars/nb-drifter.jpeg" alt="NB drifter" />
+<em>NB drifter</em></p>
+
+<p><img src="/public/img/cars/tyres.jpeg" alt="tyres" />
+<em>tyres</em></p>
+
+<p><img src="/public/img/cars/fezza.jpeg" alt="fezza" />
+<em>fezza</em></p>
+
+<p><img src="/public/img/cars/alpine.jpeg" alt="alpine" />
+<em>alpine</em></p>
+
+<p><img src="/public/img/cars/big-mac.jpeg" alt="big mac" />
+<em>big mac</em></p>
+
+<p><img src="/public/img/cars/scoob.jpeg" alt="scoob" />
+<em>scoob</em></p>
+
+<p><img src="/public/img/cars/japanuary.jpeg" alt="japanuary" />
+<em>japanuary</em></p>
+
+<p><img src="/public/img/cars/fiat.jpeg" alt="fiat" />
+<em>fiat</em></p>
+
+<p><img src="/public/img/cars/grubby-nissan.jpeg" alt="grubby nissan" />
+<em>grubby nissan</em></p>
+
+<p><img src="/public/img/cars/concours.jpeg" alt="concours" />
+<em>concours</em></p>
+
+<p><img src="/public/img/cars/triumph.jpeg" alt="triumph" />
+<em>triumph</em></p>
+
+<p><img src="/public/img/cars/mog.jpeg" alt="mog" />
+<em>mog</em></p>
+
+<p><img src="/public/img/cars/brute.jpeg" alt="brute" />
+<em>brute</em></p>
+
+<p><img src="/public/img/cars/pop.jpeg" alt="pop" />
+<em>pop</em></p>
+
+<p><img src="/public/img/cars/route-66.jpeg" alt="route 66" />
+<em>route 66</em></p>
+
+<p><img src="/public/img/cars/cortina.jpeg" alt="cortina" />
+<em>cortina</em></p>
+
+<p><img src="/public/img/cars/rosie.jpeg" alt="rosie" />
+<em>rosie</em></p>
+
+<p><img src="/public/img/cars/evo.jpeg" alt="evo" />
+<em>evo</em></p>
+
+<p><img src="/public/img/cars/rocket.jpeg" alt="rocket" />
+<em>rocket</em></p>
+
+<p><img src="/public/img/cars/deployment.jpeg" alt="deployment" />
+<em>deployment</em></p>
+
+<p><img src="/public/img/cars/jdm.jpeg" alt="jdm" />
+<em>jdm</em></p>
+
+<p><img src="/public/img/cars/pop-2.jpeg" alt="pop" />
+<em>pop</em></p>
+
+<p><img src="/public/img/cars/yellow-fire.jpeg" alt="yellow fire" />
+<em>yellow fire</em></p>
+
+<p><img src="/public/img/cars/tent.jpeg" alt="tent" />
+<em>tent</em></p>
+
+<p><img src="/public/img/cars/launch.jpeg" alt="launch" />
+<em>launch</em></p>
+
+<p><img src="/public/img/cars/tingram.jpeg" alt="Tingram" />
+<em>Tingram</em></p>
+
+<p><img src="/public/img/cars/its-on.jpeg" alt="it's on" />
+<em>it’s on</em></p>
+
+<p><img src="/public/img/cars/turbo.jpeg" alt="turbo" />
+<em>turbo</em></p>
+
+<p><img src="/public/img/cars/torslander.jpeg" alt="torslander" />
+<em>torslander</em></p>
+
+<p><img src="/public/img/cars/after-you.jpeg" alt="after you" />
+<em>after you</em></p>
+
+<p><img src="/public/img/cars/action.jpeg" alt="action" />
+<em>action</em></p>
+
+<p><img src="/public/img/cars/yuk.jpeg" alt="yuk" />
+<em>yuk</em></p>
+
+<p><img src="/public/img/cars/he-aint-heavy.jpeg" alt="he ain't heavy" />
+<em>he ain’t heavy</em></p>
+
+<p><img src="/public/img/cars/rivals.jpeg" alt="rivals" />
+<em>rivals</em></p>
+
+<p><img src="/public/img/cars/watcher.jpeg" alt="watcher" />
+<em>watcher</em></p>
+
+<p><img src="/public/img/cars/battle-mr2.jpeg" alt="battle mr2" />
+<em>battle mr2</em></p>
+
+<p><img src="/public/img/cars/relics.jpeg" alt="relics" />
+<em>relics</em></p>
+
+<p><img src="/public/img/cars/venom.jpeg" alt="venom" />
+<em>venom</em></p>
+
+<p><img src="/public/img/cars/beem.jpeg" alt="beem" />
+<em>beem</em></p>
+
+<p><img src="/public/img/cars/5.jpeg" alt="5" />
+<em>5</em></p>
+
+<p><img src="/public/img/cars/robo.jpeg" alt="robo" />
+<em>robo</em></p>
+
+<p><img src="/public/img/cars/spitfire.jpeg" alt="spitfire" />
+<em>spitfire</em></p>
+
+<p><img src="/public/img/cars/safari.jpeg" alt="safari" />
+<em>safari</em></p>
+
+<p><img src="/public/img/cars/rx150.jpeg" alt="rx150" />
+<em>rx150</em></p>
+
+<p><img src="/public/img/cars/lap.jpeg" alt="lap" />
+<em>lap</em></p>
+
+<p><img src="/public/img/cars/tour.jpeg" alt="tour" />
+<em>tour</em></p>
+
+<p><img src="/public/img/cars/doom.jpeg" alt="doom" />
+<em>doom</em></p>
+
+<p><img src="/public/img/cars/vetted.jpeg" alt="vetted" />
+<em>vetted</em></p>
+
+<p><img src="/public/img/cars/wagon.jpeg" alt="wagon" />
+<em>wagon</em></p>
+
+<p><img src="/public/img/cars/scimitar.jpeg" alt="scimitar" />
+<em>scimitar</em></p>
+
+<p><img src="/public/img/cars/patina.jpeg" alt="patina" />
+<em>patina</em></p>
+
+<p><img src="/public/img/cars/angles.jpeg" alt="angles" />
+<em>angles</em></p>
+
+<p><img src="/public/img/cars/rx-monster.jpeg" alt="rx monster" />
+<em>rx monster</em></p>
+
+<p><img src="/public/img/cars/minis.jpeg" alt="minis" />
+<em>minis</em></p>
+
+<p><img src="/public/img/cars/mean-lean.jpeg" alt="mean lean" />
+<em>mean lean</em></p>
+
+<p><img src="/public/img/cars/stanley.jpeg" alt="stanley" />
+<em>stanley</em></p>
+
+<p><img src="/public/img/cars/rarity.jpeg" alt="rarity" />
+<em>rarity</em></p>
+
+<p><img src="/public/img/cars/badge.jpeg" alt="badge" />
+<em>badge</em></p>
+
+<p><img src="/public/img/cars/champ.jpeg" alt="champ" />
+<em>champ</em></p>
+
+<p><img src="/public/img/cars/cheek.jpeg" alt="cheek" />
+<em>cheek</em></p>
+
+<p><img src="/public/img/cars/star-time.jpeg" alt="star time" />
+<em>star time</em></p>
+
+<p><img src="/public/img/cars/session.jpeg" alt="session" />
+<em>session</em></p>
+
+<p><img src="/public/img/cars/doran.jpeg" alt="doran" />
+<em>doran</em></p>
+
+<p><img src="/public/img/cars/transporter.jpeg" alt="transporter" />
+<em>transporter</em></p>
+
+<p><img src="/public/img/cars/vip.jpeg" alt="vip" />
+<em>vip</em></p>
+
+<p><img src="/public/img/cars/victory.jpeg" alt="victory" />
+<em>victory</em></p>
+
+<p><img src="/public/img/cars/pressure.jpeg" alt="pressure" />
+<em>pressure</em></p>
+
+<p><img src="/public/img/cars/chicanery.jpeg" alt="chicanery" />
+<em>chicanery</em></p>
+
+<p><img src="/public/img/cars/saxo.jpeg" alt="saxo" />
+<em>saxo</em></p>
+
+<p><img src="/public/img/cars/warp.jpeg" alt="warp" />
+<em>warp</em></p>
+
+<p><img src="/public/img/cars/apex.jpeg" alt="apex" />
+<em>apex</em></p>
+
+<p><img src="/public/img/cars/peeking.jpeg" alt="peeking" />
+<em>peeking</em></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/04/20/prescott-bhc-round-1/">
+        Prescott, BHC round 1
+      </a>
+    </h1>
+
+    <span class="post-date">20 Apr 2025</span>
+
+    <p><img src="/public/img/cars/prescott-25-0.jpeg" alt="green" />
+<em>green</em></p>
+
+<p><img src="/public/img/cars/prescott-25-1.jpeg" alt="gold" />
+<em>gold</em></p>
+
+<p><img src="/public/img/cars/prescott-25-2.jpeg" alt="blue" />
+<em>blue</em></p>
+
+<p><img src="/public/img/cars/prescott-25-3.jpeg" alt="orange" />
+<em>orange</em></p>
+
+<p><img src="/public/img/cars/prescott-25-4.jpeg" alt="red" />
+<em>red</em></p>
+
+<p><img src="/public/img/cars/prescott-25-5.jpeg" alt="chrome" />
+<em>chrome</em></p>
+
+<p><img src="/public/img/cars/prescott-25-7.jpeg" alt="black" />
+<em>black</em></p>
+
+<p>Top day out.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/03/10/street-cars/">
+        On the street
+      </a>
+    </h1>
+
+    <span class="post-date">10 Mar 2025</span>
+
+    <p><img src="/public/img/lancia.jpeg" alt="Lancia" />
+<em>Lancia.</em></p>
+
+<p><img src="/public/img/fisheye.jpeg" alt="Fisheye and I" />
+<em>Fisheye and I.</em></p>
+
+<p><img src="/public/img/miatana.jpeg" alt="Miata NA" />
+<em>Miata NA.</em></p>
+
+<p><img src="/public/img/chevy.jpeg" alt="Chevy" />
+<em>Chevy.</em></p>
+
+<p><img src="/public/img/volvo.jpeg" alt="Volvo" />
+<em>Volvo.</em></p>
+
+<p><img src="/public/img/lambo.jpeg" alt="Lambo" />
+<em>Lambo.</em></p>
+
+<p><img src="/public/img/fords.jpeg" alt="Fords" />
+<em>Fords.</em></p>
+
+<p><img src="/public/img/chevy-brands.jpeg" alt="Chevy at Brands" />
+<em>Chevy at Brands.</em></p>
+
+<p><img src="/public/img/granada.jpeg" alt="Granada" />
+<em>Granada.</em></p>
+
+<p><img src="/public/img/jeep.jpeg" alt="Jeep." />
+<em>Jeep.</em></p>
+
+<p><img src="/public/img/scoob.jpg" alt="Scoobs" />
+<em>Scoobs.</em></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/02/15/f1-london-embarrassment/">
+        The F1 thing was embarrassing
+      </a>
+    </h1>
+
+    <span class="post-date">15 Feb 2025</span>
+
+    <p>Guys the superbowl was a week ago and people were buzzing. F1 gathered all the teams to the millenium dome to unveil show cars with maybe a couple new minor sponsors.</p>
+
+<p>If this is what F1 is (and it is but it’s not nice to admit that) then honestly I’m going to start trying even harder to kick the habit. I could live with the greediness if it was at least entertaining.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/01/25/dakar-25-big-dogs-weaknesses/">
+        Dakar 25 showed the big dogs their weaknesses
+      </a>
+    </h1>
+
+    <span class="post-date">25 Jan 2025</span>
+
+    <p>In case you missed it, M-Sport turned up at Dakar with a new Ford and some not-so-quiet confidence and established big names Ekstrom and Sainz. Prodrive were positively bragging about the tech in their Dacia and brought Loeb and Al-Attiyah, the statistally greatest ever rally driver and rally-raid driver, along with Gutierrez who is up and coming and basically there in a support role with a mechanic in her co-driver’s seat.</p>
+
+<p>Meanwhile, with no fanfare at all, Toyota machinery dominated the event and the eventual winner was in a privateer Hilux entry. Toyota have developed that car year after year and Team Overdrive driver Al-Rajhi is a Saudi local who navigates the Empty Quarter for fun.</p>
+
+<p>Check out the Dakar channel on youtube and see how it was won.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2025/01/15/bike-rebuild/">
+        Bike rebuild
+      </a>
+    </h1>
+
+    <span class="post-date">15 Jan 2025</span>
+
+    <p>Grabbed a bargain jump bike and it needed some customisation. Popped on a super narrow and sharp looking Cinelli handlebar, a comfy GT saddle, some sick ODI x Vans grips and DMR pedals. I need to take some proper pics.</p>
+
+<p><img src="/public/img/purples.jpeg" alt="Purples." />
+<em>Purples.</em></p>
+
+<p><img src="/public/img/djbike.jpeg" alt="DJ." />
+<em>DJ bike.</em></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/12/31/connor-zilisch-fast-track/">
+        Fast track
+      </a>
+    </h1>
+
+    <span class="post-date">31 Dec 2024</span>
+
+    <p>Forget team Max or team Lando. My driver of 2024 has to be Connor Zilisch. Youtube is over there if you need to catch up with this guy.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/12/20/jag-marketers-cats-whiskers/">
+        Jag marketers are the cat's whiskers
+      </a>
+    </h1>
+
+    <span class="post-date">20 Dec 2024</span>
+
+    <p>All they needed to do is make one clumsy and dated video dragging them in to the 21st century and they have suddenly ceased to be the brand of golfists and top gear culture warriors. Okay so John Prescott showed you can spend your life standing up for workers and still enjoy a comfortable commute. But now they have set fire to all that in search of something interesting.</p>
+
+<p>Eddie Irvine told Clive James that Jaguar was the one brand that could find that sexiness of the likes of Ferrari. Maybe at last they have got it right. Regardless, people are talking about Jag in a way that no one has since the second E Type was driven overnight from Birmingham to Geneva. I’m backing it.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/11/25/pimped-my-bmx/">
+        Pimped my bmx
+      </a>
+    </h1>
+
+    <span class="post-date">25 Nov 2024</span>
+
+    <p><img src="/public/img/bmx.jpeg" alt="Bmx." />
+<em>Bmx.</em></p>
+
+<p><img src="/public/img/bmx-tyre.jpeg" alt="Tyres." />
+<em>Tyre.</em></p>
+
+<p><img src="/public/img/bmx-chain.jpeg" alt="Chain." />
+<em>Chain.</em></p>
+
+<p><img src="/public/img/bikezzz.jpeg" alt="Park." />
+<em>Park.</em></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/11/20/macau-f3-gp/">
+        Macau F3 GP
+      </a>
+    </h1>
+
+    <span class="post-date">20 Nov 2024</span>
+
+    <p>Macau is crazy but not such a great circuit to actually race, they should reinvent it as a time trial. Nevertheless that was a mighty performance from Ugo, who nailed every restart to confirm what plenty of us have been saying for a while. This kid is the real deal. We were there at Brands Hatch when he won his first car race and now the sky is the limit. <a href="https://www.youtube.com/watch?v=YYe_NXIC3H0">Full feature race on the youtube</a> but be prepared to fast forward…</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/11/10/mac-and-cheese/">
+        Mac and cheese
+      </a>
+    </h1>
+
+    <span class="post-date">10 Nov 2024</span>
+
+    <p>I’ve been a McLaren fan since Coulthard joined the Woking squad and as such I have always considered Ferraris to be tacky and poorly assembled and the Scuderia to be a bunch of cry babies leaning on their history to try and get preferential treatment. Ferrari are the Manchester United of F1, the idiot’s choice, the team who are more likely to license their logo for keyrings and pencil sharpeners than string a series of good performances together.</p>
+
+<p>But I’ve been looking over the more affordable end of the silly cars on Autotrader lately and there’s no way I would spend money on a Mac when you put them up against the equivalent Ferrari (or even Aston or Lambo to be honest) even if I could make sense of their model lineup.</p>
+
+<p>I don’t know what’s a 575 or a 620 or an Artura (why does that one get a name?) and honestly I don’t care. They have all the personality (from an onlooker’s perspective) of a household appliance and I would rather walk.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/10/15/lydden-hill-snaps/">
+        Lydden Hill snaps
+      </a>
+    </h1>
+
+    <span class="post-date">15 Oct 2024</span>
+
+    <p><img src="/public/img/cars/lh-pack.jpeg" alt="Pack." />
+<em>Pack scrap.</em></p>
+
+<p><img src="/public/img/cars/lh-doran.jpeg" alt="Doran." />
+<em>Doran.</em></p>
+
+<p><img src="/public/img/cars/lh-bennett.jpeg" alt="Bennett." />
+<em>Bennett.</em></p>
+
+<p><img src="/public/img/cars/lh-xcar.jpeg" alt="Crosscar." />
+<em>Crosscar.</em></p>
+
+<p><img src="/public/img/cars/lh-ford.jpeg" alt="Ford." />
+<em>Ford.</em></p>
+
+<p><img src="/public/img/cars/lh-bennett-launch.jpeg" alt="Launch." />
+<em>Launch.</em></p>
+
+<p><img src="/public/img/cars/lh-roof.jpeg" alt="Roof." />
+<em>Roof.</em></p>
+
+<p>The fireworks were way better than most displays where they are the main event. Of course at Lydden it’s all about the horsepower. Top class RX cars will beat an F1 car off the line up to about 100mph. They can race on any surface and take jumps you wouldn’t believe possible. The UK is the birthplace of rallycross and it’s a great format for families and people new to motorsport. Get to Lydden Hill when you can. Also make sure you get some of that mayo from the paddock cafe when you’re there. <a href="https://www.youtube.com/watch?v=l3b7TWoOxwc">Watch the final on the youtube</a></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/09/01/e30-m25-birthday-present/">
+        E30 M25 - birthday present
+      </a>
+    </h1>
+
+    <span class="post-date">01 Sep 2024</span>
+
+    <p>Got myself a birthday present.</p>
+
+<p><img src="/public/img/cars/bmw1.jpeg" alt="Trailer." />
+<em>Hired a trailer.</em></p>
+
+<p><img src="/public/img/cars/bmw2.jpeg" alt="Fleet." />
+<em>At Fleet, paying our respects to Scott Mills.</em></p>
+
+<p><img src="/public/img/cars/bmw3.jpeg" alt="Home." />
+<em>BMW at home.</em></p>
+
+<p><img src="/public/img/cars/bmw4.jpeg" alt="Victor drives." />
+<em>Victor gets comfortable.</em></p>
+
+<p>Plenty of work needed to get it all ready for action but isn’t it a great piece of kit?</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/08/15/prescott-bhc-classic/">
+        Prescott hillclimb - classic day out
+      </a>
+    </h1>
+
+    <span class="post-date">15 Aug 2024</span>
+
+    <p>We went to Prescott (which is the Bugatti Owners Club place in Gloucestershire) for the British Hillclimb Championship which is all on the youtube if you want to see it in a video format <a href="https://www.youtube.com/watch?v=rn7df2xiabM">here</a></p>
+
+<p>We looked like this</p>
+
+<p><img src="/public/img/us.jpeg" alt="Us." />
+<em>This is us.</em></p>
+
+<p>Here are some of the cars:</p>
+
+<p><img src="/public/img/cars/prescott-abarth.jpeg" alt="Abarth." /></p>
+
+<p><img src="/public/img/cars/prescott-bugatti.jpeg" alt="Bugatti." /></p>
+
+<p><img src="/public/img/cars/prescott-hill.jpeg" alt="The hill." /></p>
+
+<p><img src="/public/img/cars/prescott-1.jpeg" alt="Prescott." /></p>
+
+<p><img src="/public/img/cars/prescott-2.jpeg" alt="Prescott again." /></p>
+
+<p><img src="/public/img/cars/prescott-cigar.jpeg" alt="Cigar." /></p>
+
+<p><img src="/public/img/cars/prescott-frogeye.jpeg" alt="Frogeye." /></p>
+
+<p><img src="/public/img/cars/prescott-glow.jpeg" alt="Glow." /></p>
+
+<p><img src="/public/img/cars/prescott-hill.jpeg" alt="Hill." /></p>
+
+<p><img src="/public/img/cars/prescott-legend.jpeg" alt="Legend." /></p>
+
+<p><img src="/public/img/cars/prescott-mitsubishi.jpeg" alt="Mitsubishi." /></p>
+
+<p><img src="/public/img/cars/prescott-paddock.jpeg" alt="Paddock." /></p>
+
+<p><img src="/public/img/cars/prescott-porsche.jpeg" alt="Porsche." /></p>
+
+<p><img src="/public/img/cars/prescott-radical.jpeg" alt="Radical." /></p>
+
+<p><img src="/public/img/cars/prescott-rapid.jpeg" alt="Rapid." /></p>
+
+<p><img src="/public/img/cars/prescott-semicircle.jpeg" alt="Semi-circle." /></p>
+
+<p><img src="/public/img/cars/prescott-seven.jpeg" alt="Seven." /></p>
+
+<p><img src="/public/img/cars/prescott-subarus.jpeg" alt="Subarus." /></p>
+
+<p><img src="/public/img/cars/prescott-traction.jpeg" alt="Traction." /></p>
+
+<p>Can you spot which were taken with the Nikon D3300 and which were taken with the Fujifilm X-H2?</p>
+
+<p>It was one of the best motorsport events I’ve been to, a really great day out. Looking forward to next year.</p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/07/20/naples-car-culture/">
+        Naples car culture
+      </a>
+    </h1>
+
+    <span class="post-date">20 Jul 2024</span>
+
+    <p>Naples had a weird car thing going on. I loved seeing the Lancia and Dacia stuff that never made it to the UK and the splutter of air cooled Fiats is pleasing to me.</p>
+
+<p><img src="/public/img/cars/126.jpeg" alt="Fiat." />
+<em>In Naples you leave your door open and your handbrake off. If someone is determined to enter or move your car, just let them.</em></p>
+
+<p>I’ve got to get me something like this.</p>
+
+<p><img src="/public/img/cars/cargrid1.jpeg" alt="Cars." /></p>
+
+<p><img src="/public/img/cars/cargrid2.jpeg" alt="Cars." /></p>
+
+<p><img src="/public/img/cars/cargrid3.jpeg" alt="Cars." /></p>
+
+<p><img src="/public/img/cars/cargrid4.jpeg" alt="More cars." /></p>
+
+    <br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/wheels/2024/05/26/maths-in-monte-carlo-monaco-grand-prix/">
+        Applying logic and maths in Monte Carlo. When to pit at the Monaco Grand Prix?
+      </a>
+    </h1>
+
+    <span class="post-date">26 May 2024</span>
+
+    <p>Formula One is a sport made almost entirely of maths, but the commentators rarely use the full toolkit of logic while talking viewers through the races. Maybe they think it won’t be exciting to examine the competition in this way? Regardless, let’s throw some logic at today’s grand prix and see what bounces back.</p>
+
+<p><img src="/public/img/redbull.jpeg" alt="Max Verstappen's Red Bull car" />
+<em>Max Verstappen’s Red Bull car, photo from my own archive.</em></p>
+
+<p><strong>If you haven’t seen the 2024 Monaco Grand Prix but you’re planning to catch up, do that and then come back to this article.</strong></p>
+
+    <a href="/wheels/2024/05/26/maths-in-monte-carlo-monaco-grand-prix/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+</div>
+
+  <img src="/public/img/delta.png" alt="Deltastring logo" />
+</div>
+    </div>
+
+    <div class="sidebar on-mob">
+      <div class="sidebar-sticky">
+
+
+        <span class="sidebar-nav-item on-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

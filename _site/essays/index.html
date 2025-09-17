@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Essays — Nico Boyce — Person doing human things">
+  <meta name="fediverse:creator" content="@nico@social.coop">
+  <link rel="me" href="https://social.coop/@nico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Essays &middot; Nico Boyce
+      
+    </title>
+
+</head>
+
+
+  <body class="theme-base-09">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="no-mob marg" />
+      <h1 class="marg">
+        <a href="/">
+          <img src="/public/img/nicologo.svg" alt="Nico Boyce" width="100%" class="marg" />
+        </a>
+      </h1>
+      <p class="lead marg"><a href="/about/">Person doing human things</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+    <span class="sidebar-nav-item">
+        <a href="/now/" >now</a> // <a href="#top" class="active" >essays</a> // <a href="/snaps/" >snaps</a> // <a href="/music/" >tunes</a>
+        <br /><a href="/wheels/" >wheels</a> // <a href="/gear/" >stuff</a> // <a href="/sale/" >sale</a> // <a href="/next/" >future</a>
+</nav>
+
+    <span class="sidebar-nav-item"><a href="mailto:hello@nicoboyce.com">email</a> // <a href="https://pixelfed.social/beastie" target="_blank" rel="noopener noreferrer">pixelfed</a> // <a href="https://deltastring.com" target="_blank" rel="noopener noreferrer">deltastring</a></span>
+
+    <span class="sidebar-nav-item no-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+<div class="page">
+  <div class="posts">
+  
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2025/05/06/if-it-saves-just-one-life/">
+        If it saves just one life
+      </a>
+    </h1>
+
+    <span class="post-date">06 May 2025</span>
+
+    <p><em>There’s talk about death and some might say I am insensitive here and if you don’t fancy that then please read something which will make you happy</em></p>
+
+<p>I’ve heard this phrase come up a few times recently, I think mostly on Radio 4.</p>
+
+<blockquote>
+  <p>If it saves just one life, isn’t it worth doing?</p>
+</blockquote>
+
+<p>For some reason the presenter didn’t dare give the correct answer to this question:</p>
+
+    <a href="/essays/2025/05/06/if-it-saves-just-one-life/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2025/04/22/releasing-music-for-drecks/">
+        Releasing music for drecks
+      </a>
+    </h1>
+
+    <span class="post-date">22 Apr 2025</span>
+
+    <p><em>some decisions and why I made them</em></p>
+
+<p>We have made a new album. You can hear and buy it on Bandcamp <a href="https://fightingmongooses.bandcamp.com/">here</a>.</p>
+
+<p><img src="/public/img/inst.webp" alt="Instrumental Driving Music for Drecks" />
+<em>The Fighting Mongooses — Instrumental Driving Music for Drecks.</em></p>
+
+<p>We’ve pretty much used all the toys on this one.</p>
+
+    <a href="/essays/2025/04/22/releasing-music-for-drecks/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2024/12/01/enjoy-the-interval/">
+        Enjoy the interval
+      </a>
+    </h1>
+
+    <span class="post-date">01 Dec 2024</span>
+
+    <p><em>having a break from big dumb power chords</em></p>
+
+<p>It’s easy to get stuck in a rut. We can all get happy staying in our comfort zones. I’ve been struggling to write music lately just because I haven’t been trying to do anything beyond the basics.</p>
+
+    <a href="/essays/2024/12/01/enjoy-the-interval/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2024/10/17/criticise-this/">
+        Criticise this!
+      </a>
+    </h1>
+
+    <span class="post-date">17 Oct 2024</span>
+
+    <p><em>or perhaps Learn to Shut Up</em></p>
+
+<p>Everyone fancies themself as a critic. Everyone who can’t do a thing but reckons if they did do it then it would be better than you could do it. Music, film-making, art, whatever.</p>
+
+<p><img src="/public/img/noo.jpeg" alt="Art." />
+<em>Art. Load of old rubbish.</em></p>
+
+<p>It’s the premise of half the internet now. Imdb or Yelp or Glassdoor or wherever you go. What do you think? Feel important, share your feelings.</p>
+
+    <a href="/essays/2024/10/17/criticise-this/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2024/08/27/rethinking-product-pricing/">
+        Rethinking product pricing.
+      </a>
+    </h1>
+
+    <span class="post-date">27 Aug 2024</span>
+
+    <h3 id="or-why-traditional-saas-pricing-models-fail-and-what-im-going-to-do-about-it">or Why traditional SaaS pricing models fail and what I’m going to do about it</h3>
+
+<p>Selling stuff is super hard. You need people to take a punt on what you’ve made, usually by lowering the sense of risk for them. You need their feedback to improve your design and also to advocate for your item.</p>
+
+<p>But then you need to make some actual cash so you hike the prices and don’t worry about letting your early advocates churn because new customers will make up for it. It’s rough</p>
+
+    <a href="/essays/2024/08/27/rethinking-product-pricing/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2024/08/18/meanwhile-in-ancient-rome/">
+        Meanwhile, in ancient Rome
+      </a>
+    </h1>
+
+    <span class="post-date">18 Aug 2024</span>
+
+    <p>We went to Pompeii and it was a lot.</p>
+
+<p><img src="/public/img/pompeii.jpeg" alt="Pompeii." />
+<em>Pompeii and Vesuvius</em></p>
+
+<p>My partner and I are both reformed history geeks. We’re not so occupied with the past these days but I think either of us would have said that we were pretty knowledgable on Pompeii for people who hadn’t been there in person. We’d know to look in the hortus</p>
+
+    <a href="/essays/2024/08/18/meanwhile-in-ancient-rome/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2024/07/07/now-now-now/">
+        Now we know.
+      </a>
+    </h1>
+
+    <span class="post-date">07 Jul 2024</span>
+
+    <p>I’ve added a now page to the site. If you have a site a bit like this, maybe you should give it a go too?</p>
+
+<p>The now page is there to be a quick summary of what I’m up to, what I would explain to a friend I hadn’t caught up with in a while. It’s different to a social media page, where you might share things on a more minute level, or to a blog where each post would have its own narrow scope. The now page has its own brief.</p>
+
+    <a href="/essays/2024/07/07/now-now-now/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2024/05/28/in-bloom-or-come-as-you-are/">
+        In Bloom (or maybe Come As You Are)
+      </a>
+    </h1>
+
+    <span class="post-date">28 May 2024</span>
+
+    <p>I am not much of a gardener. Sometimes I will get out there and do some hacking and chopping and digging and pruning, but only for theraputic reasons. It feels nice to me when I can impress my will upon the hectic growth.</p>
+
+<p>Nevertheless if I just left it to do what it wanted then the landlord and neighbours would be bothered by this. I feel like the garden and I have this unstable equilibrium where we gently push against each other until a reaction is provoked.</p>
+
+    <a href="/essays/2024/05/28/in-bloom-or-come-as-you-are/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/essays/2024/05/25/where-did-the-nico-logo-design-originate/">
+        Where did the Nico logo design originate?
+      </a>
+    </h1>
+
+    <span class="post-date">25 May 2024</span>
+
+    <p>I put together a logo of my name soon after I chose my name itself. It looks like this:</p>
+
+<p><img src="/public/img/nicologo.svg" alt="Nico Beastie Boyce logo." width="600" />
+<em>This is my logo thing.</em></p>
+
+<p>This is how I put it together.</p>
+
+    <a href="/essays/2024/05/25/where-did-the-nico-logo-design-originate/">Read more!</a><br /><br />
+    <img src="/public/img/delta.png" width="36" height="36" />
+  </div>
+  
+</div>
+
+  <img src="/public/img/delta.png" alt="Deltastring logo" />
+</div>
+    </div>
+
+    <div class="sidebar on-mob">
+      <div class="sidebar-sticky">
+
+
+        <span class="sidebar-nav-item on-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

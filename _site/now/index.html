@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="What's happening now? — Nico Boyce — Person doing human things">
+  <meta name="fediverse:creator" content="@nico@social.coop">
+  <link rel="me" href="https://social.coop/@nico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        What's happening now? &middot; Nico Boyce
+      
+    </title>
+
+</head>
+
+
+  <body class="theme-base-09">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="no-mob marg" />
+      <h1 class="marg">
+        <a href="/">
+          <img src="/public/img/nicologo.svg" alt="Nico Boyce" width="100%" class="marg" />
+        </a>
+      </h1>
+      <p class="lead marg"><a href="/about/">Person doing human things</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+    <span class="sidebar-nav-item">
+        <a href="#top" class="active" >now</a> // <a href="/essays/" >essays</a> // <a href="/snaps/" >snaps</a> // <a href="/music/" >tunes</a>
+        <br /><a href="/wheels/" >wheels</a> // <a href="/gear/" >stuff</a> // <a href="/sale/" >sale</a> // <a href="/next/" >future</a>
+</nav>
+
+    <span class="sidebar-nav-item"><a href="mailto:hello@nicoboyce.com">email</a> // <a href="https://pixelfed.social/beastie" target="_blank" rel="noopener noreferrer">pixelfed</a> // <a href="https://deltastring.com" target="_blank" rel="noopener noreferrer">deltastring</a></span>
+
+    <span class="sidebar-nav-item no-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+<div class="page">
+  <h1 id="whats-happening-now">What’s happening now?</h1>
+
+<p><em>What is this about? This is a now page as defined <a href="https://nownownow.com/about">here</a> which exists to explain what I’m up to lately. If you are reading this and have your own now page I’d be interested to see how you do it!</em></p>
+
+<hr />
+
+<h2 id="august-2025">August 2025</h2>
+
+<h2 id="whats-happening">What’s happening</h2>
+
+<p>Mostly working on the website structure - got fed up with the mess that previous Claude instances made of the photo galleries and categories. Fixed up all the posts to show in the right places.</p>
+
+<p>Visited the silk museum in Como which was fascinating - proper industrial heritage stuff.</p>
+
+<p><em>Newly published:</em> <a href="/snaps/2025/08/23/visit-to-museo-della-seta-di-como/">Visit to Museo della Seta di Como</a> — <a href="/snaps/2025/08/23/structures/">Structures</a> — <a href="/snaps/2025/08/23/italian-animals/">Italian animals</a> — <a href="/wheels/2025/08/23/classy-travellers/">Classy travellers</a> — <a href="/wheels/2025/08/15/lando-needs-therapy/">Decision time, brown</a> — <a href="/wheels/2025/08/10/racing-worth-watching/">Racing worth watching</a></p>
+
+<hr />
+
+<h2 id="july-2025">July 2025</h2>
+
+<h2 id="whats-happening">What’s happening</h2>
+
+<p>Mostly I have been working on</p>
+
+<p><img src="/public/img/beacon-logo.svg" alt="Beacon" />
+<em>Beacon.</em></p>
+
+<p><em>Newly published:</em> <a href="/wheels/2025/07/11/christians-tough-day/">Horner had it coming</a></p>
+
+<hr />
+
+<h2 id="june-2025">June 2025</h2>
+
+<h2 id="whats-happening">What’s happening</h2>
+
+<p>We bought a house! We did a bunch of other things too but mainly we bought a house!</p>
+
+<p><em>Newly published:</em> <a href="/wheels/2025/06/15/car-photo-dump/">Car photo dump, no logic</a></p>
+
+<hr />
+
+<h2 id="may-2025">May 2025</h2>
+
+<h2 id="whats-happening">What’s happening</h2>
+
+<p>We saw Chat Pile and Hirs and also The Bug and Big Brave and also Self Esteem.. see <a href="/music/">sounds</a>. We went to Prescott and things were speedy.. see the <a href="/wheels/">wheels page</a>.</p>
+
+<p><em>Newly published:</em> <a href="/essays/2025/05/06/if-it-saves-just-one-life/">If it saves just one life</a></p>
+
+<hr />
+
+<h2 id="march-april-2025">March, April 2025</h2>
+
+<h2 id="whats-happening">What’s happening</h2>
+
+<p>I think we are pushing ourselves too hard. Masters of Reality were so excellent I had a little tear. The calendar is pretty full. The tent is back on the car.</p>
+
+<p><em>Newly published:</em> <a href="/essays/2025/04/22/releasing-music-for-drecks/">Releasing music for drecks</a> — <a href="/wheels/2025/04/20/prescott-bhc-round-1/">Prescott, BHC round 1</a> — <a href="/snaps/2025/04/18/in-and-around-water/">In and around water</a> — <a href="/snaps/2025/03/19/italy-snaps/">Italy snaps</a> — <a href="/wheels/2025/03/10/street-cars/">On the street</a></p>
+
+<hr />
+
+<h2 id="feb-2025">Feb 2025</h2>
+
+<h2 id="whats-happening">What’s happening</h2>
+
+<p>How did things get busier? New contract, new projects, gigs, adventures. Brief tour of Cornwall, see <a href="/snaps/">snaps</a>, and some big nights with Brant Bjork and Jack White, see <a href="/music/">sounds</a></p>
+
+<p><em>Newly published:</em> <a href="/wheels/2025/02/15/f1-london-embarrassment/">The F1 thing was embarrassing</a> — <a href="/snaps/2025/02/06/mixed-snaps/">Mixed snaps - January batch</a> — <a href="/snaps/2025/02/06/bird-friends/">Bird friends</a></p>
+
+
+  <img src="/public/img/delta.png" alt="Deltastring logo" />
+</div>
+    </div>
+
+    <div class="sidebar on-mob">
+      <div class="sidebar-sticky">
+
+
+        <span class="sidebar-nav-item on-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>

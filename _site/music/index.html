@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="description" content="Music or just noise — Nico Boyce — Person doing human things">
+  <meta name="fediverse:creator" content="@nico@social.coop">
+  <link rel="me" href="https://social.coop/@nico">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+      
+        Music or just noise &middot; Nico Boyce
+      
+    </title>
+
+</head>
+
+
+  <body class="theme-base-09">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="no-mob marg" />
+      <h1 class="marg">
+        <a href="/">
+          <img src="/public/img/nicologo.svg" alt="Nico Boyce" width="100%" class="marg" />
+        </a>
+      </h1>
+      <p class="lead marg"><a href="/about/">Person doing human things</a></p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+    <span class="sidebar-nav-item">
+        <a href="/now/" >now</a> // <a href="/essays/" >essays</a> // <a href="/snaps/" >snaps</a> // <a href="#top" class="active" >tunes</a>
+        <br /><a href="/wheels/" >wheels</a> // <a href="/gear/" >stuff</a> // <a href="/sale/" >sale</a> // <a href="/next/" >future</a>
+</nav>
+
+    <span class="sidebar-nav-item"><a href="mailto:hello@nicoboyce.com">email</a> // <a href="https://pixelfed.social/beastie" target="_blank" rel="noopener noreferrer">pixelfed</a> // <a href="https://deltastring.com" target="_blank" rel="noopener noreferrer">deltastring</a></span>
+
+    <span class="sidebar-nav-item no-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-echo-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-echo');
+            elem.removeAttribute('data-echo-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
+  
+          if (elem.getAttribute('data-echo-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-echo-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
+<div class="page">
+  <h1 id="music-or-just-noise">Music (or just noise)</h1>
+
+<p>I sometimes write music and I also still sometimes write about music. A long time ago I did reviews and interviews for various short-lived e-zines as well as the student papers. I’m not a believer in criticism per se but I do enjoy curation.</p>
+
+<p>Here you can check out what I’m listening to and also my latest releases.</p>
+
+<h2 id="new-album-instrumental-driving-music-for-drecks">New album Instrumental Driving Music for Drecks</h2>
+
+<p>Read about the release <a href="https://nicoboyce.com/2025/04/22/releasing-music-for-drecks/">here</a> and then go <a href="https://fightingmongooses.bandcamp.com/">here</a> and buy it.</p>
+
+<p><img src="/public/img/inst.jpg" alt="Instrumental Driving Music for Drecks" />
+<em>Instrumental Driving Music for Drecks.</em></p>
+
+<p>Put this in your ears and be happy (happiness optional)</p>
+
+<p>You can hear me on <a href="https://fightingmongooses.bandcamp.com/">Bandcamp</a> or on <a href="https://www.youtube.com/channel/UCVFMIbN6jTkiU9d7U5jspYg">YouTube</a> or <a href="https://tidal.com/browse/artist/22802151?u">Tidal</a> but I don’t recommend Spotify and I’ll be pulling my tracks from there before too long. I think you can find me on Amazon or Apple or wherever else you may be but I haven’t checked.</p>
+
+<iframe class="no-mob" style="border: 0; width: 519px; height: 611px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless=""><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe>
+<iframe class="on-mob" style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless=""><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe>
+
+<p>Actually according to <a href="https://distrokid.com/vip/seven/2666105">Distrokid</a> most of this stuff is on (deep breath) Spotify, Apple Music, iTunes, Instagram/Facebook, TikTok &amp; other ByteDance stores, YouTube Music, Amazon, Pandora, Deezer, Tidal, iHeartRadio, Claro Música, Saavn, Anghami, KKBox, NetEase, Tencent, MediaNet, Boomplay, Adaptr, Flo, Joox, Kuack Media, Qobuz, Snapchat most of which I have never heard of. So there!</p>
+
+<hr />
+
+<p><strong>Recent live shows:</strong></p>
+
+<ul>
+  <li>
+    <p>Have a Nice Life
+<em>Last ever gig at the Marble Factory apparently but we couldn’t stick around. It was so hot in the venue we had to take the decision to leave and consider what could have been. RIP the Marble Factory and we will try and see Have a Nice Life properly another time!</em></p>
+  </li>
+  <li>
+    <p>Earth, Divide and Dissolve, other Desertfest acts
+<em>It’s a shame to feel like Desertfest has fallen off a cliff but honestly aside from D&amp;D and Earth this year was a total disaster. HOWEVER those two did produce amazing performances. I’d rather they did a proper tour and we hadn’t felt obligated to stand there through one psychedelic folk stoner doom jam collective after another.</em></p>
+  </li>
+  <li>
+    <p>Self Esteem outstore with Vinilo/1865
+<em>Alright so I do love Self Esteem and I loved Slow Club from when they were playing in pubs and when she’s in town I show up, it’s as simple as that. This performance barely lasted half an hour and was just bad. I’m good with an intimate low key acoustic type little set and I’m good with a big proper show but this fell in the middle and wasn’t either and honestly I was pretty pissed of with how rubbish this was. Totally mis-sold by the Vinilo record store. Also not fun: the crowd were all people who didn’t really know how to do this sort of thing. Most people only saw the stage through their phone screen. To top it off, the new songs are not good. I’d like to wipe this from my memory.</em></p>
+  </li>
+  <li>
+    <p>The Bug vs BIG|BRAVE, sonic face-off
+<em>Mad one-off sonic battle. Canadian folk-doom noise architects Big Brave occupied the stage of the Garage and Dorset lord of dub The Bug faced them down with a separate sound system at the other end of the Islington warehouse. Face-melting bliss. Clip <a href="https://pixelfed.social/p/beastie/820786658141040899">here</a>.</em></p>
+  </li>
+  <li>
+    <p>Chat Pile (support HIRS Collective)
+<em>Mighty. HIRS combine the attributes of Melt-Banana and Napalm Death (both of which I’ve seen and are amazing) and blend classic pop samples with absolute rage. Unbelievably huge. Chat Pile powered through their best material in the same way a bulldozer would power through your home. Both acts go straight on to my must see recommendations.</em></p>
+  </li>
+  <li>
+    <p>Masters of Reality (support Earl of Hell)
+<em>So powerful I had many tears. I don’t know what else to say. The show was a real journey from dark and creepy through some freeflowing exploration to a big bold resolution and finally some humour with a dark edge. Chris Goss and co kept nothing in reserve. Earl of Hell were better, tighter, bigger, ready for launch.</em></p>
+  </li>
+  <li>
+    <p>Jack White (support Black Mekon)
+<em>Treat for my kid who is a huge fan. I had a vague worry Jack White would be a bit of an artist about things but I was totally wrong. He thrashed out a solid 90 minutes of crowd pleasers, hits from throughout his career. Jack White has been strumming out his own brand of bluesy rock before he had an audience and I think he’ll still be doing this long after the world stops caring about the possibilities for noise enabled by Leo Fender designs. Not one I would have gone to ordinarily but everyone left grinning. Support band Black Mekon were wonderful, great humour and really won over the crowd, tricky in a larger venue supporting a big name artist.</em></p>
+  </li>
+  <li>
+    <p>Brant Bjork Trio
+<em>Brant is my all-time hero and he’s truly on fire at the moment. The new record is a mighty return to form and seeing Brant and Mario Lalli bounce off of each other up close is always a dream come true for me. The 1865 was way short of capacity but it was a friendly crowd with good vibes. Drummer Mike Amster brought some extra punch and movement as compared to the more laid back and organic rhythms of Ryan Gut on the previous tour. Brant’s vocals weren’t consistent but the sheer joy of the performance is what everyone in the room will remember. Support: Earl of Hell (the vocals weren’t my bag but the tones were great) and Moosehead (strong performers but it felt like the songwriting could be more collaborative and coherent)</em></p>
+  </li>
+  <li>
+    <p>Fu Manchu
+<em>Shakey performance from singer Scott Hill but drummer Scott Reeder (also of Sun &amp; Sail Club with homonymous ex Kyuss bass monster Scott Reeder) was having fun and it showed. Epic rendition of Saturn III. Bottom of bill support <a href="https://www.torusband.com/">Torus</a> are a band to keep an eye on, with some real clever songwriting as the bass kept coming up over the top of the riffs.</em></p>
+  </li>
+  <li>
+    <p>Massive Attack (support Killer Mike)
+<em>Initial sound and lighting issues and a sudden downpour cleared out the field early but those who stayed were treated to a powerful show. Could have used more of a crescendo to end. Mostly a really well thought out one-day event. Killer Mike got the tone right with his gospel-based hip-hop of optimism.</em></p>
+  </li>
+  <li>
+    <p>Sunn O))) (support Jesse Sykes)
+<em>Almost indescribable. Destroyed like the nazis at the end of Raiders of the Lost Ark. I walked out a different man.</em></p>
+  </li>
+  <li>
+    <p>Brant Bjork, Mondo Generator, Masters of Reality, &amp;c at Desertfest
+<em>Brant is always magical to me, and this was the best performance I have seen from him since the Saved By Magic tour. Nick Oliveri smashes out singalong hits and leaves everyone with a big grin. Chris Goss of MoR was having medical issues but the band held it together and bringing in Alain Johannes was a stroke of genius. Absolute heroes.</em></p>
+  </li>
+</ul>
+
+<hr />
+
+<p><strong>In progress:</strong></p>
+
+<p>I’m really happy with Drecks and we’re going to go bigger and bolder with the sequel!</p>
+
+<p><img src="/public/img/studio.jpeg" alt="Studio." />
+<em>Studio space.</em></p>
+
+<hr />
+
+<p><strong>Things on rotation at the moment:</strong></p>
+
+<ul>
+  <li>Link Wray</li>
+  <li>Ikonika</li>
+  <li>underscores</li>
+  <li>Common</li>
+  <li>Kenny Beats</li>
+</ul>
+
+<p><strong>These artists should be on your playlists:</strong></p>
+
+<ul>
+  <li>Have a Nice Life</li>
+  <li>Keys to the Astral Gates and Mystic Doors</li>
+  <li>Tanya Tagaq</li>
+  <li>Snake River Conspiracy</li>
+  <li>Bongzilla</li>
+</ul>
+
+<p><strong>Upcoming gigs:</strong></p>
+
+<ul>
+  <li>High on Fire</li>
+  <li>Queens of the Stone Age</li>
+  <li>The Beta Band</li>
+</ul>
+
+<p><strong>Spin these:</strong></p>
+
+<ul>
+  <li>Scratch Acid - Berserker <em>(Post hardcore horror noise. Equal parts SSD and Sutch.)</em></li>
+  <li>PinkPantheress - Fancy That <em>(Genuinely exciting Brit-garage nineties pop collision.)</em></li>
+  <li>Vic du Monte’s Idiot Prayer - Prey for the City <em>(So much to unpick here, you tell me)</em></li>
+  <li>Charli XCX - Brat <em>(what more is there to say, it’s the pop album everyone can love and relate to)</em></li>
+  <li>100 Gecs <em>(hectic queer chaos, swapping medication with your friends, standing in line for the club and realising your shoes don’t match)</em></li>
+  <li>Mark Lanegan Band - Here Comes That Weird Chill <em>(post grunge hard blues, running away from your problems, finding out that your real problems were the ones you brought with you)</em></li>
+  <li>Monolord - Rust <em>(somehow more Cathedral than Sleep)</em></li>
+  <li>Earl Sweatshirt - Doris <em>(I honestly never tire of this record, sounds even better on the heavyweight vinyl. Earl picks apart his relationships with his family, his friends, his culture, his fanbase, society, all for our mere entertainment. Falling apart never sounded so perfect.)</em></li>
+  <li>Brant Bjork and the Operators <em>(Every time I have a break from this one and come back to it I find even more in there. What is the process leading from Kyuss drummer through the relaxed grooves of Jalamanta to the snappy licks and bouncy pop choruses? My all time favourite.)</em></li>
+  <li>Gaz Coombes - Turn the Car Around <em>(Full of charm.)</em></li>
+</ul>
+
+<p><strong>Bin these:</strong></p>
+
+<ul>
+  <li>FKA twigs - EUSEXUA <em>(I wish I was young enough to be impressed by this, but I’m not so I’m not. William Orbit exists and you can just listen to his work.)</em></li>
+  <li>Pantera - <em>(I don’t know why I keep hearing people playing Pantera. These records have no redeeming value. It’s okay to admit you were wrong.)</em></li>
+</ul>
+
+<p><img src="/public/img/guits.jpeg" alt="Guitars." />
+<em>Guitars.</em></p>
+
+  <img src="/public/img/delta.png" alt="Deltastring logo" />
+</div>
+    </div>
+
+    <div class="sidebar on-mob">
+      <div class="sidebar-sticky">
+
+
+        <span class="sidebar-nav-item on-mob"><br class="no-mob" />
+<p class="info">
+Latest update: 17 Sep 2025
+      <br />
+      &copy; Nico Beastie Boyce 2025.
+      <br />
+      All rights reserved.
+      <br />
+      This site does not contain cookies.
+      <br />
+      Please feel free to bake your own.
+</p>
+<img src="https://nicoboyce.com/public/img/pixel-nico-2.png" alt="pixel nico" width="100%" class="on-mob" /></span>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
