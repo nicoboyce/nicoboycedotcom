@@ -86,40 +86,40 @@ class PirateEstimationGame {
     generateEasyChallenge() {
         const easyTemplates = [
             {
-                template: "{chests} treasure chests to split between {pirates} pirates. How many chests each?",
-                ranges: { chests: [6, 16], pirates: [2, 4] },
+                template: "{chests} treasure chests to split equally between {pirates} pirates. How many chests each?",
+                ranges: { chests: [6, 20], pirates: [2, 4] },
                 calculate: (vars) => Math.floor(vars.chests / vars.pirates),
                 tolerance: 1
             },
             {
-                template: "{coins} gold coins split between {crew} crew members. About how many each?",
-                ranges: { coins: [12, 24], crew: [3, 6] },
+                template: "{coins} gold coins found in a chest. Split equally between {crew} crew members. About how many each?",
+                ranges: { coins: [15, 30], crew: [3, 6] },
                 calculate: (vars) => Math.round(vars.coins / vars.crew),
                 tolerance: 1
             },
             {
-                template: "The ship sailed {miles} miles. About how far to the nearest 10?",
-                ranges: { miles: [23, 87] },
-                calculate: (vars) => Math.round(vars.miles / 10) * 10,
-                tolerance: 10
-            },
-            {
-                template: "We have {barrels} barrels of rum. About how many tens is that?",
-                ranges: { barrels: [15, 45] },
-                calculate: (vars) => Math.floor(vars.barrels / 10),
-                tolerance: 1
-            },
-            {
-                template: "{bags} bags with about {coinsPerBag} coins each. Roughly how many total?",
+                template: "We captured {bags} bags of silver, each bag holds about {coinsPerBag} coins. Roughly how many coins total?",
                 ranges: { bags: [3, 6], coinsPerBag: [15, 25] },
                 calculate: (vars) => vars.bags * vars.coinsPerBag,
                 tolerance: 15
             },
             {
-                template: "We need {trips} trips, each takes about {minutes} minutes. About how long total?",
-                ranges: { trips: [3, 8], minutes: [12, 25] },
+                template: "Loading the ship: {trips} trips to shore, each trip takes {minutes} minutes. About how long total?",
+                ranges: { trips: [4, 8], minutes: [12, 18] },
                 calculate: (vars) => vars.trips * vars.minutes,
-                tolerance: 15
+                tolerance: 10
+            },
+            {
+                template: "Shore leave: {pirates} pirates, each gets {hours} hours on land. Total shore leave hours?",
+                ranges: { pirates: [6, 12], hours: [3, 6] },
+                calculate: (vars) => vars.pirates * vars.hours,
+                tolerance: 8
+            },
+            {
+                template: "Buying supplies: rope costs {costPerLength} gold per length, we need {lengths} lengths. Total cost?",
+                ranges: { costPerLength: [5, 15], lengths: [4, 8] },
+                calculate: (vars) => vars.costPerLength * vars.lengths,
+                tolerance: 10
             }
         ];
 
