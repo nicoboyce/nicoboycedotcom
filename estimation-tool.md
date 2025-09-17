@@ -64,7 +64,11 @@ title: Pirate Estimation Challenge
   font-size: 1.1rem;
   margin-bottom: 1rem;
   text-align: center;
-  color: #333;
+  color: #0e0518;
+}
+
+#challenge-text p {
+  color: #0e0518;
 }
 
 #game-canvas {
