@@ -138,6 +138,22 @@ class PirateEstimationGame {
                 tolerance: 10,
                 riskType: "exact",
                 explanation: "Must be exactly right for fair trading!"
+            },
+            {
+                template: "We captured {prisoners} prisoners, need {guards} guards per {prisonersPer} prisoners. How many guards needed?",
+                ranges: { prisoners: [9, 18], guards: [2, 3], prisonersPer: [3, 4] },
+                calculate: (vars) => Math.ceil(vars.prisoners / vars.prisonersPer) * vars.guards,
+                tolerance: 2,
+                riskType: "over_better",
+                explanation: "Better to have extra guards - prisoners escape if undermanned!"
+            },
+            {
+                template: "Tide changes every {tideCycle} hours, it's been {elapsed} hours since last change. When's the next? (hours from now)",
+                ranges: { tideCycle: [6, 8], elapsed: [2, 5] },
+                calculate: (vars) => vars.tideCycle - vars.elapsed,
+                tolerance: 1,
+                riskType: "exact",
+                explanation: "Must be exactly right for safe navigation!"
             }
         ];
 
@@ -181,6 +197,22 @@ class PirateEstimationGame {
                 ranges: { distance: [80, 160], speed: [6, 12] },
                 calculate: (vars) => Math.round(vars.distance / vars.speed),
                 tolerance: 3
+            },
+            {
+                template: "Shore leave: {crew} crew, groups of {groupSize}, each group gets {hours} hours. How long for everyone?",
+                ranges: { crew: [40, 60], groupSize: [6, 10], hours: [2, 4] },
+                calculate: (vars) => Math.ceil(vars.crew / vars.groupSize) * vars.hours,
+                tolerance: 3,
+                riskType: "either",
+                explanation: "Just need rough planning for shore leave scheduling."
+            },
+            {
+                template: "Port tax is {taxPerPerson} gold per crew member, we have {crew} pirates. About how much tax?",
+                ranges: { taxPerPerson: [30, 70], crew: [25, 45] },
+                calculate: (vars) => vars.taxPerPerson * vars.crew,
+                tolerance: 200,
+                riskType: "over_better",
+                explanation: "Better to have extra gold - short on tax means trouble with port authorities!"
             }
         ];
 
@@ -225,6 +257,22 @@ class PirateEstimationGame {
                 ranges: { shifts: [3, 5], piratesPerShift: [2, 4], days: [15, 30] },
                 calculate: (vars) => vars.shifts * vars.piratesPerShift * vars.days,
                 tolerance: 50
+            },
+            {
+                template: "If one cannon weighs {cannonWeight}kg, about how much do {cannons} cannons weigh?",
+                ranges: { cannonWeight: [400, 800], cannons: [6, 12] },
+                calculate: (vars) => vars.cannonWeight * vars.cannons,
+                tolerance: 1000,
+                riskType: "under_better",
+                explanation: "Better to underestimate weight - overload and the ship won't sail!"
+            },
+            {
+                template: "We can load {cannonsPerMinute} cannons per minute, need {totalCannons} loaded for battle. How long to prepare?",
+                ranges: { cannonsPerMinute: [3, 6], totalCannons: [18, 30] },
+                calculate: (vars) => Math.ceil(vars.totalCannons / vars.cannonsPerMinute),
+                tolerance: 2,
+                riskType: "under_better",
+                explanation: "Better to underestimate time - overestimate and enemy attacks while unprepared!"
             }
         ];
 
