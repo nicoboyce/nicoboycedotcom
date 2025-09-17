@@ -273,6 +273,34 @@ class PirateEstimationGame {
                 tolerance: 2,
                 riskType: "under_better",
                 explanation: "Better to underestimate time - overestimate and enemy attacks while unprepared!"
+            },
+            {
+                template: "Gold bags weigh {bagWeight}kg each. We've got {pirates} pirates, each carries {carryWeight}kg. How many trips for {totalBags} bags?",
+                ranges: { bagWeight: [6, 12], pirates: [2, 4], carryWeight: [20, 35], totalBags: [40, 80] },
+                calculate: (vars) => {
+                    const bagsPerPirate = Math.floor(vars.carryWeight / vars.bagWeight);
+                    const bagsPerTrip = bagsPerPirate * vars.pirates;
+                    return Math.ceil(vars.totalBags / bagsPerTrip);
+                },
+                tolerance: 2,
+                riskType: "either",
+                explanation: "Multi-step calculation - bags per pirate, then total trips needed."
+            },
+            {
+                template: "{crews} cannon crews working together: {crew1Rate} and {crew2Rate} cannons per minute. Need {totalCannons} loaded. How many minutes?",
+                ranges: { crews: [2, 2], crew1Rate: [3, 5], crew2Rate: [4, 6], totalCannons: [35, 60] },
+                calculate: (vars) => Math.ceil(vars.totalCannons / (vars.crew1Rate + vars.crew2Rate)),
+                tolerance: 2,
+                riskType: "under_better",
+                explanation: "Better to underestimate - multiple crews working together, enemy won't wait!"
+            },
+            {
+                template: "Supply carts: {carts} carts with {cart1Cap}, {cart2Cap}, and {cart3Cap} barrel capacity. Need to move {totalBarrels} barrels. How many trips?",
+                ranges: { carts: [3, 3], cart1Cap: [4, 6], cart2Cap: [5, 8], cart3Cap: [6, 10], totalBarrels: [80, 120] },
+                calculate: (vars) => Math.ceil(vars.totalBarrels / (vars.cart1Cap + vars.cart2Cap + vars.cart3Cap)),
+                tolerance: 3,
+                riskType: "either",
+                explanation: "Complex resource management - different cart capacities working together."
             }
         ];
 
