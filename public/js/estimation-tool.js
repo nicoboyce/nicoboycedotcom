@@ -484,13 +484,36 @@ class PirateEstimationGame {
 
         document.getElementById('feedback').innerHTML =
             `<div style="color: ${timeBonus > 10 ? 'green' : timeBonus > 0 ? 'orange' : 'red'}">${feedback}</div>
-             <div>+${timeBonus} seconds! Correct answer was ${correct}</div>`;
+             <div>+${timeBonus} seconds! Correct answer was ${correct}</div>
+             <div style="font-size: 0.9em; margin-top: 10px;">Next challenge in <span id="countdown">3</span> seconds...</div>`;
 
-        // Auto-advance to next challenge after showing feedback
-        setTimeout(() => {
-            this.resumeTimer();
-            this.nextChallenge();
-        }, 3000); // Longer pause to read feedback
+        // Show countdown and auto-advance
+        let countdownTime = 3;
+        const countdownInterval = setInterval(() => {
+            countdownTime--;
+            const countdownEl = document.getElementById('countdown');
+            if (countdownEl) {
+                countdownEl.textContent = countdownTime;
+            }
+
+            if (countdownTime <= 0) {
+                clearInterval(countdownInterval);
+                // Only proceed if game is still active
+                if (this.gameActive) {
+                    this.resumeTimer();
+                    this.nextChallenge();
+                } else {
+                    // If game ended during feedback, show manual continue option
+                    this.showManualContinue();
+                }
+            }
+        }, 1000);
+    }
+
+    showManualContinue() {
+        // Show a continue button when auto-advance fails
+        document.getElementById('feedback').innerHTML +=
+            '<br><button onclick="location.reload()">Continue Playing</button>';
     }
 
     endGame() {

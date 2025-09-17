@@ -1,22 +1,22 @@
 ---
 layout: page
-title: Pirate Estimation Challenge
+title: Pirate Quest
 ---
 
 <div id="estimation-game">
   <div id="game-header">
-    <h2>🏴‍☠️ Captain's Estimation Challenge</h2>
+    <h2>🏴‍☠️ Pirate Quest</h2>
     <div id="timer">Time: <span id="time-remaining">60</span>s</div>
     <div id="score">Score: <span id="current-score">0</span></div>
   </div>
 
   <div id="challenge-area">
     <div id="challenge-text">
-      <p>Ahoy matey! Ready to test your estimation skills?</p>
+      <p>Ahoy matey! Ready to set sail on your pirate quest?</p>
     </div>
 
     <div id="answer-area">
-      <button id="start-game">Start Challenge</button>
+      <button id="start-game">Begin Quest</button>
       <div id="multiple-choice" style="display:none;">
         <button class="choice-btn" data-choice="0"></button>
         <button class="choice-btn" data-choice="1"></button>
