@@ -224,22 +224,42 @@ class PirateEstimationGame {
 
     generateChoices() {
         const correctAnswer = this.currentChallenge.answer;
-        const tolerance = this.currentChallenge.tolerance;
 
-        // Generate plausible wrong answers
+        // Round answers to appropriate level based on magnitude
+        const roundToSignificantDigits = (num) => {
+            if (num < 10) return num;
+            if (num < 100) return Math.round(num / 5) * 5; // Round to nearest 5
+            if (num < 1000) return Math.round(num / 10) * 10; // Round to nearest 10
+            if (num < 10000) return Math.round(num / 100) * 100; // Round to nearest 100
+            return Math.round(num / 1000) * 1000; // Round to nearest 1000
+        };
+
+        const roundedCorrect = roundToSignificantDigits(correctAnswer);
+
+        // Generate plausible wrong answers at similar rounding levels
         const wrongChoices = [
-            Math.floor(correctAnswer * 0.5),
-            Math.floor(correctAnswer * 1.5),
-            Math.floor(correctAnswer * 2)
+            roundToSignificantDigits(correctAnswer * 0.4),
+            roundToSignificantDigits(correctAnswer * 0.7),
+            roundToSignificantDigits(correctAnswer * 1.6)
         ];
 
-        // Put correct answer in random position
-        this.choices = [...wrongChoices];
-        const correctPosition = Math.floor(Math.random() * 4);
-        this.choices.splice(correctPosition, 0, correctAnswer);
-        this.choices = this.choices.slice(0, 4);
+        // Remove duplicates and ensure variety
+        const uniqueChoices = [...new Set([roundedCorrect, ...wrongChoices])];
 
-        this.correctChoiceIndex = correctPosition;
+        // If we need more choices, add some more variants
+        while (uniqueChoices.length < 4) {
+            const variant = roundToSignificantDigits(correctAnswer * (0.3 + Math.random() * 1.5));
+            if (!uniqueChoices.includes(variant)) {
+                uniqueChoices.push(variant);
+            }
+        }
+
+        // Shuffle and take first 4
+        this.choices = uniqueChoices.slice(0, 4).sort(() => Math.random() - 0.5);
+        this.correctChoiceIndex = this.choices.indexOf(roundedCorrect);
+
+        // Update the current challenge answer to match the rounded version
+        this.currentChallenge.answer = roundedCorrect;
     }
 
     resetChoiceButtons() {
