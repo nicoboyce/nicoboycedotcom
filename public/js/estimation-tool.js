@@ -352,7 +352,7 @@ class PirateEstimationGame {
         let feedback, timeBonus;
 
         if (isCorrect) {
-            feedback = '🎯 Perfect! Right on target!';
+            feedback = '🎯 Excellent estimation! Great thinking!';
             timeBonus = 30;
         } else {
             // Use asymmetric scoring for close answers
