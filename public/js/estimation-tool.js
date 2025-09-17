@@ -102,12 +102,12 @@ class PirateEstimationGame {
                 explanation: "Better to have too many - crew mutinies if they starve!"
             },
             {
-                template: "Loading cargo: our ship can carry {maxWeight} barrels safely. We have {barrels} barrels to load. How much weight?",
-                ranges: { maxWeight: [50, 80], barrels: [40, 70] },
-                calculate: (vars) => vars.barrels,
-                tolerance: 5,
+                template: "Storm approaching! We can sail for {maxHours} hours before it hits. Journey to safety takes {actualHours} hours. How long do we have?",
+                ranges: { maxHours: [8, 15], actualHours: [6, 12] },
+                calculate: (vars) => vars.maxHours - vars.actualHours,
+                tolerance: 2,
                 riskType: "under_better",
-                explanation: "Better to underestimate - too much weight sinks the ship!"
+                explanation: "Better to underestimate - overestimate and we get caught in the storm!"
             },
             {
                 template: "We captured {bags} bags of silver, each bag holds about {coinsPerBag} coins. Roughly how many coins total?",
