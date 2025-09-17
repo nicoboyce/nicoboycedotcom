@@ -234,14 +234,14 @@ Latest update: 17 Sep 2025
       <p>Ahoy matey! Ready to test your estimation skills?</p>
     </div>
 
-    <div id="challenge-visual">
-      <canvas id="game-canvas" width="600" height="400"></canvas>
-    </div>
-
     <div id="answer-area">
       <button id="start-game">Start Challenge</button>
-      <input type="number" id="answer-input" placeholder="Your estimate..." style="display:none;" />
-      <button id="submit-answer" style="display:none;">Submit Answer</button>
+      <div id="multiple-choice" style="display:none;">
+        <button class="choice-btn" data-choice="0"></button>
+        <button class="choice-btn" data-choice="1"></button>
+        <button class="choice-btn" data-choice="2"></button>
+        <button class="choice-btn" data-choice="3"></button>
+      </div>
     </div>
 
     <div id="feedback">
@@ -306,16 +306,40 @@ Latest update: 17 Sep 2025
   margin: 1rem 0;
 }
 
-#answer-input {
-  padding: 0.5rem;
-  font-size: 1.1rem;
-  border: 2px solid #8b4513;
-  border-radius: 4px;
-  margin-right: 0.5rem;
-  width: 120px;
+#multiple-choice {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#estimation-game button {
+.choice-btn {
+  background: #8b4513;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+.choice-btn:hover {
+  background: #654321;
+}
+
+.choice-btn.correct {
+  background: #2d5a2d;
+}
+
+.choice-btn.incorrect {
+  background: #8b2d2d;
+}
+
+#estimation-game button:not(.choice-btn) {
   background: #8b4513;
   color: white;
   border: none;
@@ -325,7 +349,7 @@ Latest update: 17 Sep 2025
   cursor: pointer;
 }
 
-#estimation-game button:hover {
+#estimation-game button:not(.choice-btn):hover {
   background: #654321;
 }
 

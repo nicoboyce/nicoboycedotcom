@@ -6,9 +6,7 @@ class PirateEstimationGame {
         this.gameActive = false;
         this.timer = null;
         this.challengeNumber = 0;
-
-        this.canvas = document.getElementById('game-canvas');
-        this.ctx = this.canvas.getContext('2d');
+        this.choices = [];
 
         this.setupEventListeners();
         this.showWelcomeMessage();
@@ -16,10 +14,11 @@ class PirateEstimationGame {
 
     setupEventListeners() {
         document.getElementById('start-game').addEventListener('click', () => this.startGame());
-        document.getElementById('submit-answer').addEventListener('click', () => this.submitAnswer());
         document.getElementById('new-challenge').addEventListener('click', () => this.nextChallenge());
-        document.getElementById('answer-input').addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') this.submitAnswer();
+
+        // Add event listeners for multiple choice buttons
+        document.querySelectorAll('.choice-btn').forEach((btn, index) => {
+            btn.addEventListener('click', () => this.selectChoice(index));
         });
     }
 
@@ -27,7 +26,6 @@ class PirateEstimationGame {
         document.getElementById('challenge-text').innerHTML =
             '<p>🏴‍☠️ Ahoy matey! Ready to test your estimation skills?</p>' +
             '<p>Quick thinking beats precise counting - trust your instincts!</p>';
-        this.clearCanvas();
     }
 
     startGame() {
@@ -40,8 +38,7 @@ class PirateEstimationGame {
         this.nextChallenge();
 
         document.getElementById('start-game').style.display = 'none';
-        document.getElementById('answer-input').style.display = 'inline-block';
-        document.getElementById('submit-answer').style.display = 'inline-block';
+        document.getElementById('multiple-choice').style.display = 'grid';
         document.getElementById('new-challenge').style.display = 'inline-block';
     }
 
@@ -66,9 +63,9 @@ class PirateEstimationGame {
 
         this.challengeNumber++;
         this.currentChallenge = this.generateChallenge();
+        this.generateChoices();
         this.displayChallenge();
-        document.getElementById('answer-input').value = '';
-        document.getElementById('answer-input').focus();
+        this.resetChoiceButtons();
         document.getElementById('feedback').textContent = '';
     }
 
@@ -225,6 +222,52 @@ class PirateEstimationGame {
         return this.generateFromTemplate(hardTemplates);
     }
 
+    generateChoices() {
+        const correctAnswer = this.currentChallenge.answer;
+        const tolerance = this.currentChallenge.tolerance;
+
+        // Generate plausible wrong answers
+        const wrongChoices = [
+            Math.floor(correctAnswer * 0.5),
+            Math.floor(correctAnswer * 1.5),
+            Math.floor(correctAnswer * 2)
+        ];
+
+        // Put correct answer in random position
+        this.choices = [...wrongChoices];
+        const correctPosition = Math.floor(Math.random() * 4);
+        this.choices.splice(correctPosition, 0, correctAnswer);
+        this.choices = this.choices.slice(0, 4);
+
+        this.correctChoiceIndex = correctPosition;
+    }
+
+    resetChoiceButtons() {
+        document.querySelectorAll('.choice-btn').forEach((btn, index) => {
+            btn.textContent = this.choices[index];
+            btn.className = 'choice-btn';
+            btn.disabled = false;
+        });
+    }
+
+    selectChoice(choiceIndex) {
+        if (!this.gameActive || !this.currentChallenge) return;
+
+        // Disable all buttons
+        document.querySelectorAll('.choice-btn').forEach(btn => btn.disabled = true);
+
+        // Show correct/incorrect
+        document.querySelectorAll('.choice-btn').forEach((btn, index) => {
+            if (index === this.correctChoiceIndex) {
+                btn.classList.add('correct');
+            } else if (index === choiceIndex) {
+                btn.classList.add('incorrect');
+            }
+        });
+
+        this.processAnswer(choiceIndex === this.correctChoiceIndex, this.choices[choiceIndex]);
+    }
+
     generateFromTemplate(templates) {
         const template = templates[Math.floor(Math.random() * templates.length)];
         const vars = {};
@@ -278,101 +321,32 @@ class PirateEstimationGame {
             `<p><em>Challenge ${this.challengeNumber} (${difficultyText}) ${riskIcon}</em></p>
              <p><strong>${this.currentChallenge.question}</strong></p>
              <p><small><em>${this.currentChallenge.explanation}</em></small></p>`;
-
-        this.clearCanvas();
-        this.drawCaptainScene();
     }
 
-    clearCanvas() {
-        this.ctx.fillStyle = '#e6ddd4';
-        this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-    }
-
-    drawCaptainScene() {
-        this.clearCanvas();
-
-        // Draw simple pirate ship scene
-        this.ctx.fillStyle = '#654321';
-        this.ctx.font = '48px Georgia';
-        this.ctx.textAlign = 'center';
-        this.ctx.fillText('🏴‍☠️', this.canvas.width / 2, this.canvas.height / 2 - 40);
-
-        this.ctx.font = '24px Georgia';
-        this.ctx.fillText('Captain\'s Decision', this.canvas.width / 2, this.canvas.height / 2 + 20);
-
-        this.ctx.font = '16px Georgia';
-        this.ctx.fillText('Think like a pirate captain!', this.canvas.width / 2, this.canvas.height / 2 + 50);
-    }
-
-    submitAnswer() {
-        if (!this.gameActive || !this.currentChallenge) return;
-
-        const userAnswer = parseInt(document.getElementById('answer-input').value);
-        if (isNaN(userAnswer)) {
-            document.getElementById('feedback').textContent = 'Please enter a number, matey!';
-            return;
-        }
-
+    processAnswer(isCorrect, userAnswer) {
         const correct = this.currentChallenge.answer;
         const tolerance = this.currentChallenge.tolerance;
-        const diff = userAnswer - correct; // Keep sign for asymmetric scoring
+        const diff = userAnswer - correct;
         const absDiff = Math.abs(diff);
 
         let feedback, timeBonus;
 
-        // Asymmetric scoring based on risk type
-        if (absDiff === 0) {
+        if (isCorrect) {
             feedback = '🎯 Perfect! Right on target!';
             timeBonus = 30;
-        } else if (this.currentChallenge.riskType === 'exact') {
-            // Must be exactly right
-            if (absDiff <= tolerance) {
-                feedback = '⭐ Close enough for exact work!';
-                timeBonus = 15;
-            } else {
-                feedback = '💥 Not precise enough! The answer was ' + correct;
-                timeBonus = 0;
-            }
-        } else if (this.currentChallenge.riskType === 'over_better') {
-            // Better to overestimate (positive diff = overestimate)
-            if (diff >= 0 && diff <= tolerance) {
-                feedback = '⭐ Good! Better to have extra than run short!';
-                timeBonus = 20;
-            } else if (diff > tolerance) {
-                feedback = '⚠️ Way too much, but at least we won\'t run out!';
-                timeBonus = 10;
-            } else if (diff < 0 && absDiff <= tolerance) {
-                feedback = '😬 A bit low - crew might be unhappy!';
-                timeBonus = 5;
-            } else {
-                feedback = '💀 Too little! Crew mutiny! Answer was ' + correct;
-                timeBonus = 0;
-            }
-        } else if (this.currentChallenge.riskType === 'under_better') {
-            // Better to underestimate (negative diff = underestimate)
-            if (diff <= 0 && absDiff <= tolerance) {
-                feedback = '⭐ Good! Better safe than sinking the ship!';
-                timeBonus = 20;
-            } else if (diff < -tolerance) {
-                feedback = '⚠️ Very cautious, but at least we\'re safe!';
-                timeBonus = 10;
-            } else if (diff > 0 && diff <= tolerance) {
-                feedback = '😬 A bit risky - might be too much!';
-                timeBonus = 5;
-            } else {
-                feedback = '🌊 Too much! Ship sinks! Answer was ' + correct;
-                timeBonus = 0;
-            }
         } else {
-            // Traditional symmetric scoring
-            if (absDiff <= tolerance) {
-                feedback = '⭐ Great estimate! Close enough!';
-                timeBonus = 15;
+            // Use asymmetric scoring for close answers
+            if (this.currentChallenge.riskType === 'over_better' && diff > 0 && diff <= tolerance * 2) {
+                feedback = '⚠️ Too high but better than too low!';
+                timeBonus = 10;
+            } else if (this.currentChallenge.riskType === 'under_better' && diff < 0 && absDiff <= tolerance * 2) {
+                feedback = '⚠️ Too low but better safe than sorry!';
+                timeBonus = 10;
             } else if (absDiff <= tolerance * 2) {
-                feedback = '👍 Not bad! Getting warmer...';
+                feedback = '👍 Not the best choice, but in the right range!';
                 timeBonus = 5;
             } else {
-                feedback = '💥 Way off course! The answer was ' + correct;
+                feedback = '💥 Way off! Think about the captain\'s priorities!';
                 timeBonus = 0;
             }
         }
@@ -382,7 +356,7 @@ class PirateEstimationGame {
 
         document.getElementById('feedback').innerHTML =
             `<div style="color: ${timeBonus > 10 ? 'green' : timeBonus > 0 ? 'orange' : 'red'}">${feedback}</div>
-             <div>+${timeBonus} seconds! Answer was ${correct}</div>`;
+             <div>+${timeBonus} seconds! Correct answer was ${correct}</div>`;
 
         setTimeout(() => this.nextChallenge(), 2000);
     }
@@ -407,11 +381,9 @@ class PirateEstimationGame {
              <p>Final Score: ${this.score} seconds</p>
              <p>${encouragementMessage}</p>`;
 
-        this.clearCanvas();
         document.getElementById('feedback').textContent = '';
         document.getElementById('start-game').style.display = 'inline-block';
-        document.getElementById('answer-input').style.display = 'none';
-        document.getElementById('submit-answer').style.display = 'none';
+        document.getElementById('multiple-choice').style.display = 'none';
         document.getElementById('new-challenge').style.display = 'none';
     }
 }
