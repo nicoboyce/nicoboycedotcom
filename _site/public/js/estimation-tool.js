@@ -256,10 +256,21 @@ class PirateEstimationGame {
         this.gameActive = false;
         clearInterval(this.timer);
 
+        let encouragementMessage;
+        if (this.score === 0) {
+            encouragementMessage = "Don't be shy, matey! Try answering some questions next time - even rough guesses earn you points!";
+        } else if (this.score < 50) {
+            encouragementMessage = "Not bad for a landlubber! Keep practising those estimation skills!";
+        } else if (this.score < 150) {
+            encouragementMessage = "Well done, Captain! Your estimation skills are improving!";
+        } else {
+            encouragementMessage = "Incredible work, Admiral! You're a true estimation master!";
+        }
+
         document.getElementById('challenge-text').innerHTML =
             `<h3>🏴‍☠️ Game Over! 🏴‍☠️</h3>
              <p>Final Score: ${this.score} seconds</p>
-             <p>Well done, Captain! Your estimation skills are improving!</p>`;
+             <p>${encouragementMessage}</p>`;
 
         this.clearCanvas();
         document.getElementById('feedback').textContent = '';
