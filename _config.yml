@@ -24,5 +24,10 @@ collections:
 
 excerpt_separator: "<!--excerpt-end-->"
 okay:             idk-lol
+
+exclude:
+  - CLAUDE.md
+  - estimation-tool-plan.md
+
 # github:
 #   repo:           https://github.com/poole/hyde
