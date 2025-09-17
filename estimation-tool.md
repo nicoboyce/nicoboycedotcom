@@ -36,12 +36,6 @@ title: Pirate Estimation Challenge
 </div>
 
 <style>
-#estimation-game {
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: Georgia, serif;
-}
-
 #game-header {
   display: flex;
   justify-content: space-between;
@@ -93,7 +87,7 @@ title: Pirate Estimation Challenge
   width: 120px;
 }
 
-button {
+#estimation-game button {
   background: #8b4513;
   color: white;
   border: none;
@@ -103,7 +97,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#estimation-game button:hover {
   background: #654321;
 }
 
