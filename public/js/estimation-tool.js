@@ -394,35 +394,37 @@ class PirateEstimationGame {
 
         slider.style.background = gradient;
 
-        // Add marker for correct answer
+        // Add arrow marker for correct answer
         const correctMarker = document.createElement('div');
         correctMarker.className = 'slider-marker correct-marker';
+        correctMarker.innerHTML = '▼';
         correctMarker.style.cssText = `
             position: absolute;
             left: ${correctPosition}%;
-            top: -5px;
-            width: 4px;
-            height: 18px;
-            background: #2d5a2d;
-            border-radius: 2px;
+            top: -25px;
+            font-size: 16px;
+            color: #2d5a2d;
             transform: translateX(-50%);
             z-index: 10;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         `;
 
-        // Add marker for user answer
+        // Add arrow marker for user answer
         const userMarker = document.createElement('div');
         userMarker.className = 'slider-marker user-marker';
         const userColor = score >= 60 ? '#2d5a2d' : score >= 30 ? '#ff9800' : '#d32f2f';
+        userMarker.innerHTML = '▲';
         userMarker.style.cssText = `
             position: absolute;
             left: ${userPosition}%;
-            top: -5px;
-            width: 4px;
-            height: 18px;
-            background: ${userColor};
-            border-radius: 2px;
+            top: 15px;
+            font-size: 16px;
+            color: ${userColor};
             transform: translateX(-50%);
             z-index: 10;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         `;
 
         // Ensure container is positioned for absolute markers
