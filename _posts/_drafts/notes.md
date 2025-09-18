@@ -31,4 +31,8 @@ Stewart Lee https://www.stewartlee.co.uk/written_for_money/context-is-vital-that
 
 
 
-Autumn is here and so it's time for Apple to increment their version numbers. This year they have mixed it up by announcing 26 as the follow-up to 15. 
+Autumn is here and with it comes the day when Apple increment their version numbers. This year they have demonstrated a whole new understanding of counting by announcing 26 as the sequel to various values. Apparently it's a new year based numbering system, which I guess means my calendar is suffering an off-by-one error.
+
+Anyway it's another year where for a few weeks before the actual announcement I started thinking "I might buy an iPhone" but it wore off before preorders opened.
+
+I don't know if I can put my finger on why I can't, well, put my finger on the fingerprint reader to make the actual payment and buy one. My current phone is a TCL thing which has this crazy matte screen with a monochrome 
