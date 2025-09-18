@@ -1,3 +1,7 @@
-{% assign title = include.src | split: "." | first | capitalize %}
-![{{ title }}.](/public/img/{{ include.src }})
-*{{ title }}.*
+{% if include.caption %}
+  {% assign caption = include.caption %}
+{% else %}
+  {% assign caption = include.src | split: "." | first | capitalize %}
+{% endif %}
+![{{ caption }}.](/public/img/{{ include.src }})
+*{{ caption }}.*

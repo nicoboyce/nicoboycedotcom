@@ -5,35 +5,24 @@ date: 2025-02-06
 categories: snaps
 ---
 
-![Moon.](/public/img/moon.jpg)
-*Moon.*
+{% include img.html src="moon.jpg" %}
 
-![Old.](/public/img/old.jpg)
-*Old.*
+{% include img.html src="old.jpg" %}
 
-![Trees.](/public/img/trees.jpg)
-*Trees.*
+{% include img.html src="trees.jpg" %}
 
-![Robin.](/public/img/robin.jpg)
-*Robin.*
+{% include img.html src="robin.jpg" %}
 
-![Bath.](/public/img/bath.jpg)
-*Bath.*
+{% include img.html src="bath.jpg" %}
 
-![Cycle.](/public/img/cycle.jpg)
-*Cycle.*
+{% include img.html src="cycle.jpg" %}
 
-![Cremyll.](/public/img/cremyll.jpg)
-*Cremyll.*
+{% include img.html src="cremyll.jpg" %}
 
-![Scope.](/public/img/scope.jpg)
-*Scope.*
+{% include img.html src="scope.jpg" %}
 
-![Wall.](/public/img/wall.jpg)
-*Wall.*
+{% include img.html src="wall.jpg" %}
 
-![Miata.](/public/img/miata.jpg)
-*Miata.*
+{% include img.html src="miata.jpg" %}
 
-![Sprout.](/public/img/sprout.jpg)
-*Sprout.*
+{% include img.html src="sprout.jpg" %}
