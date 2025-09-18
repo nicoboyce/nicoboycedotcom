@@ -16,10 +16,17 @@ class PirateEstimationGame {
     setupEventListeners() {
         document.getElementById('start-game').addEventListener('click', () => this.startGame());
 
-        // Add event listeners for multiple choice buttons
-        document.querySelectorAll('.choice-btn').forEach((btn, index) => {
-            btn.addEventListener('click', () => this.selectChoice(index));
-        });
+        // Add event listeners for slider
+        const slider = document.getElementById('estimation-slider');
+        const submitBtn = document.getElementById('submit-estimate');
+
+        if (slider) {
+            slider.addEventListener('input', () => this.updateSliderValue());
+        }
+
+        if (submitBtn) {
+            submitBtn.addEventListener('click', () => this.submitEstimate());
+        }
     }
 
     showWelcomeMessage() {
@@ -38,7 +45,7 @@ class PirateEstimationGame {
         this.nextChallenge();
 
         document.getElementById('start-game').style.display = 'none';
-        document.getElementById('multiple-choice').style.display = 'grid';
+        document.getElementById('slider-area').style.display = 'block';
     }
 
     startTimer() {
@@ -72,9 +79,9 @@ class PirateEstimationGame {
 
         this.challengeNumber++;
         this.currentChallenge = this.generateChallenge();
-        this.generateChoices();
+        this.setupSliderRange();
         this.displayChallenge();
-        this.resetChoiceButtons();
+        this.resetSlider();
         document.getElementById('feedback').textContent = '';
     }
 
@@ -307,93 +314,59 @@ class PirateEstimationGame {
         return this.generateFromTemplate(hardTemplates);
     }
 
-    generateChoices() {
+    calculateRange(correctAnswer) {
+        // Find smallest power of 10 where correct_answer * 1.1 fits
+        const upperBound = correctAnswer * 1.1;
+        const powerOfTen = Math.pow(10, Math.ceil(Math.log10(upperBound)));
+        return { min: 0, max: powerOfTen };
+    }
+
+    setupSliderRange() {
         const correctAnswer = this.currentChallenge.answer;
+        const range = this.calculateRange(correctAnswer);
 
-        // Round answers to appropriate level based on magnitude
-        const roundToSignificantDigits = (num) => {
-            // Always ensure we have an integer first
-            num = Math.round(num);
+        const slider = document.getElementById('estimation-slider');
+        const minLabel = document.getElementById('min-label');
+        const maxLabel = document.getElementById('max-label');
 
-            if (num < 10) return num;
-            if (num < 100) return Math.round(num / 5) * 5; // Round to nearest 5
-            if (num < 1000) return Math.round(num / 10) * 10; // Round to nearest 10
-            if (num < 10000) return Math.round(num / 100) * 100; // Round to nearest 100
-            return Math.round(num / 1000) * 1000; // Round to nearest 1000
-        };
+        slider.min = range.min;
+        slider.max = range.max;
+        slider.value = Math.floor(range.max / 2); // Start at middle
 
-        const roundedCorrect = roundToSignificantDigits(correctAnswer);
+        minLabel.textContent = range.min.toLocaleString();
+        maxLabel.textContent = range.max.toLocaleString();
 
-        // Generate plausible wrong answers at similar rounding levels
-        const wrongChoices = [
-            roundToSignificantDigits(correctAnswer * 0.4),
-            roundToSignificantDigits(correctAnswer * 0.7),
-            roundToSignificantDigits(correctAnswer * 1.6)
-        ];
-
-        // Remove duplicates and ensure variety
-        const uniqueChoices = [...new Set([roundedCorrect, ...wrongChoices])];
-
-        // If we need more choices, add some more variants
-        while (uniqueChoices.length < 4) {
-            const variant = roundToSignificantDigits(correctAnswer * (0.3 + Math.random() * 1.5));
-            if (!uniqueChoices.includes(variant)) {
-                uniqueChoices.push(variant);
-            }
-        }
-
-        // Shuffle and take first 4
-        this.choices = uniqueChoices.slice(0, 4).sort(() => Math.random() - 0.5);
-        this.correctChoiceIndex = this.choices.indexOf(roundedCorrect);
-
-        // Update the current challenge answer to match the rounded version
-        this.currentChallenge.answer = roundedCorrect;
+        this.currentRange = range;
+        this.updateSliderValue();
     }
 
-    resetChoiceButtons() {
-        document.querySelectorAll('.choice-btn').forEach((btn, index) => {
-            btn.textContent = this.choices[index];
-            btn.className = 'choice-btn';
-            btn.disabled = false;
-            btn.style.opacity = '1'; // Reset opacity
-        });
+    updateSliderValue() {
+        const slider = document.getElementById('estimation-slider');
+        const valueDisplay = document.getElementById('slider-value');
+        valueDisplay.textContent = parseInt(slider.value).toLocaleString();
     }
 
-    selectChoice(choiceIndex) {
+    resetSlider() {
+        const submitBtn = document.getElementById('submit-estimate');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Estimate';
+    }
+
+    submitEstimate() {
         if (!this.gameActive || !this.currentChallenge) return;
+
+        const slider = document.getElementById('estimation-slider');
+        const userAnswer = parseInt(slider.value);
 
         // Pause timer during feedback
         this.pauseTimer();
 
-        // Disable all buttons
-        document.querySelectorAll('.choice-btn').forEach(btn => btn.disabled = true);
+        // Disable submit button
+        const submitBtn = document.getElementById('submit-estimate');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitted!';
 
-        // Enhanced visual feedback based on risk type
-        const userAnswer = this.choices[choiceIndex];
-        const correctAnswer = this.currentChallenge.answer;
-        const riskType = this.currentChallenge.riskType;
-
-        document.querySelectorAll('.choice-btn').forEach((btn, index) => {
-            if (index === this.correctChoiceIndex) {
-                btn.classList.add('correct');
-            } else if (index === choiceIndex) {
-                // Color based on how bad the choice was for this risk type
-                const diff = this.choices[index] - correctAnswer;
-
-                if (riskType === 'over_better' && diff < 0) {
-                    btn.classList.add('very-bad'); // Too low when over is better = dangerous
-                } else if (riskType === 'under_better' && diff > 0) {
-                    btn.classList.add('very-bad'); // Too high when under is better = dangerous
-                } else {
-                    btn.classList.add('incorrect'); // Regular wrong answer
-                }
-            } else {
-                // Show other options in muted style
-                btn.style.opacity = '0.5';
-            }
-        });
-
-        this.processAnswer(choiceIndex === this.correctChoiceIndex, userAnswer);
+        this.processAnswer(userAnswer);
     }
 
     generateFromTemplate(templates) {
@@ -451,40 +424,59 @@ class PirateEstimationGame {
              <p><small><em>${this.currentChallenge.explanation}</em></small></p>`;
     }
 
-    processAnswer(isCorrect, userAnswer) {
+    processAnswer(userAnswer) {
         const correct = this.currentChallenge.answer;
-        const tolerance = this.currentChallenge.tolerance;
+        const riskType = this.currentChallenge.riskType;
         const diff = userAnswer - correct;
         const absDiff = Math.abs(diff);
 
-        let feedback, timeBonus;
+        // Calculate percentage error
+        const percentageError = (absDiff / correct) * 100;
 
-        if (isCorrect) {
-            feedback = '🎯 Excellent estimation! Great thinking!';
-            timeBonus = 30;
+        // Base score from accuracy (0-100)
+        let baseScore = Math.max(0, 100 - percentageError);
+
+        // Apply risk type penalties
+        let penaltyMultiplier = 1;
+        let riskMessage = '';
+
+        if (riskType === 'over_better' && diff < 0) {
+            penaltyMultiplier = 0.3; // Harsh penalty for underestimating
+            riskMessage = ' (dangerous underestimate!)';
+        } else if (riskType === 'under_better' && diff > 0) {
+            penaltyMultiplier = 0.3; // Harsh penalty for overestimating
+            riskMessage = ' (dangerous overestimate!)';
+        } else if (riskType === 'exact' && absDiff > 0) {
+            penaltyMultiplier = 0.7; // Moderate penalty for inexact
+            riskMessage = ' (must be exact!)';
+        }
+
+        const finalScore = Math.floor(baseScore * penaltyMultiplier);
+        const timeBonus = Math.floor(finalScore * 0.5); // Convert to time bonus
+
+        // Generate feedback message
+        let feedback;
+        if (finalScore >= 95) {
+            feedback = '🎯 Perfect estimation! Legendary!';
+        } else if (finalScore >= 80) {
+            feedback = '⚡ Excellent work, Captain!';
+        } else if (finalScore >= 60) {
+            feedback = '👍 Good estimate, getting warmer!';
+        } else if (finalScore >= 30) {
+            feedback = '⚠️ Not quite right, but you\'re learning!';
         } else {
-            // Use asymmetric scoring for close answers
-            if (this.currentChallenge.riskType === 'over_better' && diff > 0 && diff <= tolerance * 2) {
-                feedback = '⚠️ Too high but better than too low!';
-                timeBonus = 10;
-            } else if (this.currentChallenge.riskType === 'under_better' && diff < 0 && absDiff <= tolerance * 2) {
-                feedback = '⚠️ Too low but better safe than sorry!';
-                timeBonus = 10;
-            } else if (absDiff <= tolerance * 2) {
-                feedback = '👍 Not the best choice, but in the right range!';
-                timeBonus = 5;
-            } else {
-                feedback = '💥 Way off! Think about the captain\'s priorities!';
-                timeBonus = 0;
-            }
+            feedback = '💥 Way off the mark, matey!';
         }
 
         this.timeRemaining += timeBonus;
         this.score += timeBonus;
 
+        const accuracyPercent = Math.floor(100 - percentageError);
+
         document.getElementById('feedback').innerHTML =
-            `<div style="color: ${timeBonus > 10 ? 'green' : timeBonus > 0 ? 'orange' : 'red'}">${feedback}</div>
-             <div>+${timeBonus} seconds! Correct answer was ${correct}</div>
+            `<div style="color: ${finalScore >= 60 ? 'green' : finalScore >= 30 ? 'orange' : 'red'}">${feedback}${riskMessage}</div>
+             <div>Accuracy: ${Math.max(0, accuracyPercent)}% | Score: ${finalScore} | +${timeBonus} seconds!</div>
+             <div>Your guess: ${userAnswer.toLocaleString()} | Correct: ${correct.toLocaleString()}</div>
              <div style="font-size: 0.9em; margin-top: 10px;">Next challenge in <span id="countdown">3</span> seconds...</div>`;
 
         // Show countdown and auto-advance
@@ -538,7 +530,7 @@ class PirateEstimationGame {
 
         document.getElementById('feedback').textContent = '';
         document.getElementById('start-game').style.display = 'inline-block';
-        document.getElementById('multiple-choice').style.display = 'none';
+        document.getElementById('slider-area').style.display = 'none';
     }
 }
 
