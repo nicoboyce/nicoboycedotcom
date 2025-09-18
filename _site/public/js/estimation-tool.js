@@ -371,9 +371,17 @@ class PirateEstimationGame {
         const sliderContainer = document.getElementById('slider-container');
         const range = this.currentRange;
 
-        // Calculate positions as percentages
+        // Get slider's actual dimensions and position
+        const sliderRect = slider.getBoundingClientRect();
+        const containerRect = sliderContainer.getBoundingClientRect();
+
+        // Calculate positions as percentages of the actual slider track
         const userPosition = ((userAnswer - range.min) / (range.max - range.min)) * 100;
         const correctPosition = ((correctAnswer - range.min) / (range.max - range.min)) * 100;
+
+        // Calculate offset from container left to slider left
+        const sliderOffset = sliderRect.left - containerRect.left;
+        const sliderWidth = sliderRect.width;
 
         // Calculate good range (±20% of correct answer, but clamped to slider range)
         const goodRangeWidth = Math.min(correctAnswer * 0.2, range.max * 0.1);
@@ -394,13 +402,17 @@ class PirateEstimationGame {
 
         slider.style.background = gradient;
 
+        // Calculate actual pixel positions relative to the slider track
+        const correctPx = sliderOffset + (correctPosition / 100) * sliderWidth;
+        const userPx = sliderOffset + (userPosition / 100) * sliderWidth;
+
         // Add arrow marker for correct answer
         const correctMarker = document.createElement('div');
         correctMarker.className = 'slider-marker correct-marker';
         correctMarker.innerHTML = '▼';
         correctMarker.style.cssText = `
             position: absolute;
-            left: ${correctPosition}%;
+            left: ${correctPx}px;
             top: -25px;
             font-size: 16px;
             color: #1b5e20;
@@ -417,7 +429,7 @@ class PirateEstimationGame {
         userMarker.innerHTML = '▲';
         userMarker.style.cssText = `
             position: absolute;
-            left: ${userPosition}%;
+            left: ${userPx}px;
             top: 15px;
             font-size: 16px;
             color: ${userColor};
