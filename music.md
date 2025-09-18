@@ -14,7 +14,7 @@ Here you can check out what I'm listening to and also my latest releases.
 
 Read about the release [here](/essays/2025/04/22/releasing-music-for-drecks/) and then go [here](https://fightingmongooses.bandcamp.com/) and buy it.
 
-![Instrumental Driving Music for Drecks](/public/img/inst.jpg)
+![Instrumental Driving Music for Drecks](/public/img/tfm-drecks.png)
 *Instrumental Driving Music for Drecks.*
 
 Put this in your ears and be happy (happiness optional)
