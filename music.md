@@ -19,7 +19,7 @@ Read about the release [here](https://nicoboyce.com/2025/04/22/releasing-music-f
 
 Put this in your ears and be happy (happiness optional)
 
-You can hear me on [Bandcamp](https://fightingmongooses.bandcamp.com/) or on [YouTube](https://www.youtube.com/channel/UCVFMIbN6jTkiU9d7U5jspYg) or [Tidal](https://tidal.com/browse/artist/22802151?u) but I don't recommend Spotify and I'll be pulling my tracks from there before too long. I think you can find me on Amazon or Apple or wherever else you may be but I haven't checked.
+Listen to the album on [Bandcamp](https://fightingmongooses.bandcamp.com/), [Tidal](https://tidal.com/browse/album/457375072), [Spotify](https://open.spotify.com/album/4xJSB3h9sIeyMfpmZZmB8n), [YouTube](https://www.youtube.com/playlist?list=OLAK5uy_nNlYcdy3bEEcBMg7ou_wpnKRIOeZRXNHk), or [Apple Music](https://music.apple.com/us/album/instrumental-driving-music-for-drecks/1836994336).
 
 <iframe class="no-mob" style="border: 0; width: 519px; height: 611px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe><iframe class="on-mob" style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe>
 
