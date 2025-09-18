@@ -41,7 +41,7 @@ Also releasing music under my name doesn't show that it's a team effort. Rosie s
 ![The Fighting Mongooses.](/public/img/fighting-mongooses.jpeg)
 *The Fighting Mongooses.*
 
-## No, this isn't on streaming services (yet)
+## ~~No, this isn't on streaming services (yet)~~ okay it is now
 
 I'll probably put this on most of the streaming services eventually, but I'm going to hold out as long as I can.
 
