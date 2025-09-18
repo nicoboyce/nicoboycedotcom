@@ -475,9 +475,9 @@ class PirateEstimationGame {
 
         document.getElementById('feedback').innerHTML =
             `<div style="color: ${finalScore >= 60 ? 'green' : finalScore >= 30 ? 'orange' : 'red'}">${feedback}${riskMessage}</div>
-             <div>Accuracy: ${Math.max(0, accuracyPercent)}% | Score: ${finalScore} | +${timeBonus} seconds!</div>
-             <div>Your guess: ${userAnswer.toLocaleString()} | Correct: ${correct.toLocaleString()}</div>
-             <div style="font-size: 0.9em; margin-top: 10px;">Next challenge in <span id="countdown">3</span> seconds...</div>`;
+             <div style="color: #0e0518;">Accuracy: ${Math.max(0, accuracyPercent)}% | Score: ${finalScore} | +${timeBonus} seconds!</div>
+             <div style="color: #0e0518;">Your guess: ${userAnswer.toLocaleString()} | Correct: ${correct.toLocaleString()}</div>
+             <div style="font-size: 0.9em; margin-top: 10px; color: #0e0518;">Next challenge in <span id="countdown">3</span> seconds...</div>`;
 
         // Show countdown and auto-advance
         let countdownTime = 3;

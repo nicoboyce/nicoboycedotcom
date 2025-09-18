@@ -109,7 +109,7 @@ title: Pirate Quest
   margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 1.1rem;
-  color: #8b4513;
+  color: #2c1810;
 }
 
 #estimation-slider {
