@@ -100,11 +100,16 @@ class PirateEstimationGame {
         const easyTemplates = [
             {
                 template: "{chests} treasure chests to split equally between {pirates} pirates. How many chests each?",
-                ranges: { chests: [6, 20], pirates: [2, 4] },
-                calculate: (vars) => Math.floor(vars.chests / vars.pirates),
-                tolerance: 1,
+                ranges: { chests: [2, 5], pirates: [2, 4] },
+                calculate: (vars) => vars.chests / vars.pirates,
+                tolerance: 0,
                 riskType: "exact",
-                explanation: "Must be exactly right - unfair splits cause fights!"
+                explanation: "Must be exactly right - unfair splits cause fights!",
+                generateVars: (template) => {
+                    const chestsEach = 2 + Math.floor(Math.random() * 4); // 2-5 chests each
+                    const pirates = 2 + Math.floor(Math.random() * 3); // 2-4 pirates
+                    return { chests: chestsEach * pirates, pirates: pirates };
+                }
             },
             {
                 template: "We need biscuits for {crew} crew, {days} days voyage. Each pirate eats {biscuitsPerDay} per day. How many biscuits total?",
@@ -371,12 +376,17 @@ class PirateEstimationGame {
 
     generateFromTemplate(templates) {
         const template = templates[Math.floor(Math.random() * templates.length)];
-        const vars = {};
+        let vars = {};
 
-        // Generate random values for each variable
-        for (const [key, range] of Object.entries(template.ranges)) {
-            const [min, max] = range;
-            vars[key] = min + Math.floor(Math.random() * (max - min + 1));
+        // Use custom variable generation if provided
+        if (template.generateVars) {
+            vars = template.generateVars(template);
+        } else {
+            // Generate random values for each variable
+            for (const [key, range] of Object.entries(template.ranges)) {
+                const [min, max] = range;
+                vars[key] = min + Math.floor(Math.random() * (max - min + 1));
+            }
         }
 
         // Handle special cases like port names
