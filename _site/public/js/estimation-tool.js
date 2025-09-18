@@ -353,8 +353,83 @@ class PirateEstimationGame {
 
     resetSlider() {
         const submitBtn = document.getElementById('submit-estimate');
+        const slider = document.getElementById('estimation-slider');
+
         submitBtn.disabled = false;
         submitBtn.textContent = 'Submit Estimate';
+
+        // Reset slider visual feedback
+        slider.style.background = '#ddd';
+
+        // Remove any existing markers
+        const existingMarkers = document.querySelectorAll('.slider-marker');
+        existingMarkers.forEach(marker => marker.remove());
+    }
+
+    showSliderFeedback(userAnswer, correctAnswer, score) {
+        const slider = document.getElementById('estimation-slider');
+        const sliderContainer = document.getElementById('slider-container');
+        const range = this.currentRange;
+
+        // Calculate positions as percentages
+        const userPosition = ((userAnswer - range.min) / (range.max - range.min)) * 100;
+        const correctPosition = ((correctAnswer - range.min) / (range.max - range.min)) * 100;
+
+        // Calculate good range (±20% of correct answer, but clamped to slider range)
+        const goodRangeWidth = Math.min(correctAnswer * 0.2, range.max * 0.1);
+        const goodRangeMin = Math.max(range.min, correctAnswer - goodRangeWidth);
+        const goodRangeMax = Math.min(range.max, correctAnswer + goodRangeWidth);
+
+        const goodRangeMinPos = ((goodRangeMin - range.min) / (range.max - range.min)) * 100;
+        const goodRangeMaxPos = ((goodRangeMax - range.min) / (range.max - range.min)) * 100;
+
+        // Create gradient background showing good zone
+        const gradient = `linear-gradient(to right,
+            #ddd 0%,
+            #ddd ${goodRangeMinPos}%,
+            #c8e6c9 ${goodRangeMinPos}%,
+            #c8e6c9 ${goodRangeMaxPos}%,
+            #ddd ${goodRangeMaxPos}%,
+            #ddd 100%)`;
+
+        slider.style.background = gradient;
+
+        // Add marker for correct answer
+        const correctMarker = document.createElement('div');
+        correctMarker.className = 'slider-marker correct-marker';
+        correctMarker.style.cssText = `
+            position: absolute;
+            left: ${correctPosition}%;
+            top: -5px;
+            width: 4px;
+            height: 18px;
+            background: #2d5a2d;
+            border-radius: 2px;
+            transform: translateX(-50%);
+            z-index: 10;
+        `;
+
+        // Add marker for user answer
+        const userMarker = document.createElement('div');
+        userMarker.className = 'slider-marker user-marker';
+        const userColor = score >= 60 ? '#2d5a2d' : score >= 30 ? '#ff9800' : '#d32f2f';
+        userMarker.style.cssText = `
+            position: absolute;
+            left: ${userPosition}%;
+            top: -5px;
+            width: 4px;
+            height: 18px;
+            background: ${userColor};
+            border-radius: 2px;
+            transform: translateX(-50%);
+            z-index: 10;
+        `;
+
+        // Ensure container is positioned for absolute markers
+        sliderContainer.style.position = 'relative';
+
+        sliderContainer.appendChild(correctMarker);
+        sliderContainer.appendChild(userMarker);
     }
 
     submitEstimate() {
@@ -483,10 +558,13 @@ class PirateEstimationGame {
 
         const accuracyPercent = Math.floor(100 - percentageError);
 
+        // Show visual feedback on slider
+        this.showSliderFeedback(userAnswer, correct, finalScore);
+
         document.getElementById('feedback').innerHTML =
             `<div style="color: ${finalScore >= 60 ? 'green' : finalScore >= 30 ? 'orange' : 'red'}">${feedback}${riskMessage}</div>
              <div style="color: #0e0518;">Accuracy: ${Math.max(0, accuracyPercent)}% | Score: ${finalScore} | +${timeBonus} seconds!</div>
-             <div style="color: #0e0518;">Your guess: ${userAnswer.toLocaleString()} | Correct: ${correct.toLocaleString()}</div>
+             <div style="color: #0e0518;">Your guess: ${userAnswer.toLocaleString()} | <strong>Correct: ${correct.toLocaleString()}</strong></div>
              <div style="font-size: 0.9em; margin-top: 10px; color: #0e0518;">Next challenge in <span id="countdown">3</span> seconds...</div>`;
 
         // Show countdown and auto-advance
