@@ -17,11 +17,16 @@ title: Pirate Quest
 
     <div id="answer-area">
       <button id="start-game">Begin Quest</button>
-      <div id="multiple-choice" style="display:none;">
-        <button class="choice-btn" data-choice="0"></button>
-        <button class="choice-btn" data-choice="1"></button>
-        <button class="choice-btn" data-choice="2"></button>
-        <button class="choice-btn" data-choice="3"></button>
+      <div id="slider-area" style="display:none;">
+        <div id="slider-container">
+          <div id="range-labels">
+            <span id="min-label">0</span>
+            <span id="max-label">100</span>
+          </div>
+          <input type="range" id="estimation-slider" min="0" max="100" value="50" step="1">
+          <div id="slider-value">50</div>
+          <button id="submit-estimate">Submit Estimate</button>
+        </div>
       </div>
     </div>
 
@@ -87,42 +92,80 @@ title: Pirate Quest
   margin: 1rem 0;
 }
 
-#multiple-choice {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+#slider-area {
+  text-align: center;
   margin: 1rem 0;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.choice-btn {
+#slider-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #8b4513;
+}
+
+#estimation-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+#estimation-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #8b4513;
+  cursor: pointer;
+  border: 2px solid #654321;
+}
+
+#estimation-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #8b4513;
+  cursor: pointer;
+  border: 2px solid #654321;
+}
+
+#slider-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8b4513;
+  margin: 1rem 0;
+}
+
+#submit-estimate {
   background: #8b4513;
   color: white;
   border: none;
-  padding: 1rem;
+  padding: 0.8rem 2rem;
   font-size: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
-  min-height: 60px;
+  margin-top: 1rem;
 }
 
-.choice-btn:hover {
+#submit-estimate:hover {
   background: #654321;
 }
 
-.choice-btn.correct {
-  background: #2d5a2d;
-}
-
-.choice-btn.incorrect {
-  background: #8b2d2d;
-}
-
-.choice-btn.very-bad {
-  background: #4a1515;
-  border: 3px solid #ff0000;
+#submit-estimate:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }
 
 #estimation-game button:not(.choice-btn) {
