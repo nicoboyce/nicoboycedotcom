@@ -387,8 +387,8 @@ class PirateEstimationGame {
         const gradient = `linear-gradient(to right,
             #ddd 0%,
             #ddd ${goodRangeMinPos}%,
-            #c8e6c9 ${goodRangeMinPos}%,
-            #c8e6c9 ${goodRangeMaxPos}%,
+            #66bb6a ${goodRangeMinPos}%,
+            #66bb6a ${goodRangeMaxPos}%,
             #ddd ${goodRangeMaxPos}%,
             #ddd 100%)`;
 
@@ -403,7 +403,7 @@ class PirateEstimationGame {
             left: ${correctPosition}%;
             top: -25px;
             font-size: 16px;
-            color: #2d5a2d;
+            color: #1b5e20;
             transform: translateX(-50%);
             z-index: 10;
             font-weight: bold;
@@ -413,7 +413,7 @@ class PirateEstimationGame {
         // Add arrow marker for user answer
         const userMarker = document.createElement('div');
         userMarker.className = 'slider-marker user-marker';
-        const userColor = score >= 60 ? '#2d5a2d' : score >= 30 ? '#ff9800' : '#d32f2f';
+        const userColor = score >= 60 ? '#1b5e20' : score >= 30 ? '#ff9800' : '#d32f2f';
         userMarker.innerHTML = '▲';
         userMarker.style.cssText = `
             position: absolute;
