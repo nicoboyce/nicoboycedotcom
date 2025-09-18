@@ -7,7 +7,7 @@ categories: essays
 
 *some decisions and why I made them*
 
-We have made a new album. You can hear and buy it on Bandcamp [here](https://fightingmongooses.bandcamp.com/).
+We have made a new album. Listen on [Bandcamp](https://fightingmongooses.bandcamp.com/), [Tidal](https://tidal.com/browse/album/457375072), [Spotify](https://open.spotify.com/album/4xJSB3h9sIeyMfpmZZmB8n), [YouTube](https://www.youtube.com/playlist?list=OLAK5uy_nNlYcdy3bEEcBMg7ou_wpnKRIOeZRXNHk), or [Apple Music](https://music.apple.com/us/album/instrumental-driving-music-for-drecks/1836994336).
 
 ![Instrumental Driving Music for Drecks](/public/img/inst.webp)
 *The Fighting Mongooses — Instrumental Driving Music for Drecks.*
