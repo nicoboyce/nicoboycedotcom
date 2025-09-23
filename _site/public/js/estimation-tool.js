@@ -453,8 +453,15 @@ class PirateEstimationGame {
 
         slider.style.background = gradient;
 
-        // Position markers as overlays on the slider itself
-        slider.style.position = 'relative';
+        // Get slider position relative to container for accurate positioning
+        const sliderRect = slider.getBoundingClientRect();
+        const containerRect = sliderContainer.getBoundingClientRect();
+        const sliderOffsetLeft = sliderRect.left - containerRect.left;
+        const sliderWidth = sliderRect.width;
+
+        // Calculate actual pixel positions
+        const correctPx = sliderOffsetLeft + (correctPosition / 100) * sliderWidth;
+        const userPx = sliderOffsetLeft + (userPosition / 100) * sliderWidth;
 
         // Add arrow marker for correct answer
         const correctMarker = document.createElement('div');
@@ -462,7 +469,7 @@ class PirateEstimationGame {
         correctMarker.innerHTML = '▼';
         correctMarker.style.cssText = `
             position: absolute;
-            left: ${correctPosition}%;
+            left: ${correctPx}px;
             top: -25px;
             font-size: 16px;
             color: #1b5e20;
@@ -470,7 +477,6 @@ class PirateEstimationGame {
             z-index: 10;
             font-weight: bold;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-            pointer-events: none;
         `;
 
         // Add arrow marker for user answer
@@ -480,7 +486,7 @@ class PirateEstimationGame {
         userMarker.innerHTML = '▲';
         userMarker.style.cssText = `
             position: absolute;
-            left: ${userPosition}%;
+            left: ${userPx}px;
             top: 15px;
             font-size: 16px;
             color: ${userColor};
@@ -488,12 +494,13 @@ class PirateEstimationGame {
             z-index: 10;
             font-weight: bold;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-            pointer-events: none;
         `;
 
-        // Append markers directly to the slider element
-        slider.appendChild(correctMarker);
-        slider.appendChild(userMarker);
+        // Ensure container is positioned for absolute markers
+        sliderContainer.style.position = 'relative';
+
+        sliderContainer.appendChild(correctMarker);
+        sliderContainer.appendChild(userMarker);
     }
 
     submitEstimate() {
