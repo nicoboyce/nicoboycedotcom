@@ -453,15 +453,8 @@ class PirateEstimationGame {
 
         slider.style.background = gradient;
 
-        // Get slider position relative to container for accurate positioning
-        const sliderRect = slider.getBoundingClientRect();
-        const containerRect = sliderContainer.getBoundingClientRect();
-        const sliderOffsetLeft = sliderRect.left - containerRect.left;
-        const sliderWidth = sliderRect.width;
-
-        // Calculate actual pixel positions
-        const correctPx = sliderOffsetLeft + (correctPosition / 100) * sliderWidth;
-        const userPx = sliderOffsetLeft + (userPosition / 100) * sliderWidth;
+        // Position markers as overlays on the slider itself
+        slider.style.position = 'relative';
 
         // Add arrow marker for correct answer
         const correctMarker = document.createElement('div');
@@ -469,7 +462,7 @@ class PirateEstimationGame {
         correctMarker.innerHTML = '▼';
         correctMarker.style.cssText = `
             position: absolute;
-            left: ${correctPx}px;
+            left: ${correctPosition}%;
             top: -25px;
             font-size: 16px;
             color: #1b5e20;
@@ -477,6 +470,7 @@ class PirateEstimationGame {
             z-index: 10;
             font-weight: bold;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            pointer-events: none;
         `;
 
         // Add arrow marker for user answer
@@ -486,7 +480,7 @@ class PirateEstimationGame {
         userMarker.innerHTML = '▲';
         userMarker.style.cssText = `
             position: absolute;
-            left: ${userPx}px;
+            left: ${userPosition}%;
             top: 15px;
             font-size: 16px;
             color: ${userColor};
@@ -494,13 +488,12 @@ class PirateEstimationGame {
             z-index: 10;
             font-weight: bold;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            pointer-events: none;
         `;
 
-        // Ensure container is positioned for absolute markers
-        sliderContainer.style.position = 'relative';
-
-        sliderContainer.appendChild(correctMarker);
-        sliderContainer.appendChild(userMarker);
+        // Append markers directly to the slider element
+        slider.appendChild(correctMarker);
+        slider.appendChild(userMarker);
     }
 
     submitEstimate() {
@@ -636,10 +629,10 @@ class PirateEstimationGame {
             `<div style="color: ${finalScore >= 60 ? 'green' : finalScore >= 30 ? 'orange' : 'red'}">${feedback}${riskMessage}</div>
              <div style="color: #0e0518;">Accuracy: ${Math.max(0, accuracyPercent)}% | Score: ${finalScore} | +${timeBonus} seconds!</div>
              <div style="color: #0e0518;">Your guess: ${userAnswer.toLocaleString()} | <strong>Correct: ${correct.toLocaleString()}</strong></div>
-             <div style="font-size: 0.9em; margin-top: 10px; color: #0e0518;">Next challenge in <span id="countdown">3</span> seconds...</div>`;
+             <div style="font-size: 0.9em; margin-top: 10px; color: #0e0518;">Next challenge in <span id="countdown">8</span> seconds...</div>`;
 
         // Show countdown and auto-advance
-        let countdownTime = 3;
+        let countdownTime = 8;
         const countdownInterval = setInterval(() => {
             countdownTime--;
             const countdownEl = document.getElementById('countdown');
