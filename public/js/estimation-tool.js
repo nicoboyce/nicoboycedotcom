@@ -457,11 +457,15 @@ class PirateEstimationGame {
         const sliderRect = slider.getBoundingClientRect();
         const containerRect = sliderContainer.getBoundingClientRect();
         const sliderOffsetLeft = sliderRect.left - containerRect.left;
-        const sliderWidth = sliderRect.width;
 
-        // Calculate actual pixel positions
-        const correctPx = sliderOffsetLeft + (correctPosition / 100) * sliderWidth;
-        const userPx = sliderOffsetLeft + (userPosition / 100) * sliderWidth;
+        // Account for slider thumb width (25px) - range inputs typically pad by half thumb width
+        const thumbWidth = 25;
+        const sliderTrackPadding = thumbWidth / 2;
+        const effectiveSliderWidth = sliderRect.width - (sliderTrackPadding * 2);
+
+        // Calculate actual pixel positions accounting for track padding
+        const correctPx = sliderOffsetLeft + sliderTrackPadding + (correctPosition / 100) * effectiveSliderWidth;
+        const userPx = sliderOffsetLeft + sliderTrackPadding + (userPosition / 100) * effectiveSliderWidth;
 
         // Add arrow marker for correct answer
         const correctMarker = document.createElement('div');
