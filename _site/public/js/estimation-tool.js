@@ -166,6 +166,22 @@ class PirateEstimationGame {
                 tolerance: 1,
                 riskType: "exact",
                 explanation: "Must be exactly right for safe navigation!"
+            },
+            {
+                template: "Fighting scurvy: {crew} pirates need {lemonsPerDay} lemons each daily for {days} days to stay healthy. How many lemons total?",
+                ranges: { crew: [6, 12], lemonsPerDay: [2, 3], days: [5, 10] },
+                calculate: (vars) => vars.crew * vars.lemonsPerDay * vars.days,
+                tolerance: 15,
+                riskType: "over_better",
+                explanation: "Better to have extra - crew gets scurvy without enough!"
+            },
+            {
+                template: "Hoisting the main sail: Takes {piratesPerRope} pirates per rope, main sail has {ropes} ropes to hoist. How many pirates needed?",
+                ranges: { piratesPerRope: [3, 5], ropes: [4, 6] },
+                calculate: (vars) => vars.piratesPerRope * vars.ropes,
+                tolerance: 2,
+                riskType: "over_better",
+                explanation: "Better to have extra pirates - too few and the sail won't rise!"
             }
         ];
 
@@ -225,6 +241,30 @@ class PirateEstimationGame {
                 tolerance: 200,
                 riskType: "over_better",
                 explanation: "Better to have extra gold - short on tax means trouble with port authorities!"
+            },
+            {
+                template: "Tavern celebration: Each rum barrel serves {servingsPerBarrel} pirates, we have {crew} crew for a victory toast. Need {servingsPerPirate} servings each. How many barrels for a proper celebratory toast?",
+                ranges: { servingsPerBarrel: [8, 12], crew: [25, 40], servingsPerPirate: [2, 3] },
+                calculate: (vars) => Math.ceil((vars.crew * vars.servingsPerPirate) / vars.servingsPerBarrel),
+                tolerance: 2,
+                riskType: "over_better",
+                explanation: "Better to have extra rum - nothing worse than a disappointed crew!"
+            },
+            {
+                template: "Merchant convoy: {ships} merchant ships, each carrying {cargoValue} gold worth of cargo. Rough total value if we capture all?",
+                ranges: { ships: [3, 7], cargoValue: [800, 1500] },
+                calculate: (vars) => vars.ships * vars.cargoValue,
+                tolerance: 1000,
+                riskType: "either",
+                explanation: "Just need rough planning for splitting the treasure."
+            },
+            {
+                template: "Sail repairs: We can patch {patchesPerHour} sail tears per hour, storm caused {totalTears} tears. About how long to fix everything?",
+                ranges: { patchesPerHour: [3, 6], totalTears: [20, 45] },
+                calculate: (vars) => Math.ceil(vars.totalTears / vars.patchesPerHour),
+                tolerance: 2,
+                riskType: "over_better",
+                explanation: "Better to overestimate time - rush the job and the sail fails when we need it most!"
             }
         ];
 
