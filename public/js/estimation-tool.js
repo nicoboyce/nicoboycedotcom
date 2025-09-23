@@ -416,7 +416,7 @@ class PirateEstimationGame {
         const correctPosition = ((correctAnswer - range.min) / (range.max - range.min)) * 100;
 
         // Calculate good range based on risk type
-        const bufferSize = Math.min(correctAnswer * 0.2, range.max * 0.1);
+        const bufferSize = Math.min(correctAnswer * 0.4, range.max * 0.2);
         let goodRangeMin, goodRangeMax;
 
         const riskType = this.currentChallenge.riskType;
@@ -430,7 +430,7 @@ class PirateEstimationGame {
             goodRangeMax = correctAnswer;
         } else if (riskType === 'exact') {
             // Very narrow green zone around correct answer
-            const exactBuffer = Math.min(correctAnswer * 0.05, range.max * 0.02);
+            const exactBuffer = Math.min(correctAnswer * 0.1, range.max * 0.04);
             goodRangeMin = Math.max(range.min, correctAnswer - exactBuffer);
             goodRangeMax = Math.min(range.max, correctAnswer + exactBuffer);
         } else {
