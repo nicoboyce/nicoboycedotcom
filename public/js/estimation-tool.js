@@ -87,9 +87,9 @@ class PirateEstimationGame {
 
     generateChallenge() {
         // Progressive difficulty based on challenge number
-        if (this.challengeNumber <= 3) {
+        if (this.challengeNumber <= 10) {
             return this.generateEasyChallenge();
-        } else if (this.challengeNumber <= 6) {
+        } else if (this.challengeNumber <= 20) {
             return this.generateMediumChallenge();
         } else {
             return this.generateHardChallenge();
