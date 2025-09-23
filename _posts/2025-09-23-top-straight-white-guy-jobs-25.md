@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Top straight white guy jobs in '25
-published: false
+categories: essays
 ---
 
 ### or How to unleash that secret talent you're sure you have somewhere, big guy
 
 Doing things is hard. Making new things requires understanding existing things. Skills take time to develop, tools need to be mastered, creativity requires imagination. Who can be arsed? Certainly not the straight white guys of the internet!
 
-Here are some things they can fall upwards into, despite everything about them.
+Here are some things they can fall upwards into, despite everything about them.<!--excerpt-end-->
 
 #### Looking at things
 
@@ -39,3 +39,8 @@ Remember how you were always being told to get off your arse and do something be
 #### Literally just whinge about stuff
 
 Podcasts are back again, again, though now no one has ipods or uses rss but who cares, grab a mic and make sounds!
+
+![Talking.](/public/img/recording.jpeg)
+*Talking.*
+
+You can combine this with anything else (or nothing) so long as you're talking. Someone is bound to want to listen!
