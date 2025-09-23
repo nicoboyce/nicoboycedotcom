@@ -640,10 +640,10 @@ class PirateEstimationGame {
             `<div style="color: ${finalScore >= 60 ? 'green' : finalScore >= 30 ? 'orange' : 'red'}">${feedback}${riskMessage}</div>
              <div style="color: #0e0518;">Accuracy: ${Math.max(0, accuracyPercent)}% | Score: ${finalScore} | +${timeBonus} seconds!</div>
              <div style="color: #0e0518;">Your guess: ${userAnswer.toLocaleString()} | <strong>Correct: ${correct.toLocaleString()}</strong></div>
-             <div style="font-size: 0.9em; margin-top: 10px; color: #0e0518;">Next challenge in <span id="countdown">8</span> seconds...</div>`;
+             <div style="font-size: 0.9em; margin-top: 10px; color: #0e0518;">Next challenge in <span id="countdown">4</span> seconds...</div>`;
 
         // Show countdown and auto-advance
-        let countdownTime = 8;
+        let countdownTime = 4;
         const countdownInterval = setInterval(() => {
             countdownTime--;
             const countdownEl = document.getElementById('countdown');
