@@ -415,10 +415,29 @@ class PirateEstimationGame {
         const userPosition = ((userAnswer - range.min) / (range.max - range.min)) * 100;
         const correctPosition = ((correctAnswer - range.min) / (range.max - range.min)) * 100;
 
-        // Calculate good range (±20% of correct answer, but clamped to slider range)
-        const goodRangeWidth = Math.min(correctAnswer * 0.2, range.max * 0.1);
-        const goodRangeMin = Math.max(range.min, correctAnswer - goodRangeWidth);
-        const goodRangeMax = Math.min(range.max, correctAnswer + goodRangeWidth);
+        // Calculate good range based on risk type
+        const bufferSize = Math.min(correctAnswer * 0.2, range.max * 0.1);
+        let goodRangeMin, goodRangeMax;
+
+        const riskType = this.currentChallenge.riskType;
+        if (riskType === 'over_better') {
+            // Green zone extends upward from correct answer
+            goodRangeMin = correctAnswer;
+            goodRangeMax = Math.min(range.max, correctAnswer + bufferSize);
+        } else if (riskType === 'under_better') {
+            // Green zone extends downward from correct answer
+            goodRangeMin = Math.max(range.min, correctAnswer - bufferSize);
+            goodRangeMax = correctAnswer;
+        } else if (riskType === 'exact') {
+            // Very narrow green zone around correct answer
+            const exactBuffer = Math.min(correctAnswer * 0.05, range.max * 0.02);
+            goodRangeMin = Math.max(range.min, correctAnswer - exactBuffer);
+            goodRangeMax = Math.min(range.max, correctAnswer + exactBuffer);
+        } else {
+            // 'either' - symmetric green zone (current behaviour)
+            goodRangeMin = Math.max(range.min, correctAnswer - bufferSize);
+            goodRangeMax = Math.min(range.max, correctAnswer + bufferSize);
+        }
 
         const goodRangeMinPos = ((goodRangeMin - range.min) / (range.max - range.min)) * 100;
         const goodRangeMaxPos = ((goodRangeMax - range.min) / (range.max - range.min)) * 100;
