@@ -411,17 +411,9 @@ class PirateEstimationGame {
         const sliderContainer = document.getElementById('slider-container');
         const range = this.currentRange;
 
-        // Get slider's actual dimensions and position
-        const sliderRect = slider.getBoundingClientRect();
-        const containerRect = sliderContainer.getBoundingClientRect();
-
-        // Calculate positions as percentages of the actual slider track
+        // Calculate positions as percentages of the slider range
         const userPosition = ((userAnswer - range.min) / (range.max - range.min)) * 100;
         const correctPosition = ((correctAnswer - range.min) / (range.max - range.min)) * 100;
-
-        // Calculate offset from container left to slider left
-        const sliderOffset = sliderRect.left - containerRect.left;
-        const sliderWidth = sliderRect.width;
 
         // Calculate good range (±20% of correct answer, but clamped to slider range)
         const goodRangeWidth = Math.min(correctAnswer * 0.2, range.max * 0.1);
@@ -442,17 +434,14 @@ class PirateEstimationGame {
 
         slider.style.background = gradient;
 
-        // Calculate actual pixel positions relative to the slider track
-        const correctPx = sliderOffset + (correctPosition / 100) * sliderWidth;
-        const userPx = sliderOffset + (userPosition / 100) * sliderWidth;
-
+        // Position markers using percentages relative to the slider itself
         // Add arrow marker for correct answer
         const correctMarker = document.createElement('div');
         correctMarker.className = 'slider-marker correct-marker';
         correctMarker.innerHTML = '▼';
         correctMarker.style.cssText = `
             position: absolute;
-            left: ${correctPx}px;
+            left: ${correctPosition}%;
             top: -25px;
             font-size: 16px;
             color: #1b5e20;
@@ -469,7 +458,7 @@ class PirateEstimationGame {
         userMarker.innerHTML = '▲';
         userMarker.style.cssText = `
             position: absolute;
-            left: ${userPx}px;
+            left: ${userPosition}%;
             top: 15px;
             font-size: 16px;
             color: ${userColor};
