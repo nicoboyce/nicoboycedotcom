@@ -17,4 +17,6 @@ title: What's happening now?
 
 {{ month.content }}
 
+{% assign month_posts = "" | split: "" %}{% for post in site.posts %}{% assign post_month = post.date | date: "%Y-%m" %}{% if post_month == month.month %}{% assign month_posts = month_posts | push: post %}{% endif %}{% endfor %}{% if month_posts.size > 0 %}*Newly published:* {% for post in month_posts %}[{{ post.title }}]({{ post.url }}){% unless forloop.last %} — {% endunless %}{% endfor %}{% endif %}
+
 {% endfor %}
