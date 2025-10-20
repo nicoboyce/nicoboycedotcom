@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Exception report"
+published: false
 ---
 
 *If you find these opinions offensive, you are entitled to return them for a full refund.*
