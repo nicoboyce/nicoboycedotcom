@@ -1,0 +1,27 @@
+# Music platforms - Instrumental Driving Music for Drecks
+music:
+  drecks:
+    bandcamp: https://fightingmongooses.bandcamp.com/
+    tidal: https://tidal.com/browse/album/457375072
+    spotify: https://open.spotify.com/album/4xJSB3h9sIeyMfpmZZmB8n
+    youtube: https://www.youtube.com/playlist?list=OLAK5uy_nNlYcdy3bEEcBMg7ou_wpnKRIOeZRXNHk
+    apple: https://music.apple.com/us/album/instrumental-driving-music-for-drecks/1836994336
+
+  # Add other albums here as needed
+  # previous: https://nicoboyce.com/music/
+
+# Business/professional
+business:
+  deltastring: https://deltastring.com
+  deltastring_yt: https://www.youtube.com/@deltastringdotcom
+  deltastring_logo: https://www.linkedin.com/posts/nicoboyce_friends-always-ask-me-about-the-deltastring-activity-7328767237085958144-eOOF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAByZVBwB4YyqAQTKe01S1QkUfCQwMdIk3o4
+
+# Internal links (essays, etc)
+internal:
+  nico_logo: /2024/05/25/where-did-the-nico-logo-design-originate/
+  music_page: /music/
+
+# External references
+external:
+  hn_exception_report: https://news.ycombinator.com/item?id=45638096
+  fdroid_nsfw: https://forum.f-droid.org/t/nsfw-flag-incorrectly-added-to-bible-and-quran-apps/33401
