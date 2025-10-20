@@ -1,8 +1,6 @@
 ---
 layout: post
 title: In Bloom (or maybe Come As You Are)
-date: 2024-05-28
-categories: essays
 ---
 
 I am not much of a gardener. Sometimes I will get out there and do some hacking and chopping and digging and pruning, but only for theraputic reasons. It feels nice to me when I can impress my will upon the hectic growth.

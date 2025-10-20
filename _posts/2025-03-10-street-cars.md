@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "On the street"
-date: 2025-03-10
 categories: wheels
 ---
 

@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Criticise this!
-date: 2024-10-17
-categories: essays
 ---
 
 *or perhaps Learn to Shut Up*

@@ -5,8 +5,8 @@ title: Essays
 ---
 
 <div class="posts">
-  {% assign essay_posts = site.posts | where: "categories", "essays" %}
-  {% for post in essay_posts %}
+  {% for post in site.posts %}
+    {% if post.categories.size == 0 %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
@@ -20,5 +20,6 @@ title: Essays
     {% if post.content != post.excerpt %}<a href="{{ post.url }}">Read more!</a>{% endif %}<br /><br />
     <img src="/public/img/delta.svg" width="36" height="36">
   </div>
+    {% endif %}
   {% endfor %}
 </div>

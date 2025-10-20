@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "The F1 thing was embarrassing"
-date: 2025-02-15
 categories: wheels
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Visit to Museo della Seta di Como"
-date: 2025-08-23
 categories: snaps
 ---
 

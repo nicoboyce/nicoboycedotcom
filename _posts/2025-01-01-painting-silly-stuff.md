@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Painting - silly stuff"
-date: 2024-08-18
 categories: snaps
 ---
 

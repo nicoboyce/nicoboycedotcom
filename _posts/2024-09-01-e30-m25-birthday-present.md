@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "E30 M25 - birthday present"
-date: 2024-09-01
 categories: wheels
 ---
 

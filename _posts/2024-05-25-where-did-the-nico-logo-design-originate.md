@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Where did the Nico logo design originate?
-date: 2024-05-25
-categories: essays
 ---
 
 I put together a logo of my name soon after I chose my name itself. It looks like this:

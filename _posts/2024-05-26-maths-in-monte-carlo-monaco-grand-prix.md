@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Applying logic and maths in Monte Carlo. When to pit at the Monaco Grand Prix?
-date: 2024-05-26
 categories: wheels
 ---
 

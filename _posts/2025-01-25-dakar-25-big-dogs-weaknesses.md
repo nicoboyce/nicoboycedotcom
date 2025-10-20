@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Dakar 25 showed the big dogs their weaknesses"
-date: 2025-01-25
 categories: wheels
 ---
 

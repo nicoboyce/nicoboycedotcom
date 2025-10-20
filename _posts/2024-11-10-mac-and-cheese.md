@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Mac and cheese"
-date: 2024-11-10
 categories: wheels
 ---
 

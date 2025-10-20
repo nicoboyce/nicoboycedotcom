@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Releasing music for drecks
-date: 2025-04-22
-categories: essays
 ---
 
 *some decisions and why I made them*
 
-We have made a new album. Listen on [Bandcamp](https://fightingmongooses.bandcamp.com/), [Tidal](https://tidal.com/browse/album/457375072), [Spotify](https://open.spotify.com/album/4xJSB3h9sIeyMfpmZZmB8n), [YouTube](https://www.youtube.com/playlist?list=OLAK5uy_nNlYcdy3bEEcBMg7ou_wpnKRIOeZRXNHk), or [Apple Music](https://music.apple.com/us/album/instrumental-driving-music-for-drecks/1836994336).
+We have made a new album. Listen on [Bandcamp][bandcamp], [Tidal][tidal], [Spotify][spotify], [YouTube][youtube], or [Apple Music][apple].
 
 ![Instrumental Driving Music for Drecks](/public/img/inst.webp)
 *The Fighting Mongooses — Instrumental Driving Music for Drecks.*
@@ -25,12 +23,12 @@ There's two things which were a bit more of a decision this time around. Here ar
 
 ## Yes, we are using a band name now
 
-Previous releases just said "Nico Boyce" on the cover. I'm okay with the name Nico Boyce because it is who I am and a name I mostly chose. On the other hand, I am building a great reputation as a Zendesk specialist (see [Deltastring.com](https://deltastring.com) for more on that) and I didn't want these things colliding so much. It would be a particular problem on Youtube where [we have a Deltastring channel](https://www.youtube.com/@deltastringdotcom) now.
+Previous releases just said "Nico Boyce" on the cover. I'm okay with the name Nico Boyce because it is who I am and a name I mostly chose. On the other hand, I am building a great reputation as a Zendesk specialist (see [Deltastring.com][deltastring] for more on that) and I didn't want these things colliding so much. It would be a particular problem on Youtube where [we have a Deltastring channel][deltastring-yt] now.
 
 <img src="/public/img/nicologo.svg" alt="Nico Beastie Boyce logo." width="600" style="filter: hue-rotate(90deg) brightness(2);"/>
 *My name is Nico.*
 
-There's some talk on the Nico logo [here](https://nicoboyce.com/2024/05/25/where-did-the-nico-logo-design-originate/) and the Deltastring logo [here](https://www.linkedin.com/posts/nicoboyce_friends-always-ask-me-about-the-deltastring-activity-7328767237085958144-eOOF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAByZVBwB4YyqAQTKe01S1QkUfCQwMdIk3o4).
+There's some talk on the Nico logo [here][nico-logo] and the Deltastring logo [here][deltastring-logo].
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ya4DuoPbVjc?si=8Qr-u-5hUtND54LS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -45,7 +43,7 @@ Also releasing music under my name doesn't show that it's a team effort. Rosie s
 
 I'll probably put this on most of the streaming services eventually, but I'm going to hold out as long as I can.
 
-Our [previous music](https://nicoboyce.com/music/) is on (deep breath) Spotify, Apple Music, iTunes, Instagram/Facebook, TikTok & other ByteDance stores, YouTube Music, Amazon, Pandora, Deezer, Tidal, iHeartRadio, Claro Música, Saavn, Anghami, KKBox, NetEase, Tencent, MediaNet, Boomplay, Adaptr, Flo, Joox, Kuack Media, Qobuz, Snapchat most of which I have never heard of.
+Our [previous music][music] is on (deep breath) Spotify, Apple Music, iTunes, Instagram/Facebook, TikTok & other ByteDance stores, YouTube Music, Amazon, Pandora, Deezer, Tidal, iHeartRadio, Claro Música, Saavn, Anghami, KKBox, NetEase, Tencent, MediaNet, Boomplay, Adaptr, Flo, Joox, Kuack Media, Qobuz, Snapchat most of which I have never heard of.
 
 Spotify have stopped paying smaller creators our pennies per month and almost all of these other services have never really played us. Apple and Youtube have contributed a tiny amount but not enough to make it worth the effort right now.
 
@@ -56,3 +54,14 @@ This one might be a Bandcamp exclusive forever but it's not set in stone. I'm lo
 ## Go and listen to it and let me know what you think
 
 People are really bad at supporting their friends when they create things. Give this a listen and also do let me know what you've created lately! I would enjoy experiencing it.
+
+[bandcamp]: https://fightingmongooses.bandcamp.com/
+[tidal]: https://tidal.com/browse/album/457375072
+[spotify]: https://open.spotify.com/album/4xJSB3h9sIeyMfpmZZmB8n
+[youtube]: https://www.youtube.com/playlist?list=OLAK5uy_nNlYcdy3bEEcBMg7ou_wpnKRIOeZRXNHk
+[apple]: https://music.apple.com/us/album/instrumental-driving-music-for-drecks/1836994336
+[deltastring]: https://deltastring.com
+[deltastring-yt]: https://www.youtube.com/@deltastringdotcom
+[nico-logo]: https://nicoboyce.com/2024/05/25/where-did-the-nico-logo-design-originate/
+[deltastring-logo]: https://www.linkedin.com/posts/nicoboyce_friends-always-ask-me-about-the-deltastring-activity-7328767237085958144-eOOF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAByZVBwB4YyqAQTKe01S1QkUfCQwMdIk3o4
+[music]: https://nicoboyce.com/music/

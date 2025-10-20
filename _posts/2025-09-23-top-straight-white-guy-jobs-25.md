@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Top straight white guy jobs in '25
-categories: essays
 ---
 
 ### or How to unleash that secret talent you're sure you have somewhere, big guy

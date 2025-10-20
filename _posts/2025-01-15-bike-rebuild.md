@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Bike rebuild"
-date: 2025-01-15
 categories: wheels
 ---
 

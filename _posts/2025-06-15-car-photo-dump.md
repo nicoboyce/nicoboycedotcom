@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Car photo dump, no logic"
-date: 2025-06-15
 categories: wheels
 ---
 

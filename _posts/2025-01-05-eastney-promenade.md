@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Eastney promenade"
-date: 2025-01-05
 categories: snaps
 ---
 

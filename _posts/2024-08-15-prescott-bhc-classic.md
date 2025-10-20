@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Prescott hillclimb - classic day out"
-date: 2024-08-15
 categories: wheels
 ---
 

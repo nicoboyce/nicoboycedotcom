@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Naples car culture"
-date: 2024-07-20
 categories: wheels
 ---
 

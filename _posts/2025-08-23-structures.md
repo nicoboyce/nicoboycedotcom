@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Structures"
-date: 2025-08-23
 categories: snaps
 ---
 

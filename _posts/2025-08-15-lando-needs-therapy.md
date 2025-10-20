@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Decision time, brown"
-date: 2025-08-15
 categories: wheels
 ---
 

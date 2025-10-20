@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Mixed snaps - January batch"
-date: 2025-02-06
 categories: snaps
 ---
 

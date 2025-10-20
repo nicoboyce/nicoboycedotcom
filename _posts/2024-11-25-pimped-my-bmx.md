@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Pimped my bmx"
-date: 2024-11-25
 categories: wheels
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Italy snaps"
-date: 2025-03-19
 categories: snaps
 ---
 

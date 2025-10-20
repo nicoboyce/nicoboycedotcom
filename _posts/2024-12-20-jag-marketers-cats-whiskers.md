@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Jag marketers are the cat's whiskers"
-date: 2024-12-20
 categories: wheels
 ---
 

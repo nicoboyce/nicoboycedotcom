@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Horner had it coming"
-date: 2025-07-11
 categories: wheels
 ---
 

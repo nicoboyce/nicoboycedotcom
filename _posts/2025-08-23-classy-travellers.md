@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Classy travellers"
-date: 2025-08-23
 categories: wheels
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Prescott, BHC round 1"
-date: 2025-04-20
 categories: wheels
 ---
 

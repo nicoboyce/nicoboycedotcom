@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Laser tag in the woods"
-date: 2025-01-06
 categories: snaps
 ---
 

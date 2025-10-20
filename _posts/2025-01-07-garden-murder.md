@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Garden murder"
-date: 2025-01-07
 categories: snaps
 ---
 

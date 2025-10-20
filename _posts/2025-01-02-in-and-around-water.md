@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "In and around water"
-date: 2025-04-18
 categories: snaps
 ---
 

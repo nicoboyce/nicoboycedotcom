@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Racing worth watching"
-date: 2025-08-10
 categories: wheels
 ---
 

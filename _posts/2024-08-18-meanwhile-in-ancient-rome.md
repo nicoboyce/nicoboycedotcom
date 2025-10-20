@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Meanwhile, in ancient Rome
-date: 2024-08-18
-categories: essays
 ---
 
 We went to Pompeii and it was a lot.
