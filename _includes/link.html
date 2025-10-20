@@ -3,11 +3,16 @@ Usage: {% include link.html ref="music.drecks.bandcamp" text="Bandcamp" %}
        {% include link.html ref="business.deltastring" text="Deltastring.com" %}
 {% endcomment %}
 {%- assign parts = include.ref | split: "." -%}
-{%- if parts.size == 1 -%}
-  {%- assign url = site.data.links[parts[0]] -%}
+{%- if parts.size == 3 -%}
+  {%- assign category = parts[0] -%}
+  {%- assign subcategory = parts[1] -%}
+  {%- assign key = parts[2] -%}
+  {%- assign url = site.data.links[category][subcategory][key] -%}
 {%- elsif parts.size == 2 -%}
-  {%- assign url = site.data.links[parts[0]][parts[1]] -%}
-{%- elsif parts.size == 3 -%}
-  {%- assign url = site.data.links[parts[0]][parts[1]][parts[2]] -%}
+  {%- assign category = parts[0] -%}
+  {%- assign key = parts[1] -%}
+  {%- assign url = site.data.links[category][key] -%}
+{%- elsif parts.size == 1 -%}
+  {%- assign url = site.data.links[parts[0]] -%}
 {%- endif -%}
 <a href="{{ url }}">{{ include.text }}</a>
