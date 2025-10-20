@@ -7,33 +7,34 @@ music:
     youtube: https://www.youtube.com/playlist?list=OLAK5uy_nNlYcdy3bEEcBMg7ou_wpnKRIOeZRXNHk
     apple: https://music.apple.com/us/album/instrumental-driving-music-for-drecks/1836994336
 
-  # Add other albums here as needed
-  # previous: https://nicoboyce.com/music/
-
 # Business/professional
 business:
   deltastring: https://deltastring.com
   deltastring_yt: https://www.youtube.com/@deltastringdotcom
   deltastring_logo: https://www.linkedin.com/posts/nicoboyce_friends-always-ask-me-about-the-deltastring-activity-7328767237085958144-eOOF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAByZVBwB4YyqAQTKe01S1QkUfCQwMdIk3o4
 
-# Internal links (essays, etc)
-internal:
-  nico_logo: /2024/05/25/where-did-the-nico-logo-design-originate/
-  music_page: /music/
-
-# External references
-external:
+# External references by article
+# Exception report (2025-10-20)
+exception_report:
   hn_exception_report: https://news.ycombinator.com/item?id=45638096
   fdroid_nsfw: https://forum.f-droid.org/t/nsfw-flag-incorrectly-added-to-bible-and-quran-apps/33401
+
+# Where did the Nico logo design originate (2024-05-25)
+nico_logo:
   imjustcreative_vaio: https://imjustcreative.com/the-sony-vaio-logo/2022/10/21
+
+# Now now now (2024-07-07)
+now_page:
   nownownow_about: https://nownownow.com/about
+
+# Maths in Monte Carlo Monaco Grand Prix (2024-05-26)
+monaco_gp:
   wikipedia_monaco_2021: https://en.wikipedia.org/wiki/2021_Monaco_Grand_Prix
 
-# YouTube videos - motorsport
-youtube:
+# Racing worth watching (2025-08-10)
+racing_worth_watching:
   hillclimb_tv: https://www.youtube.com/@HillClimbTV
   brx_5nations: https://www.youtube.com/@5NationsBRX
-  vscc_lakeland: https://www.youtube.com/watch?v=gaJu3YiBYVc
   750_motor_club: https://www.youtube.com/@750MotorClubTV
   btcc_official: https://www.youtube.com/@OfficialBTCC
   brscc_streams: https://www.youtube.com/@TheBRSCC/streams
@@ -43,11 +44,162 @@ youtube:
   k4_movies: https://www.youtube.com/@K4Movies/videos
   formula_offroad: https://www.youtube.com/@G7Media/videos
   jakob_cecil: https://www.youtube.com/user/jakobcecil
+  vscc_lakeland: https://www.youtube.com/watch?v=gaJu3YiBYVc
+
+# Prescott BHC classic (2024-08-15)
+prescott_bhc:
   prescott_bhc_2024: https://www.youtube.com/watch?v=rn7df2xiabM
+
+# Lydden Hill snaps (2024-10-15)
+lydden_hill:
   lydden_hill_final: https://www.youtube.com/watch?v=l3b7TWoOxwc
+
+# Macau F3 GP (2024-11-20)
+macau_f3:
   macau_f3_2024: https://www.youtube.com/watch?v=YYe_NXIC3H0
 
-# Email
-contact:
-  email: mailto:hello@nicoboyce.com
-  nico_deltastring: mailto:nico@deltastring.com
+# Interesting links from pinboard (uncategorised - for future content)
+# Tech/Development
+tech_dev:
+  benjamin_button_macos: https://rakhim.exotext.com/benjamin-button-reviews-macos
+  boolean_patterns: https://ntietz.com/blog/that-boolean-should-probably-be-something-else/
+  open_source_one_person: https://opensourcesecurity.io/2025/08-oss-one-person/
+  formd_blog: https://tj401.com/blog/formd/index.html
+  oklch_colors: https://jakub.kr/components/oklch-colors
+  vibecoding_reference: https://jenochs.github.io/vibecoding/quick-reference.html
+  robots_txt_wrong: https://evgeniipendragon.com/posts/i-was-wrong-about-robots-txt/
+  claude_code_unleashed: https://ymichael.com/2025/07/15/claude-code-unleashed.html
+  claude_code_beginners: https://www.geeky-gadgets.com/claude-code-beginners-guide-2025/
+  claude_code_all_you_need: https://dwyer.co.za/static/claude-code-is-all-you-need.html
+  undercut_f1_timing: https://github.com/JustAman62/undercut-f1?tab=readme-ov-file#live-timing-data-source
+  beeware_toga: https://github.com/beeware/toga/blob/main/examples/dialogs/dialogs/app.py#L76
+  org_social: https://github.com/tanrax/org-social
+  python_web_apps: https://realpython.com/python-web-applications/
+  epochalypse: https://epochalypse-project.org/
+
+# AI criticism
+ai_criticism:
+  ai_hater: https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html
+  tech_execs_nothing_to_say: https://www.stilldrinking.org/stop-talking-to-technology-executives-like-they-have-anything-to-say
+  ai_balloon_deflating: https://www.theregister.com/2025/08/25/overinflated_ai_balloon/
+  biggest_bet_tech: https://gmays.com/the-biggest-bet-in-tech/
+  tired_talking_ai: https://paddy.carvers.com/posts/2025/07/ai/
+  why_llms_cant_build: https://zed.dev/blog/why-llms-cant-build-software
+  tech_companies_ai: https://soatok.blog/2025/05/04/tech-companies-apparently-do-not-understand-why-we-dislike-ai/
+  klarna_ai_chatbot: https://www.customerexperiencedive.com/news/klarna-reinvests-human-talent-customer-service-AI-chatbot/747586/
+
+# Business/professional resources
+business_resources:
+  linkedin_mediocrity: https://www.elliotcsmith.com/linkedin-toxic-mediocrity/
+  startup_legals: https://www.legaledge.co.uk/2024/11/start-up-legals-what-not-to-f-up/
+  product_market_fit: https://iwantproductmarketfit.substack.com/p/the-product-market-fit-scale
+  startup_org_chart: https://theorg.com/iterate/the-startup-org-chart-from-founding-to-ipo
+  little_company: https://longform.asmartbear.com/little-company/
+  nathan_barry: https://nathanbarry.com/
+  front_pricing: https://front.com/pricing
+  ir35_determinations: https://www.gov.uk/government/publications/help-to-comply-with-the-reformed-off-payroll-working-rules-ir35-gfc4/making-status-determinations-part-8
+  appstle_faq: https://appstle.com/faq/#
+  supportpie: https://www.supportpie.com/
+
+# Opinion/essays
+opinion_essays:
+  brompton_ness: https://backofmind.substack.com/p/the-brompton-ness-of-it-all
+  zirp_broke_world: https://www.splinter.com/the-stock-market-is-selling-its-soul-and-the-feds-independence-to-trump-because-zirp-broke-the-world
+  american_bilingual: https://justevilenough.com/every-american-is-bilingual/
+  pitchforks_coming: https://www.politico.com/magazine/story/2014/06/the-pitchforks-are-coming-for-us-plutocrats-108014/
+  how_start_university: https://prigoose.substack.com/p/how-to-start-a-university
+  linux_format_closes: https://www.omgubuntu.co.uk/2025/05/linux-format-magazine-closes
+  dynomight_titles: https://dynomight.net/titles/
+
+# Motorsport
+motorsport:
+  schumacher_gp2_test: https://www.the-race.com/formula-1/inside-michael-schumacher-controversial-gp2-test/
+  alpina_e30: https://www.speedhunters.com/2015/09/an-alpina-e30-for-the-street/
+  f1_live_75: https://www.topgear.com/car-news/formula-one/seven-things-will-definitely-happen-f1-live-75-event-2025
+
+# Photography/design
+photo_design:
+  orange_teal_hollywood: https://petapixel.com/2017/02/23/orange-teal-look-popular-hollywood/
+  orange_blue_contrast: https://tvtropes.org/pmwiki/pmwiki.php/Main/OrangeBlueContrast
+  james_parker_photo: https://www.jamesparker.co/
+  geoffrey_huntley: https://ghuntley.com/
+  seven_planets_visible: https://petapixel.com/2025/02/25/seven-planets-visible-in-the-night-sky-starting-tonight/
+  seven_planets_alignment: https://www.sciencealert.com/a-rare-alignment-of-7-planets-is-about-to-take-place-in-the-sky
+  nhm_wildlife_photo: https://www.nhm.ac.uk/wpy/gallery?tags=cat.10yrsndndr
+
+# Music
+music_misc:
+  brant_bjork_ghettoblaster: https://songsear.ch/song/Brant-Bjork/My-Ghettoblaster/4046194
+  lord_spikeheart_review: https://www.theguardian.com/music/2024/apr/19/lord-spikeheart-the-adept-review-duma-metal
+  jack_white_setlist: https://www.setlist.fm/stats/jack-white-33d69845.html?tour=2bdcc8e2
+  jack_white_tickets: https://www.academymusicgroup.com/o2academybirmingham/events/1557617/jack-white-tickets
+  beta_band_comeback: https://www.theguardian.com/music/2025/mar/03/beta-band-debt-disastrous-decisions-defiant-comeback-top-of-the-pops-scots
+  beta_band_roundhouse: https://www.roundhouse.org.uk/whats-on/the-beta-band/
+  kings_music_room: https://www.royal.uk/news-and-activity/2025-03-07/the-kings-music-room-on-apple-music
+  teenage_engineering_po32: https://teenage.engineering/guides/po-32/en
+
+# Makers/projects
+makers_projects:
+  bulbdial_clock: https://www.evilmadscientist.com/2009/a-bulbdial-clock/
+  inky_impression: https://thepihut.com/products/inky-impression-7-3-7-colour-epaper-e-ink-hat
+  rtl_sdr_guide: https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/
+  raspberry_pi_nextcloud: https://pimylifeup.com/raspberry-pi-nextcloud-server/
+
+# Guitar/bass tech
+guitar_tech:
+  curtis_novak_pickups: https://www.curtisnovak.com/shop/bs-ds/
+  telecaster_series_wiring: https://sixstringsupplies.co.uk/pages/telecaster-wiring-in-series
+  free_stompboxes_forum: https://www.freestompboxes.org/viewtopic.php?t=31222
+  lace_teliki_t: https://lacemusic.com/products/lace-teliki-t
+  warwick_corvette: https://www.basschat.co.uk/topic/507266-warwick-corvette-fna-jazzman-fretless/
+  ritter_instruments: https://ritter-instruments.com/instrument.php?id=0946
+
+# Misc interesting
+misc_interesting:
+  now_pages_england: https://nownownow.com/GB-ENG
+  railway_inclines: https://brucehunt.co.uk/plymouth%20area%20home%20page/railway%20inclines.html
+  unimogs_uk: https://www.unimogs.co.uk/our-stock/unimogs
+  micro_clover_seed: https://gardenlawncareguy.com/shop/wild-flowers/micro-clover-seed/
+  nissan_xtrail_lego: https://rebrickable.com/mocs/MOC-196431/LT%20project/nissan-x-trail-t-30/#details
+  openguessr: https://openguessr.com/
+  cgeo: https://www.cgeo.org/
+  turtle_academy: https://www.turtleacademy.com/playground
+  raycue_mac_mini: https://www.raycue.com/products/raycue-type-c-stand-hub-with-ssd-enclosure-for-all-new-mac-mini-m4-m4pro
+  internet_dog_wikipedia: https://en.m.wikipedia.org/wiki/On_the_Internet,_nobody_knows_you're_a_dog
+  lesprit_escalier: https://en.m.wikipedia.org/wiki/L'esprit_de_l'escalier
+  from_each_ability: https://en.m.wikipedia.org/wiki/From_each_according_to_his_ability,_to_each_according_to_his_needs
+  box_smasher: https://boxsmasher.voxelmanip.se/
+  paul_graham_google: https://paulgraham.com/google.html
+
+# Guardian articles
+guardian_articles:
+  robots_not_migrants: https://www.theguardian.com/uk-news/2024/nov/28/use-robots-instead-of-hiring-low-paid-migrants-says-shadow-home-secretary
+  pepsi_max_66_days: https://www.theguardian.com/lifeandstyle/2025/jan/15/66-days-to-quit-pepsi-max-of-course-there-is-a-lot-of-misery
+  salah_liverpool: https://www.theguardian.com/football/2025/feb/25/mohamed-salah-liverpool-turns-it-up-to-11
+  messi_beauty: https://www.theguardian.com/football/2022/dec/09/lionel-messi-an-emblem-of-the-transient-fragility-of-human-beauty
+
+# Jekyll themes (if you ever redesign)
+jekyll_themes:
+  material_theme: https://github.com/jameshamann/jekyll-material-theme
+  agency_theme: https://y7kim.github.io/agency-jekyll-theme/
+
+# Shopping/brands
+shopping:
+  shirtforce: https://shirtforce.org/product-category/t-shirts/?orderby=date
+  vegankind: https://vegankind.com/
+  minuit_sur_terre: https://minuitsurterre.com/
+  minuit_bottines: https://minuitsurterre.com/collections/bottines-enigme
+  arcana_hair: https://arcanahair.com/a-sustainable-salon/
+  viltrox_uk: https://www.viltrox.co.uk/index.php?route=product/product&product_id=211
+  motorola_razr_paris: https://www.theverge.com/news/610163/motorola-paris-hilton-edition-razr-plus
+
+# Local/UK specific
+local_uk:
+  mangosteen_southsea: https://www.mangosteensouthsea.co.uk/
+  eastleigh_street_trader: https://www.eastleigh.gov.uk/business/council-services-for-businesses/licensing-permits-and-registration/street-trader-consent
+  barc_thruxton: https://barc-thruxton.azurewebsites.net/product/957
+  satnavsystems: https://www.satnavsystems.com/
+  xtrail_uk_forum: https://www.x-trail-uk.co.uk/threads/t31-major-service.82626/
+  meet_parker_rate: https://rate.meetparker.co.uk/?apiKey=0bdfd740-6571-49a3-9bf0-e0a894a117d5
+  cabinet_office_supplier: https://supplierregistration.cabinetoffice.gov.uk/
+  nhs_supply_chain: https://www.supplychain.nhs.uk/suppliers/useful-information/

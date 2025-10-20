@@ -9,7 +9,7 @@ The now page is there to be a quick summary of what I'm up to, what I would expl
 
 # Where does it come from?
 
-Well all that is explained {% include link.html ref="external.nownownow_about" text="here" %} well enough that I shouldn't be rewriting it. I'm glad to see that personal sites still exist and that the conventions for those are still evolving.
+Well all that is explained {% include link.html ref="now_page.nownownow_about" text="here" %} well enough that I shouldn't be rewriting it. I'm glad to see that personal sites still exist and that the conventions for those are still evolving.
 
 # What will you be putting there?
 

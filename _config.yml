@@ -12,6 +12,7 @@ description:      'Person doing human things'
 url:              https://nicoboyce.com
 baseurl:          /
 email:            hello@nicoboyce.com
+email_deltastring: nico@deltastring.com
 
 author:
   name:           'Nico Beastie Boyce'

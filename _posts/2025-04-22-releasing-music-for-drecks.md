@@ -28,7 +28,7 @@ Previous releases just said "Nico Boyce" on the cover. I'm okay with the name Ni
 <img src="/public/img/nicologo.svg" alt="Nico Beastie Boyce logo." width="600" style="filter: hue-rotate(90deg) brightness(2);"/>
 *My name is Nico.*
 
-There's some talk on the Nico logo <a href="{{ site.data.links.internal.nico_logo }}">here</a> and the Deltastring logo {% include link.html ref="business.deltastring_logo" text="here" %}.
+There's some talk on the Nico logo <a href="/2024/05/25/where-did-the-nico-logo-design-originate/">here</a> and the Deltastring logo {% include link.html ref="business.deltastring_logo" text="here" %}.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ya4DuoPbVjc?si=8Qr-u-5hUtND54LS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -43,7 +43,7 @@ Also releasing music under my name doesn't show that it's a team effort. Rosie s
 
 I'll probably put this on most of the streaming services eventually, but I'm going to hold out as long as I can.
 
-Our <a href="{{ site.data.links.internal.music_page }}">previous music</a> is on (deep breath) Spotify, Apple Music, iTunes, Instagram/Facebook, TikTok & other ByteDance stores, YouTube Music, Amazon, Pandora, Deezer, Tidal, iHeartRadio, Claro Música, Saavn, Anghami, KKBox, NetEase, Tencent, MediaNet, Boomplay, Adaptr, Flo, Joox, Kuack Media, Qobuz, Snapchat most of which I have never heard of.
+Our <a href="/music/">previous music</a> is on (deep breath) Spotify, Apple Music, iTunes, Instagram/Facebook, TikTok & other ByteDance stores, YouTube Music, Amazon, Pandora, Deezer, Tidal, iHeartRadio, Claro Música, Saavn, Anghami, KKBox, NetEase, Tencent, MediaNet, Boomplay, Adaptr, Flo, Joox, Kuack Media, Qobuz, Snapchat most of which I have never heard of.
 
 Spotify have stopped paying smaller creators our pennies per month and almost all of these other services have never really played us. Apple and Youtube have contributed a tiny amount but not enough to make it worth the effort right now.
 

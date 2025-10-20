@@ -42,7 +42,7 @@ The early purchasers may have to deal with a product which isn't fully realised.
 
 ### Here are some questions and answers
 
-If you have a question which isn't answered here you can {% include link.html ref="contact.nico_deltastring" text="email me" %} and I'll get back to you and update this page.
+If you have a question which isn't answered here you can <a href="mailto:{{ site.email_deltastring }}">email me</a> and I'll get back to you and update this page.
 
 **Won't this eventually price out any sales?**
 
