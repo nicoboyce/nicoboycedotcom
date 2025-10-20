@@ -17,7 +17,7 @@ As tradition dictates, it's the last Sunday in May and I've just watched the Mon
 
 No team is anywhere near challenging Max Verstappen and Red Bull in the points, but Monaco is a very historic race and one where a lot of important sponsorship deals are done. A win at Monaco is particularly prized by the more established teams, Ferrari and McLaren.
 
-Monaco is a circuit where it is notoriously difficult to overtake, in fact virtually impossible in 2024. Ferrari and their polesitter driver Leclerc are still seeking redemption for the [2021 race](https://en.wikipedia.org/wiki/2021_Monaco_Grand_Prix).
+Monaco is a circuit where it is notoriously difficult to overtake, in fact virtually impossible in 2024. Ferrari and their polesitter driver Leclerc are still seeking redemption for the {% include link.html ref="external.wikipedia_monaco_2021" text="2021 race" %}.
 
 ### What was happening?
 

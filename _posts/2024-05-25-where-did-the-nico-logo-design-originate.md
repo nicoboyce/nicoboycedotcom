@@ -23,7 +23,7 @@ This wasn't actually the first thing I considered for my own design, but it's th
 
 ### Sony Vaio
 
-I primarily took inspiration from the Sony Vaio logo. There are plenty of good articles discussing this design, such as [here](https://imjustcreative.com/the-sony-vaio-logo/2022/10/21). Essentially, consider the VA as a waveform representing analogue signals and the IO representing binary code and therefore digital signals.
+I primarily took inspiration from the Sony Vaio logo. There are plenty of good articles discussing this design, such as {% include link.html ref="external.imjustcreative_vaio" text="here" %}. Essentially, consider the VA as a waveform representing analogue signals and the IO representing binary code and therefore digital signals.
 
 ![VAIO P series, Yoggy from Yokohama, Kanagawa, Japan, CC BY 2.0](/public/img/Sony_VAIO_P.jpg)
 *VAIO P series, Yoggy from Yokohama, Kanagawa, Japan, CC BY 2.0*

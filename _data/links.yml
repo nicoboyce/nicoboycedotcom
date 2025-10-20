@@ -25,3 +25,29 @@ internal:
 external:
   hn_exception_report: https://news.ycombinator.com/item?id=45638096
   fdroid_nsfw: https://forum.f-droid.org/t/nsfw-flag-incorrectly-added-to-bible-and-quran-apps/33401
+  imjustcreative_vaio: https://imjustcreative.com/the-sony-vaio-logo/2022/10/21
+  nownownow_about: https://nownownow.com/about
+  wikipedia_monaco_2021: https://en.wikipedia.org/wiki/2021_Monaco_Grand_Prix
+
+# YouTube videos - motorsport
+youtube:
+  hillclimb_tv: https://www.youtube.com/@HillClimbTV
+  brx_5nations: https://www.youtube.com/@5NationsBRX
+  vscc_lakeland: https://www.youtube.com/watch?v=gaJu3YiBYVc
+  750_motor_club: https://www.youtube.com/@750MotorClubTV
+  btcc_official: https://www.youtube.com/@OfficialBTCC
+  brscc_streams: https://www.youtube.com/@TheBRSCC/streams
+  imsa_official: https://www.youtube.com/@imsaofficial/streams
+  nitrocross: https://www.youtube.com/@nitrocross/videos
+  hillclimb_monsters: https://www.youtube.com/@HillClimbMonsters
+  k4_movies: https://www.youtube.com/@K4Movies/videos
+  formula_offroad: https://www.youtube.com/@G7Media/videos
+  jakob_cecil: https://www.youtube.com/user/jakobcecil
+  prescott_bhc_2024: https://www.youtube.com/watch?v=rn7df2xiabM
+  lydden_hill_final: https://www.youtube.com/watch?v=l3b7TWoOxwc
+  macau_f3_2024: https://www.youtube.com/watch?v=YYe_NXIC3H0
+
+# Email
+contact:
+  email: mailto:hello@nicoboyce.com
+  nico_deltastring: mailto:nico@deltastring.com

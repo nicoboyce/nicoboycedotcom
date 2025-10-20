@@ -4,7 +4,7 @@ title: "Prescott hillclimb - classic day out"
 categories: wheels
 ---
 
-We went to Prescott (which is the Bugatti Owners Club place in Gloucestershire) for the British Hillclimb Championship which is all on the youtube if you want to see it in a video format [here](https://www.youtube.com/watch?v=rn7df2xiabM)
+We went to Prescott (which is the Bugatti Owners Club place in Gloucestershire) for the British Hillclimb Championship which is all on the youtube if you want to see it in a video format {% include link.html ref="youtube.prescott_bhc_2024" text="here" %}
 
 We looked like this
 

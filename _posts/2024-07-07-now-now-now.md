@@ -9,7 +9,7 @@ The now page is there to be a quick summary of what I'm up to, what I would expl
 
 # Where does it come from?
 
-Well all that is explained [here](https://nownownow.com/about) well enough that I shouldn't be rewriting it. I'm glad to see that personal sites still exist and that the conventions for those are still evolving.
+Well all that is explained {% include link.html ref="external.nownownow_about" text="here" %} well enough that I shouldn't be rewriting it. I'm glad to see that personal sites still exist and that the conventions for those are still evolving.
 
 # What will you be putting there?
 
@@ -18,4 +18,4 @@ Well, I'm not sure right now but I guess it'll cover my making and doing. It'll 
 ![Nico Beastie Boyce.](/public/img/yellow.jpeg)
 *BMXing has kept me pretty busy lately.*
 
-The page is [here](https://nicoboyce.com/now/) and I hope over time it has some value to me and to you.
+The page is <a href="/now/">here</a> and I hope over time it has some value to me and to you.
