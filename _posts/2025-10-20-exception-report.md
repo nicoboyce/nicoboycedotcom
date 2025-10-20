@@ -22,7 +22,7 @@ I have another friend who also came from a wealthy family, though a few orders o
 
 Prince Andrew might well have seen some real normal life at Pizza Express in Woking, if there was any evidence of his presence there. Otherwise, why would he know that other people are people?
 
-{% include link.html ref="external.hn_exception_report" text="HN discussion" %} and {% include link.html ref="external.fdroid_nsfw" text="F-Droid forum thread" %}. <!--excerpt-end-->
+{% include link.html ref="exception_report.hn_exception_report" text="HN discussion" %} and {% include link.html ref="exception_report.fdroid_nsfw" text="F-Droid forum thread" %}. <!--excerpt-end-->
 
 [Main content here]
 
@@ -68,7 +68,7 @@ What you've written (lines 13-23):
 - Religious people upset, demanding exception
 - Not arguing "the rule is wrong for everyone" - arguing "our book is special"
 - Same pattern as Prince Andrew: already believe their case deserves different treatment
-- Links: {% include link.html ref="external.hn_exception_report" text="HN discussion" %} and {% include link.html ref="external.fdroid_nsfw" text="F-Droid forum thread" %}
+- Links: {% include link.html ref="exception_report.hn_exception_report" text="HN discussion" %} and {% include link.html ref="exception_report.fdroid_nsfw" text="F-Droid forum thread" %}
 
 **Section 3: The pattern - why there's no middle ground**
 (NOT WRITTEN YET)
