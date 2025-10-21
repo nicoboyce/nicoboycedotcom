@@ -390,3 +390,261 @@ so I can know what I'm doing
   5. Make it efficient - colour coding, staying ready (medium section)
   6. Avoid stress, be ready - conclusion with anecdote (short section)
   7. Additional resources - video/other content if relevant (short section)
+
+---
+
+# Notes for "Gear for gigs, the 2025 rewrite"
+
+## STRUCTURE REVISION (based on latest input)
+
+### New proposed structure:
+
+1. **Tech Contractor Starter Pack** (summary/shopping list section at the top)
+   - Macbook Pro 14" M5
+   - Budget Windows laptop (Chuwi or similar)
+   - Chargers (USB-C, redundancy)
+   - Headset (wired with mic for calls)
+   - [Other essentials in quick list format]
+
+2. **The Detail** (existing laptop sections + expanded explanations)
+   - Current sections on Macbook/Windows choices stay
+   - Add all the detailed reasoning
+   - Network connectivity
+   - Accessories deep dive
+   - Cables/dongles
+   - Efficiency systems
+
+3. **What I Personally Use** (new section)
+   - Macbook Pro M2 (primary laptop)
+   - Mac Mini M4 (home office)
+   - Chuwi Windows laptop (backup)
+   - Rosie has HP Spectre x360 (household backup/Windows testing)
+   - MSI 4K 32" monitor
+   - Anker Solix C1000 (UPS for home office)
+   - Starlink (connectivity)
+   - Asus AX4200 router
+   - Multiple Samsung T7 SSDs (per-client data segregation)
+   - Multiple redundant 4TB HDDs (backup strategy)
+   - Sony XM4s (default office headphones)
+   - Anker Soundcore (picking up usage/backup?)
+   - Sennheiser USB-C lavalier mic (for calls - "makes a huge difference")
+   - TCL NXTPaper phone (current)
+
+4. **What I Plan to Add** (future purchases/considerations)
+   - iPhone (considering - resale value makes economic sense, want AirTags capability)
+   - [Anything else planned?]
+
+---
+
+## Additional details needed from your current setup:
+
+**Items CONFIRMED:**
+
+**Samsung T7 per client setup:**
+- Separate SSD per client for data segregation
+- Easy to implement, cheap enough to scale
+- Good compromise between convenience and safety
+- Periodically backed up as images to HDs
+
+**Backup strategy:**
+- Three 4TB HDDs
+- Weekly rotation - one HD gets reimaged each week
+- Backs up from the T7 SSDs
+
+**Sennheiser USB-C lavalier:**
+- Likely only USB-C lav model they make (~£25)
+- Model number unknown but findable
+
+**TCL NXTPaper phone:**
+- Super long battery life in monochrome mode
+- Monochrome mode reduces scrolling through rubbish
+- Much more readable and focused
+- Downsides prompting iPhone consideration: [still to answer]
+
+**Work bag:**
+- Neewer camera bag 11.8x5.5x14.6" (replaced Beagles rolltop)
+- https://uk.neewer.com/collections/bags-cases/products/neewer-11-8x5-5x14-6-camera-backpack-66600217
+- Loops to strap things
+- Velcro internal segmentation
+- "So convenient"
+
+**Items ANSWERED:**
+
+1. **Anker Solix C1000:**
+   - Not strictly a UPS but switching time less than one cycle
+   - Powers anything critical: Starlink, Mac Mini, storage solutions
+   - Hundreds of successful power cut handoffs
+   - Battery life: few hours gaming (Xbox + TV), estimated 12+ hours for Mac Mini + keyboard + Starlink
+   - Cost: about one day rate (including accessories + solar panel)
+   - ROI: has saved more than one day of pay already
+   - Context: previous location had frequent power cuts (sometimes several per day)
+
+2. **Starlink:**
+   - Now PRIMARY internet connection (was originally backup)
+   - Performance: ramps up speed on demand after idling low, can be affected by weather but not much
+   - Dish clears snow automatically
+   - Speed is really good, very reliable
+   - If it broke: would replace same day
+   - Feel: different to fixed line (moment to ramp up under high demand)
+
+3. **Mac Mini M4:**
+   - Now PRIMARY work device (breaking own rules but justified)
+   - Why: incredibly capable at good price
+   - Uses: general computing, many cron jobs, real-time service monitoring, video editing, audio work for partner content
+   - Performance: handles 4K video editing easily (Macbook Pro M2 struggled with this)
+   - Unbelievably powerful for workloads
+   - Plan to add: Raycue dock with additional SSD
+   - Form factor: tiny (no practical benefit but would've been perfect for LAN party days)
+
+4. **Headphones - Sony XM4 vs Soundcore:**
+   - XM4s: still the recommendation but availability limited (John Lewis still stocks them - get them while available)
+   - XM5/XM6: "a bit of a disaster for Sony"
+   - XM4s: not audiophile, terrible mics for calls, but excellent at making world quieter
+   - Soundcore: increasingly common in client offices, good alternative, likely next purchase
+   - Other options: Bose, Sennheiser, B&W, B&O (more expensive, not better)
+   - Use case: making office quiet, not enjoying music
+   - Don't like second-hand headphones
+   - If XM4s unavailable, Soundcore gets the recommendation
+
+5. **Colour-coding system:**
+   - Changed from yellow to ORANGE
+   - All Deltastring things: orange case or orange labelling
+   - Macbook: orange shell
+   - Camera for video content: orange
+   - System still in use, just different colour
+
+6. **Mouse:**
+   - Current: JLAB vertical mouse (from Argos)
+   - Previous: Anker vertical (died - rubber worn, sensor tracking poorly, was second one, well used)
+   - JLAB features: thumb buttons mapped to copy/paste
+   - Still recommend: buy second mouse as backup
+   - BUT: currently looking for new backup - vertical mouse only works at right elbow height (problem when standing)
+   - Considering: Apple trackpad for desk (happy with Macbook trackpad)
+   - Mobile: often don't carry mouse unless on-site full day at desk
+
+7. **Keyboard:**
+   - Still Corsair K70
+   - Good kit lasts
+   - Planned maintenance: replace space bar (doesn't feel as good as other keys), new wrist rest (gel type)
+
+8. **USB-C hub/dock:**
+   - Home office current: Kensington USB hub (on retirement/replacement list)
+   - Home office planned: Raycue hub with built-in M.2 slot (for Mac Mini storage expansion)
+   - Mobile: couple of USB-C breakout dongles
+   - Important: label them or they'll end up in someone else's bag
+
+9. **Mobile network providers:**
+   - Same: Smarty + GiffGaff
+   - Same: dual SIM approach
+
+10. **5G toggle:**
+    - Still disable it
+    - Exception: Old Street area had more reliable 5G recently
+    - General experience: just means more dropouts, more battery drain
+    - 2025 verdict: hasn't improved enough to change recommendation
+
+11. **USB-C dongles:**
+    - Carry: two at least (three might be excessive)
+    - Required ports: HDMI, ethernet, USB-A, SD card
+
+12. **USB-C cables:**
+    - Brand: Apple ones for regular carry (long, compatible with Apple fast charger)
+    - Labelling: yes, still recommend loop of electrical tape
+    - Benefit: saves so much hassle
+
+13. **Chargers:**
+    - Not fussy about specific tech (GaN/Gallium Nitride chargers - smaller/lighter but not specifically seeking them)
+    - Important: check chargers will charge ALL devices (laptops, phone, headphones)
+    - Priority: reliability over technology
+
+14. **TCL NXTPaper downsides:**
+    - Reliability declining: bought second one after screen came off first
+    - Recent issues: call wouldn't end, battery not lasting like before
+    - Likes: side toggle for monochrome/low colour modes
+    - Major problem: matte screen = very low brightness, unusable in sunlight
+    - Prompting iPhone consideration due to reliability issues
+
+**Car charging setup (CONFIRMED):**
+- ~250Wh Anker portable power station
+- Charged from 12V while driving
+- Use proper laptop charger from the power station (not direct 12V charging)
+- Benefit: Gear always charged when arriving at destination
+- This solves the 2023 problem of "Macbook doesn't charge well at 12V" - you're not doing 12V charging anymore
+
+**STILL TO ANSWER:**
+
+1. **Budget/Pricing:**
+   - Base M5 Macbook Pro 14": ~£1500
+   - M2 Air backup: ~£600? (cheapest Mac anyone should buy in 2025)
+   - Lenovo X1 Carbon Gen 13 with OLED: ~£1700
+   - M2/M3 Air for Windows-primary backup: ~£600
+   - Budget Windows backup: £300ish (Chuwi Gemibook discontinued - need to find alternative)
+   - Windows-first route still more expensive than Mac-first
+
+2. **Specific models to verify:**
+   - ThinkPad X1 Carbon Gen 13: CONFIRMED current (October 2025)
+   - HP Spectre x360: need to check if 16GB RAM is standard or if 8GB models still exist
+   - Budget Windows laptop: Chuwi Gemibook no longer available - research alternatives
+   - M5 Macbook Pro: CONFIRMED launching (base: 10-core CPU, 10-core GPU, 16GB, 512GB)
+   - macOS Tahoe: CONFIRMED current version
+
+3. **Network hand-off configuration:**
+   - DROPPED: settings location unclear in modern Android, out of loop with current methods
+   - May still be relevant but not confident enough to give specific instructions
+
+4. **Cautionary anecdote:**
+   - TO DECIDE: story about colleague's charger being nicked
+   - Need to think about whether to use this or different example
+   - Placement TBD: opening or conclusion?
+
+5. **Conclusion/resources:**
+   - YouTube video still relevant?
+   - Other Deltastring resources to link?
+   - Newsletter signup?
+
+6. **M2 Air external display:**
+   - Confirmed: single external display limitation is NOT a problem
+   - Contractors use laptop screen + one external on-site (not clamshell mode)
+   - M2 Air remains best budget backup recommendation
+
+---
+
+## Key sections from 2023 that are missing or incomplete in 2025:
+
+**Network/connectivity** - This was a major section in 2023 (dual SIMs, tethering, network switching) but appears to be completely absent from the 2025 draft.
+
+**Accessories** - 2023 covered peripherals, monitors, headphones in detail. Not present in 2025 draft yet.
+
+**Cables and dongles** - The "Over-index on the basics" section covering USB-C breakout dongles, cables, chargers, car charging setup.
+
+**Colour-coding system** - The "Make it efficient" section about marking all your gear in one distinctive colour. This was brilliant practical advice.
+
+**The anecdote** - Opening story about your colleague's charger getting nicked. Sets up the "why redundancy matters" argument nicely.
+
+---
+
+## What's changed that needs updating:
+
+**Windows recommendations** - 2023 had XPS 13 with caveats about the Plus model. 2025 says "all XPS" now have the capacitive keys issue, which is a useful update.
+
+**5G** - 2023 recommended disabling 5G because it was inconsistent. Is this still true in 2025, or has 5G reliability improved enough to change this advice?
+
+**Pricing context** - 2023 mentioned the £1000 ex VAT Macbook Pro 13" price point. What's the current budget baseline?
+
+---
+
+## Suggested order for remaining content:
+
+After completing the starter pack summary section, continue with:
+
+1. **Complete Windows section** - backup device for Windows-primary users
+2. **Network effects** - dual SIMs, tethering, phone choice (major section)
+3. **Accessories** - peripherals, display, audio (major section)
+4. **Over-index on basics** - cables, dongles, chargers (major section)
+5. **Make it efficient** - colour coding, staying ready (medium section)
+6. **What I personally use** - your actual setup (new major section)
+7. **What I plan to add** - future considerations (short section)
+8. **Avoid stress, be ready** - conclusion with anecdote (short section)
+9. **Additional resources** - video/other content if relevant (short section)
+
+Total addition: probably 2000-2500 words with the new "what I use" section.
