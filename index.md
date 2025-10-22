@@ -8,9 +8,8 @@ title: Nico Beastie Boyce — human person
 This is my old fashioned personal website where I publish and discuss my creative things.
 
 I also do CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
-<a href="https://deltastring.com">
+
 ![Deltastring](/public/img/ds-logo-trans-alt.svg)
-</a>
 
 ## New and sexy things
 
