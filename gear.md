@@ -14,6 +14,9 @@ There is some crossover between different facets of my work, but I've broadly gr
 
 I've recently switched systems to a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh? It isn't great for motorsport panning shots, whatever I do with the settings. We've now also got an X-S20 which does most of what the X-H2 can but the reduced size and weight are often useful.
 
+![Filming.](/public/cam.jpg)
+*Filming.*
+
 Sigma zooms and Viltrox primes are my choices in the Fuji system. The little Fuji power zoom is handy to have.
 
 Previously I used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. It's still skill and time rather than gear which limits my pictures.
@@ -30,6 +33,13 @@ I carry a USB-C SD card reader so I can quickly check images on my phone and sha
 Akaso action cameras are my choice for the price to performance ratio. Got a big bag of clips and straps and other accessories so we're ready for anything.
 
 I organise my images with [Darktable](https://www.darktable.org/) and store them on a DIY NAS.
+
+Recently I have been taking pictures on a Nikon F-601. I'm using Fuji 200 ISO film. I'll show off the pictures some time soon.
+
+![35mm time.](/public/f601.jpg)
+*35mm time.*
+
+A bunch of our accessories are from K&F, including straps and filters. My stuff is usually in a Neewer bag.
 
 ### Guitars, basses, amps, etc
 
