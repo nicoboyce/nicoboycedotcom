@@ -10,6 +10,15 @@ I sometimes write music and I also still sometimes write about music. A long tim
 
 Here you can check out what I'm listening to and also my latest releases.
 
+## New things are happening
+
+Everything I'm hearing right now is like Underscores went back in time to the mid 90s and I'm trying to commit that to bits and bytes.
+
+![Logic.](/public/img/logic.jpeg)
+*Logic.*
+
+I am hoping the next record will be completed this year. What's taking shape is not Drecks 2 but something else. I'm calling it the work ep in my head right now.
+
 ## New album Instrumental Driving Music for Drecks
 
 Read about the release [here](/essays/2025/04/22/releasing-music-for-drecks/) and then go [here](https://fightingmongooses.bandcamp.com/) and buy it.
@@ -29,6 +38,15 @@ Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most 
 
 **Recent live shows:**
 
+* Queens of the Stone Age at the Royal Albert Hall
+_I don't know what more I can really say about QotSA. They have reached incredible new heights and are doing things I find hard to believe. The support was so bad but I don't remember the name._
+
+* The Beta Band at the Roundhouse
+_Overambitious, self-aware, pretentious, still unmissable. They were beautiful in 2004 when they called it a day and they are just as exquisite today._
+
+* Victorious festival
+_I won't be going again but it is something we did. Not much more to say!_
+
 * Have a Nice Life
 _Last ever gig at the Marble Factory apparently but we couldn't stick around. It was so hot in the venue we had to take the decision to leave and consider what could have been. RIP the Marble Factory and we will try and see Have a Nice Life properly another time!_
 
@@ -36,7 +54,7 @@ _Last ever gig at the Marble Factory apparently but we couldn't stick around. It
 _It's a shame to feel like Desertfest has fallen off a cliff but honestly aside from D&D and Earth this year was a total disaster. HOWEVER those two did produce amazing performances. I'd rather they did a proper tour and we hadn't felt obligated to stand there through one psychedelic folk stoner doom jam collective after another._
 
 * Self Esteem outstore with Vinilo/1865
-_Alright so I do love Self Esteem and I loved Slow Club from when they were playing in pubs and when she's in town I show up, it's as simple as that. This performance barely lasted half an hour and was just bad. I'm good with an intimate low key acoustic type little set and I'm good with a big proper show but this fell in the middle and wasn't either and honestly I was pretty pissed of with how rubbish this was. Totally mis-sold by the Vinilo record store. Also not fun: the crowd were all people who didn't really know how to do this sort of thing. Most people only saw the stage through their phone screen. To top it off, the new songs are not good. I'd like to wipe this from my memory._
+_Alright so I do love Self Esteem and I loved Slow Club from when they were playing in pubs and when she's in town I show up, it's as simple as that. This performance barely lasted half an hour and was just bad. I'm good with an intimate low key acoustic type little set and I'm good with a big proper show but this fell in the middle and wasn't either and honestly I was pretty pissed off with how rubbish this was. Totally mis-sold by the Vinilo record store. Also not fun: the crowd were all people who didn't really know how to do this sort of thing. Most people only saw the stage through their phone screen. To top it off, the new songs are not good. I'd like to wipe this from my memory._
 
 * The Bug vs BIG|BRAVE, sonic face-off
 _Mad one-off sonic battle. Canadian folk-doom noise architects Big Brave occupied the stage of the Garage and Dorset lord of dub The Bug faced them down with a separate sound system at the other end of the Islington warehouse. Face-melting bliss. Clip [here](https://pixelfed.social/p/beastie/820786658141040899)._
@@ -95,8 +113,6 @@ I'm really happy with Drecks and we're going to go bigger and bolder with the se
 **Upcoming gigs:**
 
 * High on Fire
-* Queens of the Stone Age
-* The Beta Band
 
 **Spin these:**
 
