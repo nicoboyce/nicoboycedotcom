@@ -14,7 +14,7 @@ Here you can check out what I'm listening to and also my latest releases.
 
 Everything I'm hearing right now is like Underscores went back in time to the mid 90s and I'm trying to commit that to bits and bytes.
 
-![Logic.](/public/img/logic.jpeg)
+![Logic.](/public/img/logic.png)
 *Logic.*
 
 I am hoping the next record will be completed this year. What's taking shape is not Drecks 2 but something else. I'm calling it the work ep in my head right now.
