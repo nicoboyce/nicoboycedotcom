@@ -86,6 +86,7 @@ em {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Graph Paris', sans-serif;
   font-weight: bold;
   line-height: 1.25;
   color: #eff0ea;
@@ -114,6 +115,7 @@ p {
 }
 
 strong {
+  font-family: 'Graph Paris', sans-serif;
   color: #eff0ea;
 }
 
