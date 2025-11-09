@@ -5,11 +5,10 @@ title: Nico Beastie Boyce — human person
 
 # Hello. I am Nico.
 
-This is my old fashioned personal website where I publish and discuss my creative things.
+This is my old fashioned personal website where I publish creative things. It's deliberately a bit messy and chaotic because that's where the good stuff hides.
 
-I also do CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
-
-![Deltastring](/public/img/ds-logo-trans-alt.svg)
+![mushy](/public/img/mushy.jpg)
+*rage*
 
 ## New and sexy things
 
@@ -36,9 +35,11 @@ or maybe
 
 * Make new house good
 * Beacon (software project for my company)
-* New music will be more hyper and more doom
-* I am painting a mushroom monster
+* New music will be even more hyper and more doom
 * Still refining the insane distortion effect, new and unique and different to everything ever before
+
+![road](/public/img/roar.jpg)
+*roar*
 
 ## Things I do
 
@@ -53,7 +54,18 @@ My album and live reviews and also interviews have been published online and in 
 
 I'm getting into painting but it's hard to kill my inner critic. I use spray cans on wooden boards. It takes a lot of patience. I'm still developing my plans with this but there is an ambition to do some sort of exhibition within the next year or so.
 
+![skull](/public/img/skull.jpg)
+*skull*
+
+Best way to get started is to open the paint and slap it down on the surface.
+
 ![Frug.](/public/img/frug.jpg)
 *Frug.*
 
 Designing and prototyping analogue audio circuits, primarily guitar effects, is something I need to find more time for. I have been testing a novel and unique distortion unit which is capable of a huge spectrum of new sounds. I will write more about that as the project progresses.
+
+## Deltastring
+
+I also do CX consulting and Zendesk implementations and integrations, so if that is what you are interested in please head to <a href="https://deltastring.com">Deltastring</a>.
+
+![Deltastring](/public/img/ds-logo-trans-alt.svg)
