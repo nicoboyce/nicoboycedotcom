@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   color: #eff0ea;
   text-rendering: optimizeLegibility;
-  text-shadow: 1px 1px #a64b1d, -1px -1px #a64b1d, 1px -1px #a64b1d, -1px 1px #a64b1d;
+  text-shadow: 2px 2px #a64b1d, -2px -2px #a64b1d, 2px -2px #a64b1d, -2px 2px #a64b1d;
 }
 h1 {
   font-size: 3rem;
@@ -118,7 +118,7 @@ p {
 strong {
   font-family: 'Graph Paris', sans-serif;
   color: #eff0ea;
-  text-shadow: 1px 1px #a64b1d, -1px -1px #a64b1d, 1px -1px #a64b1d, -1px 1px #a64b1d;
+  text-shadow: 2px 2px #a64b1d, -2px -2px #a64b1d, 2px -2px #a64b1d, -2px 2px #a64b1d;
 }
 
 
@@ -361,7 +361,7 @@ tbody tr:nth-child(odd) th {
 .post-title,
 .post-title a {
   color: #d46e3a;
-  text-shadow: 1px 1px #3498DB, -1px -1px #3498DB, 1px -1px #3498DB, -1px 1px #3498DB;
+  text-shadow: 2px 2px #3498DB, -2px -2px #3498DB, 2px -2px #3498DB, -2px 2px #3498DB;
 }
 .page-title,
 .post-title {
