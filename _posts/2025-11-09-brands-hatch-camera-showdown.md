@@ -21,7 +21,7 @@ Representing modernity we had a Fuji XS20, Sigma 16-300mm. In the middle we had 
 *Greasy conditions and front wheel drive means endless understeer.*
 
 ![Saxo on track.](/public/img/brands-hatch/saxo.jpg)
-*Saxo appeal."
+*Saxo appeal.*
 
 ![Racing truck.](/public/img/brands-hatch/truck.jpg)
 *Heavy metal.*
