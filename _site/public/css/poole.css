@@ -94,7 +94,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-shadow: 2px 2px #a64b1d, -2px -2px #a64b1d, 2px -2px #a64b1d, -2px 2px #a64b1d;
 }
 h1, h2, h3, h4, h5, h6 {
-  text-shadow: 2px 2px #a64b1d, -2px -2px #a64b1d, 2px -2px #a64b1d, -2px 2px #a64b1d;
+  text-shadow: 2px 2px #3498DB, -2px -2px #3498DB, 2px -2px #3498DB, -2px 2px #3498DB;
 }
 h1 {
   font-size: 3rem;
@@ -361,14 +361,15 @@ tbody tr:nth-child(odd) th {
 
 /* Blog post or page title */
 .page-title,
-.post-title,
+.post-title {
+  color: #eff0ea;
+  text-rendering: optimizeLegibility;
+  text-shadow: 2px 2px #a64b1d, -2px -2px #a64b1d, 2px -2px #a64b1d, -2px 2px #a64b1d;
+}
+.page-title a,
 .post-title a {
   color: #d46e3a;
   text-shadow: 2px 2px #3498DB, -2px -2px #3498DB, 2px -2px #3498DB, -2px 2px #3498DB;
-}
-.page-title,
-.post-title {
-  margin-top: 0;
 }
 
 /* Meta data line below post title */
