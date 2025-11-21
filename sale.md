@@ -12,7 +12,7 @@ Like everyone who creates, sometimes you need a clear-out! I'll list items here 
 
 ### Music gear
 
-I'm giving Reverb another chance. [Warwick FNA Jazzman fretless](https://reverb.com/uk/item/89625306-warwick-fna-jazzman-fretless-germany-2006)
+I'm giving Reverb another chance, see [my shop](https://reverb.com/uk/shop/nicos-boutique-105) and if you're after a great fretless then go to the Bass Gallery: [Warwick FNA Jazzman fretless](https://thebassgallery.com/collections/bass/products/warwick-fna-jazzman-fl)
 
 ### Photography gear
 
