@@ -58,6 +58,9 @@ In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced wi
 
 The latest addition is a Squier offset. It's got a jazzmaster neck pickup and a tele bridge. Amazing thing.
 
+![Squier.](/public/img/squier.jpeg)
+*Squier.*
+
 These go to an Epiphone Valve Special, a Blackstar HT-5H or sometimes the Genz for that grunt.
 
 Effects come and go but I wouldn't be without the ProCo Turbo Rat and a Big Muff with Tone Wicker. The Rat is an '80s one and I need to swap out 9v adaptor for a modern one. I've got a few weirdo pedals like a Gojira FX Ants fuzz and I've built a few of my own noiseboxes. Sometimes I'll break out the Whammy or the Akai Headrush E2. Newest toy: [Neon Egg Planetarium](https://neonegg.com/).
