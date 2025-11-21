@@ -47,7 +47,7 @@ A bunch of our accessories are from K&F, including straps and filters. My stuff 
 
 The Ibanez Upswing (UB804) probably gets the most play at the moment. Other basses I play are the Ibanez ATK400, Ibanez AGB140, Maverick B-1 (rewired passive, bridge pickup only, direct to jack) and a Mania VTB-5BS. My strings of choice are LaBella Deep Talkin' flats (UB, AGB) and d'Addario nickel roundwounds for everything else.
 
-~~Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I'll own another Warwick. Maybe an FNA.~~ I did buy another one of these and we haven't quite clicked. I don't know why.
+~~Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I'll own another Warwick. Maybe an FNA.~~ I did buy another one of these and we haven't quite clicked. I don't know why. (Now it's for sale!)[https://nicoboyce.com/sale/] 
 
 ![One corner of the studio.](/public/img/studio.jpg)
 *One corner of the studio.*
