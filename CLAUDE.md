@@ -30,28 +30,29 @@
 ## Technical Implementation
 
 ### Planning & Execution
-- Plan first: Create specific, detailed plans before implementation
+- Single-file changes or clear instructions: execute directly
+- Multi-file features or unclear scope: plan first and present for approval
 - Think through the entire solution before starting
-- Multi-step tasks: present plan for approval first
-- Unambiguous commands: execute directly (e.g., "jekyll build and push to git")
-- Use judgement on complexity threshold
 - Progress updates on long tasks
 
 ### Code Standards
-- Enterprise-grade: robust, documented, understandable
+- Robust, documented, understandable
 - Textbook and orthodox approaches
-- Comprehensive error handling - no shortcuts
-- Mission-critical quality standards
-- Full defensive coding where appropriate
+- Comprehensive error handling where appropriate
 - Naming: conventional for the language (snake_case Python, camelCase JS, etc.)
 
 ### Development Preferences
 - Default to Python for scripts and odd tasks
 - Minimise dependencies where reasonable
 - Keep it simple
-- Git commits: verbose and detailed
 - Inline comments for brief explanations
-- Separate .md files for TODOs and detailed planning (more than a few words)
+- Separate .md files for project TODOs and implementation planning only (not general learnings)
+- CLAUDE.md is for repeatable patterns only, not one-off fixes
+
+### Git & Commits
+- Commit after logical completion points
+- Include context and reasoning in commit messages
+- Verbose and detailed messages
 
 ### Testing
 - Proper projects: TDD approach
@@ -78,6 +79,7 @@
 - Note issues found in existing code - don't ignore future hassles
 - Choose safest solution when multiple options exist
 - Proactively identify problems that will cause trouble later
+- Quick diagnosis, clear explanation of root cause, complete fix with verification
 
 ### Data Accuracy
 - Verify search results carefully before reporting findings

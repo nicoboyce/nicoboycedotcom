@@ -30,6 +30,7 @@ exclude:
   - CLAUDE.md
   - estimation-tool-plan.md
   - _posts/_drafts/
+  - _site
 
 # github:
 #   repo:           https://github.com/poole/hyde
