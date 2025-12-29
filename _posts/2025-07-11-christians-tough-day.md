@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Christian's tough day
+categories: wheels
 ---
 
 *We've all had bad days. Sometimes the problems are of our own making.*
