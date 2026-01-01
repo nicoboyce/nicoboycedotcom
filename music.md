@@ -10,6 +10,16 @@ I sometimes write music and I also still sometimes write about music. A long tim
 
 Here you can check out what I'm listening to and also my latest releases.
 
+*You could read [2025 is over](https://nicoboyce.com/2025/12/31/it-is-over/) at this point*
+
+Here are a couple of notes from that article:
+
+>I guess for a lot of people 2025 was about waiting in virtual queues hoping to get tickets to big stadium shows from lowest common denominator pop acts. I'm not mad at you if you are in to that, I'm just disappointed and let's not speak about it further.
+
+>2025 was a year where artists whose work I had been enjoying over the last few years released records which made me go "oh okay, that's a shame."
+
+>My favourite new record this year was PinkPanteress mixtape Fancy That and my favourite new song of the year was Music by Underscores and nothing else really came close to those choices for me. s Finally I’ve got to say “go and listen to Esdeekid” if you’re not yet in on that thing.
+
 ## New things are happening
 
 Everything I'm hearing right now is like Underscores went back in time to the mid 90s and I'm trying to commit that to bits and bytes.
@@ -37,6 +47,9 @@ Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most 
 ***
 
 **Recent live shows:**
+
+* High On Fire (and Castle Rat and other supports) Electric Ballroom
+_I'm just so happy to see HoF looking and sounding better than ever. It felt like they were having a great time. We all had a great time. Also, one of the best combos of support acts I've seen in a while. Castle Rat are a must see!_
 
 * Queens of the Stone Age at the Royal Albert Hall
 _I don't know what more I can really say about QotSA. They have reached incredible new heights and are doing things I find hard to believe. The support was so bad but I don't remember the name._
@@ -112,9 +125,16 @@ I'm really happy with Drecks and we're going to go bigger and bolder with the se
 
 **Upcoming gigs:**
 
-* High on Fire
+* Nova Twins
+* Garbage and Skunk Anansie
+
+![Guitars.](/public/img/guits.jpeg)
+*Guitars.*
 
 **Spin these:**
+
+* Underscores - Music _(My track of '25)_
+* Crookers _(I cannot get enough French and Italian hip hop right now)_
 
 * Scratch Acid - Berserker _(Post hardcore horror noise. Equal parts SSD and Sutch.)_
 * PinkPantheress - Fancy That _(Genuinely exciting Brit-garage nineties pop collision.)_
@@ -131,6 +151,3 @@ I'm really happy with Drecks and we're going to go bigger and bolder with the se
 
 * FKA twigs - EUSEXUA _(I wish I was young enough to be impressed by this, but I'm not so I'm not. William Orbit exists and you can just listen to his work.)_
 * Pantera - _(I don't know why I keep hearing people playing Pantera. These records have no redeeming value. It's okay to admit you were wrong.)_
-
-![Guitars.](/public/img/guits.jpeg)
-*Guitars.*
