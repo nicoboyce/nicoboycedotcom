@@ -16,7 +16,7 @@ The camera gear situation is getting a bit silly here lately. I have sold some l
 ![Cameras.](/public/img/cameras.jpeg)
 *Cameras.*
 
-Anyway more interesting probably is what's coming out of the camera. I've used it for a range of photography and with a mix of Fuji and Kodak film. Which are your favourite shots?
+Anyway more interesting probably is what's coming out of the camera. I've used it for a range of photography and with a mix of Fuji and Kodak film. I'm getting everything developed by [The Film Safe](https://www.thefilmsafe.co.uk/?nicoboycedotcom) who are just delightful. Which are your favourite shots?
 
 ![BH Truck.](/public/img/35mm/bhtruck.jpg)
 *BH Truck.*
