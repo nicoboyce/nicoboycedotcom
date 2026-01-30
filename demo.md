@@ -1,36 +1,35 @@
 ---
-layout: page
+layout: blank
 title: Flickbook Demo
 ---
 
 <style>
-  /* Reset page styles for full control */
-  .page {
-    max-width: none;
-    padding: 0;
-  }
 
-  /* Scroll sections */
-  .scroll-section {
-    height: 100vh;
+  /* Long scroll container to give us scroll range */
+  .flipbook-container {
+    height: 2000vh;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(180deg, #f0e68c 0%, #98d8c8 50%, #ffb6c1 100%);
   }
 
-  .scroll-section:nth-child(1) { background: #f0e68c; }
-  .scroll-section:nth-child(2) { background: #98d8c8; }
-  .scroll-section:nth-child(3) { background: #ffb6c1; }
-
-  /* Character container */
-  .character {
-    position: sticky;
+  /* Character stays fixed in viewport */
+  .character-fixed {
+    position: fixed;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
     height: 400px;
-    position: relative;
+  }
+
+  /* Stack all frames in same space */
+  .frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
   }
 
   /* Character parts positioning */
@@ -67,204 +66,362 @@ title: Flickbook Demo
     z-index: 3;
   }
 
-  /* Animation states */
-  .scroll-section:nth-child(1) .leg.left {
-    animation: knee-bounce-left 0.6s steps(3) infinite;
-  }
+  /* Frame-specific poses */
+  .frame-1 .leg.left { transform: rotate(0deg); }
+  .frame-1 .leg.right { transform: rotate(0deg); }
+  .frame-1 .body { transform: translateX(-50%) translateY(0px); }
 
-  .scroll-section:nth-child(1) .leg.right {
-    animation: knee-bounce-right 0.6s steps(3) infinite;
-  }
+  .frame-2 .leg.left { transform: rotate(-8deg); }
+  .frame-2 .leg.right { transform: rotate(8deg); }
+  .frame-2 .body { transform: translateX(-50%) translateY(-5px); }
 
-  .scroll-section:nth-child(1) .body {
-    animation: body-bounce 0.6s steps(3) infinite;
-  }
+  .frame-3 .leg.left { transform: rotate(-15deg); }
+  .frame-3 .leg.right { transform: rotate(15deg); }
+  .frame-3 .body { transform: translateX(-50%) translateY(-10px); }
 
-  .scroll-section:nth-child(2) .leg.left {
-    animation: knee-walk-left 0.4s steps(2) infinite;
-  }
+  .frame-4 .leg.left { transform: rotate(-8deg); }
+  .frame-4 .leg.right { transform: rotate(8deg); }
+  .frame-4 .body { transform: translateX(-50%) translateY(-5px); }
 
-  .scroll-section:nth-child(2) .leg.right {
-    animation: knee-walk-right 0.4s steps(2) infinite;
-  }
+  .frame-5 .leg.left { transform: rotate(0deg); }
+  .frame-5 .leg.right { transform: rotate(0deg); }
+  .frame-5 .body { transform: translateX(-50%) translateY(0px) scaleY(1.05); }
 
-  .scroll-section:nth-child(2) .body {
-    animation: body-walk 0.4s steps(2) infinite;
-  }
+  .frame-6 .leg.left { transform: rotate(10deg); }
+  .frame-6 .leg.right { transform: rotate(-10deg); }
+  .frame-6 .body { transform: translateX(-50%) translateY(-8px); }
 
-  .scroll-section:nth-child(3) .leg.left {
-    animation: knee-excited-left 0.3s steps(4) infinite;
-  }
+  .frame-7 .leg.left { transform: rotate(18deg); }
+  .frame-7 .leg.right { transform: rotate(-18deg); }
+  .frame-7 .body { transform: translateX(-50%) translateY(-15px) scaleY(0.95); }
 
-  .scroll-section:nth-child(3) .leg.right {
-    animation: knee-excited-right 0.3s steps(4) infinite;
-  }
+  .frame-8 .leg.left { transform: rotate(10deg); }
+  .frame-8 .leg.right { transform: rotate(-10deg); }
+  .frame-8 .body { transform: translateX(-50%) translateY(-8px); }
 
-  .scroll-section:nth-child(3) .body {
-    animation: body-excited 0.3s steps(4) infinite;
-  }
+  .frame-9 .leg.left { transform: rotate(0deg); }
+  .frame-9 .leg.right { transform: rotate(0deg); }
+  .frame-9 .body { transform: translateX(-50%) translateY(0px); }
 
-  /* Keyframes - Idle bounce */
-  @keyframes knee-bounce-left {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(-5deg); }
-  }
+  .frame-10 .leg.left { transform: rotate(-12deg); }
+  .frame-10 .leg.right { transform: rotate(12deg); }
+  .frame-10 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.9); }
 
-  @keyframes knee-bounce-right {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(5deg); }
-  }
+  .frame-11 .leg.left { transform: rotate(-20deg); }
+  .frame-11 .leg.right { transform: rotate(20deg); }
+  .frame-11 .body { transform: translateX(-50%) translateY(-20px) scaleY(0.85); }
 
-  @keyframes body-bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0px); }
-    50% { transform: translateX(-50%) translateY(-10px); }
-  }
+  .frame-12 .leg.left { transform: rotate(-12deg); }
+  .frame-12 .leg.right { transform: rotate(12deg); }
+  .frame-12 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.9); }
 
-  /* Keyframes - Walking */
-  @keyframes knee-walk-left {
-    0% { transform: rotate(-10deg); }
-    50% { transform: rotate(10deg); }
-    100% { transform: rotate(-10deg); }
-  }
-
-  @keyframes knee-walk-right {
-    0% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    100% { transform: rotate(10deg); }
-  }
-
-  @keyframes body-walk {
-    0%, 100% { transform: translateX(-50%) translateY(0px); }
-    50% { transform: translateX(-50%) translateY(-5px); }
-  }
-
-  /* Keyframes - Excited */
-  @keyframes knee-excited-left {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-15deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(-10deg); }
-    100% { transform: rotate(0deg); }
-  }
-
-  @keyframes knee-excited-right {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(15deg); }
-    50% { transform: rotate(0deg); }
-    75% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
-  }
-
-  @keyframes body-excited {
-    0%, 100% { transform: translateX(-50%) translateY(0px) scaleY(1); }
-    25% { transform: translateX(-50%) translateY(-20px) scaleY(0.9); }
-    50% { transform: translateX(-50%) translateY(0px) scaleY(1.1); }
-    75% { transform: translateX(-50%) translateY(-15px) scaleY(0.95); }
-  }
-
-  /* Label for sections */
-  .label {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 2rem;
-    font-weight: bold;
-    opacity: 0.3;
+  /* Scroll indicator */
+  .scroll-hint {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    opacity: 0.5;
+    pointer-events: none;
   }
 </style>
 
-<div class="scroll-section">
-  <span class="label">Idle</span>
-  <div class="character">
-    <!-- Body (kettle) -->
-    <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-      <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-    </svg>
+<div class="flipbook-container">
+  <div class="character-fixed">
+    <!-- Frame 1 -->
+    <div class="frame frame-1">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
 
-    <!-- Left leg -->
-    <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-      <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-      <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-    </svg>
+    <!-- Frame 2 -->
+    <div class="frame frame-2">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
 
-    <!-- Right leg -->
-    <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-      <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-      <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-    </svg>
+    <!-- Frame 3 -->
+    <div class="frame frame-3">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
 
-    <!-- Face -->
-    <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="15" r="5" fill="#fff"/>
-      <circle cx="40" cy="15" r="5" fill="#fff"/>
-      <circle cx="20" cy="15" r="3" fill="#000"/>
-      <circle cx="40" cy="15" r="3" fill="#000"/>
-      <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-    </svg>
+    <!-- Frame 4 -->
+    <div class="frame frame-4">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 5 -->
+    <div class="frame frame-5">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 6 -->
+    <div class="frame frame-6">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 7 -->
+    <div class="frame frame-7">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="6" fill="#fff"/>
+        <circle cx="40" cy="15" r="6" fill="#fff"/>
+        <circle cx="20" cy="15" r="4" fill="#000"/>
+        <circle cx="40" cy="15" r="4" fill="#000"/>
+        <path d="M 10 32 Q 30 40 50 32" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 8 -->
+    <div class="frame frame-8">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 9 -->
+    <div class="frame frame-9">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 10 -->
+    <div class="frame frame-10">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 11 -->
+    <div class="frame frame-11">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="6" fill="#fff"/>
+        <circle cx="40" cy="15" r="6" fill="#fff"/>
+        <circle cx="20" cy="15" r="4" fill="#000"/>
+        <circle cx="40" cy="15" r="4" fill="#000"/>
+        <path d="M 10 32 Q 30 40 50 32" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Frame 12 -->
+    <div class="frame frame-12">
+      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
+        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
+      </svg>
+      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
+        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
+      </svg>
+      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="5" fill="#fff"/>
+        <circle cx="40" cy="15" r="5" fill="#fff"/>
+        <circle cx="20" cy="15" r="3" fill="#000"/>
+        <circle cx="40" cy="15" r="3" fill="#000"/>
+        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
   </div>
+
+  <div class="scroll-hint">Scroll to flip ↓</div>
 </div>
 
-<div class="scroll-section">
-  <span class="label">Walking</span>
-  <div class="character">
-    <!-- Body (kettle) -->
-    <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-      <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-    </svg>
+<script>
+  const frames = document.querySelectorAll('.frame');
+  const totalFrames = frames.length;
 
-    <!-- Left leg -->
-    <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-      <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-      <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-    </svg>
+  function updateFrame() {
+    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    const frameIndex = Math.min(Math.floor(scrollPercent * totalFrames), totalFrames - 1);
 
-    <!-- Right leg -->
-    <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-      <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-      <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-    </svg>
+    frames.forEach((frame, index) => {
+      frame.style.opacity = index === frameIndex ? '1' : '0';
+    });
+  }
 
-    <!-- Face -->
-    <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="15" r="5" fill="#fff"/>
-      <circle cx="40" cy="15" r="5" fill="#fff"/>
-      <circle cx="20" cy="15" r="3" fill="#000"/>
-      <circle cx="40" cy="15" r="3" fill="#000"/>
-      <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-    </svg>
-  </div>
-</div>
-
-<div class="scroll-section">
-  <span class="label">Excited</span>
-  <div class="character">
-    <!-- Body (kettle) -->
-    <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-      <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-    </svg>
-
-    <!-- Left leg -->
-    <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-      <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-      <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-    </svg>
-
-    <!-- Right leg -->
-    <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-      <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-      <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-    </svg>
-
-    <!-- Face -->
-    <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20" cy="15" r="6" fill="#fff"/>
-      <circle cx="40" cy="15" r="6" fill="#fff"/>
-      <circle cx="20" cy="15" r="4" fill="#000"/>
-      <circle cx="40" cy="15" r="4" fill="#000"/>
-      <path d="M 10 32 Q 30 40 50 32" stroke="#000" stroke-width="3" fill="none"/>
-    </svg>
-  </div>
-</div>
+  window.addEventListener('scroll', updateFrame);
+  updateFrame(); // Initial frame
+</script>
