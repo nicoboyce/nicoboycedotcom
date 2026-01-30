@@ -113,25 +113,25 @@ title: Flickbook Demo
 
   /* Frame 2 - Rock forward */
   .frame-2 .leg.fl { transform: rotate(-5deg); }
-  .frame-2 .leg.fr { transform: rotate(-5deg); }
+  .frame-2 .leg.fr { transform: rotate(-7deg); }
   .frame-2 .leg.bl { transform: rotate(5deg); }
-  .frame-2 .leg.br { transform: rotate(5deg); }
+  .frame-2 .leg.br { transform: rotate(7deg); }
   .frame-2 .body { transform: translateX(-50%) translateY(-3px); }
   .frame-2 .note { opacity: 0.4; transform: scale(0.9); }
 
   /* Frame 3 - Deep rock forward */
   .frame-3 .leg.fl { transform: rotate(-10deg); }
-  .frame-3 .leg.fr { transform: rotate(-10deg); }
+  .frame-3 .leg.fr { transform: rotate(-13deg); }
   .frame-3 .leg.bl { transform: rotate(10deg); }
-  .frame-3 .leg.br { transform: rotate(10deg); }
+  .frame-3 .leg.br { transform: rotate(13deg); }
   .frame-3 .body { transform: translateX(-50%) translateY(-8px) scaleY(0.96); }
   .frame-3 .note { opacity: 0.5; transform: scale(1); }
 
   /* Frame 4 - Return to neutral */
   .frame-4 .leg.fl { transform: rotate(-5deg); }
-  .frame-4 .leg.fr { transform: rotate(-5deg); }
+  .frame-4 .leg.fr { transform: rotate(-7deg); }
   .frame-4 .leg.bl { transform: rotate(5deg); }
-  .frame-4 .leg.br { transform: rotate(5deg); }
+  .frame-4 .leg.br { transform: rotate(7deg); }
   .frame-4 .body { transform: translateX(-50%) translateY(-3px); }
   .frame-4 .note { opacity: 0.6; transform: scale(1.1); }
 
@@ -145,26 +145,26 @@ title: Flickbook Demo
 
   /* Frame 6 - Rock backward */
   .frame-6 .leg.fl { transform: rotate(5deg); }
-  .frame-6 .leg.fr { transform: rotate(5deg); }
+  .frame-6 .leg.fr { transform: rotate(7deg); }
   .frame-6 .leg.bl { transform: rotate(-5deg); }
-  .frame-6 .leg.br { transform: rotate(-5deg); }
+  .frame-6 .leg.br { transform: rotate(-7deg); }
   .frame-6 .body { transform: translateX(-50%) translateY(-3px); }
   .frame-6 .note { opacity: 0.8; transform: scale(1.3); }
 
   /* Frame 7 - Deep rock backward */
   .frame-7 .leg.fl { transform: rotate(10deg); }
-  .frame-7 .leg.fr { transform: rotate(10deg); }
+  .frame-7 .leg.fr { transform: rotate(13deg); }
   .frame-7 .leg.bl { transform: rotate(-10deg); }
-  .frame-7 .leg.br { transform: rotate(-10deg); }
+  .frame-7 .leg.br { transform: rotate(-13deg); }
   .frame-7 .body { transform: translateX(-50%) translateY(-10px) scaleY(0.94); }
   .frame-7 .note { opacity: 1; transform: scale(1.4); }
   .frame-7 .mouth { transform: translateY(10px) scale(1.02); }
 
   /* Frame 8 - Return to neutral */
   .frame-8 .leg.fl { transform: rotate(5deg); }
-  .frame-8 .leg.fr { transform: rotate(5deg); }
+  .frame-8 .leg.fr { transform: rotate(7deg); }
   .frame-8 .leg.bl { transform: rotate(-5deg); }
-  .frame-8 .leg.br { transform: rotate(-5deg); }
+  .frame-8 .leg.br { transform: rotate(-7deg); }
   .frame-8 .body { transform: translateX(-50%) translateY(-3px); }
   .frame-8 .note { opacity: 0.8; transform: scale(1.2); }
 
@@ -178,26 +178,26 @@ title: Flickbook Demo
 
   /* Frame 10 - Big rock forward */
   .frame-10 .leg.fl { transform: rotate(-8deg); }
-  .frame-10 .leg.fr { transform: rotate(-8deg); }
+  .frame-10 .leg.fr { transform: rotate(-11deg); }
   .frame-10 .leg.bl { transform: rotate(8deg); }
-  .frame-10 .leg.br { transform: rotate(8deg); }
+  .frame-10 .leg.br { transform: rotate(11deg); }
   .frame-10 .body { transform: translateX(-50%) translateY(-5px) scaleY(0.97); }
   .frame-10 .note { opacity: 0.5; transform: scale(0.9); }
 
   /* Frame 11 - Biggest rock forward */
   .frame-11 .leg.fl { transform: rotate(-15deg); }
-  .frame-11 .leg.fr { transform: rotate(-15deg); }
+  .frame-11 .leg.fr { transform: rotate(-18deg); }
   .frame-11 .leg.bl { transform: rotate(15deg); }
-  .frame-11 .leg.br { transform: rotate(15deg); }
+  .frame-11 .leg.br { transform: rotate(18deg); }
   .frame-11 .body { transform: translateX(-50%) translateY(-15px) scaleY(0.92); }
   .frame-11 .note { opacity: 1; transform: scale(1.5); }
   .frame-11 .mouth { transform: translateY(10px) scale(1.03); }
 
   /* Frame 12 - Return */
   .frame-12 .leg.fl { transform: rotate(-8deg); }
-  .frame-12 .leg.fr { transform: rotate(-8deg); }
+  .frame-12 .leg.fr { transform: rotate(-11deg); }
   .frame-12 .leg.bl { transform: rotate(8deg); }
-  .frame-12 .leg.br { transform: rotate(8deg); }
+  .frame-12 .leg.br { transform: rotate(11deg); }
   .frame-12 .body { transform: translateX(-50%) translateY(-5px); }
   .frame-12 .note { opacity: 0.7; transform: scale(1.2); }
 
