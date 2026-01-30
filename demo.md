@@ -4,7 +4,6 @@ title: Flickbook Demo
 ---
 
 <style>
-
   /* Long scroll container to give us scroll range */
   .flipbook-container {
     height: 300vh;
@@ -18,8 +17,8 @@ title: Flickbook Demo
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
   }
 
   /* Stack all frames in same space */
@@ -35,85 +34,174 @@ title: Flickbook Demo
   /* Character parts positioning */
   .body {
     position: absolute;
-    top: 80px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    width: 400px;
+    z-index: 5;
   }
 
+  .eyes {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    z-index: 7;
+  }
+
+  .mouth {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    z-index: 6;
+  }
+
+  .handle {
+    position: absolute;
+    top: 170px;
+    right: 80px;
+    width: 80px;
+    z-index: 4;
+  }
+
+  .note {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 40px;
+    z-index: 8;
+    opacity: 0.5;
+  }
+
+  /* Legs */
   .leg {
     position: absolute;
-    bottom: 60px;
-    width: 30px;
-    z-index: 1;
-  }
-
-  .leg.left {
-    left: 90px;
-    transform-origin: 50% 0%;
-  }
-
-  .leg.right {
-    left: 180px;
-    transform-origin: 50% 0%;
-  }
-
-  .face {
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 60px;
     z-index: 3;
+    transform-origin: 50% 0%;
+  }
+
+  .leg.fl {
+    left: 180px;
+    bottom: 150px;
+  }
+
+  .leg.fr {
+    left: 280px;
+    bottom: 150px;
+  }
+
+  .leg.bl {
+    left: 200px;
+    bottom: 150px;
+  }
+
+  .leg.br {
+    left: 260px;
+    bottom: 150px;
   }
 
   /* Frame-specific poses */
-  .frame-1 .leg.left { transform: rotate(0deg); }
-  .frame-1 .leg.right { transform: rotate(0deg); }
+  /* Frame 1 - Neutral */
+  .frame-1 .leg.fl { transform: rotate(0deg); }
+  .frame-1 .leg.fr { transform: rotate(0deg); }
+  .frame-1 .leg.bl { transform: rotate(0deg); }
+  .frame-1 .leg.br { transform: rotate(0deg); }
   .frame-1 .body { transform: translateX(-50%) translateY(0px); }
+  .frame-1 .note { opacity: 0.3; transform: scale(0.8); }
 
-  .frame-2 .leg.left { transform: rotate(-8deg); }
-  .frame-2 .leg.right { transform: rotate(8deg); }
-  .frame-2 .body { transform: translateX(-50%) translateY(-5px); }
+  /* Frame 2 - Start bend */
+  .frame-2 .leg.fl { transform: rotate(-5deg); }
+  .frame-2 .leg.fr { transform: rotate(5deg); }
+  .frame-2 .leg.bl { transform: rotate(5deg); }
+  .frame-2 .leg.br { transform: rotate(-5deg); }
+  .frame-2 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-2 .note { opacity: 0.4; transform: scale(0.9); }
 
-  .frame-3 .leg.left { transform: rotate(-15deg); }
-  .frame-3 .leg.right { transform: rotate(15deg); }
-  .frame-3 .body { transform: translateX(-50%) translateY(-10px); }
+  /* Frame 3 - Deep bend */
+  .frame-3 .leg.fl { transform: rotate(-10deg); }
+  .frame-3 .leg.fr { transform: rotate(10deg); }
+  .frame-3 .leg.bl { transform: rotate(10deg); }
+  .frame-3 .leg.br { transform: rotate(-10deg); }
+  .frame-3 .body { transform: translateX(-50%) translateY(-8px) scaleY(0.96); }
+  .frame-3 .note { opacity: 0.5; transform: scale(1); }
 
-  .frame-4 .leg.left { transform: rotate(-8deg); }
-  .frame-4 .leg.right { transform: rotate(8deg); }
-  .frame-4 .body { transform: translateX(-50%) translateY(-5px); }
+  /* Frame 4 - Return up */
+  .frame-4 .leg.fl { transform: rotate(-5deg); }
+  .frame-4 .leg.fr { transform: rotate(5deg); }
+  .frame-4 .leg.bl { transform: rotate(5deg); }
+  .frame-4 .leg.br { transform: rotate(-5deg); }
+  .frame-4 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-4 .note { opacity: 0.6; transform: scale(1.1); }
 
-  .frame-5 .leg.left { transform: rotate(0deg); }
-  .frame-5 .leg.right { transform: rotate(0deg); }
-  .frame-5 .body { transform: translateX(-50%) translateY(0px) scaleY(1.05); }
+  /* Frame 5 - Neutral stretch */
+  .frame-5 .leg.fl { transform: rotate(0deg); }
+  .frame-5 .leg.fr { transform: rotate(0deg); }
+  .frame-5 .leg.bl { transform: rotate(0deg); }
+  .frame-5 .leg.br { transform: rotate(0deg); }
+  .frame-5 .body { transform: translateX(-50%) translateY(2px) scaleY(1.02); }
+  .frame-5 .note { opacity: 0.7; transform: scale(1.2); }
 
-  .frame-6 .leg.left { transform: rotate(10deg); }
-  .frame-6 .leg.right { transform: rotate(-10deg); }
-  .frame-6 .body { transform: translateX(-50%) translateY(-8px); }
+  /* Frame 6 - Opposite bend start */
+  .frame-6 .leg.fl { transform: rotate(5deg); }
+  .frame-6 .leg.fr { transform: rotate(-5deg); }
+  .frame-6 .leg.bl { transform: rotate(-5deg); }
+  .frame-6 .leg.br { transform: rotate(5deg); }
+  .frame-6 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-6 .note { opacity: 0.8; transform: scale(1.3); }
 
-  .frame-7 .leg.left { transform: rotate(18deg); }
-  .frame-7 .leg.right { transform: rotate(-18deg); }
-  .frame-7 .body { transform: translateX(-50%) translateY(-15px) scaleY(0.95); }
+  /* Frame 7 - Deep opposite bend */
+  .frame-7 .leg.fl { transform: rotate(10deg); }
+  .frame-7 .leg.fr { transform: rotate(-10deg); }
+  .frame-7 .leg.bl { transform: rotate(-10deg); }
+  .frame-7 .leg.br { transform: rotate(10deg); }
+  .frame-7 .body { transform: translateX(-50%) translateY(-10px) scaleY(0.94); }
+  .frame-7 .note { opacity: 1; transform: scale(1.4); }
+  .frame-7 .mouth { transform: translateX(-50%) scaleY(1.1); }
 
-  .frame-8 .leg.left { transform: rotate(10deg); }
-  .frame-8 .leg.right { transform: rotate(-10deg); }
-  .frame-8 .body { transform: translateX(-50%) translateY(-8px); }
+  /* Frame 8 - Return */
+  .frame-8 .leg.fl { transform: rotate(5deg); }
+  .frame-8 .leg.fr { transform: rotate(-5deg); }
+  .frame-8 .leg.bl { transform: rotate(-5deg); }
+  .frame-8 .leg.br { transform: rotate(5deg); }
+  .frame-8 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-8 .note { opacity: 0.8; transform: scale(1.2); }
 
-  .frame-9 .leg.left { transform: rotate(0deg); }
-  .frame-9 .leg.right { transform: rotate(0deg); }
+  /* Frame 9 - Neutral */
+  .frame-9 .leg.fl { transform: rotate(0deg); }
+  .frame-9 .leg.fr { transform: rotate(0deg); }
+  .frame-9 .leg.bl { transform: rotate(0deg); }
+  .frame-9 .leg.br { transform: rotate(0deg); }
   .frame-9 .body { transform: translateX(-50%) translateY(0px); }
+  .frame-9 .note { opacity: 0.6; transform: scale(1); }
 
-  .frame-10 .leg.left { transform: rotate(-12deg); }
-  .frame-10 .leg.right { transform: rotate(12deg); }
-  .frame-10 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.9); }
+  /* Frame 10 - Big bend start */
+  .frame-10 .leg.fl { transform: rotate(-8deg); }
+  .frame-10 .leg.fr { transform: rotate(8deg); }
+  .frame-10 .leg.bl { transform: rotate(8deg); }
+  .frame-10 .leg.br { transform: rotate(-8deg); }
+  .frame-10 .body { transform: translateX(-50%) translateY(-5px) scaleY(0.97); }
+  .frame-10 .note { opacity: 0.5; transform: scale(0.9); }
 
-  .frame-11 .leg.left { transform: rotate(-20deg); }
-  .frame-11 .leg.right { transform: rotate(20deg); }
-  .frame-11 .body { transform: translateX(-50%) translateY(-20px) scaleY(0.85); }
+  /* Frame 11 - Biggest bend */
+  .frame-11 .leg.fl { transform: rotate(-15deg); }
+  .frame-11 .leg.fr { transform: rotate(15deg); }
+  .frame-11 .leg.bl { transform: rotate(15deg); }
+  .frame-11 .leg.br { transform: rotate(-15deg); }
+  .frame-11 .body { transform: translateX(-50%) translateY(-15px) scaleY(0.92); }
+  .frame-11 .note { opacity: 1; transform: scale(1.5); }
+  .frame-11 .mouth { transform: translateX(-50%) scaleY(1.2); }
 
-  .frame-12 .leg.left { transform: rotate(-12deg); }
-  .frame-12 .leg.right { transform: rotate(12deg); }
-  .frame-12 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.9); }
+  /* Frame 12 - Return */
+  .frame-12 .leg.fl { transform: rotate(-8deg); }
+  .frame-12 .leg.fr { transform: rotate(8deg); }
+  .frame-12 .leg.bl { transform: rotate(8deg); }
+  .frame-12 .leg.br { transform: rotate(-8deg); }
+  .frame-12 .body { transform: translateX(-50%) translateY(-5px); }
+  .frame-12 .note { opacity: 0.7; transform: scale(1.2); }
 
   /* Scroll indicator */
   .scroll-hint {
@@ -131,278 +219,158 @@ title: Flickbook Demo
   <div class="character-fixed">
     <!-- Frame 1 -->
     <div class="frame frame-1">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 2 -->
     <div class="frame frame-2">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 3 -->
     <div class="frame frame-3">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 4 -->
     <div class="frame frame-4">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 5 -->
     <div class="frame frame-5">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 6 -->
     <div class="frame frame-6">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 7 -->
     <div class="frame frame-7">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="6" fill="#fff"/>
-        <circle cx="40" cy="15" r="6" fill="#fff"/>
-        <circle cx="20" cy="15" r="4" fill="#000"/>
-        <circle cx="40" cy="15" r="4" fill="#000"/>
-        <path d="M 10 32 Q 30 40 50 32" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 8 -->
     <div class="frame frame-8">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 9 -->
     <div class="frame frame-9">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 10 -->
     <div class="frame frame-10">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 11 -->
     <div class="frame frame-11">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="6" fill="#fff"/>
-        <circle cx="40" cy="15" r="6" fill="#fff"/>
-        <circle cx="20" cy="15" r="4" fill="#000"/>
-        <circle cx="40" cy="15" r="4" fill="#000"/>
-        <path d="M 10 32 Q 30 40 50 32" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
 
     <!-- Frame 12 -->
     <div class="frame frame-12">
-      <svg class="body" width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="60" cy="70" rx="50" ry="60" fill="#ff6b6b"/>
-        <ellipse cx="60" cy="20" rx="25" ry="10" fill="#ff6b6b"/>
-      </svg>
-      <svg class="leg left" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="leg right" width="30" height="80" viewBox="0 0 30 80" xmlns="http://www.w3.org/2000/svg">
-        <rect x="5" y="0" width="20" height="60" rx="10" fill="#333"/>
-        <ellipse cx="15" cy="70" rx="15" ry="10" fill="#222"/>
-      </svg>
-      <svg class="face" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="15" r="5" fill="#fff"/>
-        <circle cx="40" cy="15" r="5" fill="#fff"/>
-        <circle cx="20" cy="15" r="3" fill="#000"/>
-        <circle cx="40" cy="15" r="3" fill="#000"/>
-        <path d="M 15 30 Q 30 35 45 30" stroke="#000" stroke-width="3" fill="none"/>
-      </svg>
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
     </div>
   </div>
 
