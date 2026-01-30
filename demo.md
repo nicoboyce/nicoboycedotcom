@@ -17,8 +17,8 @@ title: Flickbook Demo
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
   }
 
   /* Stack all frames in same space */
@@ -34,42 +34,43 @@ title: Flickbook Demo
   /* Character parts positioning */
   .body {
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
-    width: 280px;
+    width: 500px;
     z-index: 5;
   }
 
   .eyes {
     position: absolute;
-    top: 210px;
-    left: 190px;
-    width: 45px;
+    top: 190px;
+    left: 220px;
+    width: 60px;
     z-index: 7;
   }
 
   .mouth {
     position: absolute;
-    top: 260px;
-    left: 240px;
-    width: 50px;
+    top: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
     z-index: 6;
   }
 
   .handle {
     position: absolute;
-    top: 210px;
-    right: 145px;
-    width: 90px;
+    top: 180px;
+    right: 100px;
+    width: 130px;
     z-index: 4;
   }
 
   .note {
     position: absolute;
-    top: 70px;
-    left: 150px;
-    width: 30px;
+    top: 50px;
+    left: 80px;
+    width: 50px;
     z-index: 8;
     opacity: 0.5;
   }
@@ -77,29 +78,29 @@ title: Flickbook Demo
   /* Legs */
   .leg {
     position: absolute;
-    width: 45px;
+    width: 70px;
     z-index: 3;
-    transform-origin: 50% 15%;
+    transform-origin: 50% 10%;
   }
 
   .leg.fl {
-    left: 210px;
-    bottom: 65px;
+    left: 220px;
+    bottom: 120px;
   }
 
   .leg.fr {
-    left: 255px;
-    bottom: 65px;
+    left: 340px;
+    bottom: 120px;
   }
 
   .leg.bl {
-    left: 230px;
-    bottom: 65px;
+    left: 280px;
+    bottom: 120px;
   }
 
   .leg.br {
-    left: 275px;
-    bottom: 65px;
+    left: 400px;
+    bottom: 120px;
   }
 
   /* Frame-specific poses */
