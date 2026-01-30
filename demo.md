@@ -158,7 +158,7 @@ title: Flickbook Demo
   .frame-7 .leg.br { transform: rotate(10deg); }
   .frame-7 .body { transform: translateX(-50%) translateY(-10px) scaleY(0.94); }
   .frame-7 .note { opacity: 1; transform: scale(1.4); }
-  .frame-7 .mouth { transform: translateX(-50%) scaleY(1.1); }
+  .frame-7 .mouth { transform: translateY(10px) scale(1.02); }
 
   /* Frame 8 - Return */
   .frame-8 .leg.fl { transform: rotate(5deg); }
@@ -191,7 +191,7 @@ title: Flickbook Demo
   .frame-11 .leg.br { transform: rotate(-15deg); }
   .frame-11 .body { transform: translateX(-50%) translateY(-15px) scaleY(0.92); }
   .frame-11 .note { opacity: 1; transform: scale(1.5); }
-  .frame-11 .mouth { transform: translateX(-50%) scaleY(1.2); }
+  .frame-11 .mouth { transform: translateY(10px) scale(1.03); }
 
   /* Frame 12 - Return */
   .frame-12 .leg.fl { transform: rotate(-8deg); }
