@@ -35,7 +35,7 @@ title: Flickbook Demo
   .body {
     position: absolute;
     top: 150px;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     width: 500px;
     z-index: 5;
@@ -43,25 +43,24 @@ title: Flickbook Demo
 
   .eyes {
     position: absolute;
-    top: 190px;
-    left: 220px;
+    top: 233px;
+    left: 265px;
     width: 60px;
     z-index: 7;
   }
 
   .mouth {
     position: absolute;
-    top: 340px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90px;
+    top: 215px;
+    left: 10%;
+    width: 290px;
     z-index: 6;
   }
 
   .handle {
     position: absolute;
-    top: 180px;
-    right: 100px;
+    top: 192px;
+    right: 270px;
     width: 130px;
     z-index: 4;
   }
