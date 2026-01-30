@@ -15,7 +15,7 @@ title: Flickbook Demo
   .character-fixed {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 64%;
     transform: translate(-50%, -50%);
     width: 800px;
     height: 800px;
@@ -67,8 +67,8 @@ title: Flickbook Demo
 
   .note {
     position: absolute;
-    top: 50px;
-    left: 80px;
+    top: 80px;
+    left: 130px;
     width: 50px;
     z-index: 8;
     opacity: 0.5;
