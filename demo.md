@@ -7,7 +7,7 @@ title: Flickbook Demo
 
   /* Long scroll container to give us scroll range */
   .flipbook-container {
-    height: 2000vh;
+    height: 300vh;
     position: relative;
     background: linear-gradient(180deg, #f0e68c 0%, #98d8c8 50%, #ffb6c1 100%);
   }
