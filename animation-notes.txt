@@ -1,0 +1,99 @@
+FLICKBOOK ANIMATION NOTES
+=========================
+
+CHARACTER 1: KETTLEPHANT
+-------------------------
+Personality: Naive, dumb, cheerful, puppy-like energy
+Movement style: Bouncy, enthusiastic, bounding like a puppy
+
+Animation Pattern: Rocking Horse Motion
+- Front legs (FL + FR) move together
+- Back legs (BL + BR) move together
+- Front and back pairs oppose each other (forward rock vs backward rock)
+- Left-right asymmetry added (right legs rotate 2-3° more than left)
+- Creates wobblier, less robotic motion
+
+Body Parts (separate SVG files):
+- body.svg (main kettle shape)
+- eyes.svg
+- mouth.svg (tongue) - stretches on bounce peaks (frames 7, 11)
+- handle.svg
+- leg.svg (reused for all 4 legs: fl, fr, bl, br)
+- note.svg (musical note - pulses with bounces)
+
+Musical Note Behaviour:
+- Small/faded when kettlephant squashes down
+- Large/bright when stretched up (synced with bounce peaks)
+- Peak brightness at frames 7 and 11
+
+12-Frame Bounce Cycle:
+- Frames 1-4: Forward rock (front legs back, back legs forward)
+- Frame 5: Neutral stretch
+- Frames 6-8: Backward rock (front legs forward, back legs back)
+- Frame 9: Neutral
+- Frames 10-12: Big forward rock
+
+Key Animation Values:
+- Front legs swing up to 15-18° forward at peak (frame 7)
+- Body squash: scaleY(0.92) at deepest (frame 11)
+- Body stretch: scaleY(1.02) at neutral peak (frame 5)
+- Mouth: translateY(10px) scale(1.02-1.03) on big bounces
+
+
+CHARACTER 2: COFFEE MUG (name TBD - not "Mugman")
+-------------------------------------------------
+Personality: Bitter, depressed, defeated, cynical
+Visual details: Standing in own spilled coffee, coffee drip tear
+Movement style: Slow defeated trudge, reluctant plodding
+
+Planned Body Parts:
+- Body (mug shape)
+- Handle
+- Lid (separate, floats above - can wobble/tilt independently)
+- Face/eyes (tired, angry expression)
+- Mouth (frown, different expressions per frame)
+- Arms (crossed or hanging limp)
+- Legs (shuffling walk)
+- Coffee drip (animated dripping)
+- Puddle splashes (foot slightly submerged)
+
+Animation Ideas:
+- Less rocking horse, more trudging walk
+- Lid tips forward when stepping down, back when lifting foot
+- Contrast with kettlephant's enthusiasm
+- Charlie Brown energy
+
+
+TECHNICAL STRUCTURE
+-------------------
+File: demo.md
+Layout: blank (no site navigation)
+Container: 800x800px at left: 64%
+Scroll distance: 300vh for 12 frames
+
+Base positioning (frame 1 neutral):
+- All CSS positions are base state
+- Frame-specific transforms are relative to base positions
+- Transform origin on legs: 50% 10% (for knee rotation)
+
+SVG Processing Method:
+1. Export layers from Affinity as SVG
+2. Extract embedded base64 PNG data
+3. Convert to PNM with ImageMagick: magick file.png file.pnm
+4. Trace with potrace: potrace file.pnm -s -o output.svg
+5. Place in /public/svg/
+
+JavaScript:
+- Scroll position maps to frame index
+- Only one frame visible at a time (opacity toggle)
+- Smooth scroll-to-frame relationship
+
+
+FUTURE IDEAS
+------------
+- Additional characters with different personalities
+- Scene with multiple characters interacting
+- Different animation patterns (walk, jump, idle states)
+- Mouth variations (separate SVGs for different expressions)
+- Background elements
+- Sound sync possibilities
