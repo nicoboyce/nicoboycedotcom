@@ -34,10 +34,17 @@ Musical Note Behaviour:
 - Frames 10-12: Big forward rock
 
 Key Animation Values:
-- Front legs swing up to 15-18° forward at peak (frame 7)
+- Front legs swing up to 15-18° forward at peak (frames 6-8)
+- Back legs swing in opposition: -15-18° at same peaks
 - Body squash: scaleY(0.92) at deepest (frame 11)
 - Body stretch: scaleY(1.02) at neutral peak (frame 5)
-- Mouth: translateY(10px) scale(1.02-1.03) on big bounces
+- Mouth: translateY(10px) scale(1.02-1.03) on big bounces (frames 7, 11)
+
+Animation Refinements:
+- Added left-right asymmetry: right legs rotate 2-3° more than left
+- Creates wobblier, more organic motion (less robotic)
+- Front legs increased forward angle for more pronounced puppy-bound
+- Rocking horse motion: front pair + back pair move together, oppose each other
 
 
 CHARACTER 2: COFFEE MUG (name TBD - not "Mugman")
@@ -69,19 +76,36 @@ TECHNICAL STRUCTURE
 File: demo.md
 Layout: blank (no site navigation)
 Container: 800x800px at left: 64%
-Scroll distance: 300vh for 12 frames
+Scroll distance: 1500vh for 60 frames (12-frame pattern x5)
+
+Frame Structure:
+- 60 total frames (12-frame bounce cycle repeated 5 times)
+- Allows easier viewing of motion and manual adjustment
+- CSS classes frame-1 through frame-12 reused across all repetitions
 
 Base positioning (frame 1 neutral):
 - All CSS positions are base state
 - Frame-specific transforms are relative to base positions
 - Transform origin on legs: 50% 10% (for knee rotation)
 
-SVG Processing Method:
-1. Export layers from Affinity as SVG
-2. Extract embedded base64 PNG data
-3. Convert to PNM with ImageMagick: magick file.png file.pnm
-4. Trace with potrace: potrace file.pnm -s -o output.svg
-5. Place in /public/svg/
+SVG Processing Method (for bitmap exports from Affinity):
+1. Export layers from Affinity as SVG (creates embedded base64 PNG)
+2. Extract base64 PNG: grep -o 'data:image/png;base64,[^"]*' file.svg
+3. Decode to PNG: base64 -D -i base64.txt -o file.png
+4. Convert to PNM: magick file.png file.pnm
+5. Extract alpha and trace: magick file.png -alpha extract -negate file.pnm
+6. Trace with potrace: potrace file.pnm -s -o output.svg
+7. Place vectorized files in /public/svg/
+
+Note: Alpha extraction step critical for proper line tracing
+
+Kettlephant Part Sizes (final):
+- body.svg: 18KB (was 178KB embedded bitmap)
+- eyes.svg: 5.3KB
+- handle.svg: 9KB
+- leg.svg: 5.9KB
+- mouth.svg: 6.3KB
+- note.svg: 2KB
 
 JavaScript:
 - Scroll position maps to frame index
