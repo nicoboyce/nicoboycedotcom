@@ -6,11 +6,11 @@ CHARACTER 1: KETTLEPHANT
 Personality: Naive, dumb, cheerful, puppy-like energy
 Movement style: Bouncy, enthusiastic, bounding like a puppy
 
-Animation Pattern: Individual Leg Sequence Walk
-- Four-beat walk with individual leg steps
+Animation Pattern: Individual Leg Sequence Walk (Overlapping)
+- Four-beat walk with overlapping leg movements
 - Sequence: FL → BR → FR → BL (repeat)
-- Each leg gets 3 frames per step cycle
-- Creates tappy, prancing poodle-like walk
+- Each leg's movement spans multiple frames and overlaps with next
+- Creates fluid, continuous tappy poodle-like walk
 - Note: Back leg positions (BL/BR) swapped to fix left/right naming
 
 Body Parts (separate SVG files):
@@ -26,24 +26,29 @@ Musical Note Behaviour:
 - Large/bright when stretched up (synced with bounce peaks)
 - Peak brightness at frames 7 and 11
 
-12-Frame Walk Cycle:
-- Frames 1-3: FL steps forward (peak at frame 2)
-- Frames 4-6: BR steps forward (peak at frame 5)
-- Frames 7-9: FR steps forward (peak at frame 8)
-- Frames 10-12: BL steps forward (peak at frame 11)
+12-Frame Walk Cycle (Overlapping):
+- Frame 1: FL peak, BL finishing
+- Frames 2-3: FL finishing, BR starting/moving
+- Frame 4: BR peak, FL finishing back
+- Frames 5-6: BR finishing, FR starting/moving
+- Frame 7: FR peak, BR finishing back
+- Frames 8-9: FR finishing, BL starting/moving
+- Frame 10: BL peak, FR finishing back
+- Frames 11-12: BL finishing, FL starting/moving (loops)
 
 Key Animation Values:
-- Stepping leg swings to -15° at peak (frames 2, 5, 8, 11)
-- Other legs at +3° to +5° (slight back position)
-- Body squash: scaleY(0.97) at each step peak
-- Body translateY: -5px at step peaks
-- Continuous four-beat rhythm throughout cycle
+- Stepping leg swings to -15° at peak (frames 1, 4, 7, 10)
+- Other legs transition smoothly from +8° to +12° back positions
+- Body translateY: -4px at step peaks (frames 1, 4, 7, 10)
+- Body translateY: -3px during transitions
+- Continuous overlapping motion creates fluid four-beat rhythm
 
 Animation Refinements:
-- Individual leg sequence creates four-beat walk
-- Each leg steps independently in sequence
+- Overlapping leg movements create fluid four-beat walk
+- Each leg steps independently with smooth transitions
+- No waiting between steps - next leg starts before previous finishes
 - Tappy, prancing poodle-like motion
-- Continuous stepping rhythm (no sync between legs)
+- Continuous flowing rhythm throughout cycle
 - Maintains bouncy, enthusiastic puppy energy
 - Fixed back leg naming (swapped BL/BR positions for correct left/right)
 
