@@ -6,7 +6,7 @@ title: Flickbook Demo
 <style>
   /* Long scroll container to give us scroll range */
   .flipbook-container {
-    height: 1500vh;
+    height: 2400vh;
     position: relative;
     background: linear-gradient(180deg, #f0e68c 0%, #98d8c8 50%, #ffb6c1 100%);
   }
@@ -221,6 +221,104 @@ title: Flickbook Demo
     opacity: 0.5;
     pointer-events: none;
   }
+
+  /* Horizontal movement - right to left across 96 frames */
+  .frame:nth-child(1) { left: calc(64% + 400px); }
+  .frame:nth-child(2) { left: calc(64% + 391.6px); }
+  .frame:nth-child(3) { left: calc(64% + 383.2px); }
+  .frame:nth-child(4) { left: calc(64% + 374.7px); }
+  .frame:nth-child(5) { left: calc(64% + 366.3px); }
+  .frame:nth-child(6) { left: calc(64% + 357.9px); }
+  .frame:nth-child(7) { left: calc(64% + 349.5px); }
+  .frame:nth-child(8) { left: calc(64% + 341.1px); }
+  .frame:nth-child(9) { left: calc(64% + 332.6px); }
+  .frame:nth-child(10) { left: calc(64% + 324.2px); }
+  .frame:nth-child(11) { left: calc(64% + 315.8px); }
+  .frame:nth-child(12) { left: calc(64% + 307.4px); }
+  .frame:nth-child(13) { left: calc(64% + 298.9px); }
+  .frame:nth-child(14) { left: calc(64% + 290.5px); }
+  .frame:nth-child(15) { left: calc(64% + 282.1px); }
+  .frame:nth-child(16) { left: calc(64% + 273.7px); }
+  .frame:nth-child(17) { left: calc(64% + 265.3px); }
+  .frame:nth-child(18) { left: calc(64% + 256.8px); }
+  .frame:nth-child(19) { left: calc(64% + 248.4px); }
+  .frame:nth-child(20) { left: calc(64% + 240.0px); }
+  .frame:nth-child(21) { left: calc(64% + 231.6px); }
+  .frame:nth-child(22) { left: calc(64% + 223.2px); }
+  .frame:nth-child(23) { left: calc(64% + 214.7px); }
+  .frame:nth-child(24) { left: calc(64% + 206.3px); }
+  .frame:nth-child(25) { left: calc(64% + 197.9px); }
+  .frame:nth-child(26) { left: calc(64% + 189.5px); }
+  .frame:nth-child(27) { left: calc(64% + 181.1px); }
+  .frame:nth-child(28) { left: calc(64% + 172.6px); }
+  .frame:nth-child(29) { left: calc(64% + 164.2px); }
+  .frame:nth-child(30) { left: calc(64% + 155.8px); }
+  .frame:nth-child(31) { left: calc(64% + 147.4px); }
+  .frame:nth-child(32) { left: calc(64% + 138.9px); }
+  .frame:nth-child(33) { left: calc(64% + 130.5px); }
+  .frame:nth-child(34) { left: calc(64% + 122.1px); }
+  .frame:nth-child(35) { left: calc(64% + 113.7px); }
+  .frame:nth-child(36) { left: calc(64% + 105.3px); }
+  .frame:nth-child(37) { left: calc(64% + 96.8px); }
+  .frame:nth-child(38) { left: calc(64% + 88.4px); }
+  .frame:nth-child(39) { left: calc(64% + 80.0px); }
+  .frame:nth-child(40) { left: calc(64% + 71.6px); }
+  .frame:nth-child(41) { left: calc(64% + 63.2px); }
+  .frame:nth-child(42) { left: calc(64% + 54.7px); }
+  .frame:nth-child(43) { left: calc(64% + 46.3px); }
+  .frame:nth-child(44) { left: calc(64% + 37.9px); }
+  .frame:nth-child(45) { left: calc(64% + 29.5px); }
+  .frame:nth-child(46) { left: calc(64% + 21.1px); }
+  .frame:nth-child(47) { left: calc(64% + 12.6px); }
+  .frame:nth-child(48) { left: calc(64% + 4.2px); }
+  .frame:nth-child(49) { left: calc(64% - 4.2px); }
+  .frame:nth-child(50) { left: calc(64% - 12.6px); }
+  .frame:nth-child(51) { left: calc(64% - 21.1px); }
+  .frame:nth-child(52) { left: calc(64% - 29.5px); }
+  .frame:nth-child(53) { left: calc(64% - 37.9px); }
+  .frame:nth-child(54) { left: calc(64% - 46.3px); }
+  .frame:nth-child(55) { left: calc(64% - 54.7px); }
+  .frame:nth-child(56) { left: calc(64% - 63.2px); }
+  .frame:nth-child(57) { left: calc(64% - 71.6px); }
+  .frame:nth-child(58) { left: calc(64% - 80.0px); }
+  .frame:nth-child(59) { left: calc(64% - 88.4px); }
+  .frame:nth-child(60) { left: calc(64% - 96.8px); }
+  .frame:nth-child(61) { left: calc(64% - 105.3px); }
+  .frame:nth-child(62) { left: calc(64% - 113.7px); }
+  .frame:nth-child(63) { left: calc(64% - 122.1px); }
+  .frame:nth-child(64) { left: calc(64% - 130.5px); }
+  .frame:nth-child(65) { left: calc(64% - 138.9px); }
+  .frame:nth-child(66) { left: calc(64% - 147.4px); }
+  .frame:nth-child(67) { left: calc(64% - 155.8px); }
+  .frame:nth-child(68) { left: calc(64% - 164.2px); }
+  .frame:nth-child(69) { left: calc(64% - 172.6px); }
+  .frame:nth-child(70) { left: calc(64% - 181.1px); }
+  .frame:nth-child(71) { left: calc(64% - 189.5px); }
+  .frame:nth-child(72) { left: calc(64% - 197.9px); }
+  .frame:nth-child(73) { left: calc(64% - 206.3px); }
+  .frame:nth-child(74) { left: calc(64% - 214.7px); }
+  .frame:nth-child(75) { left: calc(64% - 223.2px); }
+  .frame:nth-child(76) { left: calc(64% - 231.6px); }
+  .frame:nth-child(77) { left: calc(64% - 240.0px); }
+  .frame:nth-child(78) { left: calc(64% - 248.4px); }
+  .frame:nth-child(79) { left: calc(64% - 256.8px); }
+  .frame:nth-child(80) { left: calc(64% - 265.3px); }
+  .frame:nth-child(81) { left: calc(64% - 273.7px); }
+  .frame:nth-child(82) { left: calc(64% - 282.1px); }
+  .frame:nth-child(83) { left: calc(64% - 290.5px); }
+  .frame:nth-child(84) { left: calc(64% - 298.9px); }
+  .frame:nth-child(85) { left: calc(64% - 307.4px); }
+  .frame:nth-child(86) { left: calc(64% - 315.8px); }
+  .frame:nth-child(87) { left: calc(64% - 324.2px); }
+  .frame:nth-child(88) { left: calc(64% - 332.6px); }
+  .frame:nth-child(89) { left: calc(64% - 341.1px); }
+  .frame:nth-child(90) { left: calc(64% - 349.5px); }
+  .frame:nth-child(91) { left: calc(64% - 357.9px); }
+  .frame:nth-child(92) { left: calc(64% - 366.3px); }
+  .frame:nth-child(93) { left: calc(64% - 374.7px); }
+  .frame:nth-child(94) { left: calc(64% - 383.2px); }
+  .frame:nth-child(95) { left: calc(64% - 391.6px); }
+  .frame:nth-child(96) { left: calc(64% - 400.0px); }
 </style>
 
 <div class="flipbook-container">
@@ -993,6 +1091,474 @@ title: Flickbook Demo
     </div>
 
     <!-- Frame 60 -->
+    <div class="frame frame-12">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 61 -->
+    <div class="frame frame-1">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 62 -->
+    <div class="frame frame-2">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 63 -->
+    <div class="frame frame-3">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 64 -->
+    <div class="frame frame-4">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 65 -->
+    <div class="frame frame-5">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 66 -->
+    <div class="frame frame-6">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 67 -->
+    <div class="frame frame-7">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 68 -->
+    <div class="frame frame-8">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 69 -->
+    <div class="frame frame-9">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 70 -->
+    <div class="frame frame-10">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 71 -->
+    <div class="frame frame-11">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 72 -->
+    <div class="frame frame-12">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 73 -->
+    <div class="frame frame-1">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 74 -->
+    <div class="frame frame-2">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 75 -->
+    <div class="frame frame-3">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 76 -->
+    <div class="frame frame-4">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 77 -->
+    <div class="frame frame-5">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 78 -->
+    <div class="frame frame-6">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 79 -->
+    <div class="frame frame-7">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 80 -->
+    <div class="frame frame-8">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 81 -->
+    <div class="frame frame-9">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 82 -->
+    <div class="frame frame-10">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 83 -->
+    <div class="frame frame-11">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 84 -->
+    <div class="frame frame-12">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 85 -->
+    <div class="frame frame-1">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 86 -->
+    <div class="frame frame-2">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 87 -->
+    <div class="frame frame-3">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 88 -->
+    <div class="frame frame-4">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 89 -->
+    <div class="frame frame-5">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 90 -->
+    <div class="frame frame-6">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 91 -->
+    <div class="frame frame-7">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 92 -->
+    <div class="frame frame-8">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 93 -->
+    <div class="frame frame-9">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 94 -->
+    <div class="frame frame-10">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 95 -->
+    <div class="frame frame-11">
+      <img src="/public/svg/body.svg" class="body">
+      <img src="/public/svg/eyes.svg" class="eyes">
+      <img src="/public/svg/mouth.svg" class="mouth">
+      <img src="/public/svg/handle.svg" class="handle">
+      <img src="/public/svg/leg.svg" class="leg fl">
+      <img src="/public/svg/leg.svg" class="leg fr">
+      <img src="/public/svg/leg.svg" class="leg bl">
+      <img src="/public/svg/leg.svg" class="leg br">
+      <img src="/public/svg/note.svg" class="note">
+    </div>
+
+    <!-- Frame 96 -->
     <div class="frame frame-12">
       <img src="/public/svg/body.svg" class="body">
       <img src="/public/svg/eyes.svg" class="eyes">

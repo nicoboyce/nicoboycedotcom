@@ -81,13 +81,15 @@ TECHNICAL STRUCTURE
 -------------------
 File: demo.md
 Layout: blank (no site navigation)
-Container: 800x800px at left: 64%
-Scroll distance: 1500vh for 60 frames (12-frame pattern x5)
+Container: 800x800px starting at left: 64%
+Scroll distance: 2400vh for 96 frames (12-frame pattern x8)
+Horizontal movement: Kettlephant trots from right (+400px) to left (-400px)
 
 Frame Structure:
-- 60 total frames (12-frame bounce cycle repeated 5 times)
-- Allows easier viewing of motion and manual adjustment
+- 96 total frames (12-frame bounce cycle repeated 8 times)
+- Extended cycle for smoother horizontal movement
 - CSS classes frame-1 through frame-12 reused across all repetitions
+- Horizontal movement: right to left across full cycle (800px total movement)
 
 Base positioning (frame 1 neutral):
 - All CSS positions are base state
