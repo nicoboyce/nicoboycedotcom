@@ -130,7 +130,19 @@ title: Flickbook Demo
     left: 485.4px;
     width: 450px;
     z-index: 8;
+    display: none;
   }
+
+  /* Default: show center pupils */
+  .frame .mug-pupils-c { display: block; }
+
+  /* Every 5th frame starting at 5: show dot pupils */
+  .frame:nth-child(10n+5) .mug-pupils-c { display: none; }
+  .frame:nth-child(10n+5) .mug-pupils-dot { display: block; }
+
+  /* Every 5th frame starting at 10: show x pupils */
+  .frame:nth-child(10n) .mug-pupils-c { display: none; }
+  .frame:nth-child(10n) .mug-pupils-x { display: block; }
 
   .mug-drip {
     position: absolute;
@@ -502,7 +514,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -525,7 +539,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -548,7 +564,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -571,7 +589,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -594,7 +614,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -617,7 +639,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -640,7 +664,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -663,7 +689,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -686,7 +714,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -709,7 +739,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -732,7 +764,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -755,7 +789,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -778,7 +814,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -801,7 +839,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -824,7 +864,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -847,7 +889,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -870,7 +914,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -893,7 +939,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -916,7 +964,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -939,7 +989,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -962,7 +1014,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -985,7 +1039,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1008,7 +1064,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1031,7 +1089,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1054,7 +1114,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1077,7 +1139,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1100,7 +1164,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1123,7 +1189,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1146,7 +1214,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1169,7 +1239,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1192,7 +1264,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1215,7 +1289,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1238,7 +1314,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1261,7 +1339,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1284,7 +1364,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1307,7 +1389,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1330,7 +1414,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1353,7 +1439,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1376,7 +1464,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1399,7 +1489,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1422,7 +1514,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1445,7 +1539,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1468,7 +1564,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1491,7 +1589,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1514,7 +1614,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1537,7 +1639,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1560,7 +1664,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1583,7 +1689,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1606,7 +1714,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1629,7 +1739,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1652,7 +1764,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1675,7 +1789,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1698,7 +1814,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1721,7 +1839,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1744,7 +1864,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1767,7 +1889,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1790,7 +1914,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1813,7 +1939,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1836,7 +1964,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1859,7 +1989,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1882,7 +2014,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1905,7 +2039,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1928,7 +2064,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1951,7 +2089,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1974,7 +2114,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -1997,7 +2139,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2020,7 +2164,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2043,7 +2189,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2066,7 +2214,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2089,7 +2239,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2112,7 +2264,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2135,7 +2289,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2158,7 +2314,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2181,7 +2339,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2204,7 +2364,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2227,7 +2389,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2250,7 +2414,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2273,7 +2439,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2296,7 +2464,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2319,7 +2489,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2342,7 +2514,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2365,7 +2539,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2388,7 +2564,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2411,7 +2589,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2434,7 +2614,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2457,7 +2639,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2480,7 +2664,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2503,7 +2689,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2526,7 +2714,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2549,7 +2739,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2572,7 +2764,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2595,7 +2789,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2618,7 +2814,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2641,7 +2839,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2664,7 +2864,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2687,7 +2889,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2710,7 +2914,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2733,7 +2939,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2756,7 +2964,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2779,7 +2989,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2802,7 +3014,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2825,7 +3039,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2848,7 +3064,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2871,7 +3089,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2894,7 +3114,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2917,7 +3139,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2940,7 +3164,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2963,7 +3189,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -2986,7 +3214,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3009,7 +3239,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3032,7 +3264,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3055,7 +3289,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3078,7 +3314,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3101,7 +3339,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3124,7 +3364,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3147,7 +3389,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3170,7 +3414,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3193,7 +3439,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3216,7 +3464,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3239,7 +3489,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3262,7 +3514,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3285,7 +3539,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3308,7 +3564,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3331,7 +3589,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3354,7 +3614,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3377,7 +3639,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3400,7 +3664,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3423,7 +3689,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3446,7 +3714,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3469,7 +3739,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3492,7 +3764,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3515,7 +3789,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3538,7 +3814,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3561,7 +3839,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3584,7 +3864,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3607,7 +3889,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3630,7 +3914,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3653,7 +3939,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3676,7 +3964,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3699,7 +3989,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3722,7 +4014,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3745,7 +4039,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3768,7 +4064,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3791,7 +4089,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3814,7 +4114,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3837,7 +4139,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3860,7 +4164,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3883,7 +4189,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3906,7 +4214,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3929,7 +4239,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3952,7 +4264,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3975,7 +4289,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -3998,7 +4314,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4021,7 +4339,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4044,7 +4364,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4067,7 +4389,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4090,7 +4414,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4113,7 +4439,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4136,7 +4464,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4159,7 +4489,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4182,7 +4514,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4205,7 +4539,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4228,7 +4564,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4251,7 +4589,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4274,7 +4614,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4297,7 +4639,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4320,7 +4664,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4343,7 +4689,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4366,7 +4714,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4389,7 +4739,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4412,7 +4764,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4435,7 +4789,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4458,7 +4814,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4481,7 +4839,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4504,7 +4864,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4527,7 +4889,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4550,7 +4914,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4573,7 +4939,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4596,7 +4964,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4619,7 +4989,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4642,7 +5014,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4665,7 +5039,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4688,7 +5064,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4711,7 +5089,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4734,7 +5114,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4757,7 +5139,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4780,7 +5164,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4803,7 +5189,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4826,7 +5214,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4849,7 +5239,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4872,7 +5264,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
@@ -4895,7 +5289,9 @@ title: Flickbook Demo
       <img src="/public/svg/note.svg" class="note">
       <img src="/public/svg/mug-mug.svg" class="mug-body">
       <img src="/public/svg/mug-eyes.svg" class="mug-eyes">
-      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils">
+      <img src="/public/svg/mug-pupils-c.svg" class="mug-pupils mug-pupils-c">
+      <img src="/public/svg/mug-pupils-dot.svg" class="mug-pupils mug-pupils-dot">
+      <img src="/public/svg/mug-pupils-x.svg" class="mug-pupils mug-pupils-x">
       <img src="/public/svg/mug-drip.svg" class="mug-drip">
       <img src="/public/svg/mug-coffee-1.svg" class="mug-coffee">
       <img src="/public/svg/mug-legs-r.svg" class="mug-legs mug-legs-r">
