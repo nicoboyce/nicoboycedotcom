@@ -111,7 +111,7 @@ title: Flickbook Demo
   .mug-body {
     position: absolute;
     top: 152px;
-    left: 210.4px;
+    left: 510.4px;
     width: 400px;
     z-index: 5;
   }
@@ -119,7 +119,7 @@ title: Flickbook Demo
   .mug-eyes {
     position: absolute;
     top: 176px;
-    left: 214.4px;
+    left: 514.4px;
     width: 354px;
     z-index: 7;
   }
@@ -127,7 +127,7 @@ title: Flickbook Demo
   .mug-pupils {
     position: absolute;
     top: 124px;
-    left: 185.4px;
+    left: 485.4px;
     width: 450px;
     z-index: 8;
   }
@@ -135,7 +135,7 @@ title: Flickbook Demo
   .mug-drip {
     position: absolute;
     top: 203px;
-    left: 208.4px;
+    left: 508.4px;
     width: 323px;
     z-index: 9;
   }
@@ -143,7 +143,7 @@ title: Flickbook Demo
   .mug-coffee {
     position: absolute;
     top: 191px;
-    left: 227.4px;
+    left: 527.4px;
     width: 325px;
     z-index: 6;
   }
@@ -151,7 +151,7 @@ title: Flickbook Demo
   .mug-legs {
     position: absolute;
     bottom: 262px;
-    left: 229.4px;
+    left: 529.4px;
     width: 344px;
     z-index: 3;
     display: none;
