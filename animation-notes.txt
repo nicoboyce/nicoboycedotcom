@@ -39,9 +39,12 @@ Musical Note Behaviour:
 Key Animation Values:
 - Stepping leg swings to -15° at peak (frames 1, 4, 7, 10)
 - Other legs transition smoothly from +8° to +12° back positions
-- Body translateY: -4px at step peaks (frames 1, 4, 7, 10)
-- Body translateY: -3px during transitions
-- Continuous overlapping motion creates fluid four-beat rhythm
+- Body bounce: translateY(-12px) scaleY(0.94) at peaks (frames 1, 4, 7, 10)
+- Body stretch: translateY(2px) scaleY(1.02) between steps (frames 3, 6, 9, 12)
+- Body transition: translateY(-5px) at mid-points (frames 2, 5, 8, 11)
+- Mouth: translateY(10px) scale(1.02) on bounces
+- Musical note: scale(1.4) opacity(1) at peaks, scale(0.9) opacity(0.5) at stretches
+- Continuous overlapping motion creates fluid four-beat rhythm with energy
 
 Animation Refinements:
 - Overlapping leg movements create fluid four-beat walk
