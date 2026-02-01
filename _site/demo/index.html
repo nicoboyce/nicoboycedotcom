@@ -115,106 +115,104 @@
     bottom: 267px;
   }
 
-  /* Frame-specific poses - Overlapping Leg Sequence Walk with Bounce */
-  /* Frame 1: FL forward peak, BL finishing - big bounce */
-  .frame-1 .leg.fl { transform: rotate(-15deg); }
-  .frame-1 .leg.fr { transform: rotate(8deg); }
-  .frame-1 .leg.bl { transform: rotate(8deg); }
-  .frame-1 .leg.br { transform: rotate(-8deg); }
-  .frame-1 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.94); }
-  .frame-1 .note { opacity: 1; transform: scale(1.4); }
-  .frame-1 .mouth { transform: translateY(10px) scale(1.02); }
+  /* Frame-specific poses - Diagonal Pairs (from 0fbff34) */
+  /* Frame 1 - Neutral */
+  .frame-1 .leg.fl { transform: rotate(0deg); }
+  .frame-1 .leg.fr { transform: rotate(0deg); }
+  .frame-1 .leg.bl { transform: rotate(0deg); }
+  .frame-1 .leg.br { transform: rotate(0deg); }
+  .frame-1 .body { transform: translateX(-50%) translateY(0px); }
+  .frame-1 .note { opacity: 0.3; transform: scale(0.8); }
 
-  /* Frame 2: FL finishing, BR starting */
-  .frame-2 .leg.fl { transform: rotate(-10deg); }
-  .frame-2 .leg.fr { transform: rotate(10deg); }
-  .frame-2 .leg.bl { transform: rotate(10deg); }
-  .frame-2 .leg.br { transform: rotate(-10deg); }
-  .frame-2 .body { transform: translateX(-50%) translateY(-5px); }
-  .frame-2 .note { opacity: 0.7; transform: scale(1.1); }
+  /* Frame 2 - Start bend (FL+BR forward, FR+BL back) */
+  .frame-2 .leg.fl { transform: rotate(-5deg); }
+  .frame-2 .leg.fr { transform: rotate(5deg); }
+  .frame-2 .leg.bl { transform: rotate(5deg); }
+  .frame-2 .leg.br { transform: rotate(-5deg); }
+  .frame-2 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-2 .note { opacity: 0.4; transform: scale(0.9); }
 
-  /* Frame 3: FL back, BR moving forward - neutral stretch */
-  .frame-3 .leg.fl { transform: rotate(-5deg); }
-  .frame-3 .leg.fr { transform: rotate(12deg); }
-  .frame-3 .leg.bl { transform: rotate(12deg); }
-  .frame-3 .leg.br { transform: rotate(-12deg); }
-  .frame-3 .body { transform: translateX(-50%) translateY(2px) scaleY(1.02); }
-  .frame-3 .note { opacity: 0.5; transform: scale(0.9); }
+  /* Frame 3 - Deep bend */
+  .frame-3 .leg.fl { transform: rotate(-10deg); }
+  .frame-3 .leg.fr { transform: rotate(10deg); }
+  .frame-3 .leg.bl { transform: rotate(10deg); }
+  .frame-3 .leg.br { transform: rotate(-10deg); }
+  .frame-3 .body { transform: translateX(-50%) translateY(-8px) scaleY(0.96); }
+  .frame-3 .note { opacity: 0.5; transform: scale(1); }
 
-  /* Frame 4: BR forward peak - big bounce */
-  .frame-4 .leg.fl { transform: rotate(8deg); }
-  .frame-4 .leg.fr { transform: rotate(8deg); }
-  .frame-4 .leg.bl { transform: rotate(8deg); }
-  .frame-4 .leg.br { transform: rotate(-15deg); }
-  .frame-4 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.94); }
-  .frame-4 .note { opacity: 1; transform: scale(1.4); }
-  .frame-4 .mouth { transform: translateY(10px) scale(1.02); }
+  /* Frame 4 - Return up */
+  .frame-4 .leg.fl { transform: rotate(-5deg); }
+  .frame-4 .leg.fr { transform: rotate(5deg); }
+  .frame-4 .leg.bl { transform: rotate(5deg); }
+  .frame-4 .leg.br { transform: rotate(-5deg); }
+  .frame-4 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-4 .note { opacity: 0.6; transform: scale(1.1); }
 
-  /* Frame 5: BR finishing, FR starting */
-  .frame-5 .leg.fl { transform: rotate(10deg); }
-  .frame-5 .leg.fr { transform: rotate(-10deg); }
-  .frame-5 .leg.bl { transform: rotate(10deg); }
-  .frame-5 .leg.br { transform: rotate(-10deg); }
-  .frame-5 .body { transform: translateX(-50%) translateY(-5px); }
-  .frame-5 .note { opacity: 0.7; transform: scale(1.1); }
+  /* Frame 5 - Neutral stretch */
+  .frame-5 .leg.fl { transform: rotate(0deg); }
+  .frame-5 .leg.fr { transform: rotate(0deg); }
+  .frame-5 .leg.bl { transform: rotate(0deg); }
+  .frame-5 .leg.br { transform: rotate(0deg); }
+  .frame-5 .body { transform: translateX(-50%) translateY(2px) scaleY(1.02); }
+  .frame-5 .note { opacity: 0.7; transform: scale(1.2); }
 
-  /* Frame 6: BR back, FR moving forward - neutral stretch */
-  .frame-6 .leg.fl { transform: rotate(12deg); }
-  .frame-6 .leg.fr { transform: rotate(-12deg); }
-  .frame-6 .leg.bl { transform: rotate(12deg); }
-  .frame-6 .leg.br { transform: rotate(-5deg); }
-  .frame-6 .body { transform: translateX(-50%) translateY(2px) scaleY(1.02); }
-  .frame-6 .note { opacity: 0.5; transform: scale(0.9); }
+  /* Frame 6 - Opposite bend start (FR+BL forward, FL+BR back) */
+  .frame-6 .leg.fl { transform: rotate(5deg); }
+  .frame-6 .leg.fr { transform: rotate(-5deg); }
+  .frame-6 .leg.bl { transform: rotate(-5deg); }
+  .frame-6 .leg.br { transform: rotate(5deg); }
+  .frame-6 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-6 .note { opacity: 0.8; transform: scale(1.3); }
 
-  /* Frame 7: FR forward peak - big bounce */
-  .frame-7 .leg.fl { transform: rotate(8deg); }
-  .frame-7 .leg.fr { transform: rotate(-15deg); }
-  .frame-7 .leg.bl { transform: rotate(8deg); }
-  .frame-7 .leg.br { transform: rotate(8deg); }
-  .frame-7 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.94); }
+  /* Frame 7 - Deep opposite bend */
+  .frame-7 .leg.fl { transform: rotate(10deg); }
+  .frame-7 .leg.fr { transform: rotate(-10deg); }
+  .frame-7 .leg.bl { transform: rotate(-10deg); }
+  .frame-7 .leg.br { transform: rotate(10deg); }
+  .frame-7 .body { transform: translateX(-50%) translateY(-10px) scaleY(0.94); }
   .frame-7 .note { opacity: 1; transform: scale(1.4); }
   .frame-7 .mouth { transform: translateY(10px) scale(1.02); }
 
-  /* Frame 8: FR finishing, BL starting */
-  .frame-8 .leg.fl { transform: rotate(10deg); }
-  .frame-8 .leg.fr { transform: rotate(-10deg); }
-  .frame-8 .leg.bl { transform: rotate(-10deg); }
-  .frame-8 .leg.br { transform: rotate(10deg); }
-  .frame-8 .body { transform: translateX(-50%) translateY(-5px); }
-  .frame-8 .note { opacity: 0.7; transform: scale(1.1); }
+  /* Frame 8 - Return */
+  .frame-8 .leg.fl { transform: rotate(5deg); }
+  .frame-8 .leg.fr { transform: rotate(-5deg); }
+  .frame-8 .leg.bl { transform: rotate(-5deg); }
+  .frame-8 .leg.br { transform: rotate(5deg); }
+  .frame-8 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-8 .note { opacity: 0.8; transform: scale(1.2); }
 
-  /* Frame 9: FR back, BL moving forward - neutral stretch */
-  .frame-9 .leg.fl { transform: rotate(12deg); }
-  .frame-9 .leg.fr { transform: rotate(-5deg); }
-  .frame-9 .leg.bl { transform: rotate(-12deg); }
-  .frame-9 .leg.br { transform: rotate(12deg); }
-  .frame-9 .body { transform: translateX(-50%) translateY(2px) scaleY(1.02); }
-  .frame-9 .note { opacity: 0.5; transform: scale(0.9); }
+  /* Frame 9 - Neutral */
+  .frame-9 .leg.fl { transform: rotate(0deg); }
+  .frame-9 .leg.fr { transform: rotate(0deg); }
+  .frame-9 .leg.bl { transform: rotate(0deg); }
+  .frame-9 .leg.br { transform: rotate(0deg); }
+  .frame-9 .body { transform: translateX(-50%) translateY(0px); }
+  .frame-9 .note { opacity: 0.6; transform: scale(1); }
 
-  /* Frame 10: BL forward peak - big bounce */
-  .frame-10 .leg.fl { transform: rotate(8deg); }
+  /* Frame 10 - Big bend start */
+  .frame-10 .leg.fl { transform: rotate(-8deg); }
   .frame-10 .leg.fr { transform: rotate(8deg); }
-  .frame-10 .leg.bl { transform: rotate(-15deg); }
-  .frame-10 .leg.br { transform: rotate(8deg); }
-  .frame-10 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.94); }
-  .frame-10 .note { opacity: 1; transform: scale(1.4); }
-  .frame-10 .mouth { transform: translateY(10px) scale(1.02); }
+  .frame-10 .leg.bl { transform: rotate(8deg); }
+  .frame-10 .leg.br { transform: rotate(-8deg); }
+  .frame-10 .body { transform: translateX(-50%) translateY(-5px) scaleY(0.97); }
+  .frame-10 .note { opacity: 0.5; transform: scale(0.9); }
 
-  /* Frame 11: BL finishing, FL starting */
-  .frame-11 .leg.fl { transform: rotate(-10deg); }
-  .frame-11 .leg.fr { transform: rotate(10deg); }
-  .frame-11 .leg.bl { transform: rotate(-10deg); }
-  .frame-11 .leg.br { transform: rotate(10deg); }
-  .frame-11 .body { transform: translateX(-50%) translateY(-5px); }
-  .frame-11 .note { opacity: 0.7; transform: scale(1.1); }
+  /* Frame 11 - Biggest bend */
+  .frame-11 .leg.fl { transform: rotate(-15deg); }
+  .frame-11 .leg.fr { transform: rotate(15deg); }
+  .frame-11 .leg.bl { transform: rotate(15deg); }
+  .frame-11 .leg.br { transform: rotate(-15deg); }
+  .frame-11 .body { transform: translateX(-50%) translateY(-15px) scaleY(0.92); }
+  .frame-11 .note { opacity: 1; transform: scale(1.5); }
+  .frame-11 .mouth { transform: translateY(10px) scale(1.03); }
 
-  /* Frame 12: BL back, FL moving forward - neutral stretch */
-  .frame-12 .leg.fl { transform: rotate(-12deg); }
-  .frame-12 .leg.fr { transform: rotate(12deg); }
-  .frame-12 .leg.bl { transform: rotate(-5deg); }
-  .frame-12 .leg.br { transform: rotate(12deg); }
-  .frame-12 .body { transform: translateX(-50%) translateY(2px) scaleY(1.02); }
-  .frame-12 .note { opacity: 0.5; transform: scale(0.9); }
+  /* Frame 12 - Return */
+  .frame-12 .leg.fl { transform: rotate(-8deg); }
+  .frame-12 .leg.fr { transform: rotate(8deg); }
+  .frame-12 .leg.bl { transform: rotate(8deg); }
+  .frame-12 .leg.br { transform: rotate(-8deg); }
+  .frame-12 .body { transform: translateX(-50%) translateY(-5px); }
+  .frame-12 .note { opacity: 0.7; transform: scale(1.2); }
 
   /* Scroll indicator */
   .scroll-hint {
