@@ -39,7 +39,9 @@ Key Animation Values:
 - Body squash: scaleY(0.92) at deepest (frame 11), scaleY(0.94-0.96) normally
 - Body stretch: scaleY(1.02) at neutral peak (frame 5)
 - Body translateY: ranges from +2px (stretch) to -15px (biggest bounce)
-- Mouth: translateY(10px) scale(1.02-1.03) on big bounces (frames 7, 11)
+- Mouth: subtle continuous movement, translateY(0-3px) scale(1.0-1.05)
+  - Peaks at frames 7 (3px, 1.04) and 11 (3px, 1.05)
+  - Returns to neutral at frames 1, 5, 9
 - Musical note: scale(1.5) opacity(1) at frame 11, varies 0.8-1.4 with rhythm
 
 Animation Refinements:
