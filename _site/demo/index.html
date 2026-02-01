@@ -106,113 +106,103 @@
   }
 
   .leg.bl {
-    left: 355px;
-    bottom: 267px;
-  }
-
-  .leg.br {
     left: 430px;
     bottom: 290px;
   }
 
-  /* Frame-specific poses - Diagonal Trot */
-  /* Frame 1 - Neutral */
-  .frame-1 .leg.fl { transform: rotate(0deg); }
-  .frame-1 .leg.fr { transform: rotate(0deg); }
-  .frame-1 .leg.bl { transform: rotate(0deg); }
-  .frame-1 .leg.br { transform: rotate(0deg); }
-  .frame-1 .body { transform: translateX(-50%) translateY(0px); }
-  .frame-1 .note { opacity: 0.3; transform: scale(0.8); }
+  .leg.br {
+    left: 355px;
+    bottom: 267px;
+  }
 
-  /* Frame 2 - FL+BR forward, FR+BL back */
-  .frame-2 .leg.fl { transform: rotate(-6deg); }
-  .frame-2 .leg.fr { transform: rotate(6deg); }
-  .frame-2 .leg.bl { transform: rotate(6deg); }
-  .frame-2 .leg.br { transform: rotate(-6deg); }
-  .frame-2 .body { transform: translateX(-50%) translateY(-3px); }
-  .frame-2 .note { opacity: 0.4; transform: scale(0.9); }
+  /* Frame-specific poses - Individual Leg Sequence Walk */
+  /* Frames 1-3: FL steps forward */
+  .frame-1 .leg.fl { transform: rotate(-8deg); }
+  .frame-1 .leg.fr { transform: rotate(3deg); }
+  .frame-1 .leg.bl { transform: rotate(3deg); }
+  .frame-1 .leg.br { transform: rotate(3deg); }
+  .frame-1 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-1 .note { opacity: 0.4; transform: scale(0.9); }
 
-  /* Frame 3 - FL+BR deeper forward, FR+BL deeper back */
-  .frame-3 .leg.fl { transform: rotate(-12deg); }
-  .frame-3 .leg.fr { transform: rotate(12deg); }
-  .frame-3 .leg.bl { transform: rotate(12deg); }
-  .frame-3 .leg.br { transform: rotate(-12deg); }
-  .frame-3 .body { transform: translateX(-50%) translateY(-8px) scaleY(0.96); }
-  .frame-3 .note { opacity: 0.6; transform: scale(1); }
+  .frame-2 .leg.fl { transform: rotate(-15deg); }
+  .frame-2 .leg.fr { transform: rotate(5deg); }
+  .frame-2 .leg.bl { transform: rotate(5deg); }
+  .frame-2 .leg.br { transform: rotate(5deg); }
+  .frame-2 .body { transform: translateX(-50%) translateY(-5px) scaleY(0.97); }
+  .frame-2 .note { opacity: 0.6; transform: scale(1.1); }
 
-  /* Frame 4 - FL+BR peak forward, FR+BL peak back, bounce up */
-  .frame-4 .leg.fl { transform: rotate(-15deg); }
-  .frame-4 .leg.fr { transform: rotate(15deg); }
-  .frame-4 .leg.bl { transform: rotate(15deg); }
-  .frame-4 .leg.br { transform: rotate(-15deg); }
-  .frame-4 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.94); }
-  .frame-4 .note { opacity: 0.9; transform: scale(1.3); }
-  .frame-4 .mouth { transform: translateY(8px) scale(1.02); }
+  .frame-3 .leg.fl { transform: rotate(-8deg); }
+  .frame-3 .leg.fr { transform: rotate(3deg); }
+  .frame-3 .leg.bl { transform: rotate(3deg); }
+  .frame-3 .leg.br { transform: rotate(3deg); }
+  .frame-3 .body { transform: translateX(-50%) translateY(-2px); }
+  .frame-3 .note { opacity: 0.5; transform: scale(0.95); }
 
-  /* Frame 5 - Return from peak */
-  .frame-5 .leg.fl { transform: rotate(-10deg); }
-  .frame-5 .leg.fr { transform: rotate(10deg); }
-  .frame-5 .leg.bl { transform: rotate(10deg); }
-  .frame-5 .leg.br { transform: rotate(-10deg); }
-  .frame-5 .body { transform: translateX(-50%) translateY(-5px); }
-  .frame-5 .note { opacity: 0.7; transform: scale(1.1); }
+  /* Frames 4-6: BR steps forward */
+  .frame-4 .leg.fl { transform: rotate(3deg); }
+  .frame-4 .leg.fr { transform: rotate(3deg); }
+  .frame-4 .leg.bl { transform: rotate(3deg); }
+  .frame-4 .leg.br { transform: rotate(-8deg); }
+  .frame-4 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-4 .note { opacity: 0.4; transform: scale(0.9); }
 
-  /* Frame 6 - Neutral transition */
-  .frame-6 .leg.fl { transform: rotate(0deg); }
-  .frame-6 .leg.fr { transform: rotate(0deg); }
-  .frame-6 .leg.bl { transform: rotate(0deg); }
-  .frame-6 .leg.br { transform: rotate(0deg); }
-  .frame-6 .body { transform: translateX(-50%) translateY(0px); }
-  .frame-6 .note { opacity: 0.5; transform: scale(0.9); }
+  .frame-5 .leg.fl { transform: rotate(5deg); }
+  .frame-5 .leg.fr { transform: rotate(5deg); }
+  .frame-5 .leg.bl { transform: rotate(5deg); }
+  .frame-5 .leg.br { transform: rotate(-15deg); }
+  .frame-5 .body { transform: translateX(-50%) translateY(-5px) scaleY(0.97); }
+  .frame-5 .note { opacity: 0.6; transform: scale(1.1); }
 
-  /* Frame 7 - FR+BL forward, FL+BR back */
-  .frame-7 .leg.fl { transform: rotate(6deg); }
-  .frame-7 .leg.fr { transform: rotate(-6deg); }
-  .frame-7 .leg.bl { transform: rotate(-6deg); }
-  .frame-7 .leg.br { transform: rotate(6deg); }
+  .frame-6 .leg.fl { transform: rotate(3deg); }
+  .frame-6 .leg.fr { transform: rotate(3deg); }
+  .frame-6 .leg.bl { transform: rotate(3deg); }
+  .frame-6 .leg.br { transform: rotate(-8deg); }
+  .frame-6 .body { transform: translateX(-50%) translateY(-2px); }
+  .frame-6 .note { opacity: 0.5; transform: scale(0.95); }
+
+  /* Frames 7-9: FR steps forward */
+  .frame-7 .leg.fl { transform: rotate(3deg); }
+  .frame-7 .leg.fr { transform: rotate(-8deg); }
+  .frame-7 .leg.bl { transform: rotate(3deg); }
+  .frame-7 .leg.br { transform: rotate(3deg); }
   .frame-7 .body { transform: translateX(-50%) translateY(-3px); }
   .frame-7 .note { opacity: 0.4; transform: scale(0.9); }
 
-  /* Frame 8 - FR+BL deeper forward, FL+BR deeper back */
-  .frame-8 .leg.fl { transform: rotate(12deg); }
-  .frame-8 .leg.fr { transform: rotate(-12deg); }
-  .frame-8 .leg.bl { transform: rotate(-12deg); }
-  .frame-8 .leg.br { transform: rotate(12deg); }
-  .frame-8 .body { transform: translateX(-50%) translateY(-8px) scaleY(0.96); }
-  .frame-8 .note { opacity: 0.6; transform: scale(1); }
+  .frame-8 .leg.fl { transform: rotate(5deg); }
+  .frame-8 .leg.fr { transform: rotate(-15deg); }
+  .frame-8 .leg.bl { transform: rotate(5deg); }
+  .frame-8 .leg.br { transform: rotate(5deg); }
+  .frame-8 .body { transform: translateX(-50%) translateY(-5px) scaleY(0.97); }
+  .frame-8 .note { opacity: 0.6; transform: scale(1.1); }
 
-  /* Frame 9 - FR+BL peak forward, FL+BR peak back, bounce up */
-  .frame-9 .leg.fl { transform: rotate(15deg); }
-  .frame-9 .leg.fr { transform: rotate(-15deg); }
-  .frame-9 .leg.bl { transform: rotate(-15deg); }
-  .frame-9 .leg.br { transform: rotate(15deg); }
-  .frame-9 .body { transform: translateX(-50%) translateY(-12px) scaleY(0.94); }
-  .frame-9 .note { opacity: 0.9; transform: scale(1.3); }
-  .frame-9 .mouth { transform: translateY(8px) scale(1.02); }
+  .frame-9 .leg.fl { transform: rotate(3deg); }
+  .frame-9 .leg.fr { transform: rotate(-8deg); }
+  .frame-9 .leg.bl { transform: rotate(3deg); }
+  .frame-9 .leg.br { transform: rotate(3deg); }
+  .frame-9 .body { transform: translateX(-50%) translateY(-2px); }
+  .frame-9 .note { opacity: 0.5; transform: scale(0.95); }
 
-  /* Frame 10 - Return from peak */
-  .frame-10 .leg.fl { transform: rotate(10deg); }
-  .frame-10 .leg.fr { transform: rotate(-10deg); }
-  .frame-10 .leg.bl { transform: rotate(-10deg); }
-  .frame-10 .leg.br { transform: rotate(10deg); }
-  .frame-10 .body { transform: translateX(-50%) translateY(-5px); }
-  .frame-10 .note { opacity: 0.7; transform: scale(1.1); }
+  /* Frames 10-12: BL steps forward */
+  .frame-10 .leg.fl { transform: rotate(3deg); }
+  .frame-10 .leg.fr { transform: rotate(3deg); }
+  .frame-10 .leg.bl { transform: rotate(-8deg); }
+  .frame-10 .leg.br { transform: rotate(3deg); }
+  .frame-10 .body { transform: translateX(-50%) translateY(-3px); }
+  .frame-10 .note { opacity: 0.4; transform: scale(0.9); }
 
-  /* Frame 11 - Transition back */
   .frame-11 .leg.fl { transform: rotate(5deg); }
-  .frame-11 .leg.fr { transform: rotate(-5deg); }
-  .frame-11 .leg.bl { transform: rotate(-5deg); }
+  .frame-11 .leg.fr { transform: rotate(5deg); }
+  .frame-11 .leg.bl { transform: rotate(-15deg); }
   .frame-11 .leg.br { transform: rotate(5deg); }
-  .frame-11 .body { transform: translateX(-50%) translateY(-2px); }
-  .frame-11 .note { opacity: 0.5; transform: scale(0.9); }
+  .frame-11 .body { transform: translateX(-50%) translateY(-5px) scaleY(0.97); }
+  .frame-11 .note { opacity: 0.6; transform: scale(1.1); }
 
-  /* Frame 12 - Return to neutral */
-  .frame-12 .leg.fl { transform: rotate(0deg); }
-  .frame-12 .leg.fr { transform: rotate(0deg); }
-  .frame-12 .leg.bl { transform: rotate(0deg); }
-  .frame-12 .leg.br { transform: rotate(0deg); }
-  .frame-12 .body { transform: translateX(-50%) translateY(0px); }
-  .frame-12 .note { opacity: 0.3; transform: scale(0.8); }
+  .frame-12 .leg.fl { transform: rotate(3deg); }
+  .frame-12 .leg.fr { transform: rotate(3deg); }
+  .frame-12 .leg.bl { transform: rotate(-8deg); }
+  .frame-12 .leg.br { transform: rotate(3deg); }
+  .frame-12 .body { transform: translateX(-50%) translateY(-2px); }
+  .frame-12 .note { opacity: 0.5; transform: scale(0.95); }
 
   /* Scroll indicator */
   .scroll-hint {

@@ -6,12 +6,12 @@ CHARACTER 1: KETTLEPHANT
 Personality: Naive, dumb, cheerful, puppy-like energy
 Movement style: Bouncy, enthusiastic, bounding like a puppy
 
-Animation Pattern: Diagonal Trot (Poodle Walk)
-- Diagonal pair 1 (FL + BR) move together
-- Diagonal pair 2 (FR + BL) move together
-- Pairs alternate in opposition
-- Creates tappy, prancing trot motion like a poodle
-- Two weight shifts per 12-frame cycle
+Animation Pattern: Individual Leg Sequence Walk
+- Four-beat walk with individual leg steps
+- Sequence: FL → BR → FR → BL (repeat)
+- Each leg gets 3 frames per step cycle
+- Creates tappy, prancing poodle-like walk
+- Note: Back leg positions (BL/BR) swapped to fix left/right naming
 
 Body Parts (separate SVG files):
 - body.svg (main kettle shape)
@@ -26,26 +26,26 @@ Musical Note Behaviour:
 - Large/bright when stretched up (synced with bounce peaks)
 - Peak brightness at frames 7 and 11
 
-12-Frame Trot Cycle:
-- Frame 1: Neutral stance
-- Frames 2-5: FL+BR forward, FR+BL back (first diagonal pair steps)
-- Frame 6: Neutral transition
-- Frames 7-10: FR+BL forward, FL+BR back (second diagonal pair steps)
-- Frames 11-12: Transition back to neutral
+12-Frame Walk Cycle:
+- Frames 1-3: FL steps forward (peak at frame 2)
+- Frames 4-6: BR steps forward (peak at frame 5)
+- Frames 7-9: FR steps forward (peak at frame 8)
+- Frames 10-12: BL steps forward (peak at frame 11)
 
 Key Animation Values:
-- Diagonal pairs swing to ±15° at peak (frames 4, 9)
-- Body squash: scaleY(0.94) at deepest bounce (frames 4, 9)
-- Body translateY: -12px at peak bounces
-- Mouth: translateY(8px) scale(1.02) on bounces (frames 4, 9)
-- Neutral positions at frames 1, 6, 12
+- Stepping leg swings to -15° at peak (frames 2, 5, 8, 11)
+- Other legs at +3° to +5° (slight back position)
+- Body squash: scaleY(0.97) at each step peak
+- Body translateY: -5px at step peaks
+- Continuous four-beat rhythm throughout cycle
 
 Animation Refinements:
-- Diagonal trot pattern creates more natural quadruped gait
-- Two distinct weight shifts per cycle (frames 4 and 9)
-- Tappy, prancing motion like a poodle
-- Diagonal pairs (FL+BR, FR+BL) create forward momentum
+- Individual leg sequence creates four-beat walk
+- Each leg steps independently in sequence
+- Tappy, prancing poodle-like motion
+- Continuous stepping rhythm (no sync between legs)
 - Maintains bouncy, enthusiastic puppy energy
+- Fixed back leg naming (swapped BL/BR positions for correct left/right)
 
 
 CHARACTER 2: COFFEE MUG (name TBD - not "Mugman")
