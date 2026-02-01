@@ -1665,6 +1665,8 @@ title: Flickbook Demo
       <img src="/public/svg/leg.svg" class="leg bl">
       <img src="/public/svg/leg.svg" class="leg br">
       <img src="/public/svg/note.svg" class="note">
+    </div>
+
     <!-- Frame 97 -->
     <div class="frame frame-1">
       <img src="/public/svg/body.svg" class="body">
