@@ -1,5 +1,15 @@
 # Animation TODO List
 
+## Mug Character Enhancements (Priority)
+- [ ] Coffee drip animation: fall and splash on ground
+  - Drip should fall frame by frame
+  - Create splash effect when hitting ground
+  - Splash fades over subsequent frames
+- [ ] Fading footprints trail
+  - Leave footprints as mug walks
+  - Footprints fade out gradually over time
+  - Position footprints at leg contact points
+
 ## Kettlephant Enhancements
 - [ ] Enhanced mouth animation (more variation, different expressions)
 - [ ] Add blinking animation (random or rhythmic blinks)
