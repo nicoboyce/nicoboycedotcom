@@ -49,8 +49,8 @@ title: Flickbook Demo
     z-index: 7;
   }
 
-  /* Flip eyes on odd frames along 120-degree axis */
-  .frame:nth-child(odd) .eyes {
+  /* Flip eyes on every 8th frame along 120-degree axis */
+  .frame:nth-child(8n+1) .eyes {
     transform: rotate(120deg) scaleX(-1) rotate(-120deg);
   }
 
