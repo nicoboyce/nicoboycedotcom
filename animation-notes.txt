@@ -6,12 +6,12 @@ CHARACTER 1: KETTLEPHANT
 Personality: Naive, dumb, cheerful, puppy-like energy
 Movement style: Bouncy, enthusiastic, bounding like a puppy
 
-Animation Pattern: Rocking Horse Motion
-- Front legs (FL + FR) move together
-- Back legs (BL + BR) move together
-- Front and back pairs oppose each other (forward rock vs backward rock)
-- Left-right asymmetry added (right legs rotate 2-3° more than left)
-- Creates wobblier, less robotic motion
+Animation Pattern: Diagonal Trot (Poodle Walk)
+- Diagonal pair 1 (FL + BR) move together
+- Diagonal pair 2 (FR + BL) move together
+- Pairs alternate in opposition
+- Creates tappy, prancing trot motion like a poodle
+- Two weight shifts per 12-frame cycle
 
 Body Parts (separate SVG files):
 - body.svg (main kettle shape)
@@ -26,25 +26,26 @@ Musical Note Behaviour:
 - Large/bright when stretched up (synced with bounce peaks)
 - Peak brightness at frames 7 and 11
 
-12-Frame Bounce Cycle:
-- Frames 1-4: Forward rock (front legs back, back legs forward)
-- Frame 5: Neutral stretch
-- Frames 6-8: Backward rock (front legs forward, back legs back)
-- Frame 9: Neutral
-- Frames 10-12: Big forward rock
+12-Frame Trot Cycle:
+- Frame 1: Neutral stance
+- Frames 2-5: FL+BR forward, FR+BL back (first diagonal pair steps)
+- Frame 6: Neutral transition
+- Frames 7-10: FR+BL forward, FL+BR back (second diagonal pair steps)
+- Frames 11-12: Transition back to neutral
 
 Key Animation Values:
-- Front legs swing up to 15-18° forward at peak (frames 6-8)
-- Back legs swing in opposition: -15-18° at same peaks
-- Body squash: scaleY(0.92) at deepest (frame 11)
-- Body stretch: scaleY(1.02) at neutral peak (frame 5)
-- Mouth: translateY(10px) scale(1.02-1.03) on big bounces (frames 7, 11)
+- Diagonal pairs swing to ±15° at peak (frames 4, 9)
+- Body squash: scaleY(0.94) at deepest bounce (frames 4, 9)
+- Body translateY: -12px at peak bounces
+- Mouth: translateY(8px) scale(1.02) on bounces (frames 4, 9)
+- Neutral positions at frames 1, 6, 12
 
 Animation Refinements:
-- Added left-right asymmetry: right legs rotate 2-3° more than left
-- Creates wobblier, more organic motion (less robotic)
-- Front legs increased forward angle for more pronounced puppy-bound
-- Rocking horse motion: front pair + back pair move together, oppose each other
+- Diagonal trot pattern creates more natural quadruped gait
+- Two distinct weight shifts per cycle (frames 4 and 9)
+- Tappy, prancing motion like a poodle
+- Diagonal pairs (FL+BR, FR+BL) create forward momentum
+- Maintains bouncy, enthusiastic puppy energy
 
 
 CHARACTER 2: COFFEE MUG (name TBD - not "Mugman")
