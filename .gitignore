@@ -9,3 +9,13 @@ Thumbs.db
 CLAUDE.md
 C_*
 estimation-tool-plan.md
+
+# Build scripts and temporary files
+*.py
+*.sh
+*.pnm
+*.pbm
+
+# Prevent Jekyll running in subdirectories
+mug/_site/
+mug/.jekyll-cache/
