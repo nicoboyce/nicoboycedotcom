@@ -12,3 +12,5 @@ I had a stab at making it better to look at. What do you think?
 
 ![Ferrari 849 fixed.](/public/img/ferrari-849.jpeg)
 *Ferrari 849... the Beastie Boyce edition*
+
+I'll be in Maranello in a couple of weeks so if you're a Ferrari designer and you need someone with eyes to look at any future designs then get in touch!
