@@ -24,7 +24,7 @@ collections:
 
 
 excerpt_separator: "<!--excerpt-end-->"
-okay:             lol
+okay:             no
 
 exclude:
   - CLAUDE.md
