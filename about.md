@@ -8,7 +8,7 @@ title: Who is this Nico anyway?
 
 Nico Beastie Boyce is an engineer, artist, photographer, musician.
 
-![Nico Beastie Boyce.](/public/img/steps.jpg)
+![Nico Beastie Boyce.](/public/img/ipad.jpg)
 *Nico B. Boyce*
 
 He cut his teeth playing slow-and-low jams at parties in old Cornish farm buildings with his millennial long-haired skate punk trash buddies in pre-YouTube times.
