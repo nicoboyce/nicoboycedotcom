@@ -5,6 +5,9 @@ title: Nico Beastie Boyce — human person
 
 # Hello. I am Nico.
 
+![Nico Beastie Boyce.](/public/img/steps.jpg)
+*Nico B. Boyce*
+
 This is my old fashioned personal website where I publish creative things. It's deliberately a bit messy and chaotic because that's where the good stuff hides.
 
 ![mushy](/public/img/mushy.jpg)
