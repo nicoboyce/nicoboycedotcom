@@ -4,13 +4,173 @@
  <title>Nico Boyce</title>
  <link href="https://nicoboyce.com/atom.xml" rel="self"/>
  <link href="https://nicoboyce.com/"/>
- <updated>2026-03-05T20:56:28+00:00</updated>
+ <updated>2026-03-09T00:44:47+00:00</updated>
  <id>https://nicoboyce.com</id>
  <author>
    <name>Nico Beastie Boyce</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Ferrari had three chances to win in Melbourne and took none of them</title>
+   <link href="https://nicoboyce.com/wheels/2026/03/09/ferrari-strategy-australia/"/>
+   <updated>2026-03-09T00:00:00+00:00</updated>
+   <id>https://nicoboyce.com/wheels/2026/03/09/ferrari-strategy-australia</id>
+   <content type="html">&lt;p&gt;A couple of weeks ago I was in Maranello. As a kid I’d wanted to go and see the Ferrari factory but when my stepdad and I made the trip it turned out everything was closed for a public holiday. Life’s too short for unfinished business so on a &lt;a href=&quot;/italy-26/&quot;&gt;recent Italian road trip&lt;/a&gt; I put that right with a visit to the Scuderia museum.&lt;/p&gt;
+
+&lt;p&gt;The museum itself is… fine. It’s nice to see the trophies, remember some of those races, see some properly great cars. But mostly it’s trying to put their recent stuff into the context of their historical greatness. There’s no universe in which a Purosangue deserves to be in a museum alongside Lauda trophies, Schumacher’s cars, or a 250 that won the Mille Miglia. I &lt;a href=&quot;/you-are-welcome-ferrari/&quot;&gt;had a go at redesigning their new car&lt;/a&gt; a while back and offered my services but they haven’t called yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/maranello.jpg&quot; alt=&quot;Maranello.&quot; /&gt;
+&lt;em&gt;Maranello.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The real attraction in Maranello is Ristorante Montana. The walls are covered in amazing stuff and the pasta is great. We had been at the museum and then peeked over the wall into the Fiorano test circuit where a track car was doing some testing laps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/fiorano.jpeg&quot; alt=&quot;Fiorano.&quot; /&gt;
+&lt;em&gt;Fiorano.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Also spotted a heavily camouflaged road car on the streets, what I expect will end up being the run-out final edition of the current berlinetta model. And a camouflaged electric car! They’ve just announced the Lucce with the Jony Ive interior but no exterior shots yet, so this was a treat.&lt;/p&gt;
+
+&lt;p&gt;Oh, and the Ferrari boss himself, Fred Vasseur, was having lunch at Montana too.&lt;/p&gt;
+
+&lt;p&gt;If I’d had the chance I might have asked him about his strategy department. If you watched the race, you saw them just thrown away a win at the Australian Grand Prix. The numbers prove it!&lt;!--excerpt-end--&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-situation&quot;&gt;The situation&lt;/h3&gt;
+
+&lt;p&gt;George Russell qualified on pole for Mercedes with teammate Antonelli alongside him. Hadjar was third for Red Bull. Leclerc and Hamilton qualified fourth and seventh for Ferrari, both on medium tyres, with the Mercedes pair also on mediums. Piastri didn’t start, wrecking on the way to the grid in front of his home crowd. Ouch.&lt;/p&gt;
+
+&lt;p&gt;Both Ferraris got going well. By the end of lap 1, Leclerc was leading the race and Hamilton was third. Despite qualifying a row behind the Mercedes pair, Ferrari had a 1-3 on track within a few corners. Then on lap 11, Hadjar’s Red Bull engine expired.&lt;/p&gt;
+
+&lt;p&gt;Did the decisions the teams made at that point decide the race? Definitely.&lt;/p&gt;
+
+&lt;h3 id=&quot;opportunity-one-the-hadjar-vsc&quot;&gt;Opportunity one: the Hadjar VSC&lt;/h3&gt;
+
+&lt;p&gt;The virtual safety car was deployed on lap 12 and ran until lap 14. Under a VSC, all cars slow to a regulated delta time. This means a pit stop costs roughly half the time it normally would relative to the cars still on track. This is basic F1 strategy, known to literally every team. They are constantly recalculating the answer to “what do we do if there’s a safety car or virtual safety car this lap” and Ferrari just always get this wrong.&lt;/p&gt;
+
+&lt;p&gt;Both Mercedes pitted on lap 12. So did almost every other car that needed to stop. Every car on medium or soft tyres came in except the two Ferraris.&lt;/p&gt;
+
+&lt;p&gt;The VSC ran until lap 14. Ferrari had two full laps under caution to pit at least one car and chose neither. The Ferrari pit crew came out on lap 13. Then they were told to stand down. No double-stack was required. The pit lane was empty. They just didn’t do it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What it cost:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A pit stop under the VSC cost Russell roughly 11.6 seconds relative to the cars that stayed on track. Leclerc’s green flag pit stop on lap 25 cost roughly 18.2 seconds. That’s a &lt;strong&gt;6.6 second penalty&lt;/strong&gt; just for choosing to wait.&lt;/p&gt;
+
+&lt;p&gt;But it’s worse than that. From laps 15 to 25, Leclerc was lapping on worn medium tyres while Russell was on fresh hards:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Laps&lt;/th&gt;
+      &lt;th&gt;Leclerc (old MEDIUM)&lt;/th&gt;
+      &lt;th&gt;Russell (fresh HARD)&lt;/th&gt;
+      &lt;th&gt;Delta&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;15-17&lt;/td&gt;
+      &lt;td&gt;~83.4s&lt;/td&gt;
+      &lt;td&gt;~82.8s&lt;/td&gt;
+      &lt;td&gt;~0.6s/lap&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;21-25&lt;/td&gt;
+      &lt;td&gt;~83.4s&lt;/td&gt;
+      &lt;td&gt;~82.9s&lt;/td&gt;
+      &lt;td&gt;~0.5s/lap&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Over ten clean racing laps, that’s another five seconds gone. Add it to the pit stop penalty and you’re looking at roughly &lt;strong&gt;12 seconds&lt;/strong&gt; lost from one decision.&lt;/p&gt;
+
+&lt;p&gt;Leclerc lost the race by 15.5 seconds.&lt;/p&gt;
+
+&lt;h3 id=&quot;opportunity-two-bottas-breaks-down&quot;&gt;Opportunity two: Bottas breaks down&lt;/h3&gt;
+
+&lt;p&gt;On lap 18, Valtteri Bottas ground to a halt in the pit entry. Everyone watching could see it was going to be at least a VSC. Anyone who has seen a car stop on a live circuit knew the pit lane would likely be closed shortly after.&lt;/p&gt;
+
+&lt;p&gt;Timeline from the race control data:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;04:29:38&lt;/strong&gt; — Yellow flag, sector 20 (Bottas failing)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;04:29:55&lt;/strong&gt; — VSC deployed (17 seconds later)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;04:31:16&lt;/strong&gt; — Pit lane entry closed (81 seconds after VSC)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There was an 81-second window. Ferrari had live GPS data on every car. They could see Bottas was slowing before the yellow flag even appeared. The best teams react to the cause, not the flag.&lt;/p&gt;
+
+&lt;p&gt;Ferrari didn’t pit. The pit lane closed. Another cheap stop gone.&lt;/p&gt;
+
+&lt;h3 id=&quot;opportunity-three-the-hare-and-tortoise&quot;&gt;Opportunity three: the hare and tortoise&lt;/h3&gt;
+
+&lt;p&gt;Even accepting that they missed both VSCs, Ferrari still had options. Hamilton was running second at this point, 28 laps into his medium stint, with Leclerc leading. They could have pitted Hamilton under the second VSC and split their strategies.&lt;/p&gt;
+
+&lt;p&gt;Hamilton on fresh hards would have been roughly 0.5 seconds per lap faster than the Mercedes pair on their six-lap-old hards. He could have closed in and pressured them, forcing Russell and Antonelli to push harder and degrade their rubber. Meanwhile Leclerc stays out front, extends the stint, builds the gap.&lt;/p&gt;
+
+&lt;p&gt;When Leclerc eventually pits under green, he comes out on fresh hards against Mercedes drivers whose tyres have been hammered by Hamilton’s pressure. The data shows Russell’s pace on 30+ lap hards was consistently 83.0 to 83.5 seconds. Hamilton on fresh hards was doing 82.4 to 82.7. Leclerc would have been hunting.&lt;/p&gt;
+
+&lt;p&gt;This didn’t require any luck. It didn’t require a safety car. It just required Ferrari to read the race and act.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-result&quot;&gt;The result&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Pos&lt;/th&gt;
+      &lt;th&gt;Driver&lt;/th&gt;
+      &lt;th&gt;Team&lt;/th&gt;
+      &lt;th&gt;Strategy&lt;/th&gt;
+      &lt;th&gt;Gap&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Russell&lt;/td&gt;
+      &lt;td&gt;Mercedes&lt;/td&gt;
+      &lt;td&gt;M(1-12) H(13-58), &lt;strong&gt;pitted under VSC&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Antonelli&lt;/td&gt;
+      &lt;td&gt;Mercedes&lt;/td&gt;
+      &lt;td&gt;M(1-12) H(13-58), &lt;strong&gt;pitted under VSC&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;+2.974s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Leclerc&lt;/td&gt;
+      &lt;td&gt;Ferrari&lt;/td&gt;
+      &lt;td&gt;M(1-25) H(26-58), &lt;strong&gt;pitted under green&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;+15.519s&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Hamilton&lt;/td&gt;
+      &lt;td&gt;Ferrari&lt;/td&gt;
+      &lt;td&gt;M(1-28) H(29-58), &lt;strong&gt;pitted under green&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;+16.144s&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Ferrari qualified 4-7 but had a 1-3 on track from the opening lap. They finished 3-4. Mercedes qualified 1-2, lost positions off the line, pitted under the VSC, and finished 1-2. The entire swing was manufactured by one strategic failure, repeated across two opportunities, with a third creative option left on the table.&lt;/p&gt;
+
+&lt;p&gt;Leclerc’s fastest lap was a 1:22.579 on lap 38. Hamilton’s was a 1:22.423 on lap 55. These are not the lap times of a team that lacked pace. Ferrari had the car to win this race. They needed their strategy team to not actively prevent it.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-were-they-thinking&quot;&gt;What were they thinking?&lt;/h3&gt;
+
+&lt;p&gt;The argument for staying out is always “track position.” Leclerc had led since the opening lap and was still in front. Why give that up?&lt;/p&gt;
+
+&lt;p&gt;Because you’re going to give it up anyway. The mediums had to come off. The only question was when and at what cost. A VSC halves the cost. Staying out on old mediums against fresh hards is not protecting track position, it’s delaying the inevitable while making it more expensive.&lt;/p&gt;
+
+&lt;p&gt;The crew came out on lap 13. Someone on that pit wall knew it was the right call. Someone else overruled them.&lt;/p&gt;
+
+&lt;p&gt;Fred, if you’re reading this, the pasta at Montana was excellent. The strategy was not.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Shooting on film in Italy, '26</title>
