@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Ferrari had three chances to win in Melbourne and took none of them"
-categories: wheels
 ---
 
 A couple of weeks ago I was in Maranello. As a kid I'd wanted to go and see the Ferrari factory but when my stepdad and I made the trip it turned out everything was closed for a public holiday. Life's too short for unfinished business so on a [recent Italian road trip](/italy-26/) I put that right with a visit to the Scuderia museum.
