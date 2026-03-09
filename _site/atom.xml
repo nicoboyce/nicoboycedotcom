@@ -4,7 +4,7 @@
  <title>Nico Boyce</title>
  <link href="https://nicoboyce.com/atom.xml" rel="self"/>
  <link href="https://nicoboyce.com/"/>
- <updated>2026-03-09T00:46:13+00:00</updated>
+ <updated>2026-03-09T07:55:07+00:00</updated>
  <id>https://nicoboyce.com</id>
  <author>
    <name>Nico Beastie Boyce</name>
@@ -114,51 +114,18 @@
 
 &lt;h3 id=&quot;the-result&quot;&gt;The result&lt;/h3&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Pos&lt;/th&gt;
-      &lt;th&gt;Driver&lt;/th&gt;
-      &lt;th&gt;Team&lt;/th&gt;
-      &lt;th&gt;Strategy&lt;/th&gt;
-      &lt;th&gt;Gap&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Russell&lt;/td&gt;
-      &lt;td&gt;Mercedes&lt;/td&gt;
-      &lt;td&gt;M(1-12) H(13-58), &lt;strong&gt;pitted under VSC&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;—&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;Antonelli&lt;/td&gt;
-      &lt;td&gt;Mercedes&lt;/td&gt;
-      &lt;td&gt;M(1-12) H(13-58), &lt;strong&gt;pitted under VSC&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;+2.974s&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;Leclerc&lt;/td&gt;
-      &lt;td&gt;Ferrari&lt;/td&gt;
-      &lt;td&gt;M(1-25) H(26-58), &lt;strong&gt;pitted under green&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;+15.519s&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;4&lt;/td&gt;
-      &lt;td&gt;Hamilton&lt;/td&gt;
-      &lt;td&gt;Ferrari&lt;/td&gt;
-      &lt;td&gt;M(1-28) H(29-58), &lt;strong&gt;pitted under green&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;+16.144s&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Russell&lt;/strong&gt; — Mercedes — pitted under VSC (lap 12) — winner&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Antonelli&lt;/strong&gt; — Mercedes — pitted under VSC (lap 12) — +2.974s&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Leclerc&lt;/strong&gt; — Ferrari — pitted under green (lap 25) — +15.519s&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Hamilton&lt;/strong&gt; — Ferrari — pitted under green (lap 28) — +16.144s&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;Ferrari qualified 4-7 but had a 1-3 on track from the opening lap. They finished 3-4. Mercedes qualified 1-2, lost positions off the line, pitted under the VSC, and finished 1-2. The entire swing was manufactured by one strategic failure, repeated across two opportunities, with a third creative option left on the table.&lt;/p&gt;
 
 &lt;p&gt;Leclerc’s fastest lap was a 1:22.579 on lap 38. Hamilton’s was a 1:22.423 on lap 55. These are not the lap times of a team that lacked pace. Ferrari had the car to win this race. They needed their strategy team to not actively prevent it.&lt;/p&gt;
+
+&lt;p&gt;What makes it even more frustrating is that by mid-race, there was no risk from behind. Norris was fifth, over 50 seconds back. Verstappen sixth, nearly a minute adrift. Ferrari had a free pit stop available from third and fourth — they could have tried anything and the worst case scenario was finishing exactly where they did. Doing nothing guaranteed 3-4. Doing something could have won them the race. They chose nothing.&lt;/p&gt;
 
 &lt;h3 id=&quot;what-were-they-thinking&quot;&gt;What were they thinking?&lt;/h3&gt;
 

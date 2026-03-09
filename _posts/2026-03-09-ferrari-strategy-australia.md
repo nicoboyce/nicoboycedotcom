@@ -78,16 +78,16 @@ This didn't require any luck. It didn't require a safety car. It just required F
 
 ### The result
 
-| Pos | Driver | Team | Strategy | Gap |
-|---|---|---|---|---|
-| 1 | Russell | Mercedes | M(1-12) H(13-58), **pitted under VSC** | — |
-| 2 | Antonelli | Mercedes | M(1-12) H(13-58), **pitted under VSC** | +2.974s |
-| 3 | Leclerc | Ferrari | M(1-25) H(26-58), **pitted under green** | +15.519s |
-| 4 | Hamilton | Ferrari | M(1-28) H(29-58), **pitted under green** | +16.144s |
+1. **Russell** — Mercedes — pitted under VSC (lap 12) — winner
+2. **Antonelli** — Mercedes — pitted under VSC (lap 12) — +2.974s
+3. **Leclerc** — Ferrari — pitted under green (lap 25) — +15.519s
+4. **Hamilton** — Ferrari — pitted under green (lap 28) — +16.144s
 
 Ferrari qualified 4-7 but had a 1-3 on track from the opening lap. They finished 3-4. Mercedes qualified 1-2, lost positions off the line, pitted under the VSC, and finished 1-2. The entire swing was manufactured by one strategic failure, repeated across two opportunities, with a third creative option left on the table.
 
 Leclerc's fastest lap was a 1:22.579 on lap 38. Hamilton's was a 1:22.423 on lap 55. These are not the lap times of a team that lacked pace. Ferrari had the car to win this race. They needed their strategy team to not actively prevent it.
+
+What makes it even more frustrating is that by mid-race, there was no risk from behind. Norris was fifth, over 50 seconds back. Verstappen sixth, nearly a minute adrift. Ferrari had a free pit stop available from third and fourth — they could have tried anything and the worst case scenario was finishing exactly where they did. Doing nothing guaranteed 3-4. Doing something could have won them the race. They chose nothing.
 
 ### What were they thinking?
 
