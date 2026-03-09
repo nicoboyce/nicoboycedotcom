@@ -68,7 +68,7 @@ Ferrari didn't pit. The pit lane closed. Another cheap stop gone.
 
 ### Opportunity three: the hare and tortoise
 
-Even accepting that they missed both VSCs, Ferrari still had options. Hamilton was running second at this point, 28 laps into his medium stint, with Leclerc leading. They could have pitted Hamilton under the second VSC and split their strategies.
+Even accepting that they missed both VSCs, Ferrari still had options. Hamilton was running second at this point, 28 laps into his medium stint, with Leclerc leading. They could have pitted Hamilton under the second VSC and split their strategies, but trying something different with the second car also wins every game theory scenario.
 
 Hamilton on fresh hards would have been roughly 0.5 seconds per lap faster than the Mercedes pair on their six-lap-old hards. He could have closed in and pressured them, forcing Russell and Antonelli to push harder and degrade their rubber. Meanwhile Leclerc stays out front, extends the stint, builds the gap.
 
