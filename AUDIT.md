@@ -19,24 +19,22 @@
 
 ---
 
-## Next: Medium Priority
-
 ### SEO
 
-- [ ] **No canonical URL tag** — important for Jekyll's pretty URLs to avoid duplicate content
-- [ ] **No Open Graph tags** — social sharing will look poor
-- [ ] **No Twitter Card tags**
-- [ ] **Meta description template** often exceeds 160 chars (will be truncated in SERPs)
-- [ ] **`robots.txt`** has no `Sitemap:` directive pointing to the auto-generated sitemap
-- [ ] **`site.webmanifest`** has wrong `theme_color: #ffffff` (site is dark `#0e0518`), empty site name, no `start_url`
+- [x] **Canonical URL tag** added to `head.html`
+- [x] **Open Graph tags** added (og:type, og:title, og:description, og:url, og:site_name, og:image)
+- [x] **Twitter Card tags** added (summary card)
+- [x] **Meta description** simplified to `page.description | default: site.description`, truncated to 155 chars. Posts can now have a `description:` front matter field for per-post descriptions.
+- [x] **`robots.txt`** Sitemap directive added
+- [x] **`site.webmanifest`** fixed: name, start_url, theme_color (#0e0518), background_color
 
 ### HTML Semantics
 
-- [ ] **Nav links not wrapped in `<nav>` tag** (`nav.html`)
-- [ ] **Footer not wrapped in `<footer>` tag** (`info.html`)
-- [ ] **`href="#top"` links in nav** but no `id="top"` exists in the HTML
-- [ ] **`"now" | date_to_string`** in `info.html` — `"now"` is not valid Jekyll input, should be `site.time`
-- [ ] **External links missing `rel="noopener noreferrer"`** inconsistently
+- [x] **`<nav>` tag** — was already present; fixed unclosed `<span>` inside it
+- [x] **`href="#top"` in nav** — valid per HTML spec (scrolls to top when no matching id exists); `aria-current="page"` added to active links
+- [x] **`<footer>` tag** added to `info.html`
+- [x] **`"now" | date_to_string`** fixed to `site.time | date_to_string`
+- [x] **External links `rel="noopener noreferrer"`** — JS snippet added to `default.html` applies this to all external links at runtime, covering post content without manual per-link edits
 
 ### CSS Dead Code
 
