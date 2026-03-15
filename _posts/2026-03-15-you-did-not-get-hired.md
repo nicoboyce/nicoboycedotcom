@@ -69,7 +69,7 @@ No one likes it when I say this! I actually go out of my way to make it clear I 
 
 ## So what do you actually do
 
-You see a job you want. Don't you dare apply for it! Linkedin, find out who you would be working with. The company is on LinkedIn, the team is on Linkedin. The hiring manager is almost certainly on Linkedin. Find them!
+You see a job you want. Don't you dare apply for it! Find out who you would be working with. The company is on LinkedIn, the team is on Linkedin. The hiring manager is almost certainly on Linkedin. Find them!
 
 Now find the bridge person. Who do you know who knows someone there? You have more connections than you think and it only takes one and Linkedin will tell you who that is. A former colleague, a friend of a friend, someone you met at a conference three years ago. Find the common thread and use it to start a conversation.
 
