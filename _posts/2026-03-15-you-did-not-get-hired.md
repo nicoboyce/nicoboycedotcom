@@ -65,7 +65,7 @@ This assumes that successful job applications have some kind of statistical dist
 
 **Tailoring your CV is actually bad.**
 
-No one likes it when I say this! I actually go out of my way to make it clear I am not making a special CV for your job. Someone asks for a CV and I say "Well I have an old one which I can bring up to date and pop over quickly so we can get the next chat scheduled" and then their expectations are flipped. It changes the whole narrative of the process! I've rendered the CV part a formality.
+No one likes it when I say this! I actually go out of my way to make it clear I am not making a special CV for your job. Someone asks for a CV and I say "Well I have an old one which I can bring up to date and pop over quickly so we can get the next chat scheduled" and then their expectations are flipped. It changes the whole narrative of the process! I've rendered the CV part mere formality.
 
 ## So what do you actually do
 
@@ -77,7 +77,7 @@ Something like "Hey, you and I both worked with Liz, do you keep in touch with h
 
 I might well be that person for you and this role. Please feel free to pop me a message if so! Say to them "Hey, you and I both know Nico Boyce, did you work with him at X? Did he ever make you listen to his [terrible music](https://nicoboyce.com/essays/2025/04/22/releasing-music-for-drecks/)? He mentioned you were an expert in Y, I have been working as a junior Y..." and so on. The key phrases are "informal chat" and "life at *company*". You are not asking for a job. You are having a conversation. It might turn out it's not the thing for you but they know someone else. You might just make a friend! These are all good outcomes.
 
-Help them want you before they actually evaluate anyone. By the time the formal process catches up you're already the preferred candidate and your application is a formality. Managers are human people who would rather work with someone they've had a nice chat with than a stranger from a spreadsheet, so you will beat someone of equivalent skills and experience who does through the application process properly.
+Help them want you before they actually evaluate anyone. By the time the process catches up you're already the preferred candidate. Managers are human people who would rather work with someone they've had a nice chat with than a stranger from a spreadsheet, so you will beat someone of equivalent skills and experience who does through the application process properly.
 
 ## When they do ask for your CV
 
