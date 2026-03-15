@@ -18,7 +18,7 @@ Here are a couple of notes from that article:
 
 >2025 was a year where artists whose work I had been enjoying over the last few years released records which made me go "oh okay, that's a shame."
 
->My favourite new record this year was PinkPanteress mixtape Fancy That and my favourite new song of the year was Music by Underscores and nothing else really came close to those choices for me. s Finally I’ve got to say “go and listen to Esdeekid” if you’re not yet in on that thing.
+>My favourite new record this year was PinkPanteress mixtape Fancy That and my favourite new song of the year was Music by Underscores and nothing else really came close to those choices for me. Finally I’ve got to say “go and listen to Esdeekid” if you’re not yet in on that thing.
 
 ## New things are happening
 
@@ -27,9 +27,13 @@ Everything I'm hearing right now is like Underscores went back in time to the mi
 ![Logic.](/public/img/logic.png)
 *Logic.*
 
-I am hoping the next record will be completed this year. What's taking shape is not Drecks 2 but something else. I'm calling it the work ep in my head right now.
+I am working on two different records in parallel. One is Drecks 2 and the other is something I'm currently calling Workshy.
 
-## New album Instrumental Driving Music for Drecks
+Drecks 2 is loose and open. It's sort of chopped up and wonky. It's like if the Blacknoi$e remix of Extra Capsular Extraction was a bit more interesting.
+
+Workshy is like a hyperpop take on Test Icicles but with a dose of Crookers. It's tight and claustrophobic.
+
+## Instrumental Driving Music for Drecks
 
 Read about the release [here](/essays/2025/04/22/releasing-music-for-drecks/) and then go [here](https://fightingmongooses.bandcamp.com/) and buy it.
 
@@ -47,6 +51,9 @@ Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most 
 ***
 
 **Recent live shows:**
+
+* Nova Twins at the Engine Rooms
+_Nova Twins are exciting and combine so many things I love and a bunch of stuff I didn't previously like but now I'm thinking "oh maybe I should try that" so yeah. I know I've enjoyed a show when I want to rush home and try noises. The Engine Rooms is a pretty poor venue with dreadful resonance._
 
 * High On Fire (and Castle Rat and other supports) Electric Ballroom
 _I'm just so happy to see HoF looking and sounding better than ever. It felt like they were having a great time. We all had a great time. Also, one of the best combos of support acts I've seen in a while. Castle Rat are a must see!_
@@ -125,7 +132,6 @@ I'm really happy with Drecks and we're going to go bigger and bolder with the se
 
 **Upcoming gigs:**
 
-* Nova Twins
 * Garbage and Skunk Anansie
 
 ![Guitars.](/public/img/guits.jpeg)
@@ -135,7 +141,6 @@ I'm really happy with Drecks and we're going to go bigger and bolder with the se
 
 * Underscores - Music _(My track of '25)_
 * Crookers _(I cannot get enough French and Italian hip hop right now)_
-
 * Scratch Acid - Berserker _(Post hardcore horror noise. Equal parts SSD and Sutch.)_
 * PinkPantheress - Fancy That _(Genuinely exciting Brit-garage nineties pop collision.)_
 * Vic du Monte's Idiot Prayer - Prey for the City _(So much to unpick here, you tell me)_
