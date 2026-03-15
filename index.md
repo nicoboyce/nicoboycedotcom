@@ -16,7 +16,6 @@ This is my old fashioned personal website where I publish creative things. It's 
 ## New and sexy things
 
 * My latest essay is here: {% assign post = site.posts | where_exp: "item", "item.categories.size == 0" | first %}<a href="{{ post.url }}">{{ post.title }}</a>
-* My [now page](/now/) 
 * Latest snaps: {% assign snap = site.posts | where_exp: "item", "item.categories contains 'snaps'" | first %}<a href="{{ snap.url }}">{{ snap.title }}</a> or see all on the [snaps page](/snaps) or on my [pixelfed](https://pixelfed.social/beastie).
 * Music chatter is [here](/music/)
 * Car photos and chat is [here](/wheels/).
