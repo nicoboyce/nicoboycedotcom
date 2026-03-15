@@ -30,7 +30,7 @@ Jobs are listed for all sorts of reasons and we just don't know what those reaso
 
 We've definitely all seen a job advertised even though there's already a preferred candidate. Got to follow the company process despite the decision being made some time ago.
 
-The manager might well want to bring in a colleague from their old team or they have an internal promotion lined up but the policy says we advertise and so people apply for jobs they won't get. It's unreasonable to be upset about not getting a job that was never really available but we're all unreasonable fleshy things.
+The manager might well want to bring in a colleague from their old team or they have an internal promotion lined up but the policy says we advertise and so people apply for jobs somebody already got. It's unreasonable to be upset about not getting a job that was never really available but we're all unreasonable fleshy things.
 
 The trick is to make the "somebody" you and we'll come to that somewhere down the page.
 
