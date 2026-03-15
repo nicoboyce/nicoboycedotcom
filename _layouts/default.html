@@ -21,5 +21,14 @@
 
 
 
+  <script>
+    /* Add rel="noopener noreferrer" to all external links */
+    document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  </script>
+
   </body>
 </html>
