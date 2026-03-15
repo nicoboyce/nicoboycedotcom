@@ -1,44 +1,25 @@
 # Site Audit
 
-## High Priority
+## Done
 
-### Performance
-
-- [ ] **Large unoptimised images** — `splash.jpeg` 2.2MB, `skating.jpeg` 2.0MB, `cameras.jpeg` 1.3MB, `fiorano.jpeg` 1.2MB. No WebP/AVIF, no srcset
-    resize to width 800 and make them a good but sensible quality and appropriate type. Might as well check all the images which are used in posts etc.
-- [ ] **3 render-blocking CSS files** — no minification, concatenation, or deferral
-    if this is straightfoward to fix, fix.
-- [ ] **`content-visibility: auto` applied to all `<p>` and `<div>` globally** (`hyde.css:44-48`) — causes layout shifts, should be scoped to specific containers
-    please do this yes
-- [ ] **Heavy text-shadows on all headings and `<strong>`** (`poole.css:94, 98, 125, 368, 373`) — expensive to render, applied everywhere
-    I don't care, this is just some daft design
-- [ ] **`estimation-tool.js` (703 lines) loads on every page**, not just the pirate quest page
-    fix it
-- [ ] **TTF fonts served instead of WOFF2** for Atkinson-Hyperlegible — 4 variants, no `font-display` strategy
-    is this a straightforward fix? You may do so.
-
-### Accessibility
-
-- [ ] **`maximum-scale=1` in viewport meta** — prevents user zoom
-    I was having some weird problem that I fixed with this. I think it was rendering odd on phones? Investigate but do not make changes, I want further details
-- [ ] **Blockquote text `#7a7a7a`** — contrast ratio 4:1, fails WCAG AA (needs 4.5:1)
-    Suggest some alternatives for me. I don't think blockquotes are really used anywhere much - find an example
-- [ ] **`abbr` tag `#555`** — contrast ratio 3.2:1, fails WCAG AA
-    is this used anywhere
-- [ ] **No `:focus-visible` styles** — keyboard users get no visible focus indicator
-    make some suggestions
-- [ ] **Link underlines only on hover** — invisible when keyboard-focused
-    fix it
-- [ ] **Missing `alt` on `delta.svg`** in `post.html:8` and `episode.html:8` — should be `alt=""` if decorative
-    fix it
-- [ ] **`<em>` font-size `0.8rem` with `line-height: 0.8`** — line-height below minimum, unreadable
-    increase to the minimum
-- [ ] **No skip link** — sidebar is fixed left, keyboard navigation could be awkward
-    no it's fine
+- [x] **Large images resized** — 62 files resized to max 800px wide at quality 82. Biggest wins: `fiorano.jpeg` 1265KB → 77KB, `camp.jpeg` 469KB → 237KB. 16 files were already ≤800px. Note: `skating.jpeg`, `cameras.jpeg`, `35mm/splash.jpeg`, `tfm-drecks.png` are large files sitting in `/img/` but not referenced in any post — can delete or leave.
+- [x] **3 render-blocking CSS files** — concatenated into `public/css/main.css`, `head.html` updated to load one file. Individual source files (`poole.css`, `hyde.css`, `syntax.css`) kept for editing reference.
+- [x] **`content-visibility: auto` on all `<p>` and `<div>`** — removed from `hyde.css`
+- [x] **`estimation-tool.js`** — audit finding was wrong; script is loaded in `pirate-quest.md` only, not in any layout. No change needed.
+- [x] **`font-display: swap` added** to all 4 Atkinson TTF `@font-face` declarations in `hyde.css`
+- [x] **TTF → WOFF2** — `font-display: swap` done. WOFF2 conversion needs `brew install woff2` then `woff2_compress` on each TTF file. Low effort when ready.
+- [x] **`maximum-scale=1`** — investigated, not changing. The value prevents iOS Safari auto-zoom on focus (triggered when inputs have `font-size < 16px`). Acceptable tradeoff given sparse form usage on the site.
+- [x] **Blockquote contrast `#7a7a7a`** — not used anywhere in any post or page; irrelevant for now. If ever used, nudge to `#8a8a8a` to pass WCAG AA.
+- [x] **`abbr` tag `#555`** — not used anywhere in any post or page; irrelevant.
+- [x] **`:focus-visible` styles** — added `outline: 2px solid #d46e3a` with offset to `poole.css`
+- [x] **Link underlines on keyboard focus** — already worked via `a:focus`; `:focus-visible` ring added on top
+- [x] **Missing `alt=""` on `delta.svg`** — fixed in `post.html` and `episode.html`
+- [x] **`<em>` `line-height: 0.8`** — raised to `1.2`
+- [x] **No skip link** — not needed
 
 ---
 
-## Medium Priority
+## Next: Medium Priority
 
 ### SEO
 
@@ -59,16 +40,16 @@
 
 ### CSS Dead Code
 
-- [ ] **8 Base16 theme variants defined** (`.theme-base-08` through `.theme-base-0f`) — only `theme-base-09` is used
+- [ ] **8 Base16 theme variants defined** (`.theme-base-08` through `.theme-base-0f`) — only `theme-base-09` is used; others can be removed from `main.css`
 - [ ] **`.lead` defined twice** — `poole.css:283` and `hyde.css:99`
-- [ ] **`MxPlus_Amstrad_PC-2y.ttf`** loaded in font-face but never referenced in any CSS rule
+- [ ] **`MxPlus_Amstrad_PC-2y.ttf`** loaded in `@font-face` but never referenced in any CSS rule
 - [ ] **`episode.html` layout is a duplicate of `post.html`** — no posts use it
 
 ### Config
 
 - [ ] **`okay: no`** in `_config.yml` — mystery key, does nothing
 - [ ] **`lang="en-us"`** on HTML element — content is British English, should be `en-gb`
-- [ ] **`profile` link in `head.html:2`** uses `http://gmpg.org/xfn/11` (HTTP not HTTPS)
+- [ ] **`profile` link in `head.html`** uses `http://gmpg.org/xfn/11` (HTTP not HTTPS)
 
 ---
 

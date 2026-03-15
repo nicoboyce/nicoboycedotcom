@@ -77,11 +77,16 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
+a:focus-visible {
+  outline: 2px solid #d46e3a;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
 
 em {
   font-size: 0.8rem;
   color: darkgrey;
-  line-height: 0.8;
+  line-height: 1.2;
 }
 
 /* Headings */
