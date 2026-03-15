@@ -51,3 +51,16 @@ oh this is the template I used https://github.com/posquit0/Awesome-CV in case yo
 I use it not because it's good (though it is) but because it demonstrates working knowledge of latex and python also right
 
 fin.
+
+
+***
+
+
+
+**Contact details go right up front.** They might print this off and lose the original email. You don't want even a moment of them thinking "how do we find this person, they seem great" and not being able to. Ensure you're using tel and mailto links in the PDF so they can tap straight through.
+
+**Make it a PDF, not a .doc.** A Word document says "please edit me" and looks different on every machine. A PDF says "this is a finished product". I use a template called [Awesome-CV](https://github.com/posquit0/Awesome-CV) because it's good and it's modular (you can swap in and out different sections as appropriate) and it also says "I know Latex" which is a nice flourish.
+
+**Put your location on there.** If you advertise a job you get applications from all over the world. Recruiters and hiring managers have to quickly filter CVs and even at this stage you could end up in the bin if it's not clear that you're a viable choice. You don't need your full address, just something like "New Road, Springfield" so they know you're sufficiently local. If you're in the UK and your name isn't Steve or Dave or Claire or something then you definitely can't skip this step. I see the whole world as a science experiment and I have applied to dozens of London jobs in a range of names to test this and the results are exactly as depressing as you fear.
+
+**Lead with your title, not an objective statement.** Put your desired job title or specialism right under your name. "Engineering manager, AI specialist" or something. Never use the word "enthusiast" because you are a professional and a specialist, not an amateur or a hobbyist. And lose the forward slash between multiple titles because people read in their heads as if they can hear the words and "senior developer slash team lead" doesn't flow.
