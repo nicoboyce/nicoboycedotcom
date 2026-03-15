@@ -38,7 +38,7 @@ The trick is to make the "somebody" you and we'll come to that somewhere down th
 
 You're really great! I'm sure of that. The other candidates are probably also pretty great. You probably don't know them and that is another key item of the information asymmetry inherent in the recruitment process.
 
-There was a gig I didn't get a few years ago and I felt a bit hard done by. Some time later I got talking to an industry colleague who had become a good friend and I found out he was the other of the final two for that gig (and a couple others) and he's a great and talented guy and I'm sure was the better choice for that piece of work. Turned out we had also been the final two for another gig which I got and he was grouchy about that one!
+There was a gig I didn't get a few years ago and I felt a bit hard done by. Some time later I got talking to an industry colleague who had become a good friend and I found out he was the other finalist for that gig and he's a great and talented guy and I'm sure was the better choice for that piece of work. Turned out we had also been the final two for another gig which I got and he was grouchy about that one!
 
 ![Office Nico](/public/img/nico-office.jpeg)
 *Stressed but iconic.*
@@ -69,7 +69,7 @@ No one likes it when I say this! I actually go out of my way to make it clear I 
 
 ## So what do you actually do
 
-You see a job you want. Don't you dare apply for it! Instead, find out who you would be working with. The company is on LinkedIn, the team is on LinkedIn. The hiring manager is almost certainly on LinkedIn. Find them!
+You see a job you want. Don't you dare apply for it! Linkedin, find out who you would be working with. The company is on LinkedIn, the team is on Linkedin. The hiring manager is almost certainly on Linkedin. Find them!
 
 Now find the bridge person. Who do you know who knows someone there? You have more connections than you think and it only takes one and Linkedin will tell you who that is. A former colleague, a friend of a friend, someone you met at a conference three years ago. Find the common thread and use it to start a conversation.
 
@@ -77,7 +77,7 @@ Something like "Hey, you and I both worked with Liz, do you keep in touch with h
 
 I might well be that person for you and this role. Please feel free to pop me a message if so! Say to them "Hey, you and I both know Nico Boyce, did you work with him at X? Did he ever make you listen to his [terrible music](https://nicoboyce.com/essays/2025/04/22/releasing-music-for-drecks/)? He mentioned you were an expert in Y, I have been working as a junior Y..." and so on. The key phrases are "informal chat" and "life at *company*". You are not asking for a job. You are having a conversation. It might turn out it's not the thing for you but they know someone else. You might just make a friend! These are all good outcomes.
 
-Help them want you before they actually evaluate anyone. By the time the process catches up you're already the preferred candidate. Managers are human people who would rather work with someone they've had a nice chat with than a stranger from a spreadsheet, so you will beat someone of equivalent skills and experience who does through the application process properly.
+Help them want you before they actually evaluate anyone. By the time the process catches up you're already the preferred candidate. Managers are human people who would rather work with someone they've had a nice chat with than a stranger from a spreadsheet, so you will beat someone of equivalent skills and experience who does run through the application process properly.
 
 ## When they do ask for your CV
 
