@@ -17,7 +17,7 @@
 <polygon points="1080,1120 1266,1433 894,1433" fill="#eb7824" stroke="#eb7824" stroke-width="230" transform="translate(0 60)" />
 
 <!-- middle triangle inside delta -->
-<polygon points="1080,1120 1266,1433 894,1433" fill="#eb7824" stroke="#ffffff" stroke-width="100" transform="translate(0 60)" />
+<polygon points="1080,1120 1266,1453 894,1453" fill="#eb7824" stroke="#ffffff" stroke-width="100" transform="translate(0 60)" />
 
 <polygon points="1420,1540 740,1540 894,1640 1266,1640" fill="#eb7824" stroke="#000000" stroke-width="0" transform="translate(0 56)" />
 
