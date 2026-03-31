@@ -443,7 +443,8 @@ title: Crawl
       await wait(500);
     }
 
-    // Crawl
+    // Crawl — position offscreen before inserting text to prevent flash
+    crawlEl.style.top = (window.innerHeight + 50) + 'px';
     fadeTop.style.display = 'block';
     fadeBottom.style.display = 'block';
     crawlEl.innerHTML = formatBody(data.body);
