@@ -221,7 +221,7 @@ title: Crawl
   }
   #crawl-content {
     position: absolute;
-    bottom: -100vh;
+    top: 100%;
     left: 50%;
     width: 45vw;
     color: #ffe81f;
@@ -231,7 +231,7 @@ title: Crawl
     line-height: 1.7;
     text-align: justify;
     transform-origin: 50% 100%;
-    transform: translateX(-50%) rotateX(27deg) translateY(100vh);
+    transform: translateX(-50%) rotateX(27deg);
     opacity: 0;
   }
   #crawl-content p {
@@ -430,18 +430,17 @@ title: Crawl
       titleEl.classList.add('title-visible');
       await wait(4000);
       titleEl.style.display = 'none';
-      await wait(500);
     }
 
     // Crawl — insert text while still hidden (opacity: 0 in CSS)
+    // Element is at top: 100% so it sits right at the bottom edge
     crawlEl.innerHTML = formatBody(data.body);
     crawlFade.style.display = 'block';
 
     // rAF loop animating translateY within the rotated 3D space
     requestAnimationFrame(function() {
       var speed = 50; // px per second
-      var startY = 100; // vh units — start below viewport
-      var offset = startY;
+      var offset = 0; // start at bottom edge (top: 100% handles positioning)
       var lastTime = null;
       crawlEl.style.opacity = '1';
 
