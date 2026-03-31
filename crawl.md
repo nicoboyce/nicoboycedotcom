@@ -215,46 +215,38 @@ title: Crawl
   /* Crawl */
   #crawl-perspective {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    perspective: 300px;
-    perspective-origin: 50% 0;
+    inset: 0;
+    perspective: 500px;
     overflow: hidden;
   }
   #crawl-content {
     position: absolute;
-    left: 10%; right: 10%;
-    color: #f5c500;
+    bottom: -100vh;
+    left: 50%;
+    width: 45vw;
+    color: #ffe81f;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
     font-size: clamp(1.2rem, 3.5vw, 2rem);
     line-height: 1.7;
     text-align: justify;
     transform-origin: 50% 100%;
-    transform: rotateX(20deg);
-    text-shadow: 0 0 10px rgba(245, 197, 0, 0.15);
+    transform: translateX(-50%) rotateX(27deg) translateY(100vh);
+    opacity: 0;
   }
   #crawl-content p {
     margin-bottom: 1.4em;
   }
 
-  /* Fade overlays */
-  #fade-top {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    height: 25%;
-    background: linear-gradient(to bottom, #000 40%, transparent);
-    z-index: 2;
+  /* Fade overlay — sits inside the perspective container */
+  #crawl-fade {
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0;
+    height: 50vh;
+    background: linear-gradient(0deg, #000 0%, transparent 60%);
     pointer-events: none;
-    display: none;
-  }
-  #fade-bottom {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    height: 15%;
-    background: linear-gradient(to top, #000 20%, transparent);
     z-index: 2;
-    pointer-events: none;
     display: none;
   }
 
@@ -291,7 +283,7 @@ title: Crawl
 
   @media (max-width: 500px) {
     #creator { padding: 40px 16px 30px; }
-    #crawl-content { left: 8%; right: 8%; }
+    #crawl-content { width: 85vw; }
   }
 </style>
 
@@ -334,9 +326,8 @@ title: Crawl
   <div id="title-text"></div>
   <div id="crawl-perspective">
     <div id="crawl-content"></div>
+    <div id="crawl-fade"></div>
   </div>
-  <div id="fade-top"></div>
-  <div id="fade-bottom"></div>
 </div>
 
 <a id="create-own" href="/crawl">Create your own crawl</a>
@@ -410,8 +401,7 @@ title: Crawl
     var introEl = document.getElementById('intro-text');
     var titleEl = document.getElementById('title-text');
     var crawlEl = document.getElementById('crawl-content');
-    var fadeTop = document.getElementById('fade-top');
-    var fadeBottom = document.getElementById('fade-bottom');
+    var crawlFade = document.getElementById('crawl-fade');
     var createOwn = document.getElementById('create-own');
 
     document.body.classList.add('playback-mode');
@@ -443,35 +433,31 @@ title: Crawl
       await wait(500);
     }
 
-    // Crawl — position offscreen before inserting text to prevent flash
-    crawlEl.style.top = (window.innerHeight + 50) + 'px';
-    fadeTop.style.display = 'block';
-    fadeBottom.style.display = 'block';
+    // Crawl — insert text while still hidden (opacity: 0 in CSS)
     crawlEl.innerHTML = formatBody(data.body);
+    crawlFade.style.display = 'block';
 
-    // Use rAF loop so the crawl adapts to resize and scrolls smoothly
-    // from below the bottom edge
+    // rAF loop animating translateY within the rotated 3D space
     requestAnimationFrame(function() {
-      var textHeight = crawlEl.scrollHeight;
       var speed = 50; // px per second
-      var startY = window.innerHeight + 50; // start just below viewport
+      var startY = 100; // vh units — start below viewport
       var offset = startY;
       var lastTime = null;
-      var finished = false;
+      crawlEl.style.opacity = '1';
 
       function tick(timestamp) {
         if (!lastTime) lastTime = timestamp;
         var dt = (timestamp - lastTime) / 1000;
         lastTime = timestamp;
 
-        offset -= speed * dt;
+        // Convert speed from px/s to vh/s for consistent feel across screen sizes
+        var vhPerPx = 100 / window.innerHeight;
+        offset -= speed * vhPerPx * dt;
 
-        // Recalculate end point each frame (handles resize)
-        var endY = -(crawlEl.scrollHeight + 100);
-        crawlEl.style.top = offset + 'px';
+        crawlEl.style.transform = 'translateX(-50%) rotateX(27deg) translateY(' + offset + 'vh)';
 
-        if (offset < endY) {
-          finished = true;
+        // End when text has scrolled well past the top
+        if (offset < -220) {
           createOwn.style.display = 'block';
           requestAnimationFrame(function() {
             createOwn.style.opacity = '1';
@@ -530,10 +516,10 @@ title: Crawl
     introEl.style.display = '';
     titleEl.className = '';
     titleEl.style.display = '';
-    crawlEl.style.top = '';
+    crawlEl.style.transform = '';
+    crawlEl.style.opacity = '0';
     crawlEl.innerHTML = '';
-    document.getElementById('fade-top').style.display = 'none';
-    document.getElementById('fade-bottom').style.display = 'none';
+    document.getElementById('crawl-fade').style.display = 'none';
   }
 
   // --- Generate link ---
