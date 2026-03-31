@@ -216,14 +216,13 @@ title: Crawl
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    perspective: 400px;
+    perspective: 300px;
     perspective-origin: 50% 0;
     overflow: hidden;
   }
   #crawl-content {
     position: absolute;
-    left: 15%; right: 15%;
-    top: 100%;
+    left: 10%; right: 10%;
     color: #f5c500;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;
@@ -231,7 +230,7 @@ title: Crawl
     line-height: 1.7;
     text-align: justify;
     transform-origin: 50% 100%;
-    transform: rotateX(25deg);
+    transform: rotateX(20deg);
     text-shadow: 0 0 10px rgba(245, 197, 0, 0.15);
   }
   #crawl-content p {
@@ -448,33 +447,43 @@ title: Crawl
     fadeBottom.style.display = 'block';
     crawlEl.innerHTML = formatBody(data.body);
 
+    // Use rAF loop so the crawl adapts to resize and scrolls smoothly
+    // from below the bottom edge
     requestAnimationFrame(function() {
       var textHeight = crawlEl.scrollHeight;
-      var viewportHeight = window.innerHeight;
-      var totalTravel = viewportHeight + textHeight + 200;
-      var speed = 40;
-      var duration = Math.max(totalTravel / speed, 25);
+      var speed = 50; // px per second
+      var startY = window.innerHeight + 50; // start just below viewport
+      var offset = startY;
+      var lastTime = null;
+      var finished = false;
 
-      // Inject dynamic keyframes
-      var style = document.createElement('style');
-      style.textContent =
-        '@keyframes crawl {' +
-        '  from { transform: rotateX(25deg) translateY(0); }' +
-        '  to { transform: rotateX(25deg) translateY(-' + totalTravel + 'px); }' +
-        '}';
-      document.head.appendChild(style);
+      function tick(timestamp) {
+        if (!lastTime) lastTime = timestamp;
+        var dt = (timestamp - lastTime) / 1000;
+        lastTime = timestamp;
 
-      crawlEl.style.animation = 'crawl ' + duration + 's linear forwards';
+        offset -= speed * dt;
 
-      // Show "create your own" after crawl ends
-      setTimeout(function() {
-        createOwn.style.display = 'block';
-        requestAnimationFrame(function() {
-          createOwn.style.opacity = '1';
-        });
-      }, (duration + 1) * 1000);
+        // Recalculate end point each frame (handles resize)
+        var endY = -(crawlEl.scrollHeight + 100);
+        crawlEl.style.top = offset + 'px';
+
+        if (offset < endY) {
+          finished = true;
+          createOwn.style.display = 'block';
+          requestAnimationFrame(function() {
+            createOwn.style.opacity = '1';
+          });
+          return;
+        }
+        crawlAnimId = requestAnimationFrame(tick);
+      }
+
+      crawlAnimId = requestAnimationFrame(tick);
     });
   }
+
+  var crawlAnimId = null;
 
   // --- Preview mode ---
   var isPreview = false;
@@ -499,6 +508,10 @@ title: Crawl
 
   function stopPreview() {
     isPreview = false;
+    if (crawlAnimId) {
+      cancelAnimationFrame(crawlAnimId);
+      crawlAnimId = null;
+    }
     document.body.classList.remove('playback-mode');
     document.getElementById('playback').style.display = 'none';
     document.getElementById('creator').style.display = 'block';
@@ -515,7 +528,7 @@ title: Crawl
     introEl.style.display = '';
     titleEl.className = '';
     titleEl.style.display = '';
-    crawlEl.style.animation = '';
+    crawlEl.style.top = '';
     crawlEl.innerHTML = '';
     document.getElementById('fade-top').style.display = 'none';
     document.getElementById('fade-bottom').style.display = 'none';
