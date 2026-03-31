@@ -191,16 +191,17 @@ title: Crawl
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    color: #f5c500;
+    color: #000;
+    -webkit-text-stroke: 2px #f5c500;
+    paint-order: stroke fill;
     font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
-    font-size: clamp(3rem, 10vw, 7rem);
+    font-size: clamp(3rem, 12vw, 8rem);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    line-height: 1.1;
+    line-height: 0.95;
     opacity: 0;
     width: 90%;
-    text-shadow: 0 0 30px rgba(245, 197, 0, 0.3);
   }
   .title-visible {
     animation: title-fly 4s ease-in forwards;
@@ -435,7 +436,7 @@ title: Crawl
 
     // Title
     if (data.title) {
-      titleEl.textContent = data.title;
+      titleEl.innerHTML = escapeHtml(data.title).replace(/\s+/g, '<br>');
       titleEl.classList.add('title-visible');
       await wait(4000);
       titleEl.style.display = 'none';
