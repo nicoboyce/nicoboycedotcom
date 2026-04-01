@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /morning
+permalink: /morning/
 ---
 <!DOCTYPE html>
 <html lang="en">
