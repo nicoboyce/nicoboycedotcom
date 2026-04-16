@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Does every dog bark?"
-published: false
+published: true
 ---
 
 Don't ask me what I think about your pet. I am not interested. "Isn't she a beautiful girl?" you say. I don't know. You obviously feel that way. Do I have to agree with you?
