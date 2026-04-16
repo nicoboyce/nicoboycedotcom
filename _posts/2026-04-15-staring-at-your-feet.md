@@ -22,7 +22,7 @@ It's easy to be judgemental about other people's choices. I see so many British 
 
 Britain has only Lesotho for company in the club of countries with hereditary positions in the legislature. It has only Iran for company in the club of countries with lawmakers appointed by the state religion.
 
-Our relationship with the barons and dukes and the king and the archbishops is like that of the reality television viewer. It's a distant drama and a curiosity, but hardly a day to day issue except in a watercooler sense. People voted for Rylan but it had no consequence. We don't choose the lord or royals precisely because these things are important.
+Our relationship with the barons and dukes and the king and the archbishops is like that of the reality television viewer. It's a distant drama and a curiosity, but hardly a day to day issue except in a watercooler sense. People voted for Rylan but it had no consequence. We don't choose the lords or royals precisely because these things are important.
 
 America does clearly have a very bad head of state. You know how he got there? Americans elected him. The guy here in the UK got the job when his mother died. One of the features of being able to vote is that you are free to vote badly. Maybe it's just Boaty McBoatface all the way down.
 
