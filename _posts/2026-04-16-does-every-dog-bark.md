@@ -4,6 +4,8 @@ title: "Does every dog bark?"
 published: true
 ---
 
+*Not everyone loves this piece! My feeling is that this page of text is not exactly subtle use of imagery and makes it excessively clear there's no literal cat or real sandwich and it's about the way that information asymmetry is used to embed power imbalances in society. It's okay to have feelings and sometimes those feelings might be uncomfortable.*
+
 Don't ask me what I think about your pet. I am not interested. "Isn't she a beautiful girl?" you say. I don't know. You obviously feel that way. Do I have to agree with you?
 
 ![Hare.](/public/img/hare.jpg)
@@ -13,7 +15,7 @@ It's not that I don't like animals. We're fortunate to live in an area that has 
 
 *
 
-I keep myself to myself. Honestly the lockdown in 2020 was the time of my life. People who know me now know only what I choose for them to know. No I'm not making that sentence better.<!--excerpt-end--> It wasn't always this way. There was a period where I had a desperate need to be seen, to be looked at. The dog that chased the cats. Buried deep down there's the urge to be public and opinionated. I must be right and I must be loud, vicious and precise. For now I keep that animal restrained.
+I keep myself to myself. Honestly the lockdown in 2020 was the time of my life.<!--excerpt-end--> People who know me now know only what I choose for them to know. No I'm not making that sentence better. It wasn't always this way. There was a period where I had a desperate need to be seen, to be looked at. The dog that chased the cats. Buried deep down there's the urge to be public and opinionated. I must be right and I must be loud, vicious and precise. For now I keep that animal restrained.
 
 All the loudest voices are those who weaponise ignorance. Where are the socialist attack dogs? Sorry but kind and compassionate is never going to chase the fascist neanderthals back to their caves. It is my deep belief that someone needs to verbally rip these shouty white podcast bros to shreds and it's hard to resist the thought that it should be me. Could I achieve something, will I stand up and find it's too late?
 
