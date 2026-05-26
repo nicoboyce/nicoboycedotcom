@@ -7,4 +7,8 @@ permalink: 404.html
 <div class="page">
   <h1 class="page-title">404: Page not found</h1>
   <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.baseurl }}">Head back home</a> to try finding it again.</p>
+
+  {% assign latest_post = site.posts | first %}
+  {% assign latest_snap = site.categories.snaps | first %}
+  <p>Or maybe you want the latest post, <a href="{{ latest_post.url }}">{{ latest_post.title }}</a>{% if latest_snap and latest_snap.url != latest_post.url %}, or to see <a href="{{ latest_snap.url }}">some photos</a>{% endif %}?</p>
 </div>
