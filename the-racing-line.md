@@ -45,6 +45,6 @@ By the end, will you be able to walk into a shop, a meeting, a restaurant, or a 
 ![Photographers gathered at the fence of a motorsport circuit, karts visible on the track beyond.](/public/img/the-racing-line/trackside.jpg)
 *Trackside.*
 
-A lot of this thinking grew out of running [Deltastring](https://deltastring.com), where I spend my weekdays working out why systems aren't doing what they should. But it's broader than work. It's how I look at race tracks, art installations, instruments, kitchens, the route my son takes to school. Once you start seeing the layers it's hard to stop.
+A lot of this thinking grew out of running [Deltastring](https://deltastring.com), where I spend my weekdays working out why systems aren't doing what they should.
 
 *I think this is really great and you'll love it too. [Be in the loop here](https://deltastring.com/the-racing-line/).*
