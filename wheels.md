@@ -1,6 +1,5 @@
 ---
 layout: page
-nav: Wheels
 title: Automotive, motorsport, sometimes biking and skating and such
 ---
 

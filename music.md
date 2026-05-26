@@ -1,6 +1,5 @@
 ---
 layout: page
-nav: Music
 title: Music or just noise
 ---
 

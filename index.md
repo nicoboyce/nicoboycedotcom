@@ -16,19 +16,14 @@ This is my old fashioned personal website where I publish creative things. It's 
 ## New and sexy things
 
 * My latest essay is here: {% assign post = site.posts | where_exp: "item", "item.categories.size == 0" | first %}<a href="{{ post.url }}">{{ post.title }}</a>
-* Latest snaps: {% assign snap = site.posts | where_exp: "item", "item.categories contains 'snaps'" | first %}<a href="{{ snap.url }}">{{ snap.title }}</a> or see all on the [snaps page](/snaps) or on my [pixelfed](https://pixelfed.social/beastie).
+* Latest snaps: {% assign snap = site.posts | where_exp: "item", "item.categories contains 'snaps'" | first %}<a href="{{ snap.url }}">{{ snap.title }}</a> or see all on the [snaps page](/snaps/) or on my [pixelfed](https://pixelfed.social/beastie).
 * Music chatter is [here](/music/)
 * Car photos and chat is [here](/wheels/).
-* New album out now: go [here](https://fightingmongooses.bandcamp.com/) and buy it.
+* Latest release is [Instrumental Driving Music for Drecks](https://fightingmongooses.bandcamp.com/) — Drecks 2 and Workshy are on the way.
 
 <iframe style="border: 0; width: 400px; height: 737px;" src="https://bandcamp.com/EmbeddedPlayer/album=2664333807/size=large/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/album/instrumental-driving-music-for-drecks">instrumental driving music for drecks by The Fighting Mongooses</a></iframe>
 
 It is the first release on my new label **hyperdoom**
-
-![hyperdoom](/public/img/hyperdoom_logo.svg)
-*hyperdoom*
-
-or maybe
 
 ![hyperdoom](/public/img/hyperdoom.gif)
 *hyperdoom*

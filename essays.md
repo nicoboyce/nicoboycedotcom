@@ -1,6 +1,5 @@
 ---
 layout: page
-nav: Essays
 title: Essays
 ---
 

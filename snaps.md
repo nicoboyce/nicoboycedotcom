@@ -1,6 +1,5 @@
 ---
 layout: page
-nav: Life
 title: Snaps and splats gallery
 ---
 

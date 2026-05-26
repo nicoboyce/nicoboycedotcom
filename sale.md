@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Gear for sale
+published: false
 ---
 
 # Buy some stuff, fund me buying more stuff

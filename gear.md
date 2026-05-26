@@ -1,6 +1,5 @@
 ---
 layout: page
-nav: Gear
 title: Creative Gear
 ---
 
@@ -12,7 +11,7 @@ There is some crossover between different facets of my work, but I've broadly gr
 
 ### Photography and video
 
-My main camera is a Fujifilm X-H2. It's a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder but that's the future, eh? It isn't great for motorsport panning shots, whatever I do with the settings. We've now also got an X-S20 which does most of what the X-H2 can but the reduced size and weight are often useful.
+My current workhorse is a Fujifilm X-S20 — small, light, and excellent for video. I used to have an X-H2, a lovely thing to handle with an impossibly detailed sensor and the colours of your most exciting dreams. If only it had a real viewfinder, but that's the future, eh? I never quite got it to nail motorsport panning, whatever I tried. It's gone now and I'm holding out for an X-H3 announcement; meanwhile the X-S20 does most of what the X-H2 did anyway.
 
 ![Filming.](/public/cam.jpg)
 *Filming.*
@@ -21,7 +20,7 @@ Sigma zooms and Viltrox primes are my choices in the Fuji system. The little Fuj
 
 I traded in a Sigma 18-50mm for the 16-300 and it's totally nuts.
 
-Previously I used a pair of Nikon DLSRs, specifically the D3300 and the D300S. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. It's still skill and time rather than gear which limits my pictures.
+Alongside the Fuji I'm using a pair of Nikon DSLRs again — the D3300 has cycled back into regular use, and the D300S is still around. For me it often makes sense to be a bit behind the curve. If you always use the latest and greatest then photography can be very expensive indeed. It's still skill and time rather than gear which limits my pictures.
 
 These are equipped with a range of Nikkor lenses. Most of my shots I use the Nikon AF-P DX 70-300mm f/4.5-6.3G ED VR. Telezooms always have a Hoya rotating polarising filter on the end.
 
@@ -36,7 +35,7 @@ Akaso action cameras are my choice for the price to performance ratio. Got a big
 
 I organise my images with [Darktable](https://www.darktable.org/) and store them on a DIY NAS.
 
-Recently I have been taking pictures on a Nikon F-601. I'm using Fuji 200 ISO film. I'll show off the pictures some time soon.
+I shoot a lot of 35mm on a Nikon F-601. Ektar is my favourite so far but I'm working through the other films to see what I like. There are examples in the [Italy '26 post](/snaps/2026/03/03/italy-26/).
 
 ![35mm time.](/public/f601.jpg)
 *35mm time.*
@@ -47,7 +46,7 @@ A bunch of our accessories are from K&F, including straps and filters. My stuff 
 
 The Ibanez Upswing (UB804) probably gets the most play at the moment. Other basses I play are the Ibanez ATK400, Ibanez AGB140, Maverick B-1 (rewired passive, bridge pickup only, direct to jack) and a Mania VTB-5BS. My strings of choice are LaBella Deep Talkin' flats (UB, AGB) and d'Addario nickel roundwounds for everything else.
 
-~~Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I'll own another Warwick. Maybe an FNA.~~ I did buy another one of these and we haven't quite clicked. I don't know why. [Now it's for sale!](https://nicoboyce.com/sale/)
+~~Everyone has that one instrument they regret selling, and for me that is a German Warwick Corvette fretless. One day I'll own another Warwick. Maybe an FNA.~~ I did buy another one of these and we never quite clicked. Now sold on.
 
 ![One corner of the studio.](/public/img/studio.jpg)
 *One corner of the studio.*
@@ -72,15 +71,15 @@ I'm not an expert in microphones but I like the sound of my Audio Technica pair.
 ![Recording gear in action.](/public/img/recording.jpeg)
 *Recording gear in action.*
 
-I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AGK K92 cans and mixing is on KRK 8s or Beyerdynamics DT770 pro.
+I play a Novation Mininova for both synthesis and MIDI control. Some drum loops are assembled on a Teenage Engineering Tonic. Monitoring is done with some AKG K92 cans and mixing is on KRK 8s or Beyerdynamics DT770 pro.
 
 ### Art supplies
 
-Currently I have paints in stock from Flame, Montana, Molotow, maybe some others. I get through a lot of masking tape and I get wooden panels mainly from Jewsons. I've built a sort of easel from old palattes and have a few tricks and secrets which will remain so for now!
+Currently I have paints in stock from Flame, Montana, Molotow, maybe some others. I get through a lot of masking tape and I get wooden panels mainly from Jewsons. I've built a sort of easel from old pallets and have a few tricks and secrets which will remain so for now!
 
 ### Outside
 
-We have developed a pretty serious camping setup. The tent was a great purchase, it's a Ventura and I would buy the same again if it needed to be replaced for some reason. It's the deluxe extended version and we've got the detatchable annex for when we need the additional space. When we do use that, usually we hang an inner tent and pop an additional bed in that section behind the ladder.
+We have developed a pretty serious camping setup. The tent was a great purchase, it's a Ventura and I would buy the same again if it needed to be replaced for some reason. It's the deluxe extended version and we've got the detachable annex for when we need the additional space. When we do use that, usually we hang an inner tent and pop an additional bed in that section behind the ladder.
 
 ![Tent on the car.](/public/img/camp.jpeg)
 *The car tent, fully deployed.*
