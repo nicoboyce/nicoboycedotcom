@@ -1,6 +1,6 @@
 ---
 layout: blank
-title: Flickbook Demo
+title: Breakfast parade
 ---
 
 <style>
