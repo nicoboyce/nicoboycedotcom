@@ -1,6 +1,5 @@
 ---
 layout: page
-nav: About
 title: Who is this Nico anyway?
 ---
 
