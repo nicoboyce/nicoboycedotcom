@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/book.css">
+
+  <body id="page-top" class="book-standalone">
+    <a href="#main-content" class="skip-nav-link">Skip to main content</a>
+
+    <nav class="book-nav" aria-label="Book primary navigation">
+      <div class="book-nav-inner">
+        <a href="/" class="book-nav-brand" aria-label="nicoboyce.com home">nicoboyce.com</a>
+        <a href="{{ page.register_interest_link }}" class="book-nav-cta">Register interest</a>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    <footer class="book-footer">
+      <div class="book-footer-inner">
+        <p>A book by <a href="/about/">Nico B. Boyce</a>. &copy; {{ 'now' | date: '%Y' }}.</p>
+        <p><a href="/">Back to nicoboyce.com</a> &middot; <a href="mailto:{{ site.email }}">Contact</a></p>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+        if (link.hostname !== window.location.hostname) {
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
+    </script>
+  </body>
+</html>
