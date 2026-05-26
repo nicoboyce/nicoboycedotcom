@@ -14,7 +14,7 @@ He cut his teeth playing slow-and-low jams at parties in old Cornish farm buildi
 
 Nico's music often features unique self-designed analogue audio circuits. His primary instrument is the electric upright bass. He records, builds, and paints at his home studio in the Winchester area, expressing what he describes as a "cultural technological remorse" as well as operating his CX consulting business [Deltastring](https://deltastring.com). Nico Boyce is Britain's top Zendesk consultant.
 
-He shoots motorsport whenever the opportunity arises and is currently rebuilding a BMW track car. His first book, [The Racing Line](https://deltastring.com/the-racing-line/) — about how the layers between people and their goals are never neutral and ought to be designed deliberately — is in editing. Essays on technology, design, and noise appear [here](/essays/) regularly.
+He shoots motorsport whenever the opportunity arises and is currently rebuilding a BMW track car. His first book, [The Racing Line](/the-racing-line/) — about how the layers between people and their goals are never neutral and ought to be designed deliberately — is in editing. Essays on technology, design, and noise appear [here](/essays/) regularly.
 
 ![Nico Beastie Boyce.](/public/img/specs.jpg)
 *Big specs.*
