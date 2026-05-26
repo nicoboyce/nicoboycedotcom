@@ -223,7 +223,7 @@ title: Crawl
     position: absolute;
     top: 100%;
     left: 50%;
-    width: 45vw;
+    width: 70vw;
     color: #ffe81f;
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-weight: 700;

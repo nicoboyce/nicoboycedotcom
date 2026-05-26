@@ -90,7 +90,7 @@ Black Mekon
 ### Folk, acoustic, songwriter
 
 Get Cape, Wear Cape, Fly
-KT Tunstell
+KT Tunstall
 Isobel Campbell and Mark Lanegan
 Ray Davies
 Soft Lad
