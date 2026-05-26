@@ -28,25 +28,17 @@ Building systems that let friction do the work.
 
 We are forever plodding along the winding paths of frustrating and inefficient systems. We tolerate these bad experiences because they stand between need and outcome. I'm talking about airport security, trying to get through to a person when you call the bank, filling out a job application, the unavoidable processes that seem designed to make us angry. The truth is far worse. They were designed by accident.
 
-The book is about designing with intention. It means thinking about how things happen, not just what they are. It's about understanding where to deploy friction and how to engineer experiences.
+The book is about designing with intention. It means thinking about how things happen, not just what they are. It's about understanding where to deploy friction and how to engineer experiences. Are you trying to cut the corner, or to maintain momentum?
 
 Some processes were designed on purpose. Most just grew step by step, one workaround on top of the last, until the workarounds became the process.
 
 The way things happen is part of the outcome. The hour between deciding to renew a passport and finishing the form is part of having a passport. The minutes between wanting a coffee and drinking one are part of the coffee.
 
-The metaphor I keep coming back to is the racing line. To carry speed through a corner you don't fight friction. You ride the line the friction already wants you to take. The work isn't a contest with the world. It's noticing how the world wants to flow and choosing where you sit on that line.
-
-Sometimes good design disappears. A door just opens. A form asks only for what it needs. A bus stays out of your awareness. Sometimes good design uses friction on purpose. A queue gives you time to think. A menu nudges you toward the dish the chef is proud of. A gallery makes you walk a particular path. Neither approach is virtuous or failed. They are dimensions, and the work is choosing where to sit on each one.
-
-It's a book for when you're making something for someone else, whether that's a meal, a route, a room, a set of instructions, or a website. You realise you're designing the experience whether you mean to or not. The book is about catching that moment.
-
-We're increasingly handing those choices to defaults. The question "what is this layer doing on my behalf, and is that what I wanted?" stops being a luxury and becomes basic literacy.
-
 ## Who it's for
 
-It's for anyone who shapes how other people experience something. That includes hosts and chefs, teachers and tour guides, civic planners, parents organising a birthday, and anyone who has been told "you'll figure it out" by a system that wasn't trying to help.
+If you're tired of everything we have to do feeling disjointed and brittle, you'll enjoy agreeing with me on the diagnosis. If you yourself shape processes the rest of us must navigate, you'll gain a great reference of examples and counterexamples perfect for justifying whatever it is you wanted to do anyway.
 
-By the end you shouldn't be able to walk into a shop, a website, a meeting, or a waiting room without asking. Was this designed on purpose? Does it work this way for reasons? Could the experience be better?
+By the end, will you be able to walk into a shop, a meeting, a restaurant, or a waiting room without questioning everything? "Was this designed on purpose? Is there a reason this seems to make no sense?"
 
 ## Where this comes from
 
