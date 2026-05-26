@@ -47,6 +47,4 @@ By the end, will you be able to walk into a shop, a meeting, a restaurant, or a 
 
 A lot of this thinking grew out of running [Deltastring](https://deltastring.com), where I spend my weekdays working out why systems aren't doing what they should. But it's broader than work. It's how I look at race tracks, art installations, instruments, kitchens, the route my son takes to school. Once you start seeing the layers it's hard to stop.
 
-## Be first to read it
-
-The book is with the editors. [Register your interest](https://deltastring.com/the-racing-line/) and you'll be first to hear when it's ready.
+*I think this is really great and you'll love it too. [Be in the loop here](https://deltastring.com/the-racing-line/).*

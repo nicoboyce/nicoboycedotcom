@@ -8,6 +8,7 @@ Thumbs.db
 *~
 CLAUDE.md
 C_*
+.claude/settings.local.json
 estimation-tool-plan.md
 
 # Build scripts and temporary files
