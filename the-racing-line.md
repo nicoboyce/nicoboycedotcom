@@ -12,7 +12,7 @@ description: "The Racing Line by Nico B. Boyce: building systems that let fricti
       <div class="book-mockup-pages"></div>
       <div class="book-mockup-spine"></div>
       <div class="book-mockup-cover">
-        <img src="/public/img/the-racing-line/cover.jpg" alt="The Racing Line — book cover">
+        <img src="/public/img/the-racing-line/cover.jpg" alt="The Racing Line book cover">
       </div>
     </div>
   </div>
@@ -20,33 +20,41 @@ description: "The Racing Line by Nico B. Boyce: building systems that let fricti
 
 # The Racing Line
 
-*Building systems that let friction do the work.*
+Building systems that let friction do the work.
 
-The book is with the editors. If you want to know when it's out — and get early-reader access if you're quick — [register your interest over on Deltastring](https://deltastring.com/the-racing-line/).
+*Yes I have written a book and it will be published soon! [Register your interest over on Deltastring](https://deltastring.com/the-racing-line/).*
 
 ## What it's about
 
-I've been thinking for a long time about the layer between people and the things they're trying to do. The form. The queue. The metric. The menu. The road sign. The hiring round. The keyboard. The support ticket. That layer is never neutral. You can choose it on purpose or inherit it by accident, but it's always there.
+We are forever plodding along the winding paths of frustrating and inefficient systems. We tolerate these bad experiences because they stand between need and outcome. I'm talking about airport security, trying to get through to a person when you call the bank, filling out a job application, the unavoidable processes that seem designed to make us angry. The truth is far worse. They were designed by accident.
 
-The book is about designing that layer deliberately. The metaphor is the racing line: carrying speed on a track isn't about fighting friction, it's about riding the line the friction already wants you to take. The same lens applies to software, physical products, processes, institutions — anywhere a human meets a system.
+The book is about designing with intention. It means thinking about how things happen, not just what they are. It's about understanding where to deploy friction and how to engineer experiences.
 
-It isn't a book about which choice is right. Sometimes the right move is to disappear into the background. Sometimes it's to use deliberate friction to shape the choices people make. Sometimes the texture of using the thing is the product itself. None of those is virtuous or failed. They're dimensions, and the work is choosing where you sit on each one, on purpose.
+Some processes were designed on purpose. Most just grew step by step, one workaround on top of the last, until the workarounds became the process.
 
-The timing feels important to me. We're increasingly handing the layer to defaults, and the question *"what is this layer doing on my behalf, and is that what I wanted?"* stops being a luxury and becomes basic literacy.
+The way things happen is part of the outcome. The hour between deciding to renew a passport and finishing the form is part of having a passport. The minutes between wanting a coffee and drinking one are part of the coffee.
+
+The metaphor I keep coming back to is the racing line. To carry speed through a corner you don't fight friction. You ride the line the friction already wants you to take. The work isn't a contest with the world. It's noticing how the world wants to flow and choosing where you sit on that line.
+
+Sometimes good design disappears. A door just opens. A form asks only for what it needs. A bus stays out of your awareness. Sometimes good design uses friction on purpose. A queue gives you time to think. A menu nudges you toward the dish the chef is proud of. A gallery makes you walk a particular path. Neither approach is virtuous or failed. They are dimensions, and the work is choosing where to sit on each one.
+
+It's a book for when you're making something for someone else, whether that's a meal, a route, a room, a set of instructions, or a website. You realise you're designing the experience whether you mean to or not. The book is about catching that moment.
+
+We're increasingly handing those choices to defaults. The question "what is this layer doing on my behalf, and is that what I wanted?" stops being a luxury and becomes basic literacy.
 
 ## Who it's for
 
-People who design processes, build products, run hiring rounds, lead support teams, set metrics, or otherwise ship the layers other people live inside. Also everyone who lives inside layers other people chose and would like to start seeing the choices.
+It's for anyone who shapes how other people experience something. That includes hosts and chefs, teachers and tour guides, civic planners, parents organising a birthday, and anyone who has been told "you'll figure it out" by a system that wasn't trying to help.
 
-By the end of it you shouldn't be able to walk into a shop, a website, a meeting, or a waiting room without asking: was this designed with intention? Does it work this way for reasons? Are the goals being achieved? Or is there a better racing line through it?
+By the end you shouldn't be able to walk into a shop, a website, a meeting, or a waiting room without asking. Was this designed on purpose? Does it work this way for reasons? Could the experience be better?
 
 ## Where this comes from
 
 ![Photographers gathered at the fence of a motorsport circuit, karts visible on the track beyond.](/public/img/the-racing-line/trackside.jpg)
 *Trackside.*
 
-A lot of this thinking grew out of running [Deltastring](https://deltastring.com), the business ops consultancy where I spend my weekdays. But it's broader than work. It's how I look at race tracks, art installations, instruments, kitchens, the route my son takes to school. Once you start seeing the layers it's hard to stop.
+A lot of this thinking grew out of running [Deltastring](https://deltastring.com), where I spend my weekdays working out why systems aren't doing what they should. But it's broader than work. It's how I look at race tracks, art installations, instruments, kitchens, the route my son takes to school. Once you start seeing the layers it's hard to stop.
 
 ## Be first to read it
 
-[Register your interest](https://deltastring.com/the-racing-line/) and you'll be first to hear when it's ready.
+The book is with the editors. [Register your interest](https://deltastring.com/the-racing-line/) and you'll be first to hear when it's ready.
