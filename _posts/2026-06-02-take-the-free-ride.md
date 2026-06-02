@@ -9,7 +9,7 @@ Despite the fact that [I hate AI](https://deltastring.com/2024/09/27/yes-i-hate-
 
 On the other hand, building a business as a layer on top of Claude (or whichever is your preferred LLM flavour) is a terrible strategy and I say "thanks but no thanks" to any of these tools.
 
-We're all adults here. We know the playbook! Uber took a fat stack of VC money and ran services at a loss until they were the only game in town and then jacked up the prices. We all had a bunch of free rides, right? Paypal literally gave everyone a tenner the first time they used it. Remember that? Graze sent everyone a box of cashews.
+We're all adults here. We know the playbook! Uber took a fat stack of VC money and ran services at a loss until they were the only game in town and then jacked up the prices. We all had a bunch of free rides, right? Paypal literally gave everyone a tenner the first time they used it. Remember that? Graze gave everybody a box of cashews. Yum!
 
 Seems like a great deal. Have the ride, take the tenner, eat the nuts! But here's what you should not have done. You definitely should not build a business that relies on the free rides from Uber.
 
