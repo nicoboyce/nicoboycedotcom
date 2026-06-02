@@ -16,7 +16,7 @@ Seems like a great deal. Have the ride, take the tenner, eat the nuts! But here'
 You couldn't run your own business using the Uber free rides because you must realise they won't last forever and you need to have a solution in place for getting stuff and people relocated in an affordable way. You couldn't rely on free nuts from Graze if you were starting a salad bar. Can you put cashews in a salad? I actually have no idea.
 
 ![Driving.](/public/img/cars/driving.jpg)
-*[I don't use Uber now my track car is road-legal.](/wheels/2024/09/01/e30-m25-birthday-present/)*
+*I don't use Uber now [my track car](/wheels/2024/09/01/e30-m25-birthday-present/) is road-legal.*
 
 You definitely could not provide a subscription service built on free rides from Uber. Your pitch to customers: we'll bring you this thing once a week. Here's a discount for paying for a year in advance! Then the free rides end. Now your subscription business is under water. You've already taken the cash and promised the services.
 
