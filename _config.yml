@@ -31,6 +31,7 @@ exclude:
   - estimation-tool-plan.md
   - _posts/_drafts/
   - _site
+  - outside
 
 # github:
 #   repo:           https://github.com/poole/hyde
