@@ -7,21 +7,6 @@ I get to race events, car shows, museums and informal meets very often. This yea
 
 <!--excerpt-end-->
 
-## Work with the light
-
-If there's a heavy shadow the cars dip into and pop out of, that's a great place to snap at the brightest time of day. If there are very exposed spots, shoot those at the start and end of the day. You don't want to shoot directly into the sun, and you don't want the sun directly behind you either, because it makes everything flat and dull. Get yourself at a good angle to the light so you can use the shadows to give things depth, bring out the shapes, and make the cars look super close to each other.
-
-![A car in strong light at Prescott.](/public/img/cars/prescott-25-0.jpeg)
-*Prescott, light doing all the work.*
-
-![A Mitsubishi at Prescott.](/public/img/cars/prescott-mitsubishi.jpeg)
-*The same light, put to use. The shadow emphasises the Evo bodywork.*
-
-It doesn't always go your way. This is one of my favourite photos, but the light here is poor and nearly kills it. It makes the scene so flat, and I've let the shutter run slightly too long. The shot is made by the extreme contrast of the yellow and black parts of the car. I shot this from the back door of the infield clubhouse at Thruxton.
-
-![A yellow and black car, panned.](/public/img/cars/warp.jpeg)
-*Flat light, shutter held too long, saved by the yellow and black.*
-
 ## The paddock
 
 The paddock is one of the best places to take photos. You can get right up to the cars, depending on the event, and you can see the human side of it as drivers and mechanics try to find solutions to problems against the clock. At the start of the weekend the cars are all freshly wrapped or painted, polished and gleaming, as pristine as racing cars get. I always think they look like opening a new tin of Quality Street. That's a great time to get close. Then at the end, when they're scarred and dirty, beaten up and splattered with oil, that's exciting too!
@@ -105,3 +90,26 @@ And if you want to be really bold, take a film camera to the track! Be prepared 
 
 ![A Swift on film.](/public/img/lydden-easter-26/swift.jpeg)
 *Worth the duds.*
+
+## Work with the light
+
+If there's a heavy shadow the cars dip into and pop out of, that's a great place to snap at the brightest time of day. If there are very exposed spots, shoot those at the start and end of the day. You don't want to shoot directly into the sun, and you don't want the sun directly behind you either, because it makes everything flat and dull. Get yourself at a good angle to the light so you can use the shadows to give things depth, bring out the shapes, and make the cars look super close to each other.
+
+Here are two cars parked next to each other in the same pit lane. The sky changed and the light moved between the two photos. One is exciting and the other is dull.
+
+![An RS200 under a flat grey sky.](/public/img/lydden-easter-26/rs200-pits.jpeg)
+*Flat white sky, and the car falls dead.*
+
+![A Quattro under blue sky and hard sun.](/public/img/lydden-easter-26/quattro-pits.jpeg)
+*Same pit lane, the sun out, and it comes alive.*
+
+![A car in strong light at Prescott.](/public/img/cars/prescott-25-0.jpeg)
+*Prescott, light doing all the work.*
+
+![A Mitsubishi at Prescott.](/public/img/cars/prescott-mitsubishi.jpeg)
+*The same light, put to use. The shadow emphasises the Evo bodywork.*
+
+It doesn't always go your way. This is one of my favourite photos, but the light here is poor and nearly kills it. It makes the scene so flat, and I've let the shutter run slightly too long. The shot is made by the extreme contrast of the yellow and black parts of the car. I shot this from the back door of the infield clubhouse at Thruxton.
+
+![A yellow and black car, panned.](/public/img/cars/warp.jpeg)
+*Flat light, shutter held too long, saved by the yellow and black.*
