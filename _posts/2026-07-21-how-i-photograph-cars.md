@@ -64,6 +64,9 @@ On the D3300 I use basically two settings. Aperture priority, set to the brighte
 ![A launch off the line.](/public/img/cars/launch.jpeg)
 *A launch, frozen sharp.*
 
+![A crosscar frozen on the hill at Lydden.](/public/img/lydden-easter-26/crosscars-hill.jpeg)
+*Frozen on the hill, aperture priority.*
+
 ![Bennett launching.](/public/img/cars/lh-bennett-launch.jpeg)
 *A pan, but much faster than I'd usually go.*
 
