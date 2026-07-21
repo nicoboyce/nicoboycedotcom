@@ -86,19 +86,6 @@ It's simple. Choose a point on the car and set the focus to single point. Put th
 ![Following a car through a corner.](/public/img/cars/peeking.jpeg)
 *Following the car through.*
 
-## If you're feeling bold
-
-And if you want to be really bold, take a film camera to the track! Be prepared for a lot of duds, though. Not for the faint-hearted or the budget shooter.
-
-![A crosscar jumping, on film.](/public/img/lydden-easter-26/crosscars-jump.jpeg)
-*Film, at the track. When it works.*
-
-![A Peugeot flying, on film.](/public/img/lydden-easter-26/pug-flies.jpg)
-*Film again.*
-
-![A Swift on film.](/public/img/lydden-easter-26/swift.jpeg)
-*Worth the duds.*
-
 ## Work with the light
 
 If there's a heavy shadow the cars dip into and pop out of, that's a great place to snap at the brightest time of day. If there are very exposed spots, shoot those at the start and end of the day. You don't want to shoot directly into the sun, and you don't want the sun directly behind you either, because it makes everything flat and dull. Get yourself at a good angle to the light so you can use the shadows to give things depth, bring out the shapes, and make the cars look super close to each other.
@@ -121,3 +108,16 @@ It doesn't always go your way. This is one of my favourite photos, but the light
 
 ![A yellow and black car, panned.](/public/img/cars/warp.jpeg)
 *Flat light, shutter held too long, saved by the yellow and black.*
+
+## If you're feeling bold
+
+And if you want to be really bold, take a film camera to the track! Be prepared for a lot of duds, though. Not for the faint-hearted or the budget shooter.
+
+![A crosscar jumping, on film.](/public/img/lydden-easter-26/crosscars-jump.jpeg)
+*Film, at the track. When it works.*
+
+![A Peugeot flying, on film.](/public/img/lydden-easter-26/pug-flies.jpg)
+*Film again.*
+
+![A Swift on film.](/public/img/lydden-easter-26/swift.jpeg)
+*Worth the duds.*
