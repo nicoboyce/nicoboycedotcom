@@ -104,6 +104,9 @@ Here are two cars parked next to each other in the same pit lane. The sky change
 ![A Mitsubishi at Prescott.](/public/img/cars/prescott-mitsubishi.jpeg)
 *The same light, put to use. The shadow emphasises the Evo bodywork.*
 
+![An orange single seater in dappled light at Prescott.](/public/img/cars/shadows.jpg)
+*The same corner again, the car sitting in a pool of light through the trees.*
+
 It doesn't always go your way. This is one of my favourite photos, but the light here is poor and nearly kills it. It makes the scene so flat, and I've let the shutter run slightly too long. The shot is made by the extreme contrast of the yellow and black parts of the car. I shot this from the back door of the infield clubhouse at Thruxton.
 
 ![A yellow and black car, panned.](/public/img/cars/warp.jpeg)
