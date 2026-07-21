@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "How I photograph cars"
-categories: wheels
 ---
 
 I get to race events, car shows, museums and informal meets very often. This year has been a slower one for my car photography, but I've still been to the Pagani factory, the Ferrari museum, Lydden Hill, Fiorano, and maybe ten trips to Caffeine & Machine. I photograph a lot of cars. I like to get a big range! The British Truck Racing Championship brings out the big rigs, and the soapbox race every Easter at Lydden dishes up some coffin sized constructions. When you're shooting at the track you always have to be thinking about the weather and the light, especially here in England. You need a portable bag of toys that can cover plenty of scenarios. Here's what works for me.
