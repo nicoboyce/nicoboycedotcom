@@ -19,19 +19,27 @@ For these shots I want an ultrawide lens on a mirrorless body, currently the Fuj
 ![Flat panels with reflections killed.](/public/img/cars/prescott-25-5.jpeg)
 *A CPL killing the reflections from the flat panels.*
 
-![An Evo in a car park.](/public/img/cars/evo.jpeg)
-*No CPL this time, so the reflections were a fight. Still a great looking car.*
+![A Porsche in the Prescott paddock.](/public/img/cars/prescott-porsche.jpeg)
+*Close and low in the paddock.*
+
+![Subarus lined up at Prescott.](/public/img/cars/prescott-subarus.jpeg)
+*Get low and let them line up.*
 
 ![A dirty Evo after a race at Lydden.](/public/img/lydden-easter-26/evo.jpeg)
 *The other end of the weekend: scarred, dirty, done.*
 
-You can get near enough with a phone too, if you're prepared to get down low and work with the light.
+## On the street
 
-![A JDM car shot low.](/public/img/cars/jdm.jpeg)
-*This one's a phone, down low.*
+The same technique works away from the track. Spot a good car parked up, get down low, twist out the reflections and work the light. You can get near enough with a phone, too, if you're prepared.
 
-![A Volvo shot low.](/public/img/volvo.jpeg)
-*Also a phone. Get low, work the light.*
+![An Evo on the street.](/public/img/cars/evo.jpeg)
+*No CPL this time, so the reflections were a fight. Still a great looking car.*
+
+![A Volvo on the street.](/public/img/volvo.jpeg)
+*Down low again. A phone will do it.*
+
+![An Accord Type R on the street.](/public/img/cars/jdm.jpeg)
+*The Accord Type R, on the phone, down low.*
 
 ## Common mistakes
 
