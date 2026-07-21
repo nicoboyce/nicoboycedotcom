@@ -57,7 +57,7 @@ On the D3300 I use basically two settings. Aperture priority, set to the brighte
 *A launch, frozen sharp.*
 
 ![Bennett launching.](/public/img/cars/lh-bennett-launch.jpeg)
-*Another one to freeze.*
+*A pan, but much faster than I'd usually go.*
 
 The more important setting is shutter priority, which I'll adjust through the day as I move from corner to corner. The purpose here is to pan with the cars and keep them still as the track seems to move around them. Why do you do this? When you watch a race, your eyes follow the cars. You don't defocus and keep your eyes stationary as the racers zip past. Keeping the track still and blurring out the cars is a rookie mistake when shooting action.
 
