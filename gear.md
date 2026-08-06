@@ -5,9 +5,14 @@ title: Creative Gear
 
 # What do I use for what?
 
-Gear isn't where the creativity comes from, but it sure does help draw it out.
+Gear isn't where the creativity comes from, but it's hard to get stuff done without it.
 
-There is some crossover between different facets of my work, but I've broadly grouped things as feels logical.
+There's some notes about my office on the Deltastring site [over here](https://deltastring.com/2026/04/14/nicos-office-tour/).
+
+![Nico's office.](/public/img/nicos-office.jpg)
+*Nico's office.*
+
+Here's what does what at the moment:
 
 ### Photography and video
 
@@ -35,7 +40,7 @@ Akaso action cameras are my choice for the price to performance ratio. Got a big
 
 I organise my images with [Darktable](https://www.darktable.org/) and store them on a DIY NAS.
 
-I shoot a lot of 35mm on a Nikon F-601. Ektar is my favourite so far but I'm working through the other films to see what I like. There are examples in the [Italy '26 post](/snaps/2026/03/03/italy-26/).
+Increasingly I shoot a lot of 35mm on a Nikon F-601. Ektar is my favourite so far but I'm working through other films to see what I like. There are examples in the [Italy '26 post](/snaps/2026/03/03/italy-26/) or in these car snaps [here](https://nicoboyce.com/2026/07/21/how-i-photograph-cars/). These were all taken with a 70-300mm zoom but now I've picked up a 50mm f/1.4.
 
 ![35mm time.](/public/f601.jpg)
 *35mm time.*
@@ -55,7 +60,7 @@ For many years I used Ashdown amplifiers, first a MAG 400W with 410 (the old red
 
 In higher registers, I have a Gibson Les Paul CM (2015) with the PAF replaced with a Lace Sensors Deathbucker. This one stays in C and is strung with 13s. I also have an ESP LTD LP type which has a bridge DiMarzio SD, coil split, this is my D guitar currently. My first guitar, a Vintage branded SG type with Wilkinson pickups, is currently in E. All are strung with d'Addario usually.
 
-The latest addition is a Squier offset. It's got a jazzmaster neck pickup and a tele bridge. Amazing thing.
+The latest addition is a Squier offset. It's got a jazzmaster neck pickup and a tele bridge. Amazing thing. We've swapped the bridge saddles, string tree, rewired it.
 
 ![Squier.](/public/img/squier.jpeg)
 *Squier.*
