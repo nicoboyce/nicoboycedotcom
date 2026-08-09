@@ -30,4 +30,4 @@ categories: snaps
 ![Neighbours.](/public/img/arty-shots/neighbours.jpg)
 *Neighbours.*
 
-All developed by the lovely people at The Film Safe. You can get a fiver off [via this link](https://www.thefilmsafe.co.uk/referral/xdryjC27vb8X?utm_source=referral_program).
+All developed by the lovely people at The Film Safe. You can get a fiver off [via my referral link](https://www.thefilmsafe.co.uk/referral/xdryjC27vb8X?utm_source=referral_program).
