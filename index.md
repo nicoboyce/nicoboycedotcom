@@ -18,8 +18,6 @@ This is my old fashioned personal website where I publish creative things. It's 
 * Car photos and chat is [here](/wheels/).
 * Latest release is [Instrumental Driving Music for Drecks](https://fightingmongooses.bandcamp.com/) — Drecks 2 and Workshy are on the way.
 
-<iframe style="border: 0; width: 400px; height: 737px;" src="https://bandcamp.com/EmbeddedPlayer/album=2664333807/size=large/bgcol=333333/linkcol=e99708/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/album/instrumental-driving-music-for-drecks">instrumental driving music for drecks by The Fighting Mongooses</a></iframe>
-
 It is the first release on my new label **hyperdoom**
 
 ![hyperdoom](/public/img/hyperdoom.gif)

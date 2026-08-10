@@ -30,7 +30,7 @@ Previous releases just said "Nico Boyce" on the cover. I'm okay with the name Ni
 
 There's some talk on the Nico logo <a href="/2024/05/25/where-did-the-nico-logo-design-originate/">here</a> and the Deltastring logo {% include link.html ref="business.deltastring_logo" text="here" %}.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ya4DuoPbVjc?si=8Qr-u-5hUtND54LS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+There's a video {% include link.html ref="releasing_drecks.drecks_video" text="on the youtube" %} too.
 
 The Fighting Mongooses is a cool team name, as Fry says. We're big Futurama fans. There's not a lot more to it.
 

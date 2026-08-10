@@ -43,7 +43,7 @@ Put this in your ears and be happy (happiness optional)
 
 Listen to the album on [Bandcamp](https://fightingmongooses.bandcamp.com/), [Tidal](https://tidal.com/browse/album/457375072), [Spotify](https://open.spotify.com/album/4xJSB3h9sIeyMfpmZZmB8n), [YouTube](https://www.youtube.com/playlist?list=OLAK5uy_nNlYcdy3bEEcBMg7ou_wpnKRIOeZRXNHk), or [Apple Music](https://music.apple.com/us/album/instrumental-driving-music-for-drecks/1836994336).
 
-<iframe class="no-mob" style="border: 0; width: 519px; height: 611px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe><iframe class="on-mob" style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=1225246556/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se">Now Melt (feat. d0g_r0se) by Nico Boyce</a></iframe>
+There's also [Now Melt (feat. d0g_r0se)](https://fightingmongooses.bandcamp.com/track/now-melt-feat-d0g-r0se) on Bandcamp.
 
 Actually according to [Distrokid](https://distrokid.com/vip/seven/2666105) most of this stuff is on (deep breath) Spotify, Apple Music, iTunes, Instagram/Facebook, TikTok & other ByteDance stores, YouTube Music, Amazon, Pandora, Deezer, Tidal, iHeartRadio, Claro Música, Saavn, Anghami, KKBox, NetEase, Tencent, MediaNet, Boomplay, Adaptr, Flo, Joox, Kuack Media, Qobuz, Snapchat most of which I have never heard of. So there!
 
