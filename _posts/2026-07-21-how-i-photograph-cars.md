@@ -128,4 +128,4 @@ And if you want to be really bold, take a film camera to the track! Be prepared 
 ![A Swift on film.](/public/img/lydden-easter-26/swift.jpeg)
 *Worth the duds.*
 
-The rest of the car photos and writing live on the [wheels page](/wheels/). The most recent film ones are in [Wheels on film](/wheels/2026/08/10/wheels-on-film/).
+The rest of the car photos and writing live on the [wheels page](/wheels/).
