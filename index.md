@@ -10,9 +10,6 @@ title: Nico Beastie Boyce — human person
 
 This is my old fashioned personal website where I publish creative things. It's deliberately a bit messy and chaotic because that's where the good stuff hides.
 
-![mushy](/public/img/mushy.jpg)
-*rage*
-
 ## New and sexy things
 
 * My latest essay is here: {% assign post = site.posts | where_exp: "item", "item.categories.size == 0" | first %}<a href="{{ post.url }}">{{ post.title }}</a>
@@ -60,6 +57,9 @@ Best way to get started is to open the paint and slap it down on the surface.
 *Frug.*
 
 Designing and prototyping analogue audio circuits, primarily guitar effects, is something I need to find more time for. I have been testing a novel and unique distortion unit which is capable of a huge spectrum of new sounds. I will write more about that as the project progresses.
+
+![mushy](/public/img/mushy.jpg)
+*rage*
 
 ## Deltastring
 
