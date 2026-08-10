@@ -4,9 +4,7 @@ title: "You are welcome, Ferrari"
 categories: wheels
 ---
 
-Have you seen this new Ferrari? It's the 849 Testarossa (no idea why they are resurrecting that name) and apparently it's good to drive.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/omG6aIFTLCk?si=pK0FD4B-SQQXgWm7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Have you seen this new Ferrari? It's the 849 Testarossa (no idea why they are resurrecting that name) and apparently it's good to drive. {% include link.html ref="ferrari_849.ferrari_849_video" text="Have a look on the youtube" %}.
 
 I had a stab at making it prettier. What do you think?
 

@@ -4,7 +4,7 @@
  <title>Nico Boyce</title>
  <link href="https://nicoboyce.com/atom.xml" rel="self"/>
  <link href="https://nicoboyce.com/"/>
- <updated>2026-08-10T02:37:06+01:00</updated>
+ <updated>2026-08-10T10:10:45+01:00</updated>
  <id>https://nicoboyce.com</id>
  <author>
    <name>Nico Beastie Boyce</name>
@@ -783,9 +783,7 @@
    <link href="https://nicoboyce.com/wheels/2026/02/03/you-are-welcome-ferrari/"/>
    <updated>2026-02-03T00:00:00+00:00</updated>
    <id>https://nicoboyce.com/wheels/2026/02/03/you-are-welcome-ferrari</id>
-   <content type="html">&lt;p&gt;Have you seen this new Ferrari? It’s the 849 Testarossa (no idea why they are resurrecting that name) and apparently it’s good to drive.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/omG6aIFTLCk?si=pK0FD4B-SQQXgWm7&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+   <content type="html">&lt;p&gt;Have you seen this new Ferrari? It’s the 849 Testarossa (no idea why they are resurrecting that name) and apparently it’s good to drive. &lt;a href=&quot;https://www.youtube.com/watch?v=omG6aIFTLCk&quot;&gt;Have a look on the youtube&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I had a stab at making it prettier. What do you think?&lt;/p&gt;
 
