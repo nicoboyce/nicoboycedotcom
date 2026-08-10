@@ -30,4 +30,6 @@ categories: snaps
 ![Records.](/public/img/arty-shots/records.jpg)
 *Records.*
 
+Same rolls, but pointed at cars: [Wheels on film](/wheels/2026/08/10/wheels-on-film/).
+
 All developed by the lovely people at The Film Safe. You can get a fiver off [via my referral link](https://www.thefilmsafe.co.uk/referral/xdryjC27vb8X?utm_source=referral_program).
